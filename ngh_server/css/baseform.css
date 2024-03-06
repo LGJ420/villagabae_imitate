@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(180, 180, 176);
+    text-align: center;
+}
+
+header,
+section,
+footer {
+    width: calc(1920px * .8);
+    margin: auto;
+}
+
+
+/* header 디자인 ========================================================= */
+
+/* nav 디자인 ========================================================= */
+
+header {
+    height: 25vh;
+    background-color: rgb(223, 120, 107);
+}
+
+.nav_box {
+    height: 120px;
+    padding: 0 15px;
+}
+
+.logo_design {
+    height: 120px;
+    width: 50%;
+}
+
+.logo_design a {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    height: 120px;
+    width: 100%;
+    display: inline-block;
+    text-indent: -9999em;
+}
+
+.nav_main_menu {
+    height: 120px;
+    width: 50%;
+    margin-top: -120px;
+    margin-left: 50%;
+    margin-right: 10%;
+}
+
+.nav_top_ul {
+    height: 120px;
+    text-align: right;
+    position: relative;
+}
+
+.nav_top_ul li {
+    display: inline-block;
+    line-height: 120px;
+    margin: 0 20px;
+}
+
+.nav_top_ul li:hover > ul {
+    display: inline-block;
+} 
+
+.nav_top_ul li a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    display: block;
+}
+
+.nav_top_ul li a:hover {
+    color: #e5e7eb;
+
+}
+
+.nav_deps1 {
+    position: absolute;
+    display: none;
+    
+}
+.nav_deps1 li a {
+    width: 100px;
+    height: 30px;
+}
+
+
+/* section 디자인 ========================================================= */
+
+section {
+    min-height: 75vh;
+    max-height: max-content;
+    background-color: rgb(181, 241, 233);
+}
+
+
+/* section 디자인 ========================================================= */
+
+
+/* footer 디자인 ========================================================= */
+footer {
+    height: 200px;
+    background-color: rgb(212, 166, 226);
+}
+
+.footer_box {
+    margin: 0 15px;
+}
+
+.Business_infor {
+    width: 50%;
+    height: 200px;
+}
+
+.Business_item {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.Business_item p {
+    margin-bottom: 5px;
+}
+
+.nav_footer_menu {
+    padding-top: 20px;
+    width: 50%;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: 50%;
+    margin-right: 15px;
+}
+
+.nav_bottom_ul {
+    text-align: right;
+}
+
+.nav_bottom_ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav_bottom_ul li a {
+    color: #5e5e5e;
+    text-decoration: none;
+    display: block;
+}
+
+.nav_bottom_ul li a:hover {
+    color: #3c3733;
+}

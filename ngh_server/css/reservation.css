@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(180, 180, 176);
+    text-align: center;
+}
+
+header,
+section,
+footer {
+    width: calc(1920px * .8);
+    margin: auto;
+}
+
+/* header 디자인 ========================================================= */
+
+/* nav 디자인 ========================================================= */
+
+header {
+    height: 25vh;
+    background-color: rgb(223, 120, 107);
+}
+
+.nav_box {
+    height: 120px;
+    padding: 0 15px;
+}
+
+.logo_design {
+    height: 120px;
+    width: 50%;
+}
+
+.logo_design a {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    height: 120px;
+    width: 100%;
+    display: inline-block;
+    text-indent: -9999em;
+}
+
+.nav_main_menu {
+    height: 120px;
+    width: 50%;
+    margin-top: -120px;
+    margin-left: 50%;
+    margin-right: 10%;
+}
+
+.nav_top_ul {
+    height: 120px;
+    padding: 0;
+    text-align: right;
+    position: relative;
+}
+
+.nav_top_ul li {
+    display: inline-block;
+    line-height: 120px;
+    margin: 0 20px;
+    padding: 0 5px;
+}
+
+.nav_top_ul li:hover > ul {
+    display: block;
+} 
+
+.nav_top_ul li a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    display: block;
+}
+
+.nav_top_ul li a:hover {
+    color: #e5e7eb;
+}
+
+.nav_deps1 {
+    display: none;
+    position: absolute;
+    text-align: left;
+    width: 150px;
+    height: max-content;
+    /* opacity: 0;
+    transition: 0.5s;
+    animation: backwards; */
+}
+
+.nav_deps1 li {
+    display: block;
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_deps1 li a {
+    display: block;
+    background-color: white;
+    padding-left: 15px;
+    color: rgb(76, 78, 76);
+}
+
+/* .nemu_hover:hover + .nav_deps1 {
+    opacity: 1;
+} */
+
+.nav_deps1 li a:hover {
+    background-color: rgb(237, 230, 223);
+    color: white;
+    transition: all 0.3s;
+}
+
+/* section 디자인 ========================================================= */
+
+section {
+    min-height: 75vh;
+    max-height: max-content;
+    background-color: rgb(181, 241, 233);
+}
+
+.blink1 {
+    height: 60px;   
+}
+
+.name_Reservation {
+    height: 100px;
+    text-align: left;
+    line-height: 100px;
+}
+
+.name_Reservation h2 {
+    padding: 0 15px;
+}
+
+.name_Reservation h2 {
+    display: inline-block;
+}
+
+.blink2 {
+    height: 40px;   
+}
+
+.name_rule_warning {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.name_rule_warning div {
+    font-size: 20px;
+    color: gray;
+}
+
+.borad_list {
+    width: 60%;
+    margin: auto;
+}
+
+.board_contents {
+    text-align: left;
+}
+
+.board_contents p {
+    font-weight: bold;
+    color: gray;
+    margin: 30px 10px;
+}
+
+.board_contents ul li {
+    color: gray;
+    list-style: circle;
+    margin: 0 0 20px 70px;
+}
+
+.board_contents ul {
+    margin: 30px 0;
+}
+
+.board_contents li {
+    color: gray;
+    list-style: initial;
+    margin-left: 20px;
+}
+
+.blink3 {
+    height: 60px;   
+}
+
+.btn {
+    height: 120px;
+}
+
+.btn_box {
+    margin: auto;
+    width: 350px;
+    height: 50px;
+    background-color: rgba(91, 76, 61, 0.85);
+    text-align: center;
+    line-height: 50px;
+}
+
+.btn_box a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+/* section 디자인 ========================================================= */
+
+/* section - 약관동의 기능부여 ========================================================= */
+
+input[id*="Agreement"] {
+    display: none;
+}
+
+input[id*="Agreement"] + label {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 12px 10px;
+    border: 1px solid gray;
+    border-left: 0;
+    border-right: 0;
+    color: gray;
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+}
+
+input[id*="Agreement"] + label em {
+    background: url(../img/arrowdown.png) no-repeat;
+    background-size: 70%;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    display: inline-block;
+}
+
+.board_contents {
+    max-height: 0;
+    transition: all .35s;
+    overflow: hidden;
+}
+
+input[id*="Agreement"]:checked + label + div {
+    max-height: 1000px;
+}
+
+input[id*="Agreement"]:checked + label em {
+    background: url(../img/arrowup.png) no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+/* section - 약관동의 기능부여 ========================================================= */
+
+/* footer 디자인 ========================================================= */
+footer {
+    height: 200px;
+    background-color: rgb(212, 166, 226);
+}
+
+.footer_box {
+    margin: 0 15px;
+}
+
+.Business_infor {
+    width: 50%;
+    height: 200px;
+}
+
+.Business_item {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.Business_item p {
+    margin-bottom: 5px;
+}
+
+.nav_footer_menu {
+    width: 50%;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: 50%;
+    margin-right: 15px;
+}
+
+.nav_bottom_ul {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.nav_bottom_ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav_bottom_ul li a {
+    color: #5e5e5e;
+    text-decoration: none;
+    display: block;
+}
+
+.nav_bottom_ul li a:hover {
+    color: #3c3733;
+}
