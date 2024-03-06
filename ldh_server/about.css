@@ -36,7 +36,7 @@ header {
 }
 
 .logo_design a {
-    background-image: url(../team_image/logo.png);
+    background-image: url(./team_image/logo.png);
     background-repeat: no-repeat;
     background-size: 200px;
     height: 120px;
@@ -134,14 +134,14 @@ section div>p {
 
 .welcome {
     position: relative;
-    background-image: url(../team_image/c8197b6606af6.jpg);
+    background-image: url(./team_image/c8197b6606af6.jpg);
     width: 60%;
     margin-left: 38%;
     margin-top: -25%;
 }
 
 .map {
-    background-image: url(../team_image/map_about.png);
+    background-image: url(./team_image/map_about.png);
 }
 
 .location {
