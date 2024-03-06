@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+header {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header a {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+
+.navbar_logo h1{
+    height: 0px;
+    text-indent: -9999em;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.welcome {
+    background: url(/source/images/28532e2c5216c.jpg) center;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.welcome a {
+    color: white;
+}
+
+.welcome_article {
+    display: inline-block;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.welcome_button {
+    background-color: transparent;
+    padding: 15px 30px;
+    border: RGB(255,255,255, 0.4) solid 1px;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: RGB(237,230,223);
+}
+
+.footer {
+    background-color: RGB(237,230,223);
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+}
+
+.footer {
+    color: black;
+}
+
+.footer_first {
+    margin: 20px;
+    margin-left: 80px;
+    display: inline-block;
+
+}
+
+.footer_last {
+    display: flex;
+    margin-right: 80px;
+}
+
+.footer_last ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer_last li {
+    padding: 10px 20px;
+}
+
+
+
+header {
+    position: relative;
+    height: 20vh;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+

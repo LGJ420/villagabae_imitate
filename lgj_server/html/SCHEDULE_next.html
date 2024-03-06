@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lgj_server/css/SCHEDULE_next.css">
+    <link rel="stylesheet" href="/lgj_server/css/cal.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i>짭빌라가배</i>
+            <img src="/lgj_server/images/logo.png">
+        </div>
+        <div class="header_menu">
+            <ul>
+                <li>ABOUT</li>
+                <li>ROOMS</li>
+                <li>FACILITIES</li>
+                <li>RESERVATION</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="main_left">
+            <div class="main_image">
+                <img src="/lgj_server/images/room1.jpg">
+            </div>
+            <div class="main_imglist">
+                <img src="/lgj_server/images/room1.jpg">
+                <img src="/lgj_server/images/room2.jpg">
+                <img src="/lgj_server/images/room3.jpg">
+                <img src="/lgj_server/images/room4.jpg">
+                <img src="/lgj_server/images/room5.jpg">
+                <img src="/lgj_server/images/room6.jpg">
+                <img src="/lgj_server/images/room7.jpg">
+                <img src="/lgj_server/images/room8.jpg">
+                <img src="/lgj_server/images/room9.jpg">
+                <img src="/lgj_server/images/room10.jpg">
+            </div>
+            <div class="main_detail">
+                <button>상세정보</button>
+            </div>
+            <div class="main_note">
+                <p>- 온수 비용
+
+-  11~2월 7만원 / 3월~10월 5만원 (체크인시 32~33도 다음날 아침 29~30도 외부기온에 따라 차이가 있을 수도 있습니다.) 
+                    
+- 기준 인원 외 1인 추가 요금은 1박당 30,000원 (조식 포함)
+                    
+- 24개월 이하 영유아 무료(추가 침구, 조식 미제공)
+                    
+- 예약된 인원 외에는 입실 할 수 없습니다.(방문객 불가)
+                    
+- 객실 내 반려동물 입장은 불가 합니다.
+                    
+- 실내 고기, 생선류 취사 불가 합니다.
+                    
+- 객실내 비품 파손, 분실 시 비용을 청구합니다.
+
+- 홈페이지를 통해 예약하시는 분에 한하여 조식무료제공 (타 예약 사이트를 통해 예약하실 경우 조식 미제공)</p>
+            </div>
+        </div>
+        <div class="main_right">
+            <div class="main_cal">
+                <section>
+                    <div class="calendar">
+                        <div class="header">
+                            <div class="year-month"></div>
+                            <div class="nav">
+                                <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                                <button class="nav-btn go-today" onclick="goToday()">Today</button>
+                                <button class="nav-btn go-prev" onclick="nextMonth()">&gt;</button>
+                            </div>
+                        </div>
+                        <div class="main">
+                            <div class="days">
+                                <div class="day">일</div>
+                                <div class="day">월</div>
+                                <div class="day">화</div>
+                                <div class="day">수</div>
+                                <div class="day">목</div>
+                                <div class="day">금</div>
+                                <div class="day">토</div>
+                            </div>
+                            <div class="dates"></div>
+                        </div>
+                    </div>
+                    <script src="./lgj_server/js/cal.js"></script>
+                </section>
+            </div>
+            <hr>
+            <div class="main_sel1">선택표</div>
+            <hr>
+            <div class="main_sel2">선택표2</div>
+            <hr>
+            <div class="main_sum">합계</div>
+            <div class="main_menu">
+
+                    <button>
+                        예약하기
+                    </button>
+
+                    <button>
+                        ♡
+                    </button>
+
+                    <button>
+                        <img src="">버튼
+                    </button>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_top">
+            <div class="footer_topleft">
+                <div class="footer_info">
+                    <p>빌라가배 Villagabae
+Tel. 010-8020-3216
+거제시 동부면 거제 남서로 2407-21
+공동대표 : 김태경 한동협ㅣ Biz License 308-11-42972 
+통신판매업 신고번호 : 2022-경남 거제-0622
+copyright ⓒ VILLAGABAE All right reserved. since 2023.</p>
+                </div>
+            </div>
+            <div class="footer_topright">
+                <div class="footer_toprighttop">
+                    <div class="footer_menu">
+                        <ul>
+                            <li>ABOUT</li>
+                            <li>ROOMS</li>
+                            <li>FACILITIES</li>
+                            <li>RESERVATION</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_toprightbottom">
+                    <div class="footer_b1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_b2">
+                <button>페이스북</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
