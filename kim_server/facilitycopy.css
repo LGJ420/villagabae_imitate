@@ -124,118 +124,17 @@ header {
 
 /* section 디자인 ========================================================= */
 
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: max-content;
-    min-height: 75vh;
-    text-align: center;
-    background-color: white;
-    border: 1px solid red;
-    box-sizing: border-box;
-}
 
-.section_box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-evenly;
-    max-height: 100%;
-    min-height: 75vh;
-    width: calc(1920px * .8);
-    border: 1px solid red;
-    box-sizing: border-box;
-}
 
-.name_Reservation {
-    width: 100%;
-    display: flex;
-    text-indent: 50px;
-    height: 100px;
-    line-height: 100px;
-    letter-spacing: 10px;
-    font-weight: lighter;
-    font-size: 30px;
-    color: rgb(64, 59, 55);
-}
-
-.name_rule_warning {
-    width: 100%;
-    margin-bottom: 15px;
-    line-height: max-content;
-}
-
-.name_rule_warning div {
-    font-size: 20px;
-    color: gray;
-}
-
-.borad_list {
-    width: 60%;
-    margin: auto;
-}
-
-.board_contents {
-    text-align: left;
-}
-
-.board_contents p {
-    font-weight: bold;
-    color: gray;
-    margin: 30px 10px;
-}
-
-.board_contents ul li {
-    color: gray;
-    list-style: circle;
-    margin: 0 0 20px 70px;
-}
-
-.board_contents ul {
-    margin: 30px 0;
-}
-
-.board_contents li {
-    color: gray;
-    list-style: initial;
-    margin-left: 20px;
-}
-
-.blink3 {
-    height: 60px;   
-}
-
-.btn {
-    width: 100%;
-    height: 120px;
-}
-
-.btn_box {
-    margin: auto;
-    width: 350px;
-    height: 50px;
-    background-color: rgba(91, 76, 61, 0.85);
-    text-align: center;
-    line-height: 50px;
-}
-
-.btn_box a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 14px;
-}
 
 /* section 디자인 ========================================================= */
 
 
-
-
-
 section {
     min-height: 75vh;
     max-height: max-content;
     background-color: white;
+    /* width: calc(1920px * .8); */
 }
 
 .picture * {
@@ -243,13 +142,13 @@ section {
 }
 
 .container{
-    width: 100%;
+    width: calc(1920px * .8);
     min-height: 75vh;
     max-height: max-content;
     display: flex;
     justify-content: center;
     align-items:center ;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
 }
 
 h2{
@@ -264,7 +163,7 @@ h2{
    gap: 60px;
    width: 100%;
    height: 60vh;
-   background-color: aquamarine;
+   /* background-color: aquamarine; */
 }
 
 div>img {
@@ -278,38 +177,6 @@ span{
 section p{
     text-align: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* footer 디자인 ========================================================= */
