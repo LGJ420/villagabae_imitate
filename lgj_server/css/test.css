@@ -1,0 +1,7 @@
+body * {
+    margin: 0px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
