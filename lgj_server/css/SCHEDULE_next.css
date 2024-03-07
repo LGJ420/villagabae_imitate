@@ -1,15 +1,9 @@
-* {
+body * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-
-
-body * {
-    /* box-sizing: border-box; */
-    border: 1px solid red;
-    /* padding: 2px; */
-    /* border-radius: 10px; */
+    /* border: 1px solid red; */
+    /* padding: 3px; */
 }
 
 header,
@@ -32,7 +26,16 @@ hr {
 
 /*header===================================*/
 header {
-    height: 200px;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+}
+
+.header_back {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .logo {
@@ -44,7 +47,6 @@ header {
 .logo>i {
     text-indent: -9999em;
 }
-
 
 .header_menu {
     width: 50%;
@@ -65,46 +67,50 @@ header {
 
 
 
-
-
-
 /*main===================================*/
 main {
+    display: flex;
     height: 1500px;
 }
 
 .main_left {
-    float: left;
-    width: 50%;
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 30px;
 }
+
 
 .main_left>div {
     display: block;
 }
 
 .main_image {
-    height: 50%;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.main_image img {
-    height: 100%;
+.main_image>img {
     width: 100%;
 }
 
 .main_imglist {
-    height: 10%;
-    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.main_imglist img {
-    height: 50%;
+.main_imglist>img {
+    width: 9%;
+
 }
 
 .main_detail {
     text-align: center;
+    width: 90%;
     height: 5%;
-    margin: 20px 0px;
+    margin: 20px;
 }
 
 .main_detail button {
@@ -174,8 +180,8 @@ footer {
 }
 
 .footer_top {
-    width: 99%;
-    height: 49%;
+    width: 100%;
+    height: 50%;
     background-color: RGB(237,230,223);
 }
 
@@ -207,6 +213,13 @@ footer {
 
 .footer_toprighttop div{
     float: right;
+    margin: 30px;
+    width: 50%;
+}
+
+.footer_toprighttop ul{
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer_toprightbottom {
@@ -218,9 +231,8 @@ footer {
     float: right;
 }
 
-
 .footer_bottom {
-    width: 99%;
-    height: 49%;
+    width: 100%;
+    height: 50%;
     text-align: center;
 }
