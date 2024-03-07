@@ -5,112 +5,150 @@
 }
 
 body {
-    background-color: rgb(180, 180, 176);
-    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+
+body::before {
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./image/background4.jpg) no-repeat center/cover;
+    position: fixed;
+    z-index: -1;
 }
 
 header,
 section,
 footer {
-    width: calc(1920px * .8);
     margin: auto;
 }
-
 
 /* header 디자인 ========================================================= */
 
 /* nav 디자인 ========================================================= */
+
 header {
+    display: flex;
     height: 25vh;
-    background-color: rgb(223, 120, 107);
+    background-color: transparent;
+    align-content: center;
+    justify-content: center; 
 }
 
 .nav_box {
-    height: 120px;
+    display: flex;
+    width: calc(1920px * .8);
     padding: 0 15px;
 }
 
 .logo_design {
+    display: flex;
     height: 120px;
     width: 50%;
 }
 
 .logo_design a {
-    background-image: url(../image/logo1.png);
+    display: flex;
+    background-image: url(./image/logo1.png);
     background-repeat: no-repeat;
     background-size: 200px;
     height: 120px;
     width: 100%;
-    display: inline-block;
     text-indent: -9999em;
 }
 
 .nav_main_menu {
+    display: flex;
     height: 120px;
     width: 50%;
-    margin-top: -120px;
-    margin-left: 50%;
-    margin-right: 10%;
+    justify-content: end;
 }
 
 .nav_top_ul {
+    display: flex;
     height: 120px;
-    text-align: right;
-    position: relative;
 }
 
 .nav_top_ul li {
-    display: inline-block;
     line-height: 120px;
     margin: 0 20px;
+    padding: 0 5px;
 }
 
 .nav_top_ul li:hover > ul {
-    display: inline-block;
+    display: block;
 } 
 
 .nav_top_ul li a {
+    display: block;
     color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
-    display: block;
 }
 
 .nav_top_ul li a:hover {
     color: #e5e7eb;
-
 }
 
 .nav_deps1 {
-    position: absolute;
     display: none;
-    
+    position: absolute;
+    text-align: left;
+    width: 150px;
+    height: max-content;
 }
+
+.nav_deps1 li {
+    display: block;
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
 .nav_deps1 li a {
-    width: 100px;
-    height: 30px;
+    display: block;
+    background-color: white;
+    padding-left: 15px;
+    color: rgb(76, 78, 76);
+}
+
+.nav_deps1 li a:hover {
+    background-color: rgb(237, 230, 223);
+    color: white;
+    transition: all 0.3s;
 }
 
 
 /* section 디자인 ========================================================= */
 
+
+
+
+/* section 디자인 ========================================================= */
+
+
 section {
     min-height: 75vh;
     max-height: max-content;
     background-color: white;
+    /* width: calc(1920px * .8); */
 }
 
 .picture * {
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .container{
-    width: 100%;
+    width: calc(1920px * .8);
     min-height: 75vh;
     max-height: max-content;
     display: flex;
     justify-content: center;
     align-items:center ;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
 }
 
 h2{
@@ -125,7 +163,7 @@ h2{
    gap: 60px;
    width: 100%;
    height: 60vh;
-   background-color: aquamarine;
+   /* background-color: aquamarine; */
 }
 
 div>img {
@@ -140,43 +178,47 @@ section p{
     text-align: left;
 }
 
-/* section 디자인 ========================================================= */
-
 
 /* footer 디자인 ========================================================= */
 footer {
+    display: flex;
     height: 200px;
-    background-color: rgb(212, 166, 226);
+    background-color: rgb(237, 230, 223);
+    justify-content: center;
+    align-content: center;
 }
 
 .footer_box {
+    display: flex;
+    width: calc(1920px * .8);
     margin: 0 15px;
 }
 
 .Business_infor {
+    display: flex;
     width: 50%;
     height: 200px;
 }
 
 .Business_item {
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: left;
-}
-
-.Business_item p {
-    margin-bottom: 5px;
+    width: 100%;
+    margin: 10px 0;
 }
 
 .nav_footer_menu {
-    padding-top: 20px;
+    display: flex;
+    justify-content: end;
     width: 50%;
-    height: 200px;
-    margin-top: -200px;
-    margin-left: 50%;
-    margin-right: 15px;
+    height: 50px;
 }
 
 .nav_bottom_ul {
+    display: flex;
+    margin: 10px 0;
     text-align: right;
 }
 
@@ -186,9 +228,9 @@ footer {
 }
 
 .nav_bottom_ul li a {
-    color: #5e5e5e;
-    text-decoration: none;
     display: block;
+    text-decoration: none;
+    color: #5e5e5e;
 }
 
 .nav_bottom_ul li a:hover {
