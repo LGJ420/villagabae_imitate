@@ -128,6 +128,9 @@ main {
 .main_note p {
     display: block;
     white-space: pre-wrap;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .main_right {
@@ -156,6 +159,15 @@ main {
     height: 5%;
 }
 
+.main_sel1,
+.main_sel2,
+.main_sum {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 .main_menu {
     height: 5%;
     text-align: center;
@@ -179,6 +191,12 @@ footer {
     height: 400px;
 }
 
+footer * {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .footer_top {
     width: 100%;
     height: 50%;
@@ -198,6 +216,7 @@ footer {
 
 .footer_info p{
     white-space: pre-wrap;
+    line-height: 25px;
 }
 
 .footer_topright {
