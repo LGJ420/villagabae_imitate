@@ -5,17 +5,14 @@
 }
 
 body {
-    background: url(../img/background1.jpg);
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: url(../img/background1.jpg) center/cover no-repeat;
 }
 
 header,
 section,
 footer {
-    width: calc(1920px * .8);
     margin: auto;
 }
 
@@ -24,47 +21,48 @@ footer {
 /* nav 디자인 ========================================================= */
 
 header {
+    display: flex;
     height: 25vh;
     background-color: transparent;
+    align-content: center;
+    justify-content: center;
 }
 
 .nav_box {
-    height: 120px;
+    display: flex;
+    width: calc(1920px * .8);
     padding: 0 15px;
 }
 
 .logo_design {
+    display: flex;
     height: 120px;
     width: 50%;
 }
 
 .logo_design a {
+    display: flex;
     background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-size: 200px;
     height: 120px;
     width: 100%;
-    display: inline-block;
     text-indent: -9999em;
 }
 
 .nav_main_menu {
+    display: flex;
     height: 120px;
     width: 50%;
-    margin-top: -120px;
-    margin-left: 50%;
-    margin-right: 10%;
+    justify-content: end;
 }
 
 .nav_top_ul {
+    display: flex;
     height: 120px;
-    padding: 0;
-    text-align: right;
-    position: relative;
 }
 
 .nav_top_ul li {
-    display: inline-block;
     line-height: 120px;
     margin: 0 20px;
     padding: 0 5px;
@@ -75,9 +73,9 @@ header {
 } 
 
 .nav_top_ul li a {
+    display: block;
     color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
-    display: block;
 }
 
 .nav_top_ul li a:hover {
@@ -90,9 +88,6 @@ header {
     text-align: left;
     width: 150px;
     height: max-content;
-    /* opacity: 0;
-    transition: 0.5s;
-    animation: backwards; */
 }
 
 .nav_deps1 li {
@@ -111,10 +106,6 @@ header {
     color: rgb(76, 78, 76);
 }
 
-/* .nemu_hover:hover + .nav_deps1 {
-    opacity: 1;
-} */
-
 .nav_deps1 li a:hover {
     background-color: rgb(237, 230, 223);
     color: white;
@@ -124,51 +115,88 @@ header {
 /* section 디자인 ========================================================= */
 
 section {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: calc(1920px * .8);
     min-height: 75vh;
-    max-height: max-content;
-
+    text-align: center;
 }
 
+.Slogan {
+    margin-top: -200px;
+    line-height: 100px;
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(230, 226, 226);
+}
 
+.VIST_btn {
+    border: 1px solid rgb(230, 226, 226);;
+    box-sizing: border-box;
+    opacity: 0.7;
+    width: 100px;
+    height: 50px;
+}
 
+.VIST_btn:hover {
+    background-color: rgb(254, 254, 254);
+    color: rgb(95, 95, 95);
+    transition: all 0.5s;
+}
 
-/* section - 약관동의 기능부여 ========================================================= */
+.VIST_btn a {
+    text-decoration: none;
+    line-height: 50px;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 100;
+    color: rgb(230, 226, 226);
+}
+
+/* section 디자인 ========================================================= */
 
 /* footer 디자인 ========================================================= */
 footer {
+    display: flex;
     height: 200px;
-    background-color: rgb(212, 166, 226);
+    background-color: rgb(237, 230, 223);
+    justify-content: center;
+    align-content: center;
 }
 
 .footer_box {
+    display: flex;
+    width: calc(1920px * .8);
     margin: 0 15px;
 }
 
 .Business_infor {
+    display: flex;
     width: 50%;
     height: 200px;
 }
 
 .Business_item {
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: left;
-}
-
-.Business_item p {
-    margin-bottom: 5px;
+    width: 100%;
+    margin: 10px 0;
 }
 
 .nav_footer_menu {
+    display: flex;
+    justify-content: end;
     width: 50%;
-    height: 200px;
-    margin-top: -200px;
-    margin-left: 50%;
-    margin-right: 15px;
+    height: 50px;
 }
 
 .nav_bottom_ul {
-    padding-top: 20px;
+    display: flex;
+    margin: 10px 0;
     text-align: right;
 }
 
@@ -178,9 +206,9 @@ footer {
 }
 
 .nav_bottom_ul li a {
-    color: #5e5e5e;
-    text-decoration: none;
     display: block;
+    text-decoration: none;
+    color: #5e5e5e;
 }
 
 .nav_bottom_ul li a:hover {
