@@ -112,6 +112,20 @@ header {
     transition: all 0.3s;
 }
 
+/* nav_underslidebar*/
+#horizontal-underline {
+    position: absolute;
+    width: 0%;
+    background-color: whitesmoke;
+    height: 20px;
+    top: 0;
+    left: 0;
+}
+
+
+/* nav_underslidebar*/
+
+
 /* section 디자인 ========================================================= */
 
 section {

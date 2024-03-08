@@ -238,6 +238,77 @@ iframe {
     opacity: .2;
 }
 
+/* ========================================================== */
+/* rooms */
+
+.tab_content input {
+    display: none;
+}
+
+.tab_content label {
+    display: inline-block;
+    padding: 20px;
+    background-image: url(./team_image/circle_1.png);
+    background-size: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.conbox {
+    display: none;
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+
+    margin-left: 0%;
+}
+
+.room1_1 {
+    background-image: url(./team_image/room1_1.jpg);
+}
+
+.room1_2 {
+    background-image: url(./team_image/room1_2.jpg);
+}
+
+.room1_3 {
+    background-image: url(./team_image/room1_3.jpg);
+}
+
+.room1_4 {
+    background-image: url(./team_image/room1_4.jpg);
+}
+
+/* ============================================================= */
+
+.room2_1 {
+    background-image: url(./team_image/room2_1.jpg);
+}
+
+.room2_2 {
+    background-image: url(./team_image/room2_2.jpg);
+}
+
+.room2_3 {
+    background-image: url(./team_image/room2_3.jpg);
+}
+
+.room2_4 {
+    background-image: url(./team_image/room2_4.jpg);
+}
+
+input[id="tab01"]:checked~.room1_1,
+input[id="tab02"]:checked~.room1_2,
+input[id="tab03"]:checked~.room1_3,
+input[id="tab04"]:checked~.room1_4 {
+    display: block;
+}
+
+.tab_content input:checked+label {
+    background-image: url(./team_image/circle_2.png);
+}
+
 /* section 디자인 ========================================================= */
 
 
