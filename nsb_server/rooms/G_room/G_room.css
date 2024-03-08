@@ -39,9 +39,18 @@ footer {
     margin: auto;
 }
 
+a:visited {
+    color: black;
+}
+
 /* =============header======================= */
 
 header {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+
     display: flex;
     height: 25vh;
     background-color: transparent;
@@ -51,7 +60,7 @@ header {
 
 .nav_box {
     display: flex;
-    width: calc(1920px * .8);
+    max-width: calc(1920px * .8);
     padding: 0 15px;
 }
 
@@ -145,15 +154,23 @@ section {
     margin: auto;
     max-height: 100%;
     max-width: calc(1920px * 0.8);
-    width: 100%;
+    width: calc(100% * 0.8);
     
     display: flex;
     flex-direction: column;
 }
 
+/* section 상단, 하단 마진 */
+.section_box::before,
+.section_box::after {
+    content: "";
+    display: block;
+    margin: 30px 0;
+}
+
 /* 객실 설명 */
 .room_exp {
-    margin: 20px 0;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -168,6 +185,11 @@ section {
 }
 
 /* 객실 사진 */
+/* .room_img {
+    display: flex;
+    justify-content: center;
+} */
+
 .room_img img {
     width: 100%;
 }
@@ -183,6 +205,7 @@ section {
 .room_expDetail p,
 .room_expDetail hr {
     width: 100%;
+    margin-bottom: 5px;
 }
 
 .room_expDetail ul {
@@ -193,10 +216,15 @@ section {
     padding-left: 50px;
 }
 
+.room_expDetail>ul>li::before{
+    content: "▶ ";
+    font-size: 10px;
+}
+
 /* 안내사항 */
 .notice{
     margin: 20px 0;
-
+    
     display: flex;
     flex-wrap: wrap;
 }
@@ -204,6 +232,7 @@ section {
 .notice p,
 .notice hr {
     width: 100%;
+    margin-bottom: 5px;
 }
 
 .notice ul {
@@ -214,34 +243,86 @@ section {
     padding-left: 50px;
 }
 
+.notice>ul>li::before{
+    content: "▶ ";
+    font-size: 10px;
+}
+
+/* 예약하기 버튼 */
+
+.btn {
+    margin: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn a {
+    display: inline-block;
+    width: 70%;
+    height: 50px;
+    margin: 20px 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-style: normal;
+    color: rgba(223,190,106,0.7);
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    border: 1px solid rgba(223,190,106,0.3);
+}
+
+.btn a:hover {
+    color: white;
+    background-position: 99% 50%;
+}
+
 /* 서비스 */
 .service {
     margin: 20px 0;
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.service p {
+.service>p,
+.service hr {
     width: 100%;
+    margin-bottom: 5px;
 }
 
-.service div {
+.service>div {
     width: 25%;
-    padding: 0 10px;
+    padding: 0 5px;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.service div * {
-    margin: 10px 0;
-    text-align: center;
+.service div img {
+    margin-top: 10px;
+    width: 100%;
 }
 
-.service img {
+.service div p{
     width: 100%;
+    text-align: center;
+    background-color: rgba(146,111,52,0.8);
+}
+
+.service div p a {
+    display: block;
+    color: white;
+
+    height: 100%;
+    padding: 10px;
 }
 
 /* 다른 객실 */
@@ -250,30 +331,39 @@ section {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.other_room p {
+.other_room p,
+.other_room hr {
     width: 100%;
+    margin-bottom: 5px;
 }
 
 .other_room div {
     width: 50%;
-    padding: 0 10px;
+    padding: 0 5px;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-}
-
-.other_room div * {
-    margin: 10px 0;
     text-align: center;
 }
 
-.other_room img {
+.other_room div img {
+    margin-top: 10px;
     width: 100%;
 }
 
+.other_room div p{
+    background-color: rgba(146,111,52,0.8);
+}
+
+.other_room div p a {
+    display: block;
+    color: white;
+    height: 100%;
+    padding: 10px;
+}
 
 /* =================푸터======================= */
 footer {
