@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    /* border: 1px red solid;
+    box-sizing: border-box;
+    padding: 3px; */
 }
 
 body {
@@ -144,6 +147,7 @@ section * {
 }
 
 .main_back {
+    width: 100%;
     min-height: 75vh;
     display: flex;
     flex-wrap: wrap;
@@ -167,7 +171,12 @@ hr {
 }
 
 .main_middle {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     height: 600px;
+    justify-content: center;
+    align-content: space-around;
 }
 
 .main_middle>p {
@@ -213,6 +222,10 @@ col:first-child {
 
 col:last-child {
     width: 1000px;
+}
+
+.button{
+    text-align: center;
 }
 
 .button>div {
