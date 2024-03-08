@@ -5,90 +5,128 @@
 }
 
 body {
-    background-color: rgb(180, 180, 176);
-    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+
+body::before {
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./team_image/about_back.jpg) no-repeat center/cover;
+    position: fixed;
+    z-index: -1;
 }
 
 header,
 section,
 footer {
-    width: calc(1920px * .8);
     margin: auto;
 }
+
 
 
 /* header 디자인 ========================================================= */
 
 /* nav 디자인 ========================================================= */
+
 header {
+
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+
+    display: flex;
     height: 25vh;
-    background-color: rgb(223, 120, 107);
+    background-color: transparent;
+    align-content: center;
+    justify-content: center;
 }
 
 .nav_box {
-    height: 120px;
+    display: flex;
+    width: calc(1920px * .8);
     padding: 0 15px;
 }
 
 .logo_design {
+    display: flex;
     height: 120px;
     width: 50%;
 }
 
 .logo_design a {
+    display: flex;
     background-image: url(./team_image/logo.png);
     background-repeat: no-repeat;
     background-size: 200px;
     height: 120px;
     width: 100%;
-    display: inline-block;
     text-indent: -9999em;
 }
 
 .nav_main_menu {
+    display: flex;
     height: 120px;
     width: 50%;
-    margin-top: -120px;
-    margin-left: 50%;
-    margin-right: 10%;
+    justify-content: end;
 }
 
 .nav_top_ul {
+    display: flex;
     height: 120px;
-    text-align: right;
-    position: relative;
 }
 
 .nav_top_ul li {
-    display: inline-block;
     line-height: 120px;
     margin: 0 20px;
+    padding: 0 5px;
 }
 
 .nav_top_ul li:hover>ul {
-    display: inline-block;
+    display: block;
 }
 
 .nav_top_ul li a {
+    display: block;
     color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
-    display: block;
 }
 
 .nav_top_ul li a:hover {
     color: #e5e7eb;
-
 }
 
 .nav_deps1 {
-    position: absolute;
     display: none;
+    position: absolute;
+    text-align: left;
+    width: 150px;
+    height: max-content;
+}
 
+.nav_deps1 li {
+    display: block;
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
 }
 
 .nav_deps1 li a {
-    width: 100px;
-    height: 30px;
+    display: block;
+    background-color: white;
+    padding-left: 15px;
+    color: rgb(76, 78, 76);
+}
+
+.nav_deps1 li a:hover {
+    background-color: rgb(237, 230, 223);
+    color: white;
+    transition: all 0.3s;
 }
 
 
@@ -112,9 +150,20 @@ section {
     background-color: white;
 }
 
+.section_box {
+    max-height: 100%;
+    min-height: 75vh;
+    width: calc(1920px * .8);
+    /* border: 1px solid red;
+    box-sizing: border-box; */
+    margin: auto;
+}
+
 h2 {
     line-height: 15vh;
     font-size: 30px;
+    letter-spacing: 10px;
+    opacity: .9;
 }
 
 section div>p,
@@ -130,10 +179,12 @@ h2,
 }
 
 section div>p {
-    width: 30%;
+    width: 32%;
     white-space: pre-line;
-    margin-top: -3%;
-    font-size: 15px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: bolder;
+    opacity: .7;
 }
 
 .welcome {
@@ -144,12 +195,14 @@ section div>p {
     position: relative;
     background-image: url(./team_image/c8197b6606af6.jpg);
     margin-left: 38%;
-    margin-top: -20%;
+    margin-top: -33%;
+    margin-bottom: 5%;
     box-shadow: 0 0 30px rgb(141, 132, 93);
 
 }
 
 iframe {
+    margin-top: 1%;
     /* overflow: hidden; */
     box-shadow: 0 0 30px rgb(141, 132, 93);
     /* border-radius: 10px; */
@@ -167,43 +220,68 @@ iframe {
     padding-bottom: 5px;
 }
 
+.line {
+    width: 5%;
+    margin: 0 15px;
+    margin-top: -2%;
+    margin-bottom: 1%;
+
+    opacity: .2;
+}
+
 /* section 디자인 ========================================================= */
 
 
 /* footer 디자인 ========================================================= */
 footer {
+
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    opacity: .9;
+    color: rgb(100, 92, 72);
+
+
+
+    display: flex;
     height: 200px;
-    background-color: rgb(212, 166, 226);
+    background-color: rgb(237, 230, 223);
+    justify-content: center;
+    align-content: center;
 }
 
 .footer_box {
+    display: flex;
+    width: calc(1920px * .8);
     margin: 0 15px;
 }
 
 .Business_infor {
+    display: flex;
     width: 50%;
     height: 200px;
 }
 
 .Business_item {
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: left;
-}
-
-.Business_item p {
-    margin-bottom: 5px;
+    width: 100%;
+    margin: 10px 0;
 }
 
 .nav_footer_menu {
-    padding-top: 20px;
+    display: flex;
+    justify-content: end;
     width: 50%;
-    height: 200px;
-    margin-top: -200px;
-    margin-left: 50%;
-    margin-right: 15px;
+    height: 50px;
 }
 
 .nav_bottom_ul {
+    display: flex;
+    margin: 10px 0;
     text-align: right;
 }
 
@@ -213,9 +291,9 @@ footer {
 }
 
 .nav_bottom_ul li a {
-    color: #5e5e5e;
-    text-decoration: none;
     display: block;
+    text-decoration: none;
+    color: #5e5e5e;
 }
 
 .nav_bottom_ul li a:hover {
