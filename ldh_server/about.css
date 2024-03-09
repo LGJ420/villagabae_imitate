@@ -161,7 +161,7 @@ section {
 
 h2 {
     line-height: 15vh;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 10px;
     opacity: .9;
 }
@@ -199,7 +199,7 @@ section div>p {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 60%;
-    height: 45vh;
+    height: 50vh;
     position: relative;
     background-image: url(./team_image/c8197b6606af6.jpg);
     margin-left: 38%;
@@ -239,29 +239,59 @@ iframe {
 }
 
 /* ========================================================== */
-/* rooms */
+/* room 1 */
 
-.tab_content input {
+.tab_content1 input {
     display: none;
 }
 
-.tab_content label {
+.tab_content1 label {
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     background-image: url(./team_image/circle_1.png);
-    background-size: 100%;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
     border-radius: 50%;
+    position: relative;
+    /* top: 640px; */
+    left: 195px;
 }
 
-.conbox {
+/* .tab_content input {
+    position: relative;
+    top: 640px;
+    left: 180px;
+} */
+
+.conbox1 {
     display: none;
-    width: 500px;
-    height: 600px;
+    width: 450px;
+    height: 500px;
     margin: 0 auto;
     background-repeat: no-repeat;
 
-    margin-left: 0%;
+    /* margin-left: 0%; */
+}
+
+
+.room1_1,
+.room1_2,
+.room1_3,
+.room1_4 {
+    box-shadow: 0 0 30px rgb(141, 132, 93);
+    background-size: 100% 100%;
+    animation: opacity .4s;
+    border-radius: 10% 0;
+
+}
+
+.room1_1:hover,
+.room1_2:hover,
+.room1_3:hover,
+.room1_4:hover {
+    opacity: .7;
 }
 
 .room1_1 {
@@ -282,6 +312,63 @@ iframe {
 
 /* ============================================================= */
 
+input[id="tab1_1"]:checked~.room1_1,
+input[id="tab1_2"]:checked~.room1_2,
+input[id="tab1_3"]:checked~.room1_3,
+input[id="tab1_4"]:checked~.room1_4 {
+    display: block;
+}
+
+.tab_content1 input:checked+label {
+    background-image: url(./team_image/circle_2.png);
+}
+
+/* ========================================================== */
+/* room 2 */
+
+.tab_content2 input {
+    display: none;
+}
+
+.tab_content2 label {
+    display: inline-block;
+    padding: 10px;
+    background-image: url(./team_image/circle_1.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    left: 195px;
+
+}
+
+.conbox2 {
+    display: none;
+    width: 450px;
+    height: 500px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+
+.room2_1,
+.room2_2,
+.room2_3,
+.room2_4 {
+    box-shadow: 0 0 30px rgb(141, 132, 93);
+    background-size: 100% 100%;
+    animation: opacity .4s;
+    border-radius: 10% 0;
+}
+
+.room2_1:hover,
+.room2_2:hover,
+.room2_3:hover,
+.room2_4:hover {
+    opacity: .7;
+}
+
 .room2_1 {
     background-image: url(./team_image/room2_1.jpg);
 }
@@ -298,15 +385,149 @@ iframe {
     background-image: url(./team_image/room2_4.jpg);
 }
 
-input[id="tab01"]:checked~.room1_1,
-input[id="tab02"]:checked~.room1_2,
-input[id="tab03"]:checked~.room1_3,
-input[id="tab04"]:checked~.room1_4 {
+input[id="tab2_1"]:checked~.room2_1,
+input[id="tab2_2"]:checked~.room2_2,
+input[id="tab2_3"]:checked~.room2_3,
+input[id="tab2_4"]:checked~.room2_4 {
     display: block;
 }
 
-.tab_content input:checked+label {
+.tab_content2 input:checked+label {
     background-image: url(./team_image/circle_2.png);
+}
+
+/* ========================================================== */
+/* room 3 */
+
+.tab_content3 input {
+    display: none;
+}
+
+.tab_content3 label {
+    display: inline-block;
+    padding: 10px;
+    background-image: url(./team_image/circle_1.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    /* top: 640px; */
+    left: 195px;
+}
+
+/* .tab_content input {
+    position: relative;
+    top: 640px;
+    left: 180px;
+} */
+
+.conbox3 {
+    display: none;
+    width: 450px;
+    height: 500px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+
+    margin-left: 0%;
+
+}
+
+.room3_1,
+.room3_2,
+.room3_3,
+.room3_4 {
+    box-shadow: 0 0 30px rgb(141, 132, 93);
+    background-size: 100% 100%;
+    animation: opacity .4s;
+    border-radius: 10% 0;
+}
+
+.room3_1:hover,
+.room3_2:hover,
+.room3_3:hover,
+.room3_4:hover {
+    opacity: .7;
+}
+
+.room3_1 {
+    background-image: url(./team_image/room3_1.jpg);
+}
+
+.room3_2 {
+    background-image: url(./team_image/room3_2.jpg);
+}
+
+.room3_3 {
+    background-image: url(./team_image/room3_3.jpg);
+}
+
+.room3_4 {
+    background-image: url(./team_image/room3_4.jpg);
+}
+
+/* ============================================================= */
+
+input[id="tab3_1"]:checked~.room3_1,
+input[id="tab3_2"]:checked~.room3_2,
+input[id="tab3_3"]:checked~.room3_3,
+input[id="tab3_4"]:checked~.room3_4 {
+    display: block;
+}
+
+.tab_content3 input:checked+label {
+    background-image: url(./team_image/circle_2.png);
+}
+
+.rooms {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.room_box {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -280px;
+    color: rgb(117, 97, 72);
+    font-size: 30px;
+    background-color: rgb(241, 235, 223);
+    border-radius: 30% 0;
+    opacity: .5;
+    padding: 3px 17px;
+
+    font-family: "Nanum Myeongjo", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.room_go a {
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    width: 300px;
+    line-height: 70px;
+    margin: auto;
+    color: rgb(100, 92, 72);
+
+    font-family: "Nanum Myeongjo", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    opacity: .5;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.room_go a:hover {
+    opacity: 1;
+}
+
+.room_go {
+    text-align: center;
+    margin-top: 70px;
+    height: 130px;
 }
 
 /* section 디자인 ========================================================= */
