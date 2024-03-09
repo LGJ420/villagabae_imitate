@@ -31,19 +31,61 @@
     </header>
     <main>
         <div class="main_left">
-            <div class="main_image">
-                <img src="../images/room1.jpg">
-                <div class="main_imglist">
-                    <img src="../images/room1.jpg">
-                    <img src="../images/room2.jpg">
-                    <img src="../images/room3.jpg">
-                    <img src="../images/room4.jpg">
-                    <img src="../images/room5.jpg">
-                    <img src="../images/room6.jpg">
-                    <img src="../images/room7.jpg">
-                    <img src="../images/room8.jpg">
-                    <img src="../images/room9.jpg">
-                    <img src="../images/room10.jpg">
+            <div class="main_imglist">
+                <input type="radio" name="tabmenu" id="tab1" checked>
+                <input type="radio" name="tabmenu" id="tab2">
+                <input type="radio" name="tabmenu" id="tab3">
+                <input type="radio" name="tabmenu" id="tab4">
+                <input type="radio" name="tabmenu" id="tab5">
+                <input type="radio" name="tabmenu" id="tab6">
+                <input type="radio" name="tabmenu" id="tab7">
+                <input type="radio" name="tabmenu" id="tab8">
+                <input type="radio" name="tabmenu" id="tab9">
+                <input type="radio" name="tabmenu" id="tab10">
+                
+    
+                <div class="combox room1"></div>
+                <div class="combox room2"></div>
+                <div class="combox room3"></div>
+                <div class="combox room4"></div>
+                <div class="combox room5"></div>
+                <div class="combox room6"></div>
+                <div class="combox room7"></div>
+                <div class="combox room8"></div>
+                <div class="combox room9"></div>
+                <div class="combox room10"></div>
+    
+                <div class="tabs">
+                    <label for="tab1">
+                        <img class="tab1" src="../images/room1.jpg">
+                    </label>
+                    <label for="tab2">
+                        <img class="tab2" src="../images/room2.jpg">
+                    </label>
+                    <label for="tab3">
+                        <img class="tab3" src="../images/room3.jpg">
+                    </label>
+                    <label for="tab4">
+                        <img class="tab4" src="../images/room4.jpg">
+                    </label>
+                    <label for="tab5">
+                        <img class="tab5" src="../images/room5.jpg">
+                    </label>
+                    <label for="tab6">
+                        <img class="tab6" src="../images/room6.jpg">
+                    </label>
+                    <label for="tab7">
+                        <img class="tab7" src="../images/room7.jpg">
+                    </label>
+                    <label for="tab8">
+                        <img class="tab8" src="../images/room8.jpg">
+                    </label>
+                    <label for="tab9">
+                        <img class="tab9" src="../images/room9.jpg">
+                    </label>
+                    <label for="tab10">
+                        <img class="tab10" src="../images/room10.jpg">
+                    </label>
                 </div>
             </div>
             
@@ -54,17 +96,17 @@
                 <p>- 온수 비용
 
 -  11~2월 7만원 / 3월~10월 5만원 (체크인시 32~33도 다음날 아침 29~30도 외부기온에 따라 차이가 있을 수도 있습니다.) 
-                    
+
 - 기준 인원 외 1인 추가 요금은 1박당 30,000원 (조식 포함)
-                    
+
 - 24개월 이하 영유아 무료(추가 침구, 조식 미제공)
-                    
+
 - 예약된 인원 외에는 입실 할 수 없습니다.(방문객 불가)
-                    
+
 - 객실 내 반려동물 입장은 불가 합니다.
-                    
+
 - 실내 고기, 생선류 취사 불가 합니다.
-                    
+
 - 객실내 비품 파손, 분실 시 비용을 청구합니다.
 
 - 홈페이지를 통해 예약하시는 분에 한하여 조식무료제공 (타 예약 사이트를 통해 예약하실 경우 조식 미제공)</p>
@@ -109,7 +151,27 @@
                     <a href="../html/COMPLETE.html" class="btn">예약하기</a>
                     <a href="#" class="btn">♡</a>
                     <a href="#" class="btn">공유</a>
+            </div>
+            <div class="modal_box2">
+                <div class="modal_box2_header">
+                    <h3>공유하기</h3>
+                    <button>X</button>
+                </div>
+    
+                <div class="social_btn">
+                    <ul>
+                        <li><a class="line" href="https://line.me/ko/">라인</a></li>
+                        <li><a class="band" href="https://band.us/home">밴드</a></li>
+                        <li><a class="naver" href="https://www.naver.com/">네이버</a></li>
+                        <li><a class="face" href="https://www.facebook.com/">페이스북</a></li>
+                        <li><a class="X" href="https://twitter.com/">X</a></li>
+                    </ul>
+                </div>
 
+                <div class="modal_box2_footer">
+                    <input type="text" placeholder="https://villagabae.com/SCHEDULE/?idx=7" readonly>
+                    <button>복사</button>
+                </div>
             </div>
         </div>
     </main>
@@ -137,13 +199,19 @@ copyright ⓒ VILLAGABAE All right reserved. since 2023.</p>
                     </div>
                 </div>
                 <div class="footer_toprightbottom">
-                    <div class="footer_b1"></div>
+                    <div class="footer_b1">
+                        <a href="https://www.instagram.com/">
+                            <img src="../images/insta_logo.png">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer_bottom">
             <div class="footer_b2">
-                <button>페이스북</button>
+                <a href="https://www.facebook.com/">
+                    <img src="../images/fb_logo.png">
+                </a>
             </div>
         </div>
     </footer>
