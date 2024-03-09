@@ -1,40 +1,63 @@
-.btn {
-    display: inline-block;
-    background: transparent;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 0.625rem;
-    letter-spacing: 0.3em;
-    color: rgba(223,190,106,0.7);
-    border-radius: 0;
-    padding: 18px 80px 20px;
-    transition: all 0.7s ease-out;
-    background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
-    background-position: 1% 50%;
-    background-size: 300% 300%;
-    text-decoration: none;
-    margin: 0.625rem;
-    border: none;
-    border: 1px solid rgba(223,190,106,0.3);
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding: 3px;
 }
 
-.btn:hover {
-    color: #fff;
-    border: 1px solid rgba(223,190,106,0);
-    color: white;
-    background-position: 99% 50%;
+.combox {
+    display: none;
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
 }
 
-body {
-    background: #231f20;
-    color: #fff;
-    font-family: "Helvetica Neue", Helvetica, Arials, sans;
+input[type="radio"]{
+    display:none;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.room1 {
+    background-image: url(../images/room1.jpg);
+}
+.room2 {
+    background-image: url(../images/room2.jpg);
+}
+.room3 {
+    background-image: url(../images/room3.jpg);
+}
+.room4 {
+    background-image: url(../images/room4.jpg);
+}
+.room5 {
+    background-image: url(../images/room5.jpg);
+}
+.room6 {
+    background-image: url(../images/room6.jpg);
+}
+.room7 {
+    background-image: url(../images/room7.jpg);
+}
+.room8 {
+    background-image: url(../images/room8.jpg);
+}
+.room9 {
+    background-image: url(../images/room9.jpg);
+}
+.room10 {
+    background-image: url(../images/room10.jpg);
+}
+
+input[id="tab1"]:checked~.room1,
+input[id="tab2"]:checked~.room2,
+input[id="tab3"]:checked~.room3,
+input[id="tab4"]:checked~.room4,
+input[id="tab5"]:checked~.room5,
+input[id="tab6"]:checked~.room6,
+input[id="tab7"]:checked~.room7,
+input[id="tab8"]:checked~.room8,
+input[id="tab9"]:checked~.room9,
+input[id="tab10"]:checked~.room10 {
+    display: block;
 }
