@@ -24,20 +24,19 @@ header {
     display: flex;
     height: 25vh;
     background-color: transparent;
-    align-content: center;
     justify-content: center;
 }
-
 .nav_box {
     display: flex;
     width: calc(1920px * .8);
     padding: 0 15px;
 }
 
+/* 로고 영역 */
 .logo_design {
     display: flex;
     height: 120px;
-    width: 50%;
+    width: 100%;
 }
 
 .logo_design a {
@@ -45,85 +44,92 @@ header {
     background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-size: 200px;
-    height: 120px;
-    width: 100%;
+    width: 50%;
     text-indent: -9999em;
 }
 
+/* 로고 영역 */
+
+/* 메뉴 영역 */
 .nav_main_menu {
     display: flex;
     height: 120px;
-    width: 50%;
+    width: 100%;
     justify-content: end;
 }
 
 .nav_top_ul {
     display: flex;
     height: 120px;
+    margin-top: 20px;
+    justify-content: center;
+
+    /* align-items: center; */
 }
 
-.nav_top_ul li {
-    line-height: 120px;
-    margin: 0 20px;
-    padding: 0 5px;
+.nav_top_ul>li {
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
 }
 
-.nav_top_ul li:hover > ul {
-    display: block;
-} 
-
-.nav_top_ul li a {
-    display: block;
-    color: rgba(255, 255, 255, 0.75);
+.nav_top_ul>li>a {
+    padding: 20px;
+    color: rgba(255, 255, 255);
     text-decoration: none;
 }
 
-.nav_top_ul li a:hover {
-    color: #e5e7eb;
+.nav_top_ul>li>a:hover {
+    color: rgb(95, 95, 95);
 }
 
+/* 메뉴 영역 */
+/* ↓↓↓ 2차 메뉴(deps 영역) ↓↓↓ */
 .nav_deps1 {
-    display: none;
-    position: absolute;
-    text-align: left;
-    width: 150px;
+    visibility: none;
+    opacity: 0;
+}
+
+.nav_top_ul>li:hover .nav_deps1 {
+    display: flex;
+    flex-direction: column;
     height: max-content;
-}
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+    opacity: 1;
 
-.nav_deps1 li {
-    display: block;
-    line-height: 50px;
-    width: 150px;
-    height: 50px;
-    padding: 0;
-    margin: 0;
-}
-
-.nav_deps1 li a {
-    display: block;
-    background-color: white;
-    padding-left: 15px;
-    color: rgb(76, 78, 76);
-}
-
-.nav_deps1 li a:hover {
-    background-color: rgb(237, 230, 223);
-    color: white;
-    transition: all 0.3s;
-}
-
-/* nav_underslidebar*/
-#horizontal-underline {
+    transition: 0.5s;
     position: absolute;
-    width: 0%;
-    background-color: whitesmoke;
-    height: 20px;
-    top: 0;
-    left: 0;
 }
 
+.nav_deps1>li {
+    background-color: white;
+    padding: 10px 0 10px 15px;
+    color: rgb(76, 78, 76);
+    cursor: pointer;
+}
 
-/* nav_underslidebar*/
+.nav_deps1>li>a {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.nav_deps1>li:hover {
+    transition: all 0.35s;
+    background-color: rgb(237, 230, 223);
+}
+
+.nav_deps1>li>a {
+    color: rgb(35, 35, 35);
+}
+
+.nav_deps1>li:hover a{
+    color: white;
+}
+/* ↑↑↑ 2차 메뉴(deps 영역) ↑↑↑ */
+
 
 
 /* section 디자인 ========================================================= */
@@ -222,9 +228,9 @@ footer {
 .nav_bottom_ul li a {
     display: block;
     text-decoration: none;
-    color: #5e5e5e;
+    color: rgb(95, 95, 95);
 }
 
-.nav_bottom_ul li a:hover {
-    color: #3c3733;
+.nav_bottom_ul>li>a:hover {
+    color: black;
 }
