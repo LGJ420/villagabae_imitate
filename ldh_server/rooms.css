@@ -138,99 +138,15 @@ header {
     }
 }
 
-::selection {
-    background: #705b43;
-    color: white;
-
-}
 section {
     min-height: 75vh;
     max-height: max-content;
     background-color: white;
 }
 
-h2,
-section div {
-    text-align: left;
-    color: rgb(100, 92, 72);
-}
-
-.section_box {
-    max-height: 100%;
-    min-height: 75vh;
-    width: calc(1920px * .8);
-    margin: auto;
-}
-
-h2 {
-    line-height: 15vh;
-    font-size: 35px;
-    letter-spacing: 10px;
-    opacity: .9;
-}
-
-section div>p,
-.welcome,
-.map,
-h2,
-.location>p {
-    margin: 0 15px;
-
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-section div>p {
-    width: 32%;
-    white-space: pre-line;
-    letter-spacing: 1px;
-    font-size: 17px;
-    font-weight: bolder;
-    opacity: .7;
-
-    animation: opacity 2s;
-}
-
-.welcome {
-    width: 60%;
-    height: 50vh;
-    position: relative;
-    background-image: url(./team_image/c8197b6606af6.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-left: 38%;
-    margin-top: -33%;
-    margin-bottom: 5%;
-    box-shadow: 0 0 30px rgb(141, 132, 93);
-
-    animation: opacity 2s;
-}
-
-iframe {
-    margin-top: 1%;
-    box-shadow: 0 0 30px rgb(141, 132, 93);
-    width: 100%;
-    height: 50vh;
-}
-
-.location {
-    height: 15vh;
-    padding-top: 3%;
-}
-
-.location>p {
-    line-height: 70%;
-    padding-bottom: 5px;
-}
-
-.line {
-    width: 5%;
-    margin: 0 15px;
-    margin-top: -2%;
-    margin-bottom: 1%;
-
-    opacity: .2;
+::selection {
+    background: #705b43;
+    color: white;
 }
 
 /* ========================================================== */
@@ -258,7 +174,7 @@ iframe {
     width: 450px;
     height: 500px;
     margin: 0 auto;
-    
+
     box-shadow: 0 0 30px rgb(141, 132, 93);
     background-repeat: no-repeat;
     background-size: 100% 100%;
