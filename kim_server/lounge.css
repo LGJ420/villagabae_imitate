@@ -134,90 +134,146 @@ header {
 
 
 section {
+    /* margin: auto; */
     min-height: 75vh;
     max-height: max-content;
     background-color: white;
     width: calc(1920px * 0.8);
 }
 
-.section_box {
-    margin: auto;
-    max-height: 100%;
-    min-height: 75vh;
-    max-width: calc(1920px * 0.8);
+.contitle{   
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 40px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 165px;
+}
+
+.contitle span{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(223,190,106);
+}
+
+.pictureMore input[id*="slide"] {
+    display: none;
+}
+
+.pictureMore .slidewrap {
+    max-width: 1200px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.pictureMore .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.pictureMore .slidelist>li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.pictureMore .slidelist>li>a {
+    display: block;
+    position: relative;
+}
+
+.pictureMore .slidelist>li> a img {
     width: 100%;
 }
 
-h2+img{
-    /* position: absolute; */
-    /* right: 0; */
+.pictureMore .slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
 }
 
-.pic {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    height: 75vh;
+.pictureMore .slidelist .left {
+    left: 30px;
+    background: url(../kim_server/image/chevron-double-left\ 1.png) center center / 100% no-repeat;
+}
+
+.pictureMore .slidelist .right {
+    right: 30px;
+    background: url(../kim_server/image/chevron-double-right\ 1.png ) center center / 100% no-repeat;
+}
+
+.pictureMore [id="slide01"]:checked ~ .slidewrap .slidelist>li {transform: translateX(0%);}
+.pictureMore [id="slide02"]:checked ~ .slidewrap .slidelist>li {transform: translateX(-100%);}
+.pictureMore [id="slide03"]:checked ~ .slidewrap .slidelist>li {transform: translateX(-200%);}
+
+.pictureMore [id="slide01"]:checked ~ .underList label[for="slide01"] ,
+.pictureMore [id="slide02"]:checked ~ .underList label[for="slide02"] ,
+.pictureMore [id="slide03"]:checked ~ .underList label[for="slide03"] 
+{
+    background-color: rgba(223,190,106);
+    background-image: url(./image/circle_2.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.underList {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.underList label {
+    display: inline-block;
+    background-color: rgba(223,190,106,0.5);
+    background-image: url(./image/circle_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.cautionBox+h2{
+    /* display: flex; */
+    font-size: 14px;   
+    
+}
+
+.cautionBox{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 170px;
     /* border: 1px solid red; */
 }
 
-@media (max-width: 960px) {
-    .pic {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-    }
-
-    .pic>div {
-        display: flex;
-        align-items: center;
-    }
-
-    .picture1 {
-        position: relative;
-        left: -25px;
-    }
-
-    .picture2 {
-        position: relative;
-        left: -25px;
-    }
+.cautionBox1{
+    border: 1px solid rgba(223,190,106);
+    /* box-sizing: border-box; */
 }
 
-.pic>div{
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-wrap: wrap;
-    border: 1px solid red;
+.cautionBox2{
+    border: 1px solid rgba(223,190,106);
+    /* box-sizing: border-box; */
+}
+h3 {
+    padding-left: 50px;
+    padding-top: 30px;
+    /* padding-bottom: 30px; */
 }
 
-div>img {    
-    height: 225px; 
-    cursor: pointer;
-    border: 1px solid red;
+h3+p{
+    padding-left: 70px;
 }
 
-.ser {
-    border: 1px solid red;
-    text-align: center;
-}
-
-div>img:hover,
-.ser:hover {
-    scale: 1.2;
-    transition: all 0.5s;
-}
-span{
-    font-size: 14px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-p>a:visited {
-    text-decoration: none;
-    color: black;
+.cautionBox p {
+    /* padding-top: 10px; */
 }
 
 
