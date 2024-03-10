@@ -3,6 +3,10 @@ body * {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: "Nanum Myeongjo", serif;
+
+    /* border: 1px solid red;
+    padding: 3px; */
 }
 
 a:visited {
@@ -14,7 +18,6 @@ main,
 footer {
     width: calc(1920px * 0.8);
     margin: auto;
-    
 }
 
 header *,
@@ -27,6 +30,15 @@ hr {
     display: block;
 }
 
+p {
+    white-space: pre-wrap;
+}
+
+select {
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+}
 
 @keyframes opacity {
     from {
@@ -245,7 +257,6 @@ input[id="tab10"]:checked~ .tabs .tab10{
 }
 
 .modal1_footer p {
-    font-family: "Nanum Myeongjo", serif;
     line-height: 40px;
 }
 
@@ -260,7 +271,6 @@ input[id="tab10"]:checked~ .tabs .tab10{
 .main_note p {
     display: block;
     white-space: pre-wrap;
-    font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -268,8 +278,11 @@ input[id="tab10"]:checked~ .tabs .tab10{
 /*mainright===================================*/
 .main_right {
     float: right;
-    width: 49%;
-    height: 99%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .main_cal {
@@ -278,24 +291,28 @@ input[id="tab10"]:checked~ .tabs .tab10{
 
 .main_sel1 {
     height: 5%;
+    display: flex;
+    align-items: center;
 
 }
 .main_sel2 {
-    height: 5%;
+    margin: 30px 0px ;
+}
+
+.main_sel2 p{
+    margin-bottom: 20px;
 }
 
 .main_sum {
     height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.main_sel1,
-.main_sel2,
-.main_sum {
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
-    font-style: normal;
+.main_sum>div:last-child {
+    font-size: 40px;
 }
-
 
 .main_menu {
     text-align: center;
@@ -428,12 +445,6 @@ input[id="tab10"]:checked~ .tabs .tab10{
 /*footertop===================================*/
 footer {
     height: 400px;
-}
-
-footer * {
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .footer_top {
