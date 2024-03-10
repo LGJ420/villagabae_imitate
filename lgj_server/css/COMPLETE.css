@@ -239,16 +239,16 @@ col:last-child {
 }
 
 .button>div:first-child{
-    border: rgb(214, 96, 0) solid 1px;
-    color: rgb(214, 96, 0);
+    border: rgba(223,190,106) solid 1px;
+    color: rgba(223,190,106);
 }
 
 .button>div:first-child>a:visited{
-    color: rgb(214, 96, 0);
+    color: rgba(223,190,106);
 }
 
 .button>div:last-child{
-    background-color: rgb(214, 96, 0);
+    background-color: rgba(223,190,106);
 }
 
 .button>div:last-child>a:visited{

@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="../css/SCHEDULE_next.css">
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="../js/modal.js"></script>
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     
+
     <title>Document</title>
 </head>
 <body>
+
     <header>
         <div class="header_back">
             <div class="logo">
-                <i>짭빌라가배</i>
+                <i>빌라가배</i>
                 <img src="../images/logo.png">
             </div>
             <div class="header_menu">
@@ -93,8 +95,9 @@
             </div>
             
             <div class="main_detail">
-                <a href="#" class="btn">상세정보</a>
+                <button class="modal1_open btn">이용약관</button>
             </div>
+            
             <div class="main_note">
                 <p>- 온수 비용
 
@@ -151,14 +154,44 @@
             <div class="main_sum">합계</div>
             <div class="main_menu">
 
-                    <a href="../html/COMPLETE.html" class="btn">예약하기</a>
+                    <a href="../html/COMPLETE.html" class="btn">결제하기</a>
                     <a href="#" class="btn">♡</a>
-                    <button class="modal2_btn">공유</button>
+                    <button class="modal2_open btn">공유</button>
             </div>
-            <div class="modal_box2 hidden">
-                <div class="modal_box2_header">
+
+            <div class="modal1">
+                <div class="modal1_back">
+                    <div class="modal1_header">
+                        <h3>이용약관</h3>
+                        <button class="modal1_close">
+                            <img src="../images/close.png">
+                        </button>
+                    </div>
+                    <div class="modal1_footer">
+                        <p>본 약관에서 “Villagabae” “당사” 또는 “저희”는 회원님이 계약하는 Villagabae 회사를 의미합니다. 회원님의 계약 상대방 회사는 회원님의 거주 국가 또는 설립국가를 근거로 정합니다.
+
+회원님의 거주국가 또는 설립국가가 미합중국인 경우, 회원님은 Villagabae, Inc.(888 Brannan Street, 4th Floor, San Francisco, CA 94103, United States에 소재)와 계약을 체결합니다.
+회원님의 거주국가 또는 설립국가가 미합중국, (본 약관의 목적상 홍콩, 마카오 및 대만을 포함하지 않는) 중화인민공화국(“중국”) 또는 일본 그리고 유럽경제지역이 아닌 경우, 회원님은 Villagabae Ireland UC(“Villagabae Ireland”)(The Watermarque Building, South Lotts Road, Ringsend, Dublin 4, Ireland에 소재)와 계약을 체결합니다.
+회원님의 거주국가 또는 설립국가가 유럽경제지역인 경우, 회원님은 Villagabae Ireland UC(“Villagabae Ireland”), The Watermarque Building, South Lotts Road, Ringsend, Dublin 4, Ireland와 계약을 체결하며, 회원님의 Villagabae와의 계약은 유럽 사용자를 위한 이용약관의 적용을 받습니다.
+회원님의 거주국가 또는 설립국가가 중국인 경우, Villagabae Internet (Beijing) Co., Ltd.(“Villagabae China”)와 계약을 체결합니다. 단, 회원님이 중국 외부 소재 호스팅 서비스(아래에 정의됨)를 예약하거나 리스팅을 설정하는 경우, 해당 거래와 관련하여 회원님은 Villagabae Ireland와 계약을 체결합니다.
+회원님의 거주국가 또는 설립국가가 일본인 경우, 회원님은 Villagabae Global Services Limited(“Villagabae GSL”)(25-28 North Wall Quay, Dublin 1, D01 H104, Ireland에 소재)와 계약을 체결합니다. 단, 회원님이 일본 외부 소재 호스팅 서비스(아래에 정의됨)를 예약하거나 리스팅을 설정하는 경우, 해당 거래와 관련하여 회원님은 Villagabae Ireland와 계약을 체결합니다.
+회원님이 거주국가 또는 설립국가를 변경하는 경우, 회원님이 계약을 체결하는 Villagabae 회사는 해당 변경일로부터 상기와 같은 회원님의 새로운 거주국가 또는 설립국가에 따라 결정됩니다.
+
+Villagabae 플랫폼 접속 및 사용과 관련된 당사의 개인정보 수집과 이용에 관한 사항은 당사 개인정보 처리방에 기재되어 있습니다.
+
+회원님의 Villagabae 플랫폼 이용을 통한 또는 그와 관련된 모든 결제처리 서비스(“결제 서비스”)는 결제 서비스 약관(“결제 서비스 약관”)에 명시된 하나 이상의 Villagabae Payments (경우에 따라 개별적으로 또는 총칭하여, “Villagabae Payments”) 회사들에 의해 회원님에게 제공됩니다.
+
+리스팅 및 호스팅 서비스(아래에서 정의되는 바와 같이)에 적용되는 제반 법률, 규칙 및 규제의 확인, 숙지 및 준수에 대해서는 호스트가 전적으로 책임을 집니다. 예컨대, 일부 도시에서는 유료 게스트에 대한 단기 호스트 또는 특정 호스팅 서비스 제공이 법률로 제한됩니다. 상당수 도시에서, 호스트는 특정 호스팅 서비스(식품 조리, 주류 판매, 여행 가이드, 차량 운영 등)를 제공하기 위해 등록을 하거나 허가나 면허를 취득해야 합니다. 호스트는 자신이 제공하는 호스팅 서비스에 필요한 인허가 또는 등록에 관한 확인 및 취득에 대해 전적으로 책임을 집니다. 특정 종류의 호스팅 서비스의 경우 모두 금지 대상인 경우도 있으며 벌금 등의 처벌이 부과될 수 있습니다. 저희는 도움말 센터에서 회원님에게 적용되는 의무사항을 확인할 수 있도록 일부 정보를 제공하고 있습니다. 회원님의 Villagabae 리스팅 및 호스팅 서비스에 적용되는 현지 법률에 관해서는 언제든지 법률 자문을 통해 확인해야 합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal2">
+                <div class="modal2_header">
                     <h3>공유하기</h3>
-                    <button>X</button>
+                    <button class="modal2_close">
+                        <img src="../images/close.png">
+                    </button>
                 </div>
     
                 <div class="social_btn">
@@ -171,7 +204,7 @@
                     </ul>
                 </div>
 
-                <div class="modal_box2_footer">
+                <div class="modal2_footer">
                     <input type="text" placeholder="https://villagabae.com/SCHEDULE/?idx=7" readonly>
                     <button>복사</button>
                 </div>
@@ -218,5 +251,9 @@ copyright ⓒ VILLAGABAE All right reserved. since 2023.</p>
             </div>
         </div>
     </footer>
+
 </body>
+
+<script src="../js/modal.js"></script>
+
 </html>
