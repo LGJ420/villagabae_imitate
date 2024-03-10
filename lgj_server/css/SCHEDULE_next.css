@@ -9,6 +9,10 @@ body * {
     padding: 3px; */
 }
 
+a {
+    color: black;
+}
+
 a:visited {
     color: black;
 }
