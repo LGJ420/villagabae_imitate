@@ -1,9 +1,9 @@
 /* 칸 확인용(임시) */
-body * {
+/* body * {
     padding: 1px;
     border: solid 1px green;
     box-sizing: border-box;
-}
+} */
 
 /* =========기본 세팅============== */
 
@@ -281,14 +281,13 @@ input[id="tab09"]:checked ~ .room_img_tab label[for="tab09"] {
 
 .room_expDetail>ul>li {
     display: flex;
-    align-items: center;
     padding-left: 50px;
     margin: 2px 0;
 }
 
 .room_expDetail>ul>li::before{
     content: "▶";
-    font-size: 10px;
+    font-size: 13px;
 }
 
 /* 안내사항 */
@@ -309,14 +308,13 @@ input[id="tab09"]:checked ~ .room_img_tab label[for="tab09"] {
 
 .notice>ul>li {
     display: flex;
-    align-items: center;
     padding-left: 50px;
     margin: 2px 0;
 }
 
 .notice>ul>li::before{
     content: "▶";
-    font-size: 10px;
+    font-size: 13px;
 }
 
 /* 예약하기 버튼 */
