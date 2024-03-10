@@ -35,6 +35,10 @@ hr {
     }
 }
 
+.hidden {
+    display: none;
+}
+
 /*header===================================*/
 header {
     display: flex;
@@ -221,10 +225,6 @@ input[id="tab10"]:checked~ .tabs .tab10{
     height: 99%;
 }
 
-.main_right>div {
-    display: block;
-}
-
 .main_cal {
     height: max-content;
 }
@@ -314,6 +314,7 @@ input[id="tab10"]:checked~ .tabs .tab10{
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
+    
 }
 
 .social_btn {
