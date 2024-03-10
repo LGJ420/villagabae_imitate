@@ -9,6 +9,50 @@
 <link rel="stylesheet" href="../css/homepage.css">
 
 <body>
+    <!-- ↓↓↓ 백그라운드 슬라이드 이미지 ↓↓↓ -->
+    <div class="slidebox">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+        <input type="radio" name="slide" id="slide04">
+        <div class="labelbox">
+            <label for="slide01"><em></em></label>
+            <label for="slide02"><em></em></label>
+            <label for="slide03"><em></em></label>
+            <label for="slide04"><em></em></label>
+        </div>
+        <ul class="slidelist">
+            <li class="slideitem">
+                <div>
+                    <label for="slide04" class="left"></label>
+                    <label for="slide02" class="right"></label>
+                    <a><img src="../img/background1.jpg"></a>
+                </div>
+            </li>
+            <li class="slideitem">
+                <div>
+                    <label for="slide01" class="left"></label>
+                    <label for="slide03" class="right"></label>
+                    <a><img src="../img/background2.jpg"></a>
+                </div>
+            </li>
+            <li class="slideitem">
+                <div>
+                    <label for="slide02" class="left"></label>
+                    <label for="slide04" class="right"></label>
+                    <a><img src="../img/background3.jpg"></a>
+                </div>
+            </li>
+            <li class="slideitem">
+                <div>
+                    <label for="slide03" class="left"></label>
+                    <label for="slide01" class="right"></label>
+                    <a><img src="../img/background4.jpg"></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- ↑↑↑ 백그라운드 슬라이드 이미지 ↑↑↑ -->
     <header>
         <div class="nav_box">
             <div class="logo_design">
@@ -21,34 +65,44 @@
                     </li>
                     <li>
                         <a class="nemu_hover" href="../../nsb_server/rooms/G_room/G_room.html">ROOMS</a>
-                        <ul class="nav_deps1">
+                        <ul class="nav_deps">
                             <li><a href="#">G_room</a></li>
                             <li><a href="#">H_room</a></li>
                             <li><a href="#">O_room</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="../../kim_server/facilitycopy.html">TOUR</a>
+                        <a href="../../kim_server/facilitycopy.html">GUIDE</a>
+                        <ul class="nav_deps">
+                            <li><a href="#">SERVICE</a></li>
+                            <li><a href="#">TOUR</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="../html/reservation.html">RESERVATION</a>
                     </li>
                     <li>
                         <a href="../../cjh_server/main.html">COMMUNITY</a>
+                        <ul class="nav_deps">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">게시판</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <section>
-        <p class="Slogan">
-            <span>자연과의 경계가 사라지는 곳</span>
-        </p>
-        <p class="VIST_btn">
-            <span>
-                <a href="../../ldh_server/about.html">VIST</a>
-            </span>
-        </p>
+        <div class="section_box">
+            <p class="Slogan">
+                <span>자연과의 경계가 사라지는 곳</span>
+            </p>
+            <p class="VIST_btn">
+                <span>
+                    <a href="../../ldh_server/about.html">VIST</a>
+                </span>
+            </p>
+        </div>
     </section>
     <footer>
         <div class="footer_box">

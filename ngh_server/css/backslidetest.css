@@ -86,19 +86,21 @@ input[id*="slide04"]:checked ~ .labelbox label[for*="slide04"] em {
 }
 label.left {
     left: 20px;
-    background-color: gray;
-    background-image: url(../img/arrowdown.png);
+    /* background-color: gray; */
+    background-image: url(../img/arrowleft.png);
     background-position: center;
-    background-size: 100%;
+    background-size: 80%;
     background-repeat: no-repeat;
+    opacity: 0.5;
 }
 label.right {
     right: 20px;
-    background-color: gray;
-    background-image: url(../img/arrowup.png);
+    /* background-color: gray; */
+    background-image: url(../img/arrowright.png);
     background-position: center;
-    background-size: 100%;
+    background-size: 80%;
     background-repeat: no-repeat;
+    opacity: 0.5;
 }
 [id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0);animation: slide01 20s infinite;}
 [id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation: slide02 20s infinite;}
