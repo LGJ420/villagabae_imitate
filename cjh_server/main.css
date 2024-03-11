@@ -124,7 +124,7 @@ header {
 /* section 디자인 ========================================================= */
 
 section {
-    min-height: 150vh;
+    min-height: 60vh;
     max-height: max-content;
     background-color: rgb(255, 255, 255);
 }
@@ -132,14 +132,14 @@ section {
 .section_box {
     margin: auto;
     max-height: 100%;
-    min-height: 75vh;
+    min-height:  max-content;
     width: calc(1920px * .8);
-    /* border: 1px solid red; */
+
     box-sizing: border-box;
     text-align: center;
 }
 
-.space{
+/* .space{
     height: 50px;
 }
 .section_menu{
@@ -217,8 +217,287 @@ section button{
 
 section div{
     font-family: "Stylish", serif;
+} */
+
+/* -------수정--------------------------------------------------------- */
+
+.first_box span,
+.grid_sub2 {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+section div {
+    /* border: 1px solid rgb(180, 180, 180); */
+}
+
+.grid_box {
+    padding: 50px ;
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr;
+    background: url(./frame1.png) no-repeat;
+    height: min-content;
+}
+
+.input {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 30;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    flex-direction: column;
+}
+.input>input{
+    outline: none;
+  
+    font-size: 15px;
+    padding: 0 30px;
+    line-height: 50px;
+    border-radius: 10px;
+    background: transparent;
+    transition: 0.1s ease;
+    border-color: #dbdbdb;
+    width: 70%;
+   
+}
+.labelline{
+    position: absolute;
+    transition: 0.2s ease;
+    padding: 0 10px;
+    margin: 0 300px 0 0 ;
+    background-color: white;
+    pointer-events: none;           /* 커서 비활성화 */
+    border-radius: 50%;
+    text-wrap: nowrap;
+    
+ 
+}
+input:focus,
+input:valid{
+
+    z-index: 4;
+    
+}
+input:focus + .labelline,
+input:valid + .labelline{
+    color: rgb(211, 182, 163);
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-16px,-27px) scale(0.88);
+    z-index: 4;
+   
+}
+
+.Question {
+    font-size: 4em;
+    font-weight: 500px;
+}
+
+.grid_sub1 {
+    display: grid;
+    grid-template: 3fr 2fr
+}
+
+.Question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Question>p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Question>p>span {
+
+
+    animation: move 3s;
+    position: absolute;
+    letter-spacing: 7px;
+    color: #c3bab2;
+
+}
+
+.second_box {
+ 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    animation: move 2s ease-out;
+}
+
+
+.sns_1,
+.sns_2 {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 10px;
+
+}
+
+section p {
+    display: inline-block;
+}
+
+.first_box {
+    display: grid;
+    grid-template-rows: 0.25fr 0.25fr 0.25fr 150px;
+}
+
+.first_box>p>span:nth-of-type(1) {
+    font-size: 20px;
+
+}
+
+.guide {
+    padding-right: 25%;
+    height: 50px;
+    align-items: center;
+    color: #9a9a9a;
+
+    
+
+}
+.section_bottom{
+    animation: move 1.5s ease-out;
+
+    font-family: "Noto Serif KR", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    background: url(./hq.png) ;
+    background-size: 100% 100%;
+    color: #72645c;
+    display: inline-block;
+}
+
+@keyframes move {
+from{
+    opacity: 0;
+
+}
+to{
+    opacity: 1;
+    
+}
+}
+.sns_1{
+    background: url(./Instagram.png) ;
+    background-size: 100% 100%;
+}
+.sns_2{
+    background: url(./Facebook.png);
+    background-size: 100% 100%;
+}
+.sns_1:hover {
+    background: url(./Instagram.png);
+    background-size: 100% 100%;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.sns_2:hover {
+    background: url(./Facebook.png);
+    background-size: 100% 100%;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.sns_1:active,
+.sns_2:active{
+    transform: scale(1.1);
+    
+}
+.Question>p>span {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight:500px;
+    font-style: normal;
+}
+
+.in_detail{
+    height: 50px;
+}
+input::selection{
+    background:rgb(255, 255, 255);
+}
+span::selection,
+.section_bottom::selection,
+.big::selection
+{
+    background: #e4d4cc;
+    color: #72645c;
+}
+.input1>textarea{
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    width: 75%;
+    height: 80%;
+   resize: none;
+   font-size: 16px;
+
+}
+big{
+    position: left;
+}
+.grid_sub2{
+    display: grid;
+    grid-template-rows: 0.15fr 0.7fr 0.7fr 2.5fr 1fr;
+}
+.allow_checkBox input{
+
+    display: inline-block;
+    width: 13px;
+  
+}
+.allow_checkBox{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: start;
+    padding-left: 13%;
+    
+
+}
+input#allow{
+    display: none;
+}
+.allow_checkBox input label{
+    cursor: pointer;
+}
+.allow_checkBox label span {
+    padding-left:5px ;
+    vertical-align: middle;
+}
+input#allow + label:before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border:2px solid #807570 ;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+input#allow:checked+label:before{
+    content: "";
+    background-image: url(./check.png) 100% 100%;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    background-color: #807570;
+
+}
 
 
 /* section 디자인 ========================================================= */
