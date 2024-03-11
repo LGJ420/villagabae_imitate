@@ -30,6 +30,11 @@ footer {
 /* nav 디자인 ========================================================= */
 
 header {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+
     display: flex;
     height: 25vh;
     background-color: transparent;
@@ -46,6 +51,7 @@ header {
     display: flex;
     height: 120px;
     width: 100%;
+    position: fixed;
 }
 
 .logo_design a {
@@ -72,7 +78,7 @@ header {
     height: 120px;
     margin-top: 20px;
     justify-content: center;
-
+    position: fixed;
     /* align-items: center; */
 }
 
@@ -95,12 +101,12 @@ header {
 
 /* 메뉴 영역 */
 /* ↓↓↓ 2차 메뉴(deps 영역) ↓↓↓ */
-.nav_deps1 {
+.nav_deps {
     visibility: none;
     opacity: 0;
 }
 
-.nav_top_ul>li:hover .nav_deps1 {
+.nav_top_ul>li:hover .nav_deps {
     display: flex;
     flex-direction: column;
     height: max-content;
@@ -113,28 +119,28 @@ header {
     position: absolute;
 }
 
-.nav_deps1>li {
+.nav_deps>li {
     background-color: white;
     padding: 10px 0 10px 15px;
     color: rgb(76, 78, 76);
     cursor: pointer;
 }
 
-.nav_deps1>li>a {
+.nav_deps>li>a {
     font-size: 12px;
     text-decoration: none;
 }
 
-.nav_deps1>li:hover {
+.nav_deps>li:hover {
     transition: all 0.35s;
     background-color: rgb(237, 230, 223);
 }
 
-.nav_deps1>li>a {
+.nav_deps>li>a {
     color: rgb(35, 35, 35);
 }
 
-.nav_deps1>li:hover a{
+.nav_deps>li:hover a{
     color: white;
 }
 /* ↑↑↑ 2차 메뉴(deps 영역) ↑↑↑ */
@@ -302,6 +308,14 @@ input[id*="Agreement"]:checked + label em {
 
 /* footer 디자인 ========================================================= */
 footer {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    opacity: .9;
+    color: rgb(100, 92, 72);
+
+
     display: flex;
     height: 200px;
     background-color: rgb(237, 230, 223);

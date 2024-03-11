@@ -1,26 +1,172 @@
+/* ============================ ↓↓↓ 주석 양식 ↓↓↓ ============================================*/
+/* ============================ ↑↑↑ 주석 양식 ↑↑↑ ============================================*/
 * {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 body {
     height: 100vh;
     width: 100%;
-    background: url(../img/background1.jpg) center/cover no-repeat;
 }
-
 header,
-section,
 footer {
+    position: relative;
+    z-index: 1;
     margin: auto;
 }
+/* ============================ ↓↓↓ 백그라운드 슬라이드 이미지 ↓↓↓ ============================================*/
+[name="slide"] {display: none;} 
+.slidebox {position: absolute; width:100%; margin:0 auto;}
+.slidebox img {object-fit: cover; filter: brightness(70%); width: 100%; height: 100vh; opacity: 0.9;}
+.slidebox .slidelist {
+    white-space: nowrap;
+    font-size:0;
+    overflow:hidden;
+}
 
-/* header 디자인 ========================================================= */
+/* 체크박스 스타일 지정 */
+.labelbox {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 95%;
+    text-align: center;
+    z-index: 1;
+}
+.labelbox label {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.labelbox>label em {
+    display: inline-block;
+    line-height: 50px;
+    background-color: white;
+    border-radius: 15%;
+    padding: 3px 0;
+    opacity: 0.3;
+    width: 50px;
+    height: 5px;
+}
 
-/* nav 디자인 ========================================================= */
+input[id*="slide01"]:checked ~ .labelbox label[for*="slide01"] em {
+    background-color: white;
+    opacity: 1;
+}
+input[id*="slide02"]:checked ~ .labelbox label[for*="slide02"] em {
+    background-color: white;
+    opacity: 1;
+}
+input[id*="slide03"]:checked ~ .labelbox label[for*="slide03"] em {
+    background-color: white;
+    opacity: 1;
+}
+input[id*="slide04"]:checked ~ .labelbox label[for*="slide04"] em {
+    background-color: white;
+    opacity: 1;
+}
+/* 체크박스 스타일 지정 */
 
+.slidebox .slideitem {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all 1s;
+}
+.slidebox .slideitem label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+label.left {
+    left: 20px;
+    background-image: url(../img/arrowleft.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+}
+label.right {
+    right: 20px;
+    background-image: url(../img/arrowright.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+}
+[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0);animation: slide01 20s infinite;}
+[id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation: slide02 20s infinite;}
+[id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation: slide03 20s infinite;}
+[id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation: slide04 20s infinite;}
+
+@keyframes slide01 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:-200%;}
+    73% {left:-200%;}
+    75% {left:-300%;}
+    98% {left:-300%;}
+    100% {left:0%;}
+}
+@keyframes slide02 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:-200%;}
+    73% {left:-200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+@keyframes slide03 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:200%;}
+    73% {left:200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+@keyframes slide04 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:300%;}
+    48% {left:300%;}
+    50% {left:200%;}
+    73% {left:200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+/* ============================ ↑↑↑ 백그라운드 슬라이드 이미지 ↑↑↑ ============================================*/
+
+/* ============================ ↓↓↓ header ↓↓↓ ============================================*/
+/* ↓↓↓ header 영역 디자인 ↓↓↓ */
 header {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    opacity: .9;
+    color: rgb(100, 92, 72);
+
     display: flex;
     height: 25vh;
     background-color: transparent;
@@ -36,7 +182,8 @@ header {
 .logo_design {
     display: flex;
     height: 120px;
-    width: 100%;
+    width: 50%;
+    position: fixed;
 }
 
 .logo_design a {
@@ -63,6 +210,7 @@ header {
     height: 120px;
     margin-top: 20px;
     justify-content: center;
+    position: fixed;
 
     /* align-items: center; */
 }
@@ -86,12 +234,11 @@ header {
 
 /* 메뉴 영역 */
 /* ↓↓↓ 2차 메뉴(deps 영역) ↓↓↓ */
-.nav_deps1 {
+.nav_deps {
     visibility: none;
     opacity: 0;
 }
-
-.nav_top_ul>li:hover .nav_deps1 {
+.nav_top_ul>li:hover .nav_deps {
     display: flex;
     flex-direction: column;
     height: max-content;
@@ -104,55 +251,65 @@ header {
     position: absolute;
 }
 
-.nav_deps1>li {
+.nav_deps>li {
     background-color: white;
     padding: 10px 0 10px 15px;
     color: rgb(76, 78, 76);
     cursor: pointer;
 }
 
-.nav_deps1>li>a {
+.nav_deps>li>a {
     font-size: 12px;
     text-decoration: none;
 }
 
-.nav_deps1>li:hover {
+.nav_deps>li:hover {
     transition: all 0.35s;
     background-color: rgb(237, 230, 223);
 }
 
-.nav_deps1>li>a {
+.nav_deps>li>a {
     color: rgb(35, 35, 35);
 }
 
-.nav_deps1>li:hover a{
+.nav_deps>li:hover a{
     color: white;
 }
 /* ↑↑↑ 2차 메뉴(deps 영역) ↑↑↑ */
-
-
+/* ============================ ↑↑↑ header ↑↑↑ ============================================*/
 
 /* section 디자인 ========================================================= */
-
 section {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(100, 92, 72);
+
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    width: calc(1920px * .8);
     min-height: 75vh;
     text-align: center;
 }
-
+.section_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: calc(1920px * .8);
+}
 .Slogan {
-    margin-top: -200px;
-    line-height: 100px;
+    position: absolute;
+    top: 45%;
     font-size: 18px;
     font-weight: 100;
     color: rgb(230, 226, 226);
 }
 
 .VIST_btn {
+    position: absolute;
+    top: 50%;
     border: 1px solid rgb(230, 226, 226);;
     box-sizing: border-box;
     opacity: 0.7;
@@ -179,6 +336,14 @@ section {
 
 /* footer 디자인 ========================================================= */
 footer {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    opacity: .9;
+    color: rgb(100, 92, 72);
+
+
     display: flex;
     height: 200px;
     background-color: rgb(237, 230, 223);
