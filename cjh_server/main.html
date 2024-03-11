@@ -15,6 +15,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href=".././baseform_sub.css">
+    <!-- <link rel="stylesheet" href="main.js">
+     -->
 </head>
 
 
@@ -74,8 +76,8 @@
                         <p><span>예약 및 문의</span></p>
                         <p><span>t. 02-2135-2507</span></p>
                         <div>
-                            <a href="#"><div class="sns_1"></div></a>
-                            <a href="#"><div class="sns_2"></div></a>
+                            <a href="https://www.instagram.com/villa_gabae/"><div class="sns_1"></div></a>
+                            <a href="https://www.facebook.com/profile.php?id=100093984283064"><div class="sns_2"></div></a>
                         </div>
                         <div class="second1_box">
                             <p><span>예약제 100%로 운영합니다. 전화 예약 또는 홈페이지 예약이 필요합니다.</span></p>
@@ -89,11 +91,11 @@
                         <p><span>* 예약정보를 남겨 주시면 안내 전화를 드립니다.</span></p>
                     </div>
                     <div class="input name">
-                        <input type="text" spellcheck="false" required>
+                        <input type="text" spellcheck="false" name="name" minlength="1" maxlength="5" required>
                         <div class="labelline">enter your name</div>
                     </div>
                     <div class="input call_number">
-                        <input type="text"  spellcheck="false" required>
+                        <input type="text"  spellcheck="false" name="call_number" required maxlength="13">
                         <div class="labelline">enter your call number</div>
                     </div>
                     <div class="input1 content">
@@ -103,7 +105,7 @@
                     <div class="input allow_checkBox">
                         <input type="checkbox"id="allow">
                         <label for="allow"><span>&nbsp;개인정보를 수집·이용에 동의합니다.</span></label>
-                        <button type="submit" class="button_1"><span>문의 하기</span></button>
+                        <button type="submit" class="button_1" onclick="javascript:alert('문의가 전송 되었습니다.')"><span>문의 하기</span></button>
                     </div>
                 </div>
 

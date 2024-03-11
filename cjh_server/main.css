@@ -154,6 +154,9 @@ section {
     border-color: #dbdbdb;
     width: 70%;
 }
+.input>input::selection{
+    background-color: white;
+}
 .guide {                              /*상단 가이드 박스영역 및 배치 설정*/
     padding-right: 25%;
     height: 50px;
@@ -186,10 +189,7 @@ input:valid + .labelline{
     resize: none;
     font-size: 16px;
 }
-.input1>textarea:focus {                          /* allow 체크 박스 디자인 변경*/  
-    background-color: rgb(255, 251, 245);
-}
-input#allow{                                  
+input#allow{                            /* allow 체크 박스 디자인 변경*/
     display: none;
 }
 .allow_checkBox input label{
