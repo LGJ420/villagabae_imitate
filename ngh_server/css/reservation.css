@@ -1,14 +1,14 @@
+/* ============================ ↓↓↓ 주석 양식 ↓↓↓ ============================================*/
+/* ============================ ↑↑↑ 주석 양식 ↑↑↑ ============================================*/
 * {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 body {
     height: 100vh;
     width: 100%;
 }
-
 body::before {
     content: "";
     top: 0;
@@ -18,22 +18,20 @@ body::before {
     position: fixed;
     z-index: -1;
 }
-
 header,
 section,
 footer {
     margin: auto;
 }
-
-/* header 디자인 ========================================================= */
-
-/* nav 디자인 ========================================================= */
-
+/* ============================ ↓↓↓ header ↓↓↓ ============================================*/
+/* ↓↓↓ header 영역 디자인 ↓↓↓ */
 header {
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
+    opacity: .9;
+    color: rgb(100, 92, 72);
 
     display: flex;
     height: 25vh;
@@ -45,12 +43,11 @@ header {
     width: calc(1920px * .8);
     padding: 0 15px;
 }
-
-/* 로고 영역 */
+/* ↓↓↓ 좌측 상단 메인로고 설정 ↓↓↓ */
 .logo_design {
     display: flex;
     height: 120px;
-    width: 100%;
+    width: 50%;
     position: fixed;
 }
 
@@ -62,50 +59,42 @@ header {
     width: 50%;
     text-indent: -9999em;
 }
-
-/* 로고 영역 */
-
-/* 메뉴 영역 */
+/* ↑↑↑ 좌측 상단 메인로고 설정 ↑↑↑ */
+/* ↓↓↓ NAV 메뉴 설정 ↓↓↓*/
 .nav_main_menu {
     display: flex;
     height: 120px;
     width: 100%;
     justify-content: end;
 }
-
 .nav_top_ul {
     display: flex;
     height: 120px;
     margin-top: 20px;
     justify-content: center;
     position: fixed;
-    /* align-items: center; */
 }
-
 .nav_top_ul>li {
     display: inline-block;
     width: max-content;
     height: max-content;
     cursor: pointer;
 }
-
 .nav_top_ul>li>a {
     padding: 20px;
     color: rgba(255, 255, 255);
     text-decoration: none;
 }
-
 .nav_top_ul>li>a:hover {
     color: rgb(95, 95, 95);
 }
 
-/* 메뉴 영역 */
+/* ↑↑↑ NAV 메뉴 설정 ↑↑↑ */
 /* ↓↓↓ 2차 메뉴(deps 영역) ↓↓↓ */
 .nav_deps {
     visibility: none;
     opacity: 0;
 }
-
 .nav_top_ul>li:hover .nav_deps {
     display: flex;
     flex-direction: column;
@@ -118,36 +107,31 @@ header {
     transition: 0.5s;
     position: absolute;
 }
-
 .nav_deps>li {
     background-color: white;
     padding: 10px 0 10px 15px;
     color: rgb(76, 78, 76);
     cursor: pointer;
 }
-
 .nav_deps>li>a {
     font-size: 12px;
     text-decoration: none;
 }
-
 .nav_deps>li:hover {
     transition: all 0.35s;
     background-color: rgb(237, 230, 223);
 }
-
 .nav_deps>li>a {
     color: rgb(35, 35, 35);
 }
-
 .nav_deps>li:hover a{
     color: white;
 }
 /* ↑↑↑ 2차 메뉴(deps 영역) ↑↑↑ */
+/* ============================ ↑↑↑ header ↑↑↑ ============================================*/
 
-
-/* section 디자인 ========================================================= */
-
+/* ============================ ↓↓↓ section ↓↓↓ ============================================*/
+/* ↓↓↓ section 내용 디자인 설정 ↓↓↓ */
 section {
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
@@ -157,7 +141,6 @@ section {
     min-height: 75vh;
     background-color: white;
 }
-
 .section_box {
     border: 1px solid rgb(7, 7, 7, 0);
     box-sizing: border-box;
@@ -167,7 +150,6 @@ section {
     min-height: 75vh;
     max-width: calc(1920px * .8);
 }
-
 .name_Reservation {
     position: relative;
 
@@ -179,63 +161,51 @@ section {
     font-weight: lighter;
     font-size: 30px;
     color: rgb(64, 59, 55);
-
     text-indent: 100px;
 }
-
 .board_title {
     text-align: center;
-
     font-weight: bold;
     opacity: 0.7;
     margin: 20px 0;
     line-height: max-content;
 }
-
 .name_rule_warning div {
     font-size: 20px;
     color: gray;
 }
-
 .borad_list {
     display: flex;
     width: 60%;
     margin: auto;
 }
-
 .accordion {
     margin-top: 50px;
     width: 98%;
 }
-
 .board_contents p {
     font-weight: bold;
     color: gray;
     margin: 30px 10px;
 }
-
 .board_contents ul li {
     color: gray;
     list-style: circle;
     margin: 0 0 20px 70px;
 }
-
 .board_contents ul {
     margin: 30px 0;
 }
-
 .board_contents li {
     color: gray;
     list-style: initial;
     margin-left: 20px;
 }
-
 .btn {
     display: flex;
     height: 120px;
     margin: 30px 0;
 }
-
 .btn_box {
     margin: auto;
     width: 350px;
@@ -244,21 +214,16 @@ section {
     text-align: center;
     line-height: 50px;
 }
-
 .btn_box a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 14px;
 }
-
-/* section 디자인 ========================================================= */
-
-/* section - 약관동의 기능부여 ========================================================= */
-
+/* ↑↑↑ section 내용 디자인 설정 ↑↑↑ */
+/* ↓↓↓ section 아코디언 기능 ↓↓↓ */
 input[id*="Agreement"] {
     display: none;
 }
-
 input[id*="Agreement"] + label {
     display: block;
     width: 100%;
@@ -274,7 +239,6 @@ input[id*="Agreement"] + label {
     text-align: left;
     cursor: pointer;
 }
-
 input[id*="Agreement"] + label em {
     background: url(../img/arrowdown.png) no-repeat;
     background-size: 70%;
@@ -287,26 +251,23 @@ input[id*="Agreement"] + label em {
     margin-top: -15px;
     display: inline-block;
 }
-
 .board_contents {
     max-height: 0;
     transition: all .35s;
     overflow: hidden;
 }
-
 input[id*="Agreement"]:checked + label + div {
     max-height: 1000px;
 }
-
 input[id*="Agreement"]:checked + label em {
     background: url(../img/arrowup.png) no-repeat;
     background-position: center;
     background-size: 70%;
 }
+/* ↑↑↑ section 아코디언 기능 ↑↑↑ */
+/* ============================ ↑↑↑ section ↑↑↑ ============================================*/
 
-/* section - 약관동의 기능부여 ========================================================= */
-
-/* footer 디자인 ========================================================= */
+/* ============================ ↓↓↓ footer ↓↓↓ ============================================*/
 footer {
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
@@ -315,26 +276,23 @@ footer {
     opacity: .9;
     color: rgb(100, 92, 72);
 
-
     display: flex;
     height: 200px;
     background-color: rgb(237, 230, 223);
     justify-content: center;
     align-content: center;
 }
-
 .footer_box {
     display: flex;
     width: calc(1920px * .8);
     margin: 0 15px;
 }
-
+/* ↓↓↓ biz 정보 디자인 설정 ↓↓↓*/
 .Business_infor {
     display: flex;
     width: 50%;
     height: 200px;
 }
-
 .Business_item {
     display: flex;
     flex-direction: column;
@@ -343,31 +301,30 @@ footer {
     width: 100%;
     margin: 10px 0;
 }
-
+/* ↑↑↑ biz 정보 디자인 설정 ↑↑↑ */
+/* ↓↓↓ footer nav 설정 ↓↓ ↓*/
 .nav_footer_menu {
     display: flex;
     justify-content: end;
     width: 50%;
     height: 50px;
 }
-
 .nav_bottom_ul {
     display: flex;
     margin: 10px 0;
     text-align: right;
 }
-
 .nav_bottom_ul li {
     display: inline-block;
     margin: 0 20px;
 }
-
 .nav_bottom_ul li a {
     display: block;
     text-decoration: none;
     color: rgb(95, 95, 95);
 }
-
 .nav_bottom_ul>li>a:hover {
     color: black;
 }
+/* ↑↑↑ footer nav 설정 ↑↑↑ */
+/* ============================ ↑↑↑ footer ↑↑↑ ============================================*/
