@@ -15,8 +15,8 @@ footer {
     z-index: 1;
     margin: auto;
 }
-/* ============================ ↓↓↓ 백그라운드 슬라이드 이미지 ↓↓↓ ============================================*/
-[name="slide"] {display: none;} 
+/* ============================ ↓↓↓ 백그라운드 슬라이드 설정 ↓↓↓ ============================================*/
+[name="slide"] {display: none;}
 .slidebox {position: absolute; width:100%; margin:0 auto;}
 .slidebox img {object-fit: cover; filter: brightness(70%); width: 100%; height: 100vh; opacity: 0.9;}
 .slidebox .slidelist {
@@ -24,8 +24,7 @@ footer {
     font-size:0;
     overflow:hidden;
 }
-
-/* 체크박스 스타일 지정 */
+/* ↓↓↓ 중하단 체크박스 스타일 지정 ↓↓↓ */
 .labelbox {
     display: inline-block;
     position: absolute;
@@ -37,7 +36,7 @@ footer {
 }
 .labelbox label {
     display: inline-block;
-    width: 50px;
+    width: 30px;
     height: 30px;
     position: relative;
     cursor: pointer;
@@ -49,28 +48,18 @@ footer {
     border-radius: 15%;
     padding: 3px 0;
     opacity: 0.3;
-    width: 50px;
-    height: 5px;
+    width: 30px;
+    height: 2px;
 }
-
-input[id*="slide01"]:checked ~ .labelbox label[for*="slide01"] em {
-    background-color: white;
-    opacity: 1;
-}
-input[id*="slide02"]:checked ~ .labelbox label[for*="slide02"] em {
-    background-color: white;
-    opacity: 1;
-}
-input[id*="slide03"]:checked ~ .labelbox label[for*="slide03"] em {
-    background-color: white;
-    opacity: 1;
-}
+input[id*="slide01"]:checked ~ .labelbox label[for*="slide01"] em,
+input[id*="slide02"]:checked ~ .labelbox label[for*="slide02"] em,
+input[id*="slide03"]:checked ~ .labelbox label[for*="slide03"] em,
 input[id*="slide04"]:checked ~ .labelbox label[for*="slide04"] em {
     background-color: white;
     opacity: 1;
 }
-/* 체크박스 스타일 지정 */
-
+/* ↑↑↑ 중하단 체크박스 스타일 지정 ↑↑↑ */
+/* ↓↓↓ 슬라이드 효과 설정 ↓↓↓ */
 .slidebox .slideitem {
     position: relative;
     display: inline-block;
@@ -155,7 +144,8 @@ label.right {
     98% {left:100%;}
     100% {left:0%;}
 }
-/* ============================ ↑↑↑ 백그라운드 슬라이드 이미지 ↑↑↑ ============================================*/
+/* ↑↑↑ 슬라이드 효과 설정 ↑↑↑ */
+/* ============================ ↑↑↑ 백그라운드 슬라이드 설정 ↑↑↑ ============================================*/
 
 /* ============================ ↓↓↓ header ↓↓↓ ============================================*/
 /* ↓↓↓ header 영역 디자인 ↓↓↓ */
@@ -177,8 +167,7 @@ header {
     width: calc(1920px * .8);
     padding: 0 15px;
 }
-
-/* 로고 영역 */
+/* ↓↓↓ 좌측 상단 메인로고 설정 ↓↓↓ */
 .logo_design {
     display: flex;
     height: 120px;
@@ -194,45 +183,39 @@ header {
     width: 50%;
     text-indent: -9999em;
 }
+/* ↑↑↑ 좌측 상단 메인로고 설정 ↑↑↑ */
 
-/* 로고 영역 */
-
-/* 메뉴 영역 */
+/* ↓↓↓ NAV 메뉴 설정 ↓↓↓*/
 .nav_main_menu {
     display: flex;
     height: 120px;
     width: 100%;
     justify-content: end;
 }
-
 .nav_top_ul {
     display: flex;
     height: 120px;
     margin-top: 20px;
     justify-content: center;
     position: fixed;
-
-    /* align-items: center; */
 }
-
 .nav_top_ul>li {
     display: inline-block;
     width: max-content;
     height: max-content;
     cursor: pointer;
 }
-
 .nav_top_ul>li>a {
     padding: 20px;
     color: rgba(255, 255, 255);
     text-decoration: none;
 }
-
 .nav_top_ul>li>a:hover {
     color: rgb(95, 95, 95);
 }
 
-/* 메뉴 영역 */
+/* ↑↑↑ NAV 메뉴 설정 ↑↑↑ */
+
 /* ↓↓↓ 2차 메뉴(deps 영역) ↓↓↓ */
 .nav_deps {
     visibility: none;
@@ -250,35 +233,30 @@ header {
     transition: 0.5s;
     position: absolute;
 }
-
 .nav_deps>li {
     background-color: white;
     padding: 10px 0 10px 15px;
     color: rgb(76, 78, 76);
     cursor: pointer;
 }
-
 .nav_deps>li>a {
     font-size: 12px;
     text-decoration: none;
 }
-
 .nav_deps>li:hover {
     transition: all 0.35s;
     background-color: rgb(237, 230, 223);
 }
-
 .nav_deps>li>a {
     color: rgb(35, 35, 35);
 }
-
 .nav_deps>li:hover a{
     color: white;
 }
 /* ↑↑↑ 2차 메뉴(deps 영역) ↑↑↑ */
 /* ============================ ↑↑↑ header ↑↑↑ ============================================*/
 
-/* section 디자인 ========================================================= */
+/* ============================ ↓↓↓ section ↓↓↓ ============================================*/
 section {
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
@@ -321,6 +299,7 @@ section {
     background-color: rgb(254, 254, 254);
     color: rgb(95, 95, 95);
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .VIST_btn a {
@@ -331,10 +310,9 @@ section {
     font-weight: 100;
     color: rgb(230, 226, 226);
 }
+/* ============================ ↑↑↑ section ↑↑↑ ============================================*/
 
-/* section 디자인 ========================================================= */
-
-/* footer 디자인 ========================================================= */
+/* ============================ ↓↓↓ footer ↓↓↓ ============================================*/
 footer {
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
@@ -343,26 +321,23 @@ footer {
     opacity: .9;
     color: rgb(100, 92, 72);
 
-
     display: flex;
     height: 200px;
     background-color: rgb(237, 230, 223);
     justify-content: center;
     align-content: center;
 }
-
 .footer_box {
     display: flex;
     width: calc(1920px * .8);
     margin: 0 15px;
 }
-
+/* ↓↓↓ biz 정보 디자인 설정 ↓↓↓*/
 .Business_infor {
     display: flex;
     width: 50%;
     height: 200px;
 }
-
 .Business_item {
     display: flex;
     flex-direction: column;
@@ -371,31 +346,30 @@ footer {
     width: 100%;
     margin: 10px 0;
 }
-
+/* ↑↑↑ biz 정보 디자인 설정 ↑↑↑ */
+/* ↓↓↓ footer nav 설정 ↓↓ ↓*/
 .nav_footer_menu {
     display: flex;
     justify-content: end;
     width: 50%;
     height: 50px;
 }
-
 .nav_bottom_ul {
     display: flex;
     margin: 10px 0;
     text-align: right;
 }
-
 .nav_bottom_ul li {
     display: inline-block;
     margin: 0 20px;
 }
-
 .nav_bottom_ul li a {
     display: block;
     text-decoration: none;
     color: rgb(95, 95, 95);
 }
-
 .nav_bottom_ul>li>a:hover {
     color: black;
 }
+/* ↑↑↑ footer nav 설정 ↑↑↑ */
+/* ============================ ↑↑↑ footer ↑↑↑ ============================================*/
