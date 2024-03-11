@@ -8,7 +8,7 @@ let signup_btn = $('#signup_btn');
 let id_btn = $('#id_btn');
 
 $(signup_btn).on('click', function() {
-    if($(id).val() == "") {
+    if($(id).val().length < 5) {
         $(id).next('label').addClass('warning');
         setTimeout(function(){
             $('label').removeClass('warning');
