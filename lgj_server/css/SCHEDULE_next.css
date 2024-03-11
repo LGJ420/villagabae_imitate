@@ -3,6 +3,8 @@ body * {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: "Nanum Myeongjo", serif;
+
     /* border: 1px solid red;
     padding: 3px; */
 }
@@ -16,7 +18,6 @@ main,
 footer {
     width: calc(1920px * 0.8);
     margin: auto;
-    
 }
 
 header *,
@@ -28,6 +29,24 @@ footer * {
 hr {
     display: block;
 }
+
+p {
+    white-space: pre-wrap;
+}
+
+select {
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+}
+
+
 
 /*header===================================*/
 header {
@@ -73,6 +92,7 @@ header {
 
 
 /*main===================================*/
+/*mainleft===================================*/
 main {
     display: flex;
     height: 1500px;
@@ -85,31 +105,95 @@ main {
     margin-right: 30px;
 }
 
-
 .main_left>div {
     display: block;
 }
 
-.main_image {
-
-    display: flex;
-    flex-wrap: wrap;
+.combox {
+    display: none;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 30px rgb(141, 132, 93);
 }
 
-.main_image>img {
+input[type="radio"]{
+    display:none;
+}
+
+.room1 {
+    background-image: url(../images/room1.jpg);
+}
+.room2 {
+    background-image: url(../images/room2.jpg);
+}
+.room3 {
+    background-image: url(../images/room3.jpg);
+}
+.room4 {
+    background-image: url(../images/room4.jpg);
+}
+.room5 {
+    background-image: url(../images/room5.jpg);
+}
+.room6 {
+    background-image: url(../images/room6.jpg);
+}
+.room7 {
+    background-image: url(../images/room7.jpg);
+}
+.room8 {
+    background-image: url(../images/room8.jpg);
+}
+.room9 {
+    background-image: url(../images/room9.jpg);
+}
+.room10 {
+    background-image: url(../images/room10.jpg);
+}
+
+.tabs {
     width: 100%;
-}
-
-.main_imglist {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.main_imglist>img {
-    width: 9%;
-
+.tabs img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
 }
+
+input[id="tab1"]:checked~.room1,
+input[id="tab2"]:checked~.room2,
+input[id="tab3"]:checked~.room3,
+input[id="tab4"]:checked~.room4,
+input[id="tab5"]:checked~.room5,
+input[id="tab6"]:checked~.room6,
+input[id="tab7"]:checked~.room7,
+input[id="tab8"]:checked~.room8,
+input[id="tab9"]:checked~.room9,
+input[id="tab10"]:checked~.room10 {
+    display: block;
+    animation: opacity 1s;
+}
+
+input[id="tab1"]:checked~ .tabs .tab1,
+input[id="tab2"]:checked~ .tabs .tab2,
+input[id="tab3"]:checked~ .tabs .tab3,
+input[id="tab4"]:checked~ .tabs .tab4,
+input[id="tab5"]:checked~ .tabs .tab5,
+input[id="tab6"]:checked~ .tabs .tab6,
+input[id="tab7"]:checked~ .tabs .tab7,
+input[id="tab8"]:checked~ .tabs .tab8,
+input[id="tab9"]:checked~ .tabs .tab9,
+input[id="tab10"]:checked~ .tabs .tab10{
+    border: 5px solid rgb(99, 70, 7);
+}
+
 
 .main_detail {
     width: 90%;
@@ -117,40 +201,88 @@ main {
     margin: 20px;
 }
 
-
-.main_detail a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.modal1_open {
     font-size: 20px;
     width: 100%;
     height: 80px;
     background-color: transparent;
     border: 1px solid black;
+    color: black;
 }
+
+.modal1 {
+    display: none;
+    position: fixed;
+    width: 800px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.modal1_back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal1_close{
+    border: 0;
+    background-color: transparent;
+}
+
+.modal1_close img{
+    width: 50px;
+}
+
+.modal1_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    height: 20%;
+    font-size: xx-large;
+    border-bottom: 1px solid black;
+}
+
+.modal1_footer {
+    padding: 0 30px;
+    white-space: pre-wrap;
+    overflow: scroll;
+    width: 100%;
+    height: 80%;
+}
+
+.modal1_footer p {
+    line-height: 40px;
+}
+
+
 
 
 .main_note {
     margin-top: 40px;
-    height: 60%;
+    height: 30%;
 }
 
 .main_note p {
     display: block;
     white-space: pre-wrap;
-    font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/*mainright===================================*/
 .main_right {
     float: right;
-    width: 49%;
-    height: 99%;
-}
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
-.main_right>div {
-    display: block;
 }
 
 .main_cal {
@@ -159,24 +291,28 @@ main {
 
 .main_sel1 {
     height: 5%;
+    display: flex;
+    align-items: center;
 
 }
 .main_sel2 {
-    height: 5%;
+    margin: 30px 0px ;
+}
+
+.main_sel2 p{
+    margin-bottom: 20px;
 }
 
 .main_sum {
     height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.main_sel1,
-.main_sel2,
-.main_sum {
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
-    font-style: normal;
+.main_sum>div:last-child {
+    font-size: 40px;
 }
-
 
 .main_menu {
     text-align: center;
@@ -185,13 +321,10 @@ main {
 
 .btn {
     display: inline-block;
-    font-style: normal;
-    color: rgba(223,190,106,0.7);
     transition: all 0.7s ease-out;
     background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
     background-position: 1% 50%;
     background-size: 300% 300%;
-    border: 1px solid rgba(223,190,106,0.3);
 }
 
 .btn:hover {
@@ -199,8 +332,7 @@ main {
     background-position: 99% 50%;
 }
 
-.main_menu a:nth-child(1),
-.main_menu a:nth-child(2) {
+.main_menu a {
     width: 250px;
     height: 100%;
     font-size: 20px;
@@ -208,29 +340,111 @@ main {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
-    
 }
 
-.main_menu a:nth-child(3) {
-    width: 80px;
+.modal2_open {
+    width: 100px;
     height: 100%;
     font-size: 20px;
     border: 1px solid black;
-    display: inline-flex;
+}
+
+
+.modal2 {
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.modal2>div {
+    width: 100%;
+}
+
+.modal2_header {
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.modal2_close{
+    border: 0;
+    background-color: transparent;
+}
+
+.modal2_close img{
+    width: 50px;
+}
+
+.social_btn {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social_btn ul {
+    width: 92%;
+}
+
+
+.social_btn li a {
+    background-image: url(../images/social_btn.png);
+    width: 112px;
+    height: 112px;
+    margin: 3px;
+    text-indent: -9999em;
+}
+
+.social_btn .line {
+    background-position-y: calc(-163px);
+}
+.social_btn .band {
+    background-position-y: calc(-163px*5 + 3px);
+}
+.social_btn .naver {
+    background-position-y: calc(-163px*8 + 6px);
+}
+.social_btn .face {
+    background-position-y: calc(-163px*2);
+}
+.social_btn .X {
+    background-position-y: calc(-163px*3);
+}
+
+.modal2_footer {
+    height: 15%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*footer===================================*/
-footer {
-    height: 400px;
+.modal2_footer>* {
+    height: 40px;
+    font-size: 1.4em;
 }
 
-footer * {
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
-    font-style: normal;
+.modal2_footer input {
+    width: 200px;
+}
+
+.modal2_footer button {
+    width: 70px;
+
+}
+
+/*footer===================================*/
+/*footertop===================================*/
+footer {
+    height: 400px;
 }
 
 .footer_top {
@@ -282,12 +496,44 @@ footer * {
     height: 50%;
 }
 
+.footer_b1 {
+    width: 5%;
+}
+
+.footer_b1 img {
+    float: right;
+    margin-right: 30px;
+    width: 100%;
+}
+
+.footer_b1 img:hover {
+    opacity: 0.3;
+    transition: 0.2s;
+}
+
 .footer_toprightbottom div{
     float: right;
 }
 
+/*footerbottom===================================*/
 .footer_bottom {
     width: 100%;
     height: 50%;
     text-align: center;
+}
+
+.footer_b2 {
+    width: 3%;
+
+}
+
+.footer_b2 img{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.footer_b2 img:hover{
+    opacity: 0.3;
+    transition: 0.2s;
 }

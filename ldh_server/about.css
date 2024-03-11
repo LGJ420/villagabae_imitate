@@ -132,36 +132,39 @@ header {
 
 /* section 디자인 ========================================================= */
 
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+}
+
 ::selection {
     background: #705b43;
     color: white;
-}
 
-section,
-h2,
-section div {
-    text-align: left;
-    color: rgb(100, 92, 72);
 }
-
 section {
     min-height: 75vh;
     max-height: max-content;
     background-color: white;
 }
 
+h2,
+section div {
+    text-align: left;
+    color: rgb(100, 92, 72);
+}
+
 .section_box {
     max-height: 100%;
     min-height: 75vh;
     width: calc(1920px * .8);
-    /* border: 1px solid red;
-    box-sizing: border-box; */
     margin: auto;
 }
 
 h2 {
     line-height: 15vh;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 10px;
     opacity: .9;
 }
@@ -189,19 +192,13 @@ section div>p {
     animation: opacity 2s;
 }
 
-@keyframes opacity {
-    from {
-        opacity: 0;
-    }
-}
-
 .welcome {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     width: 60%;
-    height: 45vh;
+    height: 50vh;
     position: relative;
     background-image: url(./team_image/c8197b6606af6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     margin-left: 38%;
     margin-top: -33%;
     margin-bottom: 5%;
@@ -212,11 +209,9 @@ section div>p {
 
 iframe {
     margin-top: 1%;
-    /* overflow: hidden; */
     box-shadow: 0 0 30px rgb(141, 132, 93);
-    /* border-radius: 10px; */
     width: 100%;
-    height: 50vh
+    height: 50vh;
 }
 
 .location {
@@ -239,7 +234,7 @@ iframe {
 }
 
 /* ========================================================== */
-/* rooms */
+/* room 공통사항 */
 
 .tab_content input {
     display: none;
@@ -247,22 +242,56 @@ iframe {
 
 .tab_content label {
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     background-image: url(./team_image/circle_1.png);
-    background-size: 100%;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
     border-radius: 50%;
+    position: relative;
+    left: 195px;
 }
 
 .conbox {
     display: none;
-    width: 500px;
-    height: 600px;
+    width: 450px;
+    height: 500px;
     margin: 0 auto;
+    
+    box-shadow: 0 0 30px rgb(141, 132, 93);
     background-repeat: no-repeat;
-
-    margin-left: 0%;
+    background-size: 100% 100%;
+    animation: opacity .4s;
+    border-radius: 10% 0;
 }
+
+.conbox:hover {
+    opacity: .7;
+}
+
+input[id="tab1_1"]:checked~.room1_1,
+input[id="tab1_2"]:checked~.room1_2,
+input[id="tab1_3"]:checked~.room1_3,
+input[id="tab1_4"]:checked~.room1_4,
+input[id="tab2_1"]:checked~.room2_1,
+input[id="tab2_2"]:checked~.room2_2,
+input[id="tab2_3"]:checked~.room2_3,
+input[id="tab2_4"]:checked~.room2_4,
+input[id="tab3_1"]:checked~.room3_1,
+input[id="tab3_2"]:checked~.room3_2,
+input[id="tab3_3"]:checked~.room3_3,
+input[id="tab3_4"]:checked~.room3_4 {
+    display: block;
+}
+
+.tab_content input:checked+label {
+    background-image: url(./team_image/circle_2.png);
+}
+
+/* ========================================================== */
+/* room 1 */
+
 
 .room1_1 {
     background-image: url(./team_image/room1_1.jpg);
@@ -280,7 +309,8 @@ iframe {
     background-image: url(./team_image/room1_4.jpg);
 }
 
-/* ============================================================= */
+/* ========================================================== */
+/* room 2 */
 
 .room2_1 {
     background-image: url(./team_image/room2_1.jpg);
@@ -298,15 +328,72 @@ iframe {
     background-image: url(./team_image/room2_4.jpg);
 }
 
-input[id="tab01"]:checked~.room1_1,
-input[id="tab02"]:checked~.room1_2,
-input[id="tab03"]:checked~.room1_3,
-input[id="tab04"]:checked~.room1_4 {
-    display: block;
+/* ========================================================== */
+/* room 3 */
+
+.room3_1 {
+    background-image: url(./team_image/room3_1.jpg);
 }
 
-.tab_content input:checked+label {
-    background-image: url(./team_image/circle_2.png);
+.room3_2 {
+    background-image: url(./team_image/room3_2.jpg);
+}
+
+.room3_3 {
+    background-image: url(./team_image/room3_3.jpg);
+}
+
+.room3_4 {
+    background-image: url(./team_image/room3_4.jpg);
+}
+
+/* ============================================================= */
+
+.rooms {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.room_box,
+.room_go a {
+    font-family: "Nanum Myeongjo", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color: rgb(117, 97, 72);
+    opacity: .5;
+}
+
+.room_box {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -280px;
+    font-size: 30px;
+    background-color: rgb(241, 235, 223);
+    border-radius: 30% 0;
+    padding: 3px 17px;
+}
+
+.room_go a {
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    width: 300px;
+    line-height: 70px;
+    margin: auto;
+
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.room_go a:hover {
+    opacity: 1;
+}
+
+.room_go {
+    text-align: center;
+    margin-top: 70px;
+    height: 130px;
 }
 
 /* section 디자인 ========================================================= */

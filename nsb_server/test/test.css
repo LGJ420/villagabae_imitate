@@ -1,28 +1,86 @@
-body * {
-    border: 1px red solid;
+/* 임시용 */
+/* body * {
+    border: 1px solid red;
+    padding: 4px;
+} */
+
+/* 기본설정 */
+.modal_body * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.room_container {
+/* ======================================== */
+/* 모달(로그인) 시작!!!! */
+.modal_body input[id="login"] {
+    display: none;
+}
+
+label[for="login"] {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    background-color: white;
+    display: none;
+    padding: 20px;
+    width: 400px;
+
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+}
+
+.modal hr {
+    margin: 10px;
+}
+
+.modal label[for="login"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal .info form {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+} 
 
-    width: 300px;
-    height: 800px;
+/* ?? 왜 input, button은 display:block 안먹음?? ㅠㅠ */
+.modal .info form * {
+    margin: 5px;
+    padding: 10px;
+    width: 80%;
+    /* display: block; */
 }
 
-.room_picture {
-    width: 100%;
-    height: 100%;
+.modal .info form button {
+    cursor: pointer;
 }
 
-.room_exp {
-    width: 100%;
-    height: 70%;
+.modal div p {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.room_btn {
+/* 로그인(모달) 열기&닫기 */
+.modal_body input[id="login"]:checked ~ .modal{
+    display: block;
+}
+
+/* 로그인(모달) 열었을 때 배경 오퍼시티 */
+.modal_body input[id="login"]:checked ~ .modal_bg{
     width: 100%;
-    height: 30%;
+    height: 100vh;
+    background-color: gray;
+    opacity: .5;
+
+    position: fixed;
+    top: 0;
+    left: 0;
 }
