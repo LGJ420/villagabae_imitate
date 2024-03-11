@@ -53,7 +53,7 @@ footer {
     width: 30px;
     height: 2px;
 }
-input[id*="slide01"]:checked ~ .labelbox label[for*="slide01"] em,
+input[id*="slide01"]:checked ~ .labelbox label[for*="slide01"] em ,
 input[id*="slide02"]:checked ~ .labelbox label[for*="slide02"] em,
 input[id*="slide03"]:checked ~ .labelbox label[for*="slide03"] em,
 input[id*="slide04"]:checked ~ .labelbox label[for*="slide04"] em {
@@ -166,8 +166,12 @@ header {
 }
 .nav_box {
     display: flex;
-    width: calc(1920px * .8);
+    max-width: calc(1920px * .8);
+    width: 100%;
     padding: 0 15px;
+    position: fixed;
+
+    flex-direction: column;
 }
 /* ↓↓↓ 좌측 상단 메인로고 설정 ↓↓↓ */
 .logo_design {
@@ -176,7 +180,6 @@ header {
     width: 50%;
     position: fixed;
 }
-
 .logo_design a {
     display: flex;
     background-image: url(../img/logo.png);
@@ -188,18 +191,22 @@ header {
 /* ↑↑↑ 좌측 상단 메인로고 설정 ↑↑↑ */
 
 /* ↓↓↓ NAV 메뉴 설정 ↓↓↓*/
+.login_join_menu,
 .nav_main_menu {
     display: flex;
-    height: 120px;
+    height: 60px;
     width: 100%;
     justify-content: end;
+    align-items: center;
+
 }
-.nav_top_ul {
+.nav_main_menu>.nav_top_ul {
     display: flex;
-    height: 120px;
-    margin-top: 20px;
+    height: 60px;
     justify-content: center;
-    position: fixed;
+
+    padding-right: 15px;
+    top: 60px;
 }
 .nav_top_ul>li {
     display: inline-block;
@@ -208,6 +215,7 @@ header {
     cursor: pointer;
 }
 .nav_top_ul>li>a {
+    margin: 0 5px;
     padding: 20px;
     color: rgba(255, 255, 255);
     text-decoration: none;
@@ -215,7 +223,18 @@ header {
 .nav_top_ul>li>a:hover {
     color: rgb(95, 95, 95);
 }
+/* ↑↑↑ NAV 메뉴 설정 ↑↑↑ */
 
+/* ↓↓↓ NAV 메뉴 설정 ↓↓↓*/
+.login_join_menu>.nav_top_ul {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    padding-right: 15px;
+    padding-bottom: 40px ;
+
+    align-items: end;
+}
 /* ↑↑↑ NAV 메뉴 설정 ↑↑↑ */
 
 /* ↓↓↓ 2차 메뉴(deps 영역) ↓↓↓ */
@@ -236,12 +255,23 @@ header {
     position: absolute;
 }
 .nav_deps>li {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
     background-color: white;
-    padding: 10px 0 10px 15px;
+    /* padding: 10px 0 10px 15px; */
     color: rgb(76, 78, 76);
     cursor: pointer;
 }
 .nav_deps>li>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120%;
+    height: 100%;;
+    box-sizing: border-box;
     font-size: 12px;
     text-decoration: none;
 }
