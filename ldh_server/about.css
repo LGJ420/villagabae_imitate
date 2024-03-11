@@ -27,6 +27,7 @@ footer {
 
 /* section 디자인 ========================================================= */
 
+
 @keyframes opacity {
     from {
         opacity: 0;
@@ -36,6 +37,10 @@ footer {
 ::selection {
     background: #705b43;
     color: white;
+}
+
+.section_box {
+    width: calc(1920px * .8);
 }
 
 h2,
