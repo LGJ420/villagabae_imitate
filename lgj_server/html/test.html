@@ -1,317 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/cal.css">
-    <link rel="stylesheet" href="../css/test.css">
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    
+    <title>RESERVATION</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-    
-
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 </head>
+
+<link rel="stylesheet" href="../css/test.css">
+
 <body>
 
-    <header>
-        <div class="header_back">
-            <div class="logo">
-                <i>빌라가배</i>
-                <img src="../images/logo.png">
-            </div>
-            <div class="header_menu">
-                <nav class="nav_main_menu">
-                    <ul class="nav_top_ul">
-                        <li>
-                            <a href="../../ldh_server/about.html">ABOUT</a>
-                        </li>
-                        <li>
-                            <a class="nemu_hover" href="../../nsb_server/rooms/G_room/G_room.html">ROOMS</a>
-                            <ul class="nav_deps">
-                                <li><a href="#">G_room</a></li>
-                                <li><a href="#">H_room</a></li>
-                                <li><a href="#">O_room</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="../../kim_server/facilitycopy.html">GUIDE</a>
-                            <ul class="nav_deps">
-                                <li><a href="#">SERVICE</a></li>
-                                <li><a href="#">TOUR</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="../html/reservation.html">RESERVATION</a>
-                        </li>
-                        <li>
-                            <a href="../../cjh_server/main.html">COMMUNITY</a>
-                            <ul class="nav_deps">
-                                <li><a href="#">공지사항</a></li>
-                                <li><a href="#">게시판</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="main_left">
-            <div class="main_imglist">
-                <input type="radio" name="tabmenu" id="tab1" checked>
-                <input type="radio" name="tabmenu" id="tab2">
-                <input type="radio" name="tabmenu" id="tab3">
-                <input type="radio" name="tabmenu" id="tab4">
-                <input type="radio" name="tabmenu" id="tab5">
-                <input type="radio" name="tabmenu" id="tab6">
-                <input type="radio" name="tabmenu" id="tab7">
-                <input type="radio" name="tabmenu" id="tab8">
-                <input type="radio" name="tabmenu" id="tab9">
-                <input type="radio" name="tabmenu" id="tab10">
+    <section>
+        <div class="section_box">
+
+            <div class="grid_box">
+
                 
-    
-                <div class="combox room1"></div>
-                <div class="combox room2"></div>
-                <div class="combox room3"></div>
-                <div class="combox room4"></div>
-                <div class="combox room5"></div>
-                <div class="combox room6"></div>
-                <div class="combox room7"></div>
-                <div class="combox room8"></div>
-                <div class="combox room9"></div>
-                <div class="combox room10"></div>
-    
-                <div class="tabs">
-                    <label for="tab1">
-                        <img class="tab1" src="../images/room1.jpg">
-                    </label>
-                    <label for="tab2">
-                        <img class="tab2" src="../images/room2.jpg">
-                    </label>
-                    <label for="tab3">
-                        <img class="tab3" src="../images/room3.jpg">
-                    </label>
-                    <label for="tab4">
-                        <img class="tab4" src="../images/room4.jpg">
-                    </label>
-                    <label for="tab5">
-                        <img class="tab5" src="../images/room5.jpg">
-                    </label>
-                    <label for="tab6">
-                        <img class="tab6" src="../images/room6.jpg">
-                    </label>
-                    <label for="tab7">
-                        <img class="tab7" src="../images/room7.jpg">
-                    </label>
-                    <label for="tab8">
-                        <img class="tab8" src="../images/room8.jpg">
-                    </label>
-                    <label for="tab9">
-                        <img class="tab9" src="../images/room9.jpg">
-                    </label>
-                    <label for="tab10">
-                        <img class="tab10" src="../images/room10.jpg">
-                    </label>
+                <div class="grid_sub2">
+                    <div class="guide">
+                        <p><span>* 예약정보를 남겨 주시면 초진 안내 전화를 드립니다.</span></p>
+                    </div>
+                    <div class="input name">
+                        <input type="text" spellcheck="false" required>
+                        <div class="labelline">enter your name</div>
+                    </div>
+                    <div class="input call_number">
+                        <input type="text"  spellcheck="false" required>
+                        <div class="labelline">enter your call number</div>
+                    </div>
+                    <div class="input1 content">
+                        <div class="big">문의 내용</div>
+                        <textarea placeholder="문의 내용을 입력해주세요." ></textarea>
+                    </div>
+                    <div class="input reservation_hope_day"></div>
+                    <div class="input allow_checkBox">
+                        <input type="checkbox"id="allow">
+                        <label for="allow"><span>&nbsp;개인정보를 수집·이용에 동의합니다.</span></label>
+                    </div>
+                    <div class="in_detail"></div>
+                    <!-- <div class="in_detail"></div> -->
                 </div>
-            </div>
-            
-            <div class="main_detail">
-                <button class="modal1_open btn">이용약관</button>
-            </div>
-            
-            <div class="main_note">
-                <p>- 온수 비용
 
--  11~2월 7만원 / 3월~10월 5만원 (체크인시 32~33도 다음날 아침 29~30도 외부기온에 따라 차이가 있을 수도 있습니다.) 
 
-- 기준 인원 외 1인 추가 요금은 1박당 30,000원 (조식 포함)
 
-- 24개월 이하 영유아 무료(추가 침구, 조식 미제공)
-
-- 예약된 인원 외에는 입실 할 수 없습니다.(방문객 불가)
-
-- 객실 내 반려동물 입장은 불가 합니다.
-
-- 실내 고기, 생선류 취사 불가 합니다.
-
-- 객실내 비품 파손, 분실 시 비용을 청구합니다.
-
-- 홈페이지를 통해 예약하시는 분에 한하여 조식무료제공 (타 예약 사이트를 통해 예약하실 경우 조식 미제공)</p>
-            </div>
         </div>
-        <div class="main_right">
-            <div class="main_cal">
-                <section>
-                    <div class="calendar">
-                        <div class="header">
-                            <div class="year-month"></div>
-                            <div class="nav">
-                                <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
-                                <button class="nav-btn go-today" onclick="goToday()">Today</button>
-                                <button class="nav-btn go-prev" onclick="nextMonth()">&gt;</button>
-                            </div>
-                        </div>
-                        <div class="main">
-                            <div class="days">
-                                <div class="day">일</div>
-                                <div class="day">월</div>
-                                <div class="day">화</div>
-                                <div class="day">수</div>
-                                <div class="day">목</div>
-                                <div class="day">금</div>
-                                <div class="day">토</div>
-                            </div>
-                            <div class="dates"></div>
-                        </div>
-                    </div>
-                    <script src="../js/cal.js"></script>
-                </section>
-            </div>
-            <hr>
-            <div class="main_sel1">
-                <select>
-                    <option>추가인원</option>
-                    <option>1명</option>
-                    <option>2명</option>
-                    <option>3명</option>
-                    <option>4명</option>
-                </select>
-                <div>기준인원 2명, 추가시 30,000원</div>
-            </div>
-            <hr>
-            <div class="main_sel2">
-                <p>Höfats / 호파츠 스핀 SPIN 파이어
-
-
-회오리 치듯 상승하는 불꽃의 모양이 매혹적인 
-
-불멍 스토브를 추가 대여 하실 수 있습니다.
-
-호파츠 스핀  SPIN  파이어의 바이오 에탄올은
-
-약 60분 동안 연기와 냄새없이 연소됩니다.
-
-인체에 무해하니 안전하게 즐기실 수 있습니다.</p>
-                <br>
-                <select>
-                    <option>사용안함</option>
-                    <option>사용함</option>
-                </select>
-                10000원
-            </div>
-            <hr>
-            <div class="main_sum">
-                <div>총 합계</div>
-                <div>150,000원</div>
-            </div>
-
-            <div class="main_menu">
-
-                    <a href="../html/COMPLETE.html" class="btn">결제하기</a>
-                    <a href="#" class="btn">♡</a>
-                    <button class="modal2_open btn">공유</button>
-            </div>
-
-            <div class="modal1">
-                <div class="modal1_back">
-                    <div class="modal1_header">
-                        <h3>이용약관</h3>
-                        <button class="modal1_close">
-                            <img src="../images/close.png">
-                        </button>
-                    </div>
-                    <div class="modal1_footer">
-                        <p>본 약관에서 “Villagabae” “당사” 또는 “저희”는 회원님이 계약하는 Villagabae 회사를 의미합니다. 회원님의 계약 상대방 회사는 회원님의 거주 국가 또는 설립국가를 근거로 정합니다.
-
-회원님의 거주국가 또는 설립국가가 미합중국인 경우, 회원님은 Villagabae, Inc.(888 Brannan Street, 4th Floor, San Francisco, CA 94103, United States에 소재)와 계약을 체결합니다.
-회원님의 거주국가 또는 설립국가가 미합중국, (본 약관의 목적상 홍콩, 마카오 및 대만을 포함하지 않는) 중화인민공화국(“중국”) 또는 일본 그리고 유럽경제지역이 아닌 경우, 회원님은 Villagabae Ireland UC(“Villagabae Ireland”)(The Watermarque Building, South Lotts Road, Ringsend, Dublin 4, Ireland에 소재)와 계약을 체결합니다.
-회원님의 거주국가 또는 설립국가가 유럽경제지역인 경우, 회원님은 Villagabae Ireland UC(“Villagabae Ireland”), The Watermarque Building, South Lotts Road, Ringsend, Dublin 4, Ireland와 계약을 체결하며, 회원님의 Villagabae와의 계약은 유럽 사용자를 위한 이용약관의 적용을 받습니다.
-회원님의 거주국가 또는 설립국가가 중국인 경우, Villagabae Internet (Beijing) Co., Ltd.(“Villagabae China”)와 계약을 체결합니다. 단, 회원님이 중국 외부 소재 호스팅 서비스(아래에 정의됨)를 예약하거나 리스팅을 설정하는 경우, 해당 거래와 관련하여 회원님은 Villagabae Ireland와 계약을 체결합니다.
-회원님의 거주국가 또는 설립국가가 일본인 경우, 회원님은 Villagabae Global Services Limited(“Villagabae GSL”)(25-28 North Wall Quay, Dublin 1, D01 H104, Ireland에 소재)와 계약을 체결합니다. 단, 회원님이 일본 외부 소재 호스팅 서비스(아래에 정의됨)를 예약하거나 리스팅을 설정하는 경우, 해당 거래와 관련하여 회원님은 Villagabae Ireland와 계약을 체결합니다.
-회원님이 거주국가 또는 설립국가를 변경하는 경우, 회원님이 계약을 체결하는 Villagabae 회사는 해당 변경일로부터 상기와 같은 회원님의 새로운 거주국가 또는 설립국가에 따라 결정됩니다.
-
-Villagabae 플랫폼 접속 및 사용과 관련된 당사의 개인정보 수집과 이용에 관한 사항은 당사 개인정보 처리방에 기재되어 있습니다.
-
-회원님의 Villagabae 플랫폼 이용을 통한 또는 그와 관련된 모든 결제처리 서비스(“결제 서비스”)는 결제 서비스 약관(“결제 서비스 약관”)에 명시된 하나 이상의 Villagabae Payments (경우에 따라 개별적으로 또는 총칭하여, “Villagabae Payments”) 회사들에 의해 회원님에게 제공됩니다.
-
-리스팅 및 호스팅 서비스(아래에서 정의되는 바와 같이)에 적용되는 제반 법률, 규칙 및 규제의 확인, 숙지 및 준수에 대해서는 호스트가 전적으로 책임을 집니다. 예컨대, 일부 도시에서는 유료 게스트에 대한 단기 호스트 또는 특정 호스팅 서비스 제공이 법률로 제한됩니다. 상당수 도시에서, 호스트는 특정 호스팅 서비스(식품 조리, 주류 판매, 여행 가이드, 차량 운영 등)를 제공하기 위해 등록을 하거나 허가나 면허를 취득해야 합니다. 호스트는 자신이 제공하는 호스팅 서비스에 필요한 인허가 또는 등록에 관한 확인 및 취득에 대해 전적으로 책임을 집니다. 특정 종류의 호스팅 서비스의 경우 모두 금지 대상인 경우도 있으며 벌금 등의 처벌이 부과될 수 있습니다. 저희는 도움말 센터에서 회원님에게 적용되는 의무사항을 확인할 수 있도록 일부 정보를 제공하고 있습니다. 회원님의 Villagabae 리스팅 및 호스팅 서비스에 적용되는 현지 법률에 관해서는 언제든지 법률 자문을 통해 확인해야 합니다.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal2">
-                <div class="modal2_header">
-                    <h3>공유하기</h3>
-                    <button class="modal2_close">
-                        <img src="../images/close.png">
-                    </button>
-                </div>
-    
-                <div class="social_btn">
-                    <ul>
-                        <li><a class="line" href="https://line.me/ko/">라인</a></li>
-                        <li><a class="band" href="https://band.us/home">밴드</a></li>
-                        <li><a class="naver" href="https://www.naver.com/">네이버</a></li>
-                        <li><a class="face" href="https://www.facebook.com/">페이스북</a></li>
-                        <li><a class="X" href="https://twitter.com/">X</a></li>
-                    </ul>
-                </div>
-
-                <div class="modal2_footer">
-                    <input type="text" placeholder="https://villagabae.com/SCHEDULE/?idx=7" readonly>
-                    <button>복사</button>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer_top">
-            <div class="footer_topleft">
-                <div class="footer_info">
-                    <p>빌라가배 Villagabae
-Tel. 010-8020-3216
-거제시 동부면 거제 남서로 2407-21
-공동대표 : 김태경 한동협ㅣ Biz License 308-11-42972 
-통신판매업 신고번호 : 2022-경남 거제-0622
-copyright ⓒ VILLAGABAE All right reserved. since 2023.</p>
-                </div>
-            </div>
-            <div class="footer_topright">
-                <div class="footer_toprighttop">
-                    <div class="footer_menu">
-                        <ul>
-                            <li>ABOUT</li>
-                            <li>ROOMS</li>
-                            <li>FACILITIES</li>
-                            <li>RESERVATION</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer_toprightbottom">
-                    <div class="footer_b1">
-                        <a href="https://www.instagram.com/">
-                            <img src="../images/insta_logo.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer_bottom">
-            <div class="footer_b2">
-                <a href="https://www.facebook.com/">
-                    <img src="../images/fb_logo.png">
-                </a>
-            </div>
-        </div>
-    </footer>
+    </section>
 
 </body>
-
-<script src="../js/modal.js"></script>
 
 </html>
