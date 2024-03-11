@@ -2,7 +2,7 @@
 /* ============================ ↑↑↑ 주석 양식 ↑↑↑ ============================================*/
 /* ↓↓↓ "작은" 주석 양식 ↓↓↓ */
 /* ↑↑↑ "작은" 주석 양식 ↑↑↑ */
-* {
+/* * {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -24,7 +24,7 @@ header,
 section,
 footer {
     margin: auto;
-}
+} */
 /* ============================ ↓↓↓ header ↓↓↓ ============================================*/
 /* ↓↓↓ header 영역 디자인 ↓↓↓ */
 header {
@@ -55,7 +55,7 @@ header {
 
 .logo_design a {
     display: flex;
-    background-image: url(../img/logo.png);
+    background-image: url(./img/logo.png);
     background-repeat: no-repeat;
     background-size: 200px;
     width: 50%;
