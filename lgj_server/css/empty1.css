@@ -1,5 +1,3 @@
-/* ============================ ↓↓↓ default ↓↓↓ ============================================*/
-
 body * {
     box-sizing: border-box;
     margin: 0;
@@ -52,9 +50,9 @@ select {
     }
 }
 
-/* ============================ ↑↑↑ default ↑↑↑ ============================================*/
-/* ============================ ↓↓↓ header ↓↓↓ ============================================*/
-/* ↓↓↓ 로고영역 ↓↓↓ */
+
+
+/*header===================================*/
 header {
     display: flex;
     height: 20vh;
@@ -71,7 +69,7 @@ header {
 .logo {
     width: 20%;
     height: 70%;
-    transform: translateY(-15%)
+    float: left;
 }
 
 .logo>i {
@@ -84,83 +82,21 @@ header {
     float: right;
 }
 
+.header_menu ul {
+    float: right;
+}
 
 .header_menu li {
     padding: 15px 20px;
 }
 
-/* ↑↑↑ 로고영역 ↑↑↑ */
-/* ↓↓↓ NAV 메뉴 설정 ↓↓↓*/
-.nav_box {
-    display: flex;
-}
 
-.nav_main_menu {
-    display: flex;
-    height: 120px;
-    width: 100%;
-    justify-content: end;
-}
-.nav_top_ul {
-    display: flex;
-}
-.nav_top_ul>li {
-    display: inline-block;
-    cursor: pointer;
-}
-.nav_top_ul>li>a {
-    padding: 20px;
-    color: black;
-    text-decoration: none;
-}
-.nav_top_ul>li>a:hover {
-    color: rgb(95, 95, 95);
-}
 
-/* ↑↑↑ NAV 메뉴 설정 ↑↑↑ */
-/* ↓↓↓ 2차 메뉴(deps 영역) ↓↓↓ */
 
-.nav_deps {
-    visibility: none;
-    opacity: 0;
-}
-.nav_top_ul>li:hover .nav_deps {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    width: 120px;
-    margin-top: 20px;
-    margin-left: 20px;
-    opacity: 1;
 
-    transition: 0.5s;
-    position: absolute;
-}
-.nav_deps>li {
-    background-color: white;
-    padding: 10px 0 10px 15px;
-    color: rgb(76, 78, 76);
-    cursor: pointer;
-}
-.nav_deps>li>a {
-    font-size: 12px;
-    text-decoration: none;
-}
-.nav_deps>li:hover {
-    transition: all 0.35s;
-    background-color: rgb(237, 230, 223);
-}
-.nav_deps>li>a {
-    color: rgb(35, 35, 35);
-}
-.nav_deps>li:hover a{
-    color: black;
-}
 
-/* ↑↑↑ 2차 메뉴(deps 영역) ↑↑↑ */
-/* ============================ ↑↑↑ header ↑↑↑ ============================================*/
-/* ============================ ↓↓↓ main ↓↓↓ ============================================*/
-/* ↓↓↓ main 왼쪽 ↓↓↓ */
+/*main===================================*/
+/*mainleft===================================*/
 main {
     display: flex;
     height: 1500px;
@@ -344,8 +280,7 @@ input[id="tab10"]:checked~ .tabs .tab10{
     font-style: normal;
 }
 
-/* ↑↑↑ main 왼쪽 ↑↑↑ */
-/* ↓↓↓ main 오른쪽 ↓↓↓ */
+/*mainright===================================*/
 .main_right {
     float: right;
     width: 50%;
@@ -510,10 +445,9 @@ input[id="tab10"]:checked~ .tabs .tab10{
     width: 70px;
 
 }
-/* ↑↑↑ main 오른쪽 ↑↑↑ */
-/* ============================ ↑↑↑ main ↑↑↑ ============================================*/
-/* ============================ ↓↓↓ footer ↓↓↓ ============================================*/
-/* ↓↓↓ footertop 내용 ↓↓↓ */
+
+/*footer===================================*/
+/*footertop===================================*/
 footer {
     height: 400px;
 }
@@ -523,6 +457,7 @@ footer {
     height: 50%;
     background-color: RGB(237,230,223);
 }
+
 
 .footer_topleft {
     width: 40%;
@@ -584,8 +519,8 @@ footer {
 .footer_toprightbottom div{
     float: right;
 }
-/* ↑↑↑ footertop 내용 ↑↑↑ */
-/* ↓↓↓ footerbottom 내용 ↓↓↓ */
+
+/*footerbottom===================================*/
 .footer_bottom {
     width: 100%;
     height: 50%;
@@ -607,5 +542,3 @@ footer {
     opacity: 0.3;
     transition: 0.2s;
 }
-
-/* ↑↑↑ footerbottom 내용 ↑↑↑ */
