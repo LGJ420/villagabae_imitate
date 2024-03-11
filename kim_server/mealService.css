@@ -156,6 +156,12 @@ section {
     color: rgba(223,190,106);
 }
 
+.pictureBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .pictureMore input[id*="slide"] {
     display: none;
 }
