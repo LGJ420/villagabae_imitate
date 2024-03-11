@@ -16,34 +16,43 @@
 </head>
 
 <link rel="stylesheet" href="./main.css">
+<link rel="stylesheet" href=".././baseform_sub.css">
 
 <body>
     <header>
         <div class="nav_box">
             <div class="logo_design">
-                <a href="#">logo</a>
+                <a href="./homepage.html">logo</a>
             </div>
             <nav class="nav_main_menu">
                 <ul class="nav_top_ul">
                     <li>
-                        <a href="#">ABOUT</a>
+                        <a href="../../ldh_server/about.html">ABOUT</a>
                     </li>
                     <li>
-                        <a href="#">ROOMS</a>
-                        <ul class="nav_deps1">
+                        <a class="nemu_hover" href="../../nsb_server/rooms/G_room/G_room.html">ROOMS</a>
+                        <ul class="nav_deps">
                             <li><a href="#">G_room</a></li>
                             <li><a href="#">H_room</a></li>
                             <li><a href="#">O_room</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">TOUR</a>
+                        <a href="../../kim_server/facilitycopy.html">GUIDE</a>
+                        <ul class="nav_deps">
+                            <li><a href="#">SERVICE</a></li>
+                            <li><a href="#">TOUR</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#">RESERVATION</a>
+                        <a href="../html/reservation.html">RESERVATION</a>
                     </li>
                     <li>
-                        <a href="#">COMMUNITY</a>
+                        <a href="../../cjh_server/main.html">COMMUNITY</a>
+                        <ul class="nav_deps">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">게시판</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -90,10 +99,10 @@
                         <div class="big">문의 내용</div>
                         <textarea placeholder="문의 내용을 입력해주세요." ></textarea>
                     </div>
-                    <div class="input reservation_hope_day"></div>
                     <div class="input allow_checkBox">
                         <input type="checkbox"id="allow">
                         <label for="allow"><span>&nbsp;개인정보를 수집·이용에 동의합니다.</span></label>
+                        <button type="submit" class="button_1"><span>Send</span></button>
                     </div>
                     <div class="in_detail"></div>
                     <!-- <div class="in_detail"></div> -->

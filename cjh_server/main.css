@@ -24,103 +24,6 @@ section,
 footer {
     margin: auto;
 }
-
-/* header 디자인 ========================================================= */
-
-/* nav 디자인 ========================================================= */
-header {
-    display: flex;
-    height: 25vh;
-    background-color: transparent;
-    align-content: center;
-    justify-content: center;
-}
-
-.nav_box {
-    display: flex;
-    width: calc(1920px * .8);
-    padding: 0 15px;
-}
-
-.logo_design {
-    display: flex;
-    height: 120px;
-    width: 50%;
-}
-
-.logo_design a {
-    display: flex;
-    background-image: url(./logo.png);
-    background-repeat: no-repeat;
-    background-size: 200px;
-    height: 120px;
-    width: 100%;
-    text-indent: -9999em;
-}
-
-.nav_main_menu {
-    display: flex;
-    height: 120px;
-    width: 50%;
-    justify-content: end;
-}
-
-.nav_top_ul {
-    display: flex;
-    height: 120px;
-}
-
-.nav_top_ul li {
-    line-height: 120px;
-    margin: 0 20px;
-    padding: 0 5px;
-}
-
-.nav_top_ul li:hover>ul {
-    display: block;
-}
-
-.nav_top_ul li a {
-    display: block;
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: none;
-}
-
-.nav_top_ul li a:hover {
-    color: #e5e7eb;
-}
-
-.nav_deps1 {
-    display: none;
-    position: absolute;
-    text-align: left;
-    width: 150px;
-    height: max-content;
-}
-
-.nav_deps1 li {
-    display: block;
-    line-height: 50px;
-    width: 150px;
-    height: 50px;
-    padding: 0;
-    margin: 0;
-}
-
-.nav_deps1 li a {
-    display: block;
-    background-color: white;
-    padding-left: 15px;
-    color: rgb(76, 78, 76);
-}
-
-.nav_deps1 li a:hover {
-    background-color: rgb(237, 230, 223);
-    color: white;
-    transition: all 0.3s;
-}
-
-
 /* section 디자인 ========================================================= */
 
 section {
@@ -220,18 +123,15 @@ section div{
 } */
 
 /* -------수정--------------------------------------------------------- */
-
 .first_box span,
 .grid_sub2 {
     font-family: "Noto Serif KR", serif;
     font-weight: 400;
     font-style: normal;
 }
-
 section div {
     /* border: 1px solid rgb(180, 180, 180); */
 }
-
 .grid_box {
     padding: 50px ;
     display: grid;
@@ -253,7 +153,6 @@ section div {
 }
 .input>input{
     outline: none;
-  
     font-size: 15px;
     padding: 0 30px;
     line-height: 50px;
@@ -262,7 +161,6 @@ section div {
     transition: 0.1s ease;
     border-color: #dbdbdb;
     width: 70%;
-   
 }
 .labelline{
     position: absolute;
@@ -273,8 +171,6 @@ section div {
     pointer-events: none;           /* 커서 비활성화 */
     border-radius: 50%;
     text-wrap: nowrap;
-    
- 
 }
 input:focus,
 input:valid{
@@ -289,53 +185,38 @@ input:valid + .labelline{
     line-height: 30px;
     transform: translate(-16px,-27px) scale(0.88);
     z-index: 4;
-   
 }
-
 .Question {
     font-size: 4em;
     font-weight: 500px;
 }
-
 .grid_sub1 {
     display: grid;
     grid-template: 3fr 2fr
 }
-
 .Question {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 .Question>p {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 .Question>p>span {
-
-
     animation: move 3s;
     position: absolute;
     letter-spacing: 7px;
     color: #c3bab2;
-
 }
-
 .second_box {
- 
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     animation: move 2s ease-out;
 }
-
-
 .sns_1,
 .sns_2 {
     width: 50px;
@@ -343,9 +224,7 @@ input:valid + .labelline{
     display: inline-block;
     border-radius: 50%;
     margin: 10px;
-
 }
-
 section p {
     display: inline-block;
 }
@@ -444,8 +323,8 @@ span::selection,
     padding: 10px;
     width: 75%;
     height: 80%;
-   resize: none;
-   font-size: 16px;
+    resize: none;
+    font-size: 16px;
 
 }
 big{
@@ -459,7 +338,6 @@ big{
 
     display: inline-block;
     width: 13px;
-  
 }
 .allow_checkBox{
     display: flex;
@@ -467,8 +345,6 @@ big{
     flex-direction: row;
     align-items: start;
     padding-left: 13%;
-    
-
 }
 input#allow{
     display: none;
@@ -488,6 +364,7 @@ input#allow + label:before{
     border:2px solid #807570 ;
     border-radius: 2px;
     vertical-align: middle;
+    border-radius: 50%;
 }
 input#allow:checked+label:before{
     content: "";
@@ -496,67 +373,29 @@ input#allow:checked+label:before{
     width: 15px;
     height: 15px;
     background-color: #807570;
+    border-radius: 50%;
+}
+.button_1{
+    border: 2px solid #72645c; 
+    background: transparent;
+    width:30%;
+    height: 45%;
+    color: #796a56;
+    font-size: 1.5em;
+    margin-left: 50px;
+    font-family: "Noto Serif KR", serif;
+    border-radius: 10px;
+    cursor: pointer;
+    
 
 }
+.button_1:hover{
+    background-color: #9f8c74;
+    color: white;
+    transition: all 0.35s ease-out;
+
+}
+
 
 
 /* section 디자인 ========================================================= */
-
-
-/* footer 디자인 ========================================================= */
-footer {
-    display: flex;
-    height: 200px;
-    background-color: rgb(237, 230, 223);
-    justify-content: center;
-    align-content: center;
-}
-
-.footer_box {
-    display: flex;
-    width: calc(1920px * .8);
-    margin: 0 15px;
-}
-
-.Business_infor {
-    display: flex;
-    width: 50%;
-    height: 200px;
-}
-
-.Business_item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    width: 100%;
-    margin: 10px 0;
-}
-
-.nav_footer_menu {
-    display: flex;
-    justify-content: end;
-    width: 50%;
-    height: 50px;
-}
-
-.nav_bottom_ul {
-    display: flex;
-    margin: 10px 0;
-    text-align: right;
-}
-
-.nav_bottom_ul li {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-.nav_bottom_ul li a {
-    display: block;
-    text-decoration: none;
-    color: #5e5e5e;
-}
-
-.nav_bottom_ul li a:hover {
-    color: #3c3733;
-}
