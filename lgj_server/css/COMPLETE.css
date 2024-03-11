@@ -244,6 +244,7 @@ col:last-child {
     color: rgba(223,190,106);
 }
 
+.button>div:first-child>a,
 .button>div:first-child>a:visited{
     color: rgba(223,190,106);
 }
@@ -252,6 +253,7 @@ col:last-child {
     background-color: rgba(223,190,106);
 }
 
+.button>div:last-child>a,
 .button>div:last-child>a:visited{
     color: white;
 }
