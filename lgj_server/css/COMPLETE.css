@@ -34,97 +34,11 @@ footer {
 /*======================================================================*/
 /* header */
 
-header {
-    display: flex;
-    height: 25vh;
-    background-color: transparent;
-    align-content: center;
-    justify-content: center; 
-}
 
-.nav_box {
-    display: flex;
-    width: calc(1920px * .8);
-    padding: 0 15px;
-}
 
-.logo_design {
-    display: flex;
-    height: 120px;
-    width: 50%;
-}
 
-.logo_design a {
-    display: flex;
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
-    background-size: 200px;
-    height: 120px;
-    width: 100%;
-    text-indent: -9999em;
-}
 
-.nav_main_menu {
-    display: flex;
-    height: 120px;
-    width: 50%;
-    justify-content: end;
-}
 
-.nav_top_ul {
-    display: flex;
-    height: 120px;
-}
-
-.nav_top_ul li {
-    line-height: 120px;
-    margin: 0 20px;
-    padding: 0 5px;
-}
-
-.nav_top_ul li:hover > ul {
-    display: block;
-} 
-
-.nav_top_ul li a {
-    display: block;
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: none;
-}
-
-.nav_top_ul li a:hover {
-    color: #e5e7eb;
-}
-
-.nav_deps1 {
-    display: none;
-    position: absolute;
-    text-align: left;
-    width: 150px;
-    height: max-content;
-}
-
-.nav_deps1 li {
-    display: block;
-    line-height: 50px;
-    width: 150px;
-    height: 50px;
-    padding: 0;
-    margin: 0;
-}
-
-.nav_deps1 li a {
-    display: block;
-    background-color: white;
-    padding-left: 15px;
-    color: rgb(76, 78, 76);
-}
-
-.nav_deps1 li a:hover {
-    background-color: rgb(237, 230, 223);
-    color: white;
-    transition: all 0.3s;
-}
 
 
 
@@ -266,59 +180,3 @@ col:last-child {
 
 /*======================================================================*/
 /* footer */
-footer {
-    display: flex;
-    height: 200px;
-    background-color: rgb(237, 230, 223);
-    justify-content: center;
-    align-content: center;
-}
-
-.footer_box {
-    display: flex;
-    width: calc(1920px * .8);
-    margin: 0 15px;
-}
-
-.Business_infor {
-    display: flex;
-    width: 50%;
-    height: 200px;
-}
-
-.Business_item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    width: 100%;
-    margin: 10px 0;
-}
-
-.nav_footer_menu {
-    display: flex;
-    justify-content: end;
-    width: 50%;
-    height: 50px;
-}
-
-.nav_bottom_ul {
-    display: flex;
-    margin: 10px 0;
-    text-align: right;
-}
-
-.nav_bottom_ul li {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-.nav_bottom_ul li a {
-    display: block;
-    text-decoration: none;
-    color: #5e5e5e;
-}
-
-.nav_bottom_ul li a:hover {
-    color: #3c3733;
-}
