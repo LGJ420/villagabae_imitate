@@ -250,6 +250,7 @@ section {
 .cautionBox{
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 170px;
+    width: 1200px;
     /* border: 1px solid red; */
 }
 
