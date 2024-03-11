@@ -6,14 +6,117 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* border: 1px red solid;
+    padding: 4px; */
+}
+
+.lgj_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup_form {
+    position: relative;
+    z-index: 2;
+}
+
+.signup_form h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+.input_area {
+    width: 400px;
+    position: relative;
+    margin: 20px 0;
+}
+
+input::placeholder {
+    text-align: end;
+}
+
+.input_area input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px;
+    outline: none;
+}
+
+.input_area label {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 18px;
+    transition: top .5s ease;
+}
+
+.input_area:first-child button {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(131, 125, 40);
+    cursor: pointer;
+    color: white;
+}
+
+
+@keyframes warning {
+    0% {
+        transform: translateX(-8px);
+    }
+    25% {
+        transform: translateX(8px);
+    }
+    50% {
+        transform: translateX(-8px);
+    }
+    75% {
+        transform: translateX(8px);
+    }
 }
 
 
 
 
-.container {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
+/* ↓↓↓ warning 클래스는 자바스크립트사용 ↓↓↓ */
+.input_area label.warning {
+    color: red !important;
+    animation: warning .3s ease;
+    animation-iteration-count: 3;
+}
+/* ↑↑↑ warning 클래스는 자바스크립트사용 ↑↑↑ */
+
+
+
+
+.input_area input:focus + label,
+.input_area input:valid + label {
+    top: 0;
+    font-size: 13px;
+    color: #166cea;
+}
+
+.btn_area {
+    margin-top: 30px;
+}
+
+.btn_area button{
+    width: 100%;
+    height: 50px;
+    background-color: #166cea;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
 }
