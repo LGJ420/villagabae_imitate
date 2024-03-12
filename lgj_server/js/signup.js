@@ -7,8 +7,9 @@ let email = $('#email');
 let signup_btn = $('#signup_btn');
 let id_btn = $('#id_btn');
 
-$(signup_btn).on('click', function() {
+$(signup_btn).on('click', function(event) {
     if($(id).val().length < 5) {
+        event.preventDefault();
         $(id).next('label').addClass('warning');
         setTimeout(function(){
             $('label').removeClass('warning');
@@ -47,9 +48,18 @@ $(signup_btn).on('click', function() {
 });
 
 
-$(signup_btn).on('click', function() {
+$(signup_btn).on('click', function(event) {
     if($(pw).val() != $(pw_check).val()) {
-        alert('비밀번호와 비밀번호 확인이 일치하지 않습니다.')
+        alert('비밀번호와 비밀번호 확인이 일치하지 않습니다.');
+        event.preventDefault();
+        $(pw).next('label').addClass('warning');
+        setTimeout(function(){
+            $('label').removeClass('warning');
+        },1500);
+        $(pw_check).next('label').addClass('warning');
+        setTimeout(function(){
+            $('label').removeClass('warning');
+        },1500);
     }
 });
 
