@@ -212,7 +212,7 @@ header {
     cursor: pointer;
 }
 .nav_top_ul>li>a {
-    margin: 0 15px;
+    /* margin: 0 5px; */
     padding: 20px;
     color: rgba(255, 255, 255);
     text-decoration: none;
@@ -241,7 +241,7 @@ header {
     display: flex;
     flex-direction: column;
     height: max-content;
-    width: 120px;
+    width: 100px;
 
     position: absolute;
     transition: 0.5s;
@@ -257,12 +257,12 @@ header {
 }
 .nav_deps>li>a {
     display: flex;
-    width: 100px;
+    width: 90px;
     padding: 15px;
     justify-content: left;
     align-items: center;
     font-size: 12px;
-    text-indent: 8px;
+    text-indent: -3px;
     text-decoration: none;
 }
 .nav_deps>li:hover {
