@@ -16,10 +16,11 @@
 </head>
 
 <body>
+
     <header>
         <div class="nav_box">
             <div class="logo_design">
-                <a href="../../ldh_server/about.html">logo</a>
+                <a href="../ngh_server/html/homepage.html">logo</a>
             </div>
             <nav class="nav_main_menu">
                 <ul class="nav_top_ul">
@@ -27,11 +28,11 @@
                         <a href="../../ldh_server/about.html">ABOUT</a>
                     </li>
                     <li>
-                        <a class="nemu_hover" href="../../nsb_server/rooms/G_room/G_room.html">ROOMS</a>
+                        <a class="nemu_hover" href="./rooms.html">ROOMS</a>
                         <ul class="nav_deps">
-                            <li><a href="#">G_room</a></li>
-                            <li><a href="#">H_room</a></li>
-                            <li><a href="#">O_room</a></li>
+                            <li><a href="../nsb_server/rooms/G_room/G_room.html">G_room</a></li>
+                            <li><a href="../nsb_server/rooms/H_room/H_room.html">H_room</a></li>
+                            <li><a href="../nsb_server/rooms/O_room/O_room.html">O_room</a></li>
                         </ul>
                     </li>
                     <li>
@@ -57,60 +58,243 @@
     </header>
 
     <section>
-        <div class="rooms">
-            <!-- room1 -->
-            <div class="tab_content">
-                <input type="radio" name="room1" id="tab1_1" checked>
-                <label for="tab1_1"></label>
-                <input type="radio" name="room1" id="tab1_2">
-                <label for="tab1_2"></label>
-                <input type="radio" name="room1" id="tab1_3">
-                <label for="tab1_3"></label>
-                <input type="radio" name="room1" id="tab1_4">
-                <label for="tab1_4"></label>
+        <div class="section_box">
 
-                <div class="conbox room1_1"></div>
-                <div class="conbox room1_2"></div>
-                <div class="conbox room1_3"></div>
-                <div class="conbox room1_4"></div>
+            <h2><strong>객 실</strong></h2>
+            <hr class="line">
+
+            <p>
+                호텔 파라다이스만의 예술적 품격을 갖춘 객실에서
+                격이 다른 휴식과 여유를 경험해 보세요.
+            </p>
+
+            <!-- G_Room =============================================================== -->
+
+            <h3>G_room</h3>
+
+            <p>예술적 감성과 아늑함을 동시에 느낄 수 있는 디럭스 객실</p>
+
+            <div class="room_box">
+                <div class="rooms_main">
+                    <!-- G_room -->
+                    <input type="radio" name="room1_main" id="sl1_1" checked>
+                    <input type="radio" name="room1_main" id="sl1_2">
+                    <input type="radio" name="room1_main" id="sl1_3">
+                    <input type="radio" name="room1_main" id="sl1_4">
+
+                    <ul class="room_list">
+                        <li class="room_item">
+                            <div>
+                                <label for="sl1_4" class="sl_left"></label>
+                                <label for="sl1_2" class="sl_right"></label>
+                                <a><img src="./team_image/room1_1.jpg" alt="room1_1"></a>
+                            </div>
+                        </li>
+                        <li class="room_item">
+                            <div>
+                                <label for="sl1_1" class="sl_left"></label>
+                                <label for="sl1_3" class="sl_right"></label>
+                                <a><img src="./team_image/room1_2.jpg" alt="room1_2"></a>
+                            </div>
+                        </li>
+                        <li class="room_item">
+                            <div>
+                                <label for="sl1_2" class="sl_left"></label>
+                                <label for="sl1_4" class="sl_right"></label>
+                                <a><img src="./team_image/room1_3.jpg" alt="room1_3"></a>
+                            </div>
+                        </li>
+                        <li class="room_item">
+                            <div>
+                                <label for="sl1_3" class="sl_left"></label>
+                                <label for="sl1_1" class="sl_right"></label>
+                                <a><img src="./team_image/room1_4.jpg" alt="room1_4"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="room_smallbox">
+                    <!-- 룸 정보 소개 -->
+                    <P>G_room</P>
+                    <p>
+                        <span>모던하면서 아늑한 인테리어와 편안한
+                            여유로움을 느낄 수 있는 디럭스 룸
+                        </span>
+                    </p>
+                    <hr>
+                    <div class="room_type">
+                        <p>면적</p>
+                        <p>45m<sup>2</sup></p>
+                        <p>인원</p>
+                        <p>성인 2인 기준</p>
+                        <p>베드타입</p>
+                        <p>KING / TWIN</p>
+                    </div>
+                </div>
+
+                <div class="room_go">
+                    <!-- 예약하기 버튼 -->
+                    <a href="../nsb_server/rooms/G_room/G_room.html">
+                        상세보기
+                        <img src="./team_image/button_right.png" alt="button">
+                    </a>
+                </div>
+
             </div>
 
-            <!-- room2 -->
-            <div class="tab_content">
-                <input type="radio" name="room2" id="tab2_1" checked>
-                <label for="tab2_1"></label>
-                <input type="radio" name="room2" id="tab2_2">
-                <label for="tab2_2"></label>
-                <input type="radio" name="room2" id="tab2_3">
-                <label for="tab2_3"></label>
-                <input type="radio" name="room2" id="tab2_4">
-                <label for="tab2_4"></label>
+            <!-- H_Room =============================================================== -->
 
-                <div class="conbox room2_1"></div>
-                <div class="conbox room2_2"></div>
-                <div class="conbox room2_3"></div>
-                <div class="conbox room2_4"></div>
+            <h3>H_room</h3>
+
+            <p>여유로운 휴식을 즐길 수 있는 우아한 감성의 스위트 객실</p>
+
+            <div class="room_box">
+                <div class="rooms_main main2">
+                    <!-- H_room -->
+                    <input type="radio" name="room2_main" id="sl2_1" checked>
+                    <input type="radio" name="room2_main" id="sl2_2">
+                    <input type="radio" name="room2_main" id="sl2_3">
+                    <input type="radio" name="room2_main" id="sl2_4">
+
+                    <ul class="room_list">
+                        <li class="room_item">
+                            <div>
+                                <label for="sl2_4" class="sl_left"></label>
+                                <label for="sl2_2" class="sl_right"></label>
+                                <a><img src="./team_image/room2_1.jpg" alt="room2_1"></a>
+                            </div>
+                        </li>
+                        <li class="room_item">
+                            <div>
+                                <label for="sl2_1" class="sl_left"></label>
+                                <label for="sl2_3" class="sl_right"></label>
+                                <a><img src="./team_image/room2_2.jpg" alt="room2_2"></a>
+                            </div>
+                        </li>
+                        <li class="room_item">
+                            <div>
+                                <label for="sl2_2" class="sl_left"></label>
+                                <label for="sl2_4" class="sl_right"></label>
+                                <a><img src="./team_image/room2_3.jpg" alt="room2_3"></a>
+                            </div>
+                        </li>
+                        <li class="room_item">
+                            <div>
+                                <label for="sl2_3" class="sl_left"></label>
+                                <label for="sl2_1" class="sl_right"></label>
+                                <a><img src="./team_image/room2_4.jpg" alt="room2_4"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="room_smallbox smallbox2">
+                    <!-- 룸 정보 소개 -->
+                    <P>H_room</P>
+                    <p>
+                        <span>
+                            편안한 분위기의 침실과 우아한 감성의 거실이 분리되어
+                            독립적 공간 활용이 매력적인 코너 스위트
+                        </span>
+                    </p>
+                    <hr>
+                    <div class="room_type">
+                        <p>면적</p>
+                        <p>68m<sup>2</sup></p>
+                        <p>인원</p>
+                        <p>성인 2인 기준</p>
+                        <p>베드타입</p>
+                        <p>KING</p>
+                    </div>
+                </div>
+
+                <div class="room_go room_go2">
+                    <!-- 예약하기 버튼 -->
+                    <a href="../nsb_server/rooms/H_room/H_room.html">
+                        상세보기
+                        <img src="./team_image/button_right.png" alt="button">
+                    </a>
+                </div>
+
             </div>
 
-            <!-- room3 -->
-            <div class="tab_content">
-                <input type="radio" name="room3" id="tab3_1" checked>
-                <label for="tab3_1"></label>
-                <input type="radio" name="room3" id="tab3_2">
-                <label for="tab3_2"></label>
-                <input type="radio" name="room3" id="tab3_3">
-                <label for="tab3_3"></label>
-                <input type="radio" name="room3" id="tab3_4">
-                <label for="tab3_4"></label>
+            <!-- O_Room =============================================================== -->
 
-                <div class="conbox room3_1"></div>
-                <div class="conbox room3_2"></div>
-                <div class="conbox room3_3"></div>
-                <div class="conbox room3_4"></div>
+            <h3>O_room</h3>
+
+            <p>프라이빗하게 즐길 수 있어 자유롭고 힐링 가득한 고급 풀빌라</p>
+
+            <div class="room_box">
+                <div class="rooms_main">
+                    <!-- O_room -->
+                    <input type="radio" name="room3_main" id="sl3_1" checked>
+                    <input type="radio" name="room3_main" id="sl3_2">
+                    <input type="radio" name="room3_main" id="sl3_3">
+                    <input type="radio" name="room3_main" id="sl3_4">
+
+                    <ul class="room_list">
+                        <li class="room_item">
+                            <div>
+                                <label for="sl3_4" class="sl_left"></label>
+                                <label for="sl3_2" class="sl_right"></label>
+                                <a><img src="./team_image/room3_1.jpg" alt="room3_1"></a>
+                            </div>
+                        </li>
+                        <li class="room_item">
+                            <div>
+                                <label for="sl3_1" class="sl_left"></label>
+                                <label for="sl3_3" class="sl_right"></label>
+                                <a><img src="./team_image/room3_2.jpg" alt="room3_2"></a>
+                            </div>
+                        </li>
+                        <li class="room_item">
+                            <div>
+                                <label for="sl3_2" class="sl_left"></label>
+                                <label for="sl3_4" class="sl_right"></label>
+                                <a><img src="./team_image/room3_3.jpg" alt="room3_3"></a>
+                            </div>
+                        </li>
+                        <li class="room_item">
+                            <div>
+                                <label for="sl3_3" class="sl_left"></label>
+                                <label for="sl3_1" class="sl_right"></label>
+                                <a><img src="./team_image/room3_4.jpg" alt="room3_4"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="room_smallbox">
+                    <!-- 룸 정보 소개 -->
+                    <P>O_room</P>
+                    <p>
+                        <span>
+                            고급스러운 색채와 감각적인 분위기를 지닌
+                            풀빌라의 정석, 디럭스 풀빌라
+                        </span>
+                    </p>
+                    <hr>
+                    <div class="room_type">
+                        <p>면적</p>
+                        <p>457m<sup>2</sup></p>
+                        <p>인원</p>
+                        <p>성인 2인 기준</p>
+                        <p>베드타입</p>
+                        <p>KING</p>
+                    </div>
+                </div>
+
+                <div class="room_go">
+                    <!-- 예약하기 버튼 -->
+                    <a href="../nsb_server/rooms/O_room/O_room.html">
+                        상세보기
+                        <img src="./team_image/button_right.png" alt="button">
+                    </a>
+                </div>
+
             </div>
         </div>
-
-        <div class="room_go"><a href="#">둘러보기</a></div>
     </section>
 
     <footer>
