@@ -27,19 +27,20 @@ footer {
 
 /* section 디자인 ========================================================= */
 
+
 @keyframes opacity {
     from {
         opacity: 0;
     }
 }
 
-.section_box {
-    width: calc(1920px * .8);
-}
-
 ::selection {
     background: #705b43;
     color: white;
+}
+
+.section_box {
+    width: calc(1920px * .8);
 }
 
 /* ========================================================== */
@@ -58,7 +59,8 @@ footer {
     background-repeat: no-repeat;
     cursor: pointer;
     position: relative;
-    left: 195px;
+    left: 200px;
+    top: 540px;
 }
 
 .conbox {
@@ -162,33 +164,35 @@ input[id="tab3_4"]:checked~.room3_4 {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.room_go {
-    text-align: center;
-    margin-top: 70px;
-    height: 130px;
-}
-
 .room_go a {
     font-family: "Nanum Myeongjo", serif;
     font-style: normal;
     letter-spacing: 1px;
     font-weight: bolder;
-    font-size: 20px;
-    text-decoration: none;
-
     color: rgb(117, 97, 72);
     opacity: .5;
+}
+
+.room_go a {
     display: inline-block;
     border: 1px solid;
     text-align: center;
     width: 300px;
     line-height: 70px;
     margin: auto;
+
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .room_go a:hover {
     opacity: 1;
 }
 
+.room_go {
+    text-align: center;
+    margin-top: 80px;
+    height: 130px;
+}
 
 /* section 디자인 ========================================================= */
