@@ -110,8 +110,10 @@ section {
     line-height: 50px;
 }
 .btn_box a {
+    padding: 18px 40px;
     text-decoration: none;
     color: whitesmoke;
+    cursor: pointer;
     font-size: 14px;
 }
 /* ↑↑↑ section 내용 디자인 설정 ↑↑↑ */
