@@ -271,6 +271,7 @@ input[id="tab3_4"]:checked~.room3_4 {
 
     font-size: 20px;
     text-decoration: none;
+    letter-spacing: 5px;
 }
 
 .room_go a:hover {

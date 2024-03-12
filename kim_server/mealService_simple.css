@@ -36,7 +36,7 @@ section {
     background-color: white;
 }
 
-.contitle {
+.contitle{
     font-size: 30px;
     font-weight: 100;
     line-height: 40px;
@@ -50,22 +50,13 @@ section {
     font-size: 20px;
     color: rgba(223, 190, 106);
 }
-.pictureBox{
-    border: 1px solid blue;
-    display: grid;
-    justify-content: center;
-}
-
-.textBox{
-    border: 1px solid red;
-}
 
 .pictureMore input[id*="slide"] {
     display: none;
 }
 
 .pictureMore .slidewrap {
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -133,6 +124,17 @@ section {
     cursor: pointer;
 }
 
+.textBox{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.text {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
 .underList {
     padding: 30px;
     display: flex;
@@ -152,26 +154,13 @@ section {
     border-radius: 50%;
 }
 
-.cautionBox+h2 {
-    font-size: 14px;
-}
-
 .cautionBox {
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
-    /* width: 100%; */
-    padding-bottom: 100px;
-    /* padding-left: 170px; */
-    width: calc(100vw * 0.8);
-    /* border: 1px solid red; */
-    max-width: calc(100% * 0.8);
+    padding-bottom: 100px;   
 }
 
-.cautionBox1 {
-    border: 1px solid rgba(223, 190, 106);
-    /* box-sizing: border-box; */
-}
-
+.cautionBox1,
 .cautionBox2 {
     border: 1px solid rgba(223, 190, 106);
 }
@@ -179,7 +168,6 @@ section {
 h3 {
     padding-left: 50px;
     padding-top: 30px;
-    /* padding-bottom: 30px; */
 }
 
 h3+p {
