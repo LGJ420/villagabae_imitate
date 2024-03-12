@@ -1,3 +1,4 @@
+/* ============================ ↓↓↓ 디폴트 ↓↓↓ ============================================*/
 * {
     margin: 0;
     padding: 0;
@@ -31,8 +32,9 @@ footer {
     margin: auto;
 }
 
-/*======================================================================*/
-/* main */
+/* ============================ ↑↑↑ 디폴트 ↑↑↑ ============================================*/
+
+/* ============================ ↓↓↓ 메인 ↓↓↓ ============================================*/
 .lgj_section {
     display: flex;
     justify-content: center;
@@ -52,7 +54,7 @@ footer {
     margin-bottom: 50px;
 }
 
-
+/* ↓↓↓ input ↓↓↓ */
 
 .input_area {
     width: 400px;
@@ -92,8 +94,9 @@ input::placeholder {
     cursor: pointer;
     color: white;
 }
+/* ↑↑↑ input ↑↑↑ */
 
-
+/* ↓↓↓ 경고 효과 ↓↓↓ */
 @keyframes warning {
     0% {
         transform: translateX(-8px);
@@ -109,28 +112,23 @@ input::placeholder {
     }
 }
 
-
-
-
-/* ↓↓↓ warning 클래스는 자바스크립트사용 ↓↓↓ */
 .input_area label.warning {
     color: red !important;
     animation: warning .3s ease;
     animation-iteration-count: 3;
 }
-/* ↑↑↑ warning 클래스는 자바스크립트사용 ↑↑↑ */
+/* ↑↑↑ 경고효과 ↑↑↑ */
 
-
-
-
+/* ↓↓↓ input 클릭효과 ↓↓↓ */
 .input_area input:focus + label,
 .input_area input:valid + label {
     top: 0;
     font-size: 13px;
     color: #166cea;
 }
+/* ↑↑↑ input 클릭효과 ↑↑↑ */
 
-
+/* ↓↓↓ 가입버튼 ↓↓↓ */
 .btn_area {
     margin-top: 30px;
 }
@@ -145,3 +143,5 @@ input::placeholder {
     border-radius: 25px;
     cursor: pointer;
 }
+
+/* ↑↑↑ 가입버튼 ↑↑↑ */

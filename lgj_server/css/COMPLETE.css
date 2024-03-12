@@ -1,3 +1,4 @@
+/* ============================ ↓↓↓ 디폴트 ↓↓↓ ============================================*/
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +25,10 @@ body::before {
     z-index: -1;
 }
 
+hr {
+    display: block;
+}
+
 header,
 section,
 footer {
@@ -31,9 +36,9 @@ footer {
 }
 
 
+/* ============================ ↑↑↑ 디폴트 ↑↑↑ ============================================*/
 
-/*======================================================================*/
-/* main */
+/* ============================ ↓↓↓ 메인 ↓↓↓ ============================================*/
 section {
     background-color: white;
 }
@@ -48,19 +53,18 @@ section * {
     margin: auto;
     max-height: 100%;
     min-height: 75vh;
-    width: calc(1920px * .8);
+    width: 80%;
+    max-width: calc(1920px * 0.8);
     display: flex;
     align-items: center;
 }
-
 
 .main_back {
     position: relative;
 }
 
-hr {
-    display: block;
-}
+
+/* ↓↓↓ 메인 탑 ↓↓↓ */
 
 .main_top {
     text-indent: 30px;
@@ -72,7 +76,9 @@ hr {
     text-align: left;
     font-size: 50px;
 }
+/* ↑↑↑ 메인 탑 ↑↑↑ */
 
+/* ↓↓↓ 메인 미들 ↓↓↓ */
 .main_middle {
     display: flex;
     width: 100%;
@@ -93,6 +99,7 @@ hr {
     border-bottom: 1px solid;
 }
 
+/* ↓↓↓ 결제표 ↓↓↓ */
 table {
     border-collapse: collapse;
 }
@@ -129,6 +136,9 @@ col:last-child {
     width: 1000px;
 }
 
+/* ↑↑↑ 결제표 ↑↑↑ */
+
+/* ↓↓↓ 버튼 ↓↓↓ */
 .button{
     text-align: center;
 }
@@ -159,9 +169,5 @@ col:last-child {
 .button>div:last-child>a:visited{
     color: white;
 }
-
-.main_bottom {
-    position: absolute;
-    right: 5%;
-    top: 0;
-}
+/* ↑↑↑ 버튼 ↑↑↑ */
+/* ↑↑↑ 메인 미들 ↑↑↑ */
