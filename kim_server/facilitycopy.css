@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    /* border: 1px red solid;
-    box-sizing: border-box;
-    padding: 3px; */
 }
 
 body {
@@ -39,42 +36,52 @@ section {
     background-color: white;   
 }
 
+.section_box {
+    border: 1px solid rgb(7, 7, 7, 0);
+    box-sizing: border-box;
+
+    margin: auto;
+    max-width: calc(1920px * .8);
+    width: 100%;
+}
+
+.picture {
+    display: flex;
+    flex-direction: column;
+}
+
+.picture h2{
+}
+
+img {
+    width: 100%;
+}
 .pic {
+    height: 75vh;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    height: 75vh;
+    gap: 10px;
 }
 
 @media (max-width: 960px) {
     .pic {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-    }
-
-    .pic>div {
-        display: flex;
-        align-items: center;
-    }
-
-    .picture1 {
-        position: relative;
-    }
-
-    .picture2 {
-        position: relative;
+        grid-template-columns: repeat(2,1fr) ;
+        grid-template-rows: repeat(auto-fit,1fr);
     }
 }
 
-.pic>div{
+.pic div{
+    width: 100%;
+
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
 }
 
-div>img {    
-    height: 225px; 
+.pic div img {    
+    width: 100%;
     cursor: pointer;
 }
 
@@ -82,11 +89,12 @@ div>img {
     text-align: center;
 }
 
-div>img:hover,
+.pic div img:hover,
 .ser:hover {
     scale: 1.2;
     transition: all 0.5s;
 }
+
 span{
     font-size: 14px;
 }
@@ -95,6 +103,7 @@ a {
     text-decoration: none;
     color: black;
 }
+
 p>a:visited {
     text-decoration: none;
     color: black;
