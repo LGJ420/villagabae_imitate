@@ -3,30 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-
-    <link rel="stylesheet" href="../../baseform_sub.css">
-    <link rel="stylesheet" href="../css/SIGNUP_next.css">
-
-
-    <title>COMPLETE</title>
-
-    
+    <title>Baseform(header, footer)+login_modal</title>
 </head>
+
+<link rel="stylesheet" href="../css/baseform_sub.css">
+<!-- ↓↓↓ 각자의 html에 login.css 링크 걸어야 함 ↓↓↓ -->
+<link rel="stylesheet" href="./login.css">
+<!-- ↑↑↑ 각자의 html에 login.css 링크 걸어야 함 ↑↑↑ -->
 
 <body>
     <header>
         <div class="nav_box">
             <div class="logo_design">
-                <a href="./homepage.html">logo</a>
+                <a href="../html/homepage.html">logo</a>
+            </div>
+            <div class="login_join_menu">
+                <div class="nav_top_ul">
+                    <li>
+                        <!-- ============================ ↓↓↓ 변경 사항 ↓↓↓ ============================================ -->
+                        
+                        <!-- ↓↓↓ 변경 전 ↓↓↓ -->
+                        <!-- <a href="#">login</a> -->
+                        <!-- ↑↑↑ 변경 전 ↑↑↑ -->
+                        
+                        <!-- ↓↓↓ 변경 후 ↓↓↓ -->
+                        <div class="modal">
+                            <input type="checkbox" id="modal_login">
+                            <label for="modal_login">로그인</label>
+                            <div class="modal_box">
+                                <label for="modal_login">×</label>
+                                <div>
+                                    <h2>로그인</h2>
+                                    <hr>
+                                    <div class="info">
+                                        <form action="#" >
+                                            <input type="text" placeholder="아이디" required>
+                                            <input type="password" placeholder="비밀번호" required>
+                                            <button>로그인</button>
+                                        </form>
+                                    </div>
+                                    <hr>
+                                    <p>
+                                        <a href="">아이디 찾기</a>
+                                        <a href="">비밀번호 찾기</a>
+                                        <a href="">회원가입</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 로그인(모달) 열었을 때 배경 오퍼시티 -->
+                            <div class="modal_bg"></div>
+                        </div>
+                        <!-- ↑↑↑ 변경 후 ↑↑↑ -->
+
+                        <!--  ============================ ↑↑↑ 변경 사항 ↑↑↑ ============================================ -->
+                    </li>
+                    <li>
+                        <a href="#">Join</a>
+                    </li>
+                </div>
             </div>
             <nav class="nav_main_menu">
                 <ul class="nav_top_ul">
@@ -62,37 +96,11 @@
             </nav>
         </div>
     </header>
-
-
-
-
-
-
     <section>
         <div class="section_box">
-            <div class="lgj_section">
-                <div class="section_header">
-                    <img src="../images/valid.png">
-                </div>
-                <div class="section_main">
-                    <h1>회원가입 완료</h1>
-                    <p>회원가입이 완료되었습니다!
-이제 빌라가배의 다양한 서비스를 이용하실 수 있습니다.
-                    </p>
-                </div>
-                <div class="section_footer">
-                    <a href="../../ngh_server/html/homepage.html">돌아가기</a>
-                    <a href="">로그인</a>
-                </div>
-            </div>
+        시작하세요!!
         </div>
     </section>
-
-
-
-
-
-
     <footer>
         <div class="footer_box">
             <div class="Business_infor">
