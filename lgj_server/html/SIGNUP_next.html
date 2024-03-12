@@ -15,9 +15,9 @@
 
     <link rel="stylesheet" href="../../baseform_sub.css">
     <link rel="stylesheet" href="../css/SIGNUP_next.css">
+    <link rel="stylesheet" href="../css/login_modal.css">
 
-
-    <title>COMPLETE</title>
+    <title>빌라가배 - 회원가입 완료</title>
 
     
 </head>
@@ -82,7 +82,32 @@
                 </div>
                 <div class="section_footer">
                     <a href="../../ngh_server/html/homepage.html">돌아가기</a>
-                    <a href="">로그인</a>
+                    <div class="modal">
+                        <input type="checkbox" id="modal_login">
+                        <label for="modal_login">로그인</label>
+                        <div class="modal_box">
+                            <label for="modal_login">×</label>
+                            <div>
+                                <h2>로그인</h2>
+                                <hr>
+                                <div class="info">
+                                    <form action="#" >
+                                        <input type="text" placeholder="아이디" required>
+                                        <input type="password" placeholder="비밀번호" required>
+                                        <button>로그인</button>
+                                    </form>
+                                </div>
+                                <hr>
+                                <p>
+                                    <a href="">아이디 찾기</a>
+                                    <a href="">비밀번호 찾기</a>
+                                    <a href="../../../lgj_server/html/SIGNUP.html">회원가입</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 로그인(모달) 열었을 때 배경 오퍼시티 -->
+                        <div class="modal_bg"></div>
+                    </div>
                 </div>
             </div>
         </div>
