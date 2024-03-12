@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    height: 100vh;
+    width: 100%;
+}
+body::before {
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/background4.jpg) no-repeat center/cover;
+    position: fixed;
+    z-index: -1;
+}
+header,
+section,
+footer {
+    margin: auto;
+}
+
+/* ============================ ↓↓↓ section ↓↓↓ ============================================*/
+/* ↓↓↓ section 내용 디자인 설정 ↓↓↓ */
+section {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    max-height: max-content;
+    min-height: 90vh;
+    background-color: white;
+}
+
+.section_box {
+    border: 1px solid rgb(7, 7, 7, 0);
+    box-sizing: border-box;
+
+    margin: auto;
+    max-height: 100%;
+    min-height: 75vh;
+    max-width: calc(1920px * .8);
+}
+
+.jeju_guide_box {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 80px;
+}
+
+/* ↓↓↓ 슬라이드 기능 추가 ↓↓↓ */
+[name="slide"] {display: none;} 
+.slidebox {position: relative; width:600px; }
+.slidebox img {
+    margin-top: 40px;
+    object-fit: cover; 
+    max-width: 100%;
+    height: 500px;
+    box-shadow: 10px 10px 20px 0px gray;
+}
+.slidebox .slidelist {
+    white-space: nowrap;
+    font-size:0;
+    overflow:hidden;
+}
+
+/* 체크박스 스타일 지정 */
+.jeju_map label {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+.jeju_map>label em {
+    border: 2px solid red;
+    box-sizing: border-box;
+
+    display: flex;
+    position: absolute;
+    line-height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    padding: 10px;
+    opacity: .7;
+    width: 10px;
+    height: 10px;
+}
+.jeju_map label[for="slide01"] {bottom: 190px;left: 205px;z-index: 1;}
+.jeju_map label[for="slide02"] {bottom: 335px;left: 525px;z-index: 1;}
+.jeju_map label[for="slide03"] {bottom: 185px;left: 120px;z-index: 1;}
+.jeju_map label[for="slide04"] {bottom: 200px;left: 340px;z-index: 1;}
+.jeju_map label[for="slide05"] {bottom: 235px;left: 165px;z-index: 1;}
+.jeju_map label[for="slide06"] {bottom: 190px;left: 300px;z-index: 1;}
+
+input[id*="slide01"]:checked ~ .labelbox label[for*="slide01"] em ,
+input[id*="slide02"]:checked ~ .labelbox label[for*="slide02"] em,
+input[id*="slide03"]:checked ~ .labelbox label[for*="slide03"] em,
+input[id*="slide04"]:checked ~ .labelbox label[for*="slide04"] em,
+input[id*="slide05"]:checked ~ .labelbox label[for*="slide05"] em,
+input[id*="slide06"]:checked ~ .labelbox label[for*="slide06"] em {
+    background-color: white;
+    opacity: 1;
+}
+
+/* 체크박스 스타일 지정 */
+.slidebox .slideitem {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .35s;
+}
+.slidebox .slideitem label {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0);}
+[id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);}
+[id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%);}
+[id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);}
+[id="slide05"]:checked ~ .slidelist .slideitem {transform:translateX(-400%);}
+[id="slide06"]:checked ~ .slidelist .slideitem {transform:translateX(-500%);}
+
+/* ↑↑↑ "작은" 주석 양식 ↑↑↑ */
+
+/* ↓↓↓ 이미지 테투리 효과 ↓↓↓ */
+.jeju_map {
+    position: relative;
+    display: inline-block;
+    width: 600px;
+    height: 600px;
+}
+.jeju_map img {
+    max-width: 100%;
+    box-shadow: 10px 10px 20px 0px gray;
+}
+.jeju_map::before, .jeju_map::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 95%;
+    height: 95%;
+    transform: translate(-50%, -50%);
+    transition: all .8s;
+}
+.jeju_map::before {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    width: 0;
+}
+.jeju_map::after {
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    height: 0;
+}
+.jeju_map:hover span.text {display: block;}
+.jeju_map:hover::before {width:95%;}
+.jeju_map:hover::after {height:95%;}
+/* ↑↑↑ 이미지 테투리 효과 ↑↑↑ */
+
+/* ↓↓↓ 여행지 페이지 탭 ↓↓↓ */
+.tab_content_name {
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 10%;
+}
+.tab_content_name label {
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #666;
+    font-size: 10%;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[id="slide01"]:hover ~ .tab_content_name label[for="slide01"], 
+input[id="slide02"]:hover ~ .tab_content_name label[for="slide02"], 
+input[id="slide03"]:hover ~ .tab_content_name label[for="slide03"], 
+input[id="slide04"]:hover ~ .tab_content_name label[for="slide04"], 
+input[id="slide05"]:hover ~ .tab_content_name label[for="slide05"], 
+input[id="slide06"]:hover ~ .tab_content_name label[for="slide06"] {
+    color: #00a9ba;;
+    transition: all 0.5s;
+}
+input[id="slide01"]:checked ~ .tab_content_name label[for="slide01"], 
+input[id="slide02"]:checked ~ .tab_content_name label[for="slide02"], 
+input[id="slide03"]:checked ~ .tab_content_name label[for="slide03"], 
+input[id="slide04"]:checked ~ .tab_content_name label[for="slide04"], 
+input[id="slide05"]:checked ~ .tab_content_name label[for="slide05"], 
+input[id="slide06"]:checked ~ .tab_content_name label[for="slide06"] {
+    background:#fff;color: #000;
+    transition: all 0.35s;
+}
+/* ↑↑↑ 여행지 페이지 탭 ↑↑↑ */
+
+/* ↑↑↑ section 내용 디자인 설정 ↑↑↑ */
+/* ============================ ↑↑↑ section ↑↑↑ ============================================*/7
