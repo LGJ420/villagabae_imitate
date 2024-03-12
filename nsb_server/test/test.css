@@ -101,16 +101,12 @@
 /* ↑↑↑ 로그인(모달) ↑↑↑ */
 
 /* ↓↓↓ 로그인(모달) 열기&닫기 ↓↓↓ */
-.modal input[type="checkbox"]:checked ~ .modal_box{
-    display: block;
-}
-
 .modal input[type="checkbox"]:checked ~ .modal_box .login{
     display: block;
 }
 
-.modal input[type="checkbox"]:checked ~ .modal_box .id_serch,
-.modal input[type="checkbox"]:checked ~ .modal_box .pw_serch {
+.modal input[id="id_serch"]:checked ~ .modal_box .id_serch,
+.modal input[id="pw_serch"]:checked ~ .modal_box .pw_serch {
     display: none;
 }
 /* ↑↑↑ 로그인(모달) 열기&닫기 ↑↑↑ */
@@ -140,8 +136,7 @@
     display: block;
 }
 
-.modal .modal_box div input[id="id_serch"]:checked ~ .login,
-.modal .modal_box div input[id="id_serch"]:checked ~ .login {
+.modal .modal_box div input[id="id_serch"]:checked ~ .login{
     display: none;
 }
 /* ============================ ↑↑↑ 아이디 찾기 모달팝업 ↑↑↑ ============================================*/
@@ -155,8 +150,7 @@
     display: block;
 }
 
-.modal .modal_box div input[id="pw_serch"]:checked ~ .login,
-.modal .modal_box div input[id="pw_serch"]:checked ~ .pw_serch{
+.modal .modal_box div input[id="pw_serch"]:checked ~ .login{
     display: none;
 }
 /* ============================ ↑↑↑ 비밀번호 찾기 모달팝업 ↑↑↑ ============================================*/
