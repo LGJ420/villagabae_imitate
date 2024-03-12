@@ -33,10 +33,8 @@ footer {
     }
 }
 
-section {
-    min-height: 75vh;
-    max-height: max-content;
-    background-color: white;
+.section_box {
+    width: calc(1920px * .8);
 }
 
 ::selection {
@@ -164,46 +162,33 @@ input[id="tab3_4"]:checked~.room3_4 {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.room_box,
+.room_go {
+    text-align: center;
+    margin-top: 70px;
+    height: 130px;
+}
+
 .room_go a {
     font-family: "Nanum Myeongjo", serif;
     font-style: normal;
     letter-spacing: 1px;
     font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+
     color: rgb(117, 97, 72);
     opacity: .5;
-}
-
-.room_box {
-    position: absolute;
-    margin-left: 200px;
-    margin-top: -280px;
-    font-size: 30px;
-    background-color: rgb(241, 235, 223);
-    border-radius: 30% 0;
-    padding: 3px 17px;
-}
-
-.room_go a {
     display: inline-block;
     border: 1px solid;
     text-align: center;
     width: 300px;
     line-height: 70px;
     margin: auto;
-
-    font-size: 20px;
-    text-decoration: none;
 }
 
 .room_go a:hover {
     opacity: 1;
 }
 
-.room_go {
-    text-align: center;
-    margin-top: 70px;
-    height: 130px;
-}
 
 /* section 디자인 ========================================================= */

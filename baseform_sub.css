@@ -40,11 +40,13 @@ header {
     background-color: transparent;
     justify-content: center;
 }
+
 .nav_box {
     display: flex;
     width: calc(1920px * .8);
     padding: 0 15px;
 }
+
 /* ↓↓↓ 좌측 상단 메인로고 설정 ↓↓↓ */
 .logo_design {
     display: flex;
@@ -61,6 +63,7 @@ header {
     width: 50%;
     text-indent: -9999em;
 }
+
 /* ↑↑↑ 좌측 상단 메인로고 설정 ↑↑↑ */
 /* ↓↓↓ NAV 메뉴 설정 ↓↓↓*/
 .nav_main_menu {
@@ -69,24 +72,29 @@ header {
     width: 100%;
     justify-content: end;
 }
+
 .nav_top_ul {
     display: flex;
-    height: 120px;
-    margin-top: 20px;
-    justify-content: center;
+    height: 60px;
+    margin-top: 10px;
+    
     position: fixed;
 }
+
 .nav_top_ul>li {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     width: max-content;
     height: max-content;
     cursor: pointer;
 }
+
 .nav_top_ul>li>a {
     padding: 20px;
     color: rgba(255, 255, 255);
     text-decoration: none;
 }
+
 .nav_top_ul>li>a:hover {
     color: rgb(95, 95, 95);
 }
@@ -96,39 +104,57 @@ header {
 .nav_deps {
     visibility: none;
     opacity: 0;
+    position: absolute;
+    top:50px;
 }
+
 .nav_top_ul>li:hover .nav_deps {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: max-content;
-    width: 120px;
-    margin-top: 20px;
-    margin-left: 20px;
+    width: 100px;
     opacity: 1;
 
     transition: 0.5s;
     position: absolute;
 }
+
 .nav_deps>li {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
     background-color: white;
-    padding: 10px 0 10px 15px;
+    /* padding: 10px 0 10px 15px; */
     color: rgb(76, 78, 76);
     cursor: pointer;
 }
+
 .nav_deps>li>a {
+    display: flex;
+    width: 90px;
+    padding: 15px;
+    justify-content: left;
+    align-items: center;
     font-size: 12px;
+    text-indent: -3px;
     text-decoration: none;
 }
+
 .nav_deps>li:hover {
     transition: all 0.35s;
     background-color: rgb(237, 230, 223);
 }
+
 .nav_deps>li>a {
     color: rgb(35, 35, 35);
 }
-.nav_deps>li:hover a{
+
+.nav_deps>li:hover a {
     color: white;
 }
+
 /* ↑↑↑ 2차 메뉴(deps 영역) ↑↑↑ */
 /* ============================ ↑↑↑ header ↑↑↑ ============================================*/
 
@@ -143,6 +169,7 @@ section {
     min-height: 75vh;
     background-color: white;
 }
+
 .section_box {
     border: 1px solid rgb(7, 7, 7, 0);
     box-sizing: border-box;
@@ -171,17 +198,20 @@ footer {
     justify-content: center;
     align-content: center;
 }
+
 .footer_box {
     display: flex;
     width: calc(1920px * .8);
     margin: 0 15px;
 }
+
 /* ↓↓↓ biz 정보 디자인 설정 ↓↓↓*/
 .Business_infor {
     display: flex;
     width: 50%;
     height: 200px;
 }
+
 .Business_item {
     display: flex;
     flex-direction: column;
@@ -190,6 +220,7 @@ footer {
     width: 100%;
     margin: 10px 0;
 }
+
 /* ↑↑↑ biz 정보 디자인 설정 ↑↑↑ */
 /* ↓↓↓ footer nav 설정 ↓↓ ↓*/
 .nav_footer_menu {
@@ -198,22 +229,27 @@ footer {
     width: 50%;
     height: 50px;
 }
+
 .nav_bottom_ul {
     display: flex;
     margin: 10px 0;
     text-align: right;
 }
+
 .nav_bottom_ul li {
     display: inline-block;
     margin: 0 20px;
 }
+
 .nav_bottom_ul li a {
     display: block;
     text-decoration: none;
     color: rgb(95, 95, 95);
 }
+
 .nav_bottom_ul>li>a:hover {
     color: black;
 }
+
 /* ↑↑↑ footer nav 설정 ↑↑↑ */
 /* ============================ ↑↑↑ footer ↑↑↑ ============================================*/
