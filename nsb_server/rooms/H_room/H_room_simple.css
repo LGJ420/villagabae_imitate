@@ -5,8 +5,7 @@
     box-sizing: border-box;
 } */
 
-/* =========기본 세팅============== */
-
+/* ============================ ↓↓↓ 기본 세팅 ↓↓↓ ============================================*/
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +18,9 @@ body {
     width: 100%;
 }
 
-body * {
+/* body * {
     box-sizing: border-box;
-}
+} */
 
 body::before {
     content: "";
@@ -52,9 +51,11 @@ em {
     padding: 10px 0;
     color: white;
 }
+/* ============================ ↑↑↑ 기본 세팅 ↑↑↑ ============================================*/
 
-/* ============메인============================ */
 
+/* ============================ ↓↓↓ 섹션 ↓↓↓ ============================================*/
+/* ↓↓↓ 섹션 세팅 ↓↓↓ */
 section {
     max-height: max-content;
     background-color: white;
@@ -81,8 +82,9 @@ section {
 .section_box>div {
     margin: 20px 0;
 }
+/* ↑↑↑ 섹션 세팅 ↑↑↑ */
 
-/* 객실 설명 */
+/* ↓↓↓ 객실 설명 ↓↓↓ */
 .room_exp {
     display: flex;
     flex-wrap: wrap;
@@ -96,8 +98,9 @@ section {
 .room_exp *:not(h2) {
     padding-left: 50px;
 }
+/* ↑↑↑ 객실 설명 ↑↑↑ */
 
-/* 객실 사진 */
+/* ↓↓↓ 객실 사진 ↓↓↓ */
 .room_img {
     display: flex;
     flex-wrap: wrap;
@@ -114,22 +117,22 @@ input[type="radio"]{
     max-width: calc(1920px * 0.8 * 0.6);
 }
 
-.room_img_box img {
+/* .room_img_box img {
     display: flex;
-}
+} */
 
 .room_img_tab {
     display: flex;
 }
 
 label[for*="tab"] {
-    display: inline-block;
+    /* display: inline-block; */
     cursor: pointer;
-    width: 50%;
+    width: 100%;
     max-width: 100px;
 
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 @keyframes opacity {
@@ -162,8 +165,9 @@ input[id="tab08"]:checked ~ .room_img_tab label[for="tab08"],
 input[id="tab09"]:checked ~ .room_img_tab label[for="tab09"] {
     border: 5px solid rgba(146,111,52,0.8);
 }
+/* ↑↑↑ 객실 사진 ↑↑↑ */
 
-/* 상세 정보 */
+/* ↓↓↓ 상세 정보 ↓↓↓ */
 .room_expDetail{
     display: flex;
     flex-wrap: wrap;
@@ -194,8 +198,9 @@ input[id="tab09"]:checked ~ .room_img_tab label[for="tab09"] {
     content: "▶";
     font-size: 13px;
 }
+/* ↑↑↑ 상세 정보 ↑↑↑ */
 
-/* 안내사항 */
+/* ↓↓↓ 안내 사항 ↓↓↓ */
 .notice{
     display: flex;
     flex-wrap: wrap;
@@ -221,9 +226,9 @@ input[id="tab09"]:checked ~ .room_img_tab label[for="tab09"] {
     content: "▶";
     font-size: 13px;
 }
+/* ↑↑↑ 안내 사항 ↑↑↑ */
 
-/* 예약하기 버튼 */
-
+/* ↓↓↓ 예약하기 버튼 ↓↓↓ */
 .btn {
     display: flex;
     justify-content: center;
@@ -253,8 +258,9 @@ input[id="tab09"]:checked ~ .room_img_tab label[for="tab09"] {
     color: white;
     background-position: 99% 50%;
 }
+/* ↑↑↑ 예약하기 버튼 ↑↑↑ */
 
-/* 서비스 */
+/* ↓↓↓ 서비스 ↓↓↓ */
 .service {
     display: flex;
     flex-wrap: wrap;
@@ -288,8 +294,9 @@ input[id="tab09"]:checked ~ .room_img_tab label[for="tab09"] {
     justify-content: center;
     text-align: center;
 }
+/* ↑↑↑ 서비스 ↑↑↑ */
 
-/* 다른 객실 */
+/* ↓↓↓ 다른 객실 ↓↓↓ */
 .other_room {
     display: flex;
     flex-wrap: wrap;
@@ -323,3 +330,5 @@ input[id="tab09"]:checked ~ .room_img_tab label[for="tab09"] {
     justify-content: center;
     text-align: center;
 }
+/* ↑↑↑ 다른 객실 ↑↑↑ */
+/* ============================ ↑↑↑ 섹션 세팅 ↑↑↑ ============================================*/
