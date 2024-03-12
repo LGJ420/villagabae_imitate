@@ -130,7 +130,7 @@ label[for*="tab"] {
     cursor: pointer;
     width: 100%;
     max-width: 100px;
-
+    
     display: flex;
     /* align-items: center; */
 }
