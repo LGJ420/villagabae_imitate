@@ -1,8 +1,8 @@
 /* 임시용 */
-/* body * {
+body * {
     border: 1px solid red;
     padding: 1px;
-} */
+}
 
 /* ============================ ↓↓↓ 모달 기본 설정 ↓↓↓ ============================================*/
 .modal * {
@@ -14,6 +14,7 @@
     cursor: auto;
     text-decoration: none;
 }
+
 /* ============================ ↑↑↑ 모달 기본 설정 ↑↑↑ ============================================*/
 
 
@@ -56,13 +57,14 @@
     color: black;
 }
 
-.modal_box label[for="modal_login"] {
+.modal_box>div>a {
     font-size: 1.5em;
     padding: 10px 10px;
     
     position: absolute;
     top: 0;
     right: 0;
+    cursor: pointer;
 }
 
 .modal_box hr {
@@ -89,18 +91,23 @@
     background-color: rgba(146,111,52,0.8);
 }
 
-.modal_box div p {
+.modal_box div {
     display: flex;
     justify-content: space-evenly;
 }
 
-.modal_box div p a {
+.modal_box div label,
+.modal_box div a {
     font-size: 13px;
     cursor: pointer;
 }
 /* ↑↑↑ 로그인(모달) ↑↑↑ */
 
 /* ↓↓↓ 로그인(모달) 열기&닫기 ↓↓↓ */
+.modal input[type="checkbox"]:checked ~ .modal_box{
+    display: block;
+}
+
 .modal input[type="checkbox"]:checked ~ .modal_box .login{
     display: block;
 }
