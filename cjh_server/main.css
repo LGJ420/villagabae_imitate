@@ -24,10 +24,33 @@ section,
 footer {
     margin: auto;
 }
-/* section 디자인 ========================================================= */
+/* section 디자인 =====================================================================*/
 
+section div {
+    /* border: 1px solid rgb(180, 180, 180);*/    /*(영역 확인용)border */
+}
+/* =====================↓↓↓↓폰트 설정↓↓↓↓===============================================*/
+.first_box span,
+.grid_sub2 {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 400px;
+    font-style: normal;
+}
+.Question>p>span {
+    font-family: "Lora", serif;
+    font-weight:500px;
+    font-style: normal;
+}
+span::selection,                                 /*드래그 색상 변경*/
+.section_bottom::selection,
+.big::selection
+{
+    background: #e4d4cc;
+    color: #72645c;
+}
+/* -===========↓↓↓↓Section 백그라운드(기본 set)↓↓↓↓======================================*/
 section {
-    min-height: 60vh;
+    min-height: 40vh;
     max-height: max-content;
     background-color: rgb(255, 255, 255);
 }
@@ -36,167 +59,68 @@ section {
     max-height: 100%;
     min-height:  max-content;
     width: calc(1920px * .8);
-
     box-sizing: border-box;
     text-align: center;
 }
----------------------------------------------------- */
-.first_box span,
-.grid_sub2 {
-    font-family: "Noto Serif KR", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-section div {
-    /* border: 1px solid rgb(180, 180, 180); */
-}
+/* ==============↓↓↓↓Section grid 골조설정↓↓↓↓============================================*/
 .grid_box {
     padding: 50px ;
     display: grid;
     grid-template: 1fr/ 1fr 1fr;
-    background: url(./frame1.png) no-repeat;
-    height: min-content;
-}
-
-.input {
-    background-color: rgb(255, 255, 255);
-    height: 100px;
-    width: 30;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: none;
-    flex-direction: column;
-}
-.input>input{
-    outline: none;
-    font-size: 15px;
-    padding: 0 30px;
-    line-height: 50px;
-    border-radius: 10px;
-    background: transparent;
-    transition: 0.1s ease;
-    border-color: #dbdbdb;
-    width: 70%;
-}
-.labelline{
-    position: absolute;
-    transition: 0.2s ease;
-    padding: 0 10px;
-    margin: 0 300px 0 0 ;
-    background-color: white;
-    pointer-events: none;           /* 커서 비활성화 */
-    border-radius: 50%;
-    text-wrap: nowrap;
-}
-input:focus,
-input:valid{
-
-    z-index: 4;
-    
-}
-input:focus + .labelline,
-input:valid + .labelline{
-    color: rgb(211, 182, 163);
-    height: 30px;
-    line-height: 30px;
-    transform: translate(-16px,-27px) scale(0.88);
-    z-index: 4;
-}
-.Question {
-    font-size: 4em;
-    font-weight: 500px;
+    background: url(./frame1.png) no-repeat;   /*main grid박스(1행X2열)*/
 }
 .grid_sub1 {
     display: grid;
-    grid-template: 3fr 2fr
+    grid-template: 3fr 2fr                     /*오른쪽 grid박스(5행)*/
+}
+.grid_sub2{
+    display: grid;                             /*왼쪽 grid박스(5행)*/
+    grid-template-rows: 0.15fr 0.7fr 0.7fr 2.5fr 1fr;
+}
+/* =====================↓↓↓↓박스내 세부설정↓↓↓↓============================================*/
+
+/* ==================================(오른쪽 박스) */
+
+.first_box {
+    display: grid;
+    grid-template-rows: 0.25fr 0.25fr 0.25fr 150px;     /*4행*/
+}
+.second1_box {
+    animation: move 2s ease-out;                              
 }
 .Question {
     display: flex;
+    font-size: 4em;
     justify-content: center;
     align-items: center;
-}
-.Question>p {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Question>p>span {
-    animation: move 3s;
-    position: absolute;
-    letter-spacing: 7px;
     color: #c3bab2;
+    animation: move 3s;
+    letter-spacing: 7px;
 }
-.second_box {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    animation: move 2s ease-out;
+.first_box>p>span:nth-of-type(1) {
+    font-size: 20px;
 }
-.sns_1,
+.sns_1{
+    background: url(./Instagram.png) ;
+}
+.sns_2{
+    background: url(./Facebook.png);
+}
+.sns_1,                                                 /*SNS아이콘 (공통)설정*/
 .sns_2 {
     width: 50px;
     height: 50px;
     display: inline-block;
     border-radius: 50%;
     margin: 10px;
-}
-section p {
-    display: inline-block;
-}
-.first_box {
-    display: grid;
-    grid-template-rows: 0.25fr 0.25fr 0.25fr 150px;
-}
-.first_box>p>span:nth-of-type(1) {
-    font-size: 20px;
-
-}
-.guide {
-    padding-right: 25%;
-    height: 50px;
-    align-items: center;
-    color: #9a9a9a;
-}
-.section_bottom{
-    animation: move 1.5s ease-out;
-
-    font-family: "Noto Serif KR", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    background: url(./hq.png) ;
-    background-size: 100% 100%;
-    color: #72645c;
-    display: inline-block;
-}
-@keyframes move {
-from{
-    opacity: 0;
-
-}
-to{
-    opacity: 1;
-    
-}
-}
-.sns_1{
-    background: url(./Instagram.png) ;
-    background-size: 100% 100%;
-}
-.sns_2{
-    background: url(./Facebook.png);
     background-size: 100% 100%;
 }
 .sns_1:hover {
-    background: url(./Instagram.png);
+    background: url(./Instagram.png);                  /*SNS아이콘 클릭효과*/
     background-size: 100% 100%;
     opacity: 0.5;
     transition: all 0.5s;
 }
-
 .sns_2:hover {
     background: url(./Facebook.png);
     background-size: 100% 100%;
@@ -208,27 +132,55 @@ to{
     transform: scale(1.1);
     
 }
-.Question>p>span {
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    font-weight:500px;
-    font-style: normal;
-}
+/* ==================================(왼쪽 박스) */
 
-.in_detail{
+.input {
+    background-color: rgb(255, 255, 255);            /*input박스 전체 setting*/
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    /* flex-direction: column; */
+}
+.input>input{                                          /*name,tel <input>태그 속성 설정*/
+    outline: none;
+    font-size: 15px;
+    padding: 0 30px;
+    line-height: 50px;
+    border-radius: 10px;
+    background: transparent;
+    transition: 0.1s ease;
+    border-color: #dbdbdb;
+    width: 70%;
+}
+.input>input::selection{
+    background-color: white;
+}
+.guide {                              /*상단 가이드 박스영역 및 배치 설정*/
+    padding-right: 25%;
     height: 50px;
+    color: #9a9a9a;
 }
-input::selection{
-    background:rgb(255, 255, 255);
+.labelline{                           /*<input>태그 모션효과 속성설정*/
+    position: absolute;
+    transition: 0.2s ease;
+    padding: 0 10px;
+    margin: 0 300px 0 0 ;
+    background-color: white;
+    pointer-events: none;             /* 커서 비활성화 */
+    border-radius: 50%;
+    text-wrap: nowrap;
 }
-span::selection,
-.section_bottom::selection,
-.big::selection
-{
-    background: #e4d4cc;
-    color: #72645c;
+input:focus + .labelline,
+input:valid + .labelline{
+    color: rgb(211, 182, 163);
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-16px,-27px) scale(0.88);
+    z-index: 4;
 }
-.input1>textarea{
+.input1>textarea{                       /*문의 내용 입력창 설정*/
     border-radius: 10px;
     outline: none;
     padding: 10px;
@@ -236,36 +188,12 @@ span::selection,
     height: 80%;
     resize: none;
     font-size: 16px;
-
 }
-big{
-    position: left;
-}
-.grid_sub2{
-    display: grid;
-    grid-template-rows: 0.15fr 0.7fr 0.7fr 2.5fr 1fr;
-}
-.allow_checkBox input{
-
-    display: inline-block;
-    width: 13px;
-}
-.allow_checkBox{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: start;
-    padding-left: 13%;
-}
-input#allow{
+input#allow{                            /* allow 체크 박스 디자인 변경*/
     display: none;
 }
 .allow_checkBox input label{
     cursor: pointer;
-}
-.allow_checkBox label span {
-    padding-left:5px ;
-    vertical-align: middle;
 }
 input#allow + label:before{
     content: "";
@@ -273,20 +201,20 @@ input#allow + label:before{
     width: 15px;
     height: 15px;
     border:2px solid #807570 ;
-    border-radius: 2px;
-    vertical-align: middle;
     border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
 }
 input#allow:checked+label:before{
     content: "";
-    background-image: url(./check.png) 100% 100%;
-    background-repeat: no-repeat;
     width: 15px;
     height: 15px;
     background-color: #807570;
     border-radius: 50%;
+    cursor: pointer;
 }
-.button_1{
+
+.button_1{                                     /*전송 버튼 디자인 및 효과설정*/
     border: 2px solid #72645c; 
     background: transparent;
     width:30%;
@@ -303,4 +231,30 @@ input#allow:checked+label:before{
     color: white;
     transition: all 0.35s ease-out;
 }
-/* section 디자인 ========================================================= */
+.button_1 span:active {
+    font-size: 95%;
+    transition: all 0.35s ease;
+}
+/* =====================↓↓↓↓하단 문구 및 디자인↓↓↓↓=======================================*/
+.section_bottom{
+    animation: move 1.5s ease-out;
+    font-family: "Noto Serif KR", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    background: url(./hq.png) no-repeat;
+    background-size: 100% 70%;
+    color: #72645c;
+    display: inline-block;
+    padding-bottom: 50px;
+}
+/* =====================↓↓↓↓keyframes 모음↓↓↓↓============================================*/
+@keyframes move {
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+}
+}
+/* section 디자인 =========================================================================*/
