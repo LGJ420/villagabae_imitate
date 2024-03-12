@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baseform(header, footer)</title>
+    <title>Baseform(header, footer)+login_modal</title>
 </head>
 
-
-<link rel="stylesheet" href="./baseform_sub.css">
+<link rel="stylesheet" href="../css/baseform_sub.css">
+<!-- ↓↓↓ 각자의 html에 login.css 링크 걸어야 함 ↓↓↓ -->
+<link rel="stylesheet" href="./login.css">
+<!-- ↑↑↑ 각자의 html에 login.css 링크 걸어야 함 ↑↑↑ -->
 
 <body>
     <header>
@@ -18,7 +20,42 @@
             <div class="login_join_menu">
                 <div class="nav_top_ul">
                     <li>
-                        <a href="#">Login</a>
+                        <!-- ============================ ↓↓↓ 변경 사항 ↓↓↓ ============================================ -->
+                        
+                        <!-- ↓↓↓ 변경 전 ↓↓↓ -->
+                        <!-- <a href="#">login</a> -->
+                        <!-- ↑↑↑ 변경 전 ↑↑↑ -->
+                        
+                        <!-- ↓↓↓ 변경 후 ↓↓↓ -->
+                        <div class="modal">
+                            <input type="checkbox" id="modal_login">
+                            <label for="modal_login">로그인</label>
+                            <div class="modal_box">
+                                <label for="modal_login">×</label>
+                                <div>
+                                    <h2>로그인</h2>
+                                    <hr>
+                                    <div class="info">
+                                        <form action="#" >
+                                            <input type="text" placeholder="아이디" required>
+                                            <input type="password" placeholder="비밀번호" required>
+                                            <button>로그인</button>
+                                        </form>
+                                    </div>
+                                    <hr>
+                                    <p>
+                                        <a href="">아이디 찾기</a>
+                                        <a href="">비밀번호 찾기</a>
+                                        <a href="">회원가입</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 로그인(모달) 열었을 때 배경 오퍼시티 -->
+                            <div class="modal_bg"></div>
+                        </div>
+                        <!-- ↑↑↑ 변경 후 ↑↑↑ -->
+
+                        <!--  ============================ ↑↑↑ 변경 사항 ↑↑↑ ============================================ -->
                     </li>
                     <li>
                         <a href="#">Join</a>
@@ -31,7 +68,7 @@
                         <a href="../../ldh_server/about.html">ABOUT</a>
                     </li>
                     <li>
-                        <a class="nemu_hover" href="./ldh_server/rooms.html">ROOMS</a>
+                        <a class="nemu_hover" href="../../nsb_server/rooms/G_room/G_room.html">ROOMS</a>
                         <ul class="nav_deps">
                             <li><a href="#">G_room</a></li>
                             <li><a href="#">H_room</a></li>
