@@ -80,7 +80,7 @@ input[id*="slide04"]:checked ~ .labelbox label[for*="slide04"] em {
 }
 label.left {
     left: 20px;
-    background-image: url(../img/arrowleft.png);
+    background-image: url(./image/arrowleft.png);
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ label.left {
 }
 label.right {
     right: 20px;
-    background-image: url(../img/arrowright.png);
+    background-image: url(./image/arrowright.png);
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;
@@ -182,7 +182,7 @@ header {
 }
 .logo_design a {
     display: flex;
-    background-image: url(../img/logo.png);
+    background-image: url(./image/logo.png);
     background-repeat: no-repeat;
     background-size: 200px;
     width: 50%;
