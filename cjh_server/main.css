@@ -35,11 +35,13 @@ section div {
     font-family: "Noto Serif KR", serif;
     font-weight: 400px;
     font-style: normal;
+    color: rgb(154, 136, 119);
 }
 .Question>p>span {
     font-family: "Lora", serif;
     font-weight:500px;
     font-style: normal;
+    
 }
 span::selection,                                 /*드래그 색상 변경*/
 .section_bottom::selection,
