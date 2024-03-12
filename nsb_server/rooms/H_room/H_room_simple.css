@@ -18,9 +18,9 @@ body {
     width: 100%;
 }
 
-/* body * {
+body * {
     box-sizing: border-box;
-} */
+}
 
 body::before {
     content: "";
@@ -293,6 +293,24 @@ input[id="tab09"]:checked ~ .room_img_tab label[for="tab09"] {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+}
+
+@media (width <= 600px) {
+    .service>div {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+
+    .service>div>div {
+        width: 50%;
+        max-width: calc(1920px * 0.8 * 0.2);
+        padding: 5px 5px;
+    }
+    
 }
 /* ↑↑↑ 서비스 ↑↑↑ */
 
