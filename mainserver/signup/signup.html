@@ -14,7 +14,7 @@
 
 
     
-    <link rel="stylesheet" href="../htmlcssform_sub.css">
+    <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../loginform.css">
     <link rel="stylesheet" href="./signup.css">
 
@@ -28,36 +28,69 @@
     <header>
         <div class="nav_box">
             <div class="logo_design">
-                <a href="./homepage.html">logo</a>
+                <a href="./index.html">logo</a>
+            </div>
+            <div class="login_join_menu">
+                <div class="nav_top_ul">
+                    <li>
+                        <div class="modal">
+                            <input type="checkbox" id="modal_login">
+                            <label for="modal_login">Login</label>
+                            <div class="modal_box">
+                                <label for="modal_login">×</label>
+                                <div>
+                                    <h2>로그인</h2>
+                                    <hr>
+                                    <div class="info">
+                                        <form action="#" >
+                                            <input type="text" placeholder="아이디" required>
+                                            <input type="password" placeholder="비밀번호" required>
+                                            <button>로그인</button>
+                                        </form>
+                                    </div>
+                                    <hr>
+                                    <p>
+                                        <a href="">아이디 찾기</a>
+                                        <a href="">비밀번호 찾기</a>
+                                        <a href="">회원가입</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 로그인(모달) 열었을 때 배경 오퍼시티 -->
+                            <div class="modal_bg"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./signup/signup.html">SignUp</a>
+                    </li>
+                </div>
             </div>
             <nav class="nav_main_menu">
                 <ul class="nav_top_ul">
                     <li>
-                        <a href="../../ldh_server/about.html">ABOUT</a>
+                        <a href="./about/html/about.html">ABOUT</a>
                     </li>
                     <li>
-                        <a class="nemu_hover" href="../../nsb_server/rooms/G_room/G_room.html">ROOMS</a>
+                        <a class="nemu_hover" href="./rooms/rooms.html">ROOMS</a>
                         <ul class="nav_deps">
-                            <li><a href="#">G_room</a></li>
-                            <li><a href="#">H_room</a></li>
-                            <li><a href="#">O_room</a></li>
+                            <li><a href="./rooms/groom/G_room.html">G_room</a></li>
+                            <li><a href="./rooms/hroom/H_room.html">H_room</a></li>
+                            <li><a href="./rooms/oroom/O_room.html">O_room</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="../../kim_server/facilitycopy.html">GUIDE</a>
+                        <a href="./facility/facility.html">FACILITY</a>
                         <ul class="nav_deps">
-                            <li><a href="#">SERVICE</a></li>
-                            <li><a href="#">TOUR</a></li>
+                            <li><a href="./facility/tour/html/tour.html">TOUR</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="../html/reservation.html">RESERVATION</a>
+                        <a href="./reservation/reservation.html">RESERVATION</a>
                     </li>
                     <li>
-                        <a href="../../cjh_server/main.html">COMMUNITY</a>
+                        <a href="./community/community.html">COMMUNITY</a>
                         <ul class="nav_deps">
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">게시판</a></li>
+                            <li><a href="./community/noticeboard/html/noticeboard.html">게시판</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -138,19 +171,19 @@
             <nav class="nav_footer_menu">
                 <ul class="nav_bottom_ul">
                     <li>
-                        <a href="#">ABOUT</a>
+                        <a href="./about/html/about.html">ABOUT</a>
                     </li>
                     <li>
-                        <a href="#">ROOMS</a>
+                        <a href="./rooms/rooms.html">ROOMS</a>
                     </li>
                     <li>
-                        <a href="#">TOUR</a>
+                        <a href="./facility/facility.html">FACILITY</a>
                     </li>
                     <li>
-                        <a href="#">RESERVATION</a>
+                        <a href="./reservation/reservation.html">RESERVATION</a>
                     </li>
                     <li>
-                        <a href="#">COMMUNITY</a>
+                        <a href="./community/community.html">COMMUNITY</a>
                     </li>
                 </ul>
             </nav>

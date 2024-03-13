@@ -36,12 +36,33 @@ footer {
 /* ============================ ↑↑↑ 디폴트 ↑↑↑ ============================================*/
 
 /* ============================ ↓↓↓ 메인 ↓↓↓ ============================================*/
+section {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    max-height: max-content;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.section_box {
+    border: 1px solid rgb(7, 7, 7, 0);
+    box-sizing: border-box;
+
+    margin: auto;
+    max-height: 100%;
+    min-height: 100%;
+    max-width: calc(1920px * .8);
+}
+
+
 .lgj_section {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    height: 80vh;
+    height: 100%;
     margin: 40px;
 }
 
@@ -105,8 +126,8 @@ footer {
     transform: translateY(-11px);
 }
 
-.modal>label,
-.modal>label:visited {
+.section_footer label,
+.section_footer label:visited {
     background-color: rgba(223,190,106);
     color: white;
     cursor: pointer;
