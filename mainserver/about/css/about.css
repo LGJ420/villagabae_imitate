@@ -136,6 +136,8 @@ iframe {
 
     box-shadow: 0 0 30px rgb(141, 132, 93);
     opacity: .9;
+
+    margin-top: 3%;
 }
 
 .small_box .about_img {
