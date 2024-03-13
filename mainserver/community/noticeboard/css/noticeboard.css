@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 body::before {
@@ -23,7 +23,7 @@ header,
 section,
 footer {
     margin: auto;
-    overflow-x: hidden;
+
 }
 /* =================↓↓↓↓section↓↓↓↓=============================== */
 .top_space1{
@@ -109,7 +109,7 @@ th::selection,
 caption::selection {
     background-color: rgb(217, 196, 171);    /*드래그 효과 설정*/
 }
-td,th,a,
+td,th,a,label,button
 .motion_logo,
 .ment{
     font-family: "Noto Serif KR", serif;

@@ -37,7 +37,8 @@ section div {
     font-style: normal;
     color: rgb(154, 136, 119);
 }
-.Question>p>span {
+.Question>p>span,
+button,label,a {
     font-family: "Lora", serif;
     font-weight:500px;
     font-style: normal;
