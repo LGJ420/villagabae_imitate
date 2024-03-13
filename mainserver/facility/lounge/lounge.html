@@ -7,9 +7,94 @@
 </head>
 <link rel="stylesheet" href="../../htmlcssform_sub.css">
 <link rel="stylesheet" href="./lounge.css">
+<link rel="stylesheet" href="../../../mainserver/loginform.css">
 
 <body>
     <header>
+        <div class="nav_box">
+            <div class="logo_design">
+                <a href="../../../mainserver/index.html">logo</a>
+            </div>
+            
+            <div class="login_join_menu">
+                <div class="nav_top_ul">
+                    <li>
+                        <!-- ============================ ↓↓↓ 변경 사항 ↓↓↓ ============================================ -->
+                        
+                        <!-- ↓↓↓ 변경 전 ↓↓↓ -->
+                        <!-- <a href="#">login</a> -->
+                        <!-- ↑↑↑ 변경 전 ↑↑↑ -->
+                        
+                        <!-- ↓↓↓ 변경 후 ↓↓↓ -->
+                        <div class="modal">
+                            <input type="checkbox" id="modal_login">
+                            <label for="modal_login">Login</label>
+                            <div class="modal_box">
+                                <div>
+                                    <a href="../../../mainserver/facility/facility.html">×</a>
+                                </div>
+                                <div>
+                                    <input type="radio" name="modal_usage" id="login" checked>
+                                    <input type="radio" name="modal_usage" id="id_serch">
+                                    <input type="radio" name="modal_usage" id="pw_serch">
+                                    <div class="login">
+                                        <h2>로그인</h2>
+                                        <hr>
+                                        <div class="info">
+                                            <form action="#" >
+                                                <input type="text" placeholder="아이디" required>
+                                                <input type="password" placeholder="비밀번호" required>
+                                                <button>Login</button>
+                                            </form>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <label for="id_serch">ID 찾기</label>
+                                            <label for="pw_serch">PW 찾기</label>
+                                            <a href="../../../mainserver/signup/signup.html">SignUp</a>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="id_serch">
+                                        <h2>ID 찾기</h2>
+                                        <hr>
+                                        <div class="info">
+                                            <form action="#" >
+                                                <input type="text" placeholder="성명" required>
+                                                <input type="text" placeholder="주민번호 6자" required>
+                                                <button>ID 찾기</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="pw_serch">
+                                        <h2>PW 찾기</h2>
+                                        <hr>
+                                        <div class="info">
+                                            <form action="#" >
+                                                <input type="text" placeholder="성명" required>
+                                                <input type="text" placeholder="주민번호 6자" required>
+                                                <input type="text" placeholder="아이디" required>
+                                                <button>PW 찾기</button>
+                                            </form>
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 로그인(모달) 열었을 때 배경 오퍼시티 -->
+                            <div class="modal_bg"></div>
+                        </div>
+                        <!-- ↑↑↑ 변경 후 ↑↑↑ -->
+
+                        <!--  ============================ ↑↑↑ 변경 사항 ↑↑↑ ============================================ -->
+                    </li>
+                    <li>
+                        <a href="#">SignUp</a>
+                    </li>
+                </div>
+            </div>
+
         <div class="nav_box">
             <div class="logo_design">
                 <a href="../../../mainserver/index.html">logo</a>
