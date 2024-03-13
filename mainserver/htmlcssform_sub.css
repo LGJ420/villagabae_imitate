@@ -53,17 +53,32 @@ header {
 .logo_design {
     display: flex;
     height: 120px;
-    width: 30%;
+    width: 50%;
     position: absolute;
 }
 .logo_design a {
     display: flex;
-    background-image: url(./image/logo.png);
-    background-repeat: no-repeat;
+    background: url(./image/logo.png) no-repeat;
     background-size: 200px;
-    width: 50%;
+    width: 100%;
     text-indent: -9999em;
 }
+@media (width <= 1100px) {
+    .login_join_menu {
+        display: flex;
+        position: absolute;
+        top: 100px;
+    }
+    .nav_main_menu {
+        display: flex;
+        position: absolute;
+        top: 140px;
+    }
+    .Business_infor {
+        visibility: hidden;
+    }
+}
+
 /* ↑↑↑ 좌측 상단 메인로고 설정 ↑↑↑ */
 /* ↓↓↓ NAV 메뉴 설정 ↓↓↓*/
 .login_join_menu,
@@ -72,7 +87,6 @@ header {
     height: 60px;
     width: 100%;
     justify-content: end;
-    align-items: start;
 }
 .nav_main_menu>.nav_top_ul {
     display: flex;
