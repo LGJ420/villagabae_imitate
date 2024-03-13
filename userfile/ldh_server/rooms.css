@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+body::before {
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./team_image/about_back.jpg) no-repeat center/cover;
+    position: fixed;
+    z-index: -1;
+}
+
+header,
+section,
+footer {
+    margin: auto;
+}
+
+/* section 디자인 ========================================================= */
+
+::selection {
+    background: #705b43;
+    color: white;
+}
+
+.section_box {
+    width: calc(1920px * .8);
+}
+
+/* ========================================================== */
+/* 상단 소개 */
+
+h2 {
+    margin-top: 8%;
+    color: rgb(117, 97, 72);
+}
+
+.section_box hr+p {
+    white-space: pre-line;
+    font-size: 40px;
+    opacity: .7;
+    color: #796a59;
+    margin-top: -2%;
+    margin-bottom: 4%;
+    line-height: 55px;
+}
+
+.line {
+    width: 5%;
+    margin-top: 2%;
+    opacity: .2;
+}
+
+h3 {
+    color: rgb(105, 89, 69);
+    margin-bottom: 15px;
+}
+
+h3+p {
+    color: rgb(153, 144, 132);
+    opacity: .8;
+    font-weight: bolder;
+    margin-bottom: -110px;
+
+}
+
+/* ========================================================== */
+/* 개별 div 안 정렬 */
+
+.room_box {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(8, 1fr);
+    height: 50vh;
+    align-items: center;
+    justify-items: center;
+
+    padding: 0 7px;
+    margin-bottom: 9%;
+
+    overflow: hidden;
+}
+
+.rooms_main {
+    grid-area: 1 / 1 / -1 / -4;
+}
+
+.main2 {
+    grid-area: 1 / 4 / -1 / -1;
+}
+
+.room_smallbox {
+    grid-area: 1 / -4 / -2 / -1;
+    width: 350px;
+}
+
+.smallbox2 {
+    grid-area: 1 / 1 / -2 / 4;
+}
+
+.room_go {
+    grid-area: -2 / -4 / -1 / -1;
+}
+
+.room_go2 {
+    grid-area: -2 / 1 / -1 / 4;
+
+}
+
+/* ========================================================== */
+/* room 공통사항 */
+
+[name="room1_main"],
+[name="room2_main"],
+[name="room3_main"] {
+    display: none;
+}
+
+.rooms_main {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.rooms_main img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.rooms_main .room_list {
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.rooms_main .room_item {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    transition: all .35s;
+}
+
+.rooms_main .room_item label {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+label.sl_left {
+    left: 10px;
+    background-image: url(./team_image/left.png);
+    background-position: center center;
+    background-size: 100% 140%;
+    background-repeat: no-repeat;
+}
+
+label.sl_right {
+    right: 10px;
+    background-image: url(./team_image/right.png);
+    background-position: center center;
+    background-size: 100% 140%;
+    background-repeat: no-repeat;
+}
+
+[id="sl1_1"]:checked~.room_list .room_item,
+[id="sl2_1"]:checked~.room_list .room_item,
+[id="sl3_1"]:checked~.room_list .room_item {
+    transform: translateX(0);
+}
+
+[id="sl1_2"]:checked~.room_list .room_item,
+[id="sl2_2"]:checked~.room_list .room_item,
+[id="sl3_2"]:checked~.room_list .room_item {
+    transform: translateX(-100%);
+}
+
+[id="sl1_3"]:checked~.room_list .room_item,
+[id="sl2_3"]:checked~.room_list .room_item,
+[id="sl3_3"]:checked~.room_list .room_item {
+    transform: translateX(-200%);
+}
+
+[id="sl1_4"]:checked~.room_list .room_item,
+[id="sl2_4"]:checked~.room_list .room_item,
+[id="sl3_4"]:checked~.room_list .room_item {
+    transform: translateX(-300%);
+}
+
+/* ============================================================= */
+
+@keyframes slide {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+[id="sl1_1"]:checked~.room_list .room_item,
+[id="sl2_1"]:checked~.room_list .room_item,
+[id="sl3_1"]:checked~.room_list .room_item {
+    transform: translateX(0);
+    animation: slide 12s infinite;
+}
+
+
+.room_box {
+    border: 1px solid rgb(175, 167, 167);
+    margin-top: 8%;
+}
+
+/* ========================================================= */
+
+.room_smallbox>p:nth-of-type(1) {
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: rgb(105, 89, 69);
+}
+
+.room_smallbox>p+p {
+    line-height: 30px;
+}
+
+.room_smallbox>p+p+hr {
+    margin: 30px 0;
+    opacity: .3;
+}
+
+.room_type {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 230px;
+    height: 120px;
+    margin-bottom: -25%;
+}
+
+.room_type p:nth-of-type(2n-1) {
+    color: rgb(105, 89, 69);
+
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.room_type p:nth-of-type(2n) {
+    color: #756a5e;
+    font-size: 17px;
+
+}
+
+/* ========================================================= */
+
+.room_go a {
+    font-family: "Nanum Myeongjo", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color: rgb(117, 97, 72);
+    opacity: .5;
+
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    width: 300px;
+    line-height: 70px;
+    margin: auto;
+
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.room_go a:hover {
+    opacity: 1;
+}
+
+.room_go {
+    text-align: center;
+    margin-top: 80px;
+    height: 130px;
+}
+
+.room_go a {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: right;
+    align-items: center;
+}
+
+.room_go a img {
+    justify-self: center;
+}
+
+/* section 디자인 ========================================================= */

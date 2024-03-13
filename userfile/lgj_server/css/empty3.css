@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Nanum Myeongjo", serif;
+
+    /* border: 1px red solid;
+    box-sizing: border-box;
+    padding: 3px; */
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+body::before {
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../ngh_server/img/background4.jpg) no-repeat center/cover;
+    position: fixed;
+    z-index: -1;
+}
+
+header,
+section,
+footer {
+    margin: auto;
+}
+
+/*======================================================================*/
+/* main */
+.lgj_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    margin: 40px;
+}
+
+
+
+@keyframes opacity {
+    0% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.section_header{
+    opacity: 0;
+    animation: opacity 2s ease-out forwards;
+}
+
+.section_main {
+    opacity: 0;
+    animation: opacity 2s ease-out 1s forwards;
+}
+
+.section_footer {
+    opacity: 0;
+    animation: opacity 2s ease-out 2s forwards;
+}
+
+
+
+.section_header img {
+    width: 150px;
+}
+
+.section_main h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+.section_main p {
+    white-space: pre-wrap;
+    line-height: 40px;
+}
+
+.section_footer {
+    display: flex;
+}
+
+.section_footer a {
+    display: flex;
+    width: 300px;
+    height: 60px;
+    margin: 10px;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_footer a:first-child,
+.section_footer a:first-child:visited {
+    border: rgba(223,190,106) solid 1px;
+    color: rgba(223,190,106);
+    cursor: pointer;
+}
+
+.section_footer a:last-child,
+.section_footer a:last-child:visited {
+    background-color: rgba(223,190,106);
+    color: white;
+    cursor: pointer;
+}
+
+.button>div:first-child>a,
+.button>div:first-child>a:visited{
+    color: rgba(223,190,106);
+}
