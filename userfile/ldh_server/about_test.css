@@ -14,7 +14,6 @@ body::before {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(./team_image/about_back.jpg) no-repeat center/cover;
     position: fixed;
     z-index: -1;
 }
@@ -25,22 +24,25 @@ footer {
     margin: auto;
 }
 
-/* section 디자인 ========================================================= */
+/* ============================ ↓↓↓ about_section ↓↓↓ ============================================*/
 
+/* ↓↓↓ section 기본 디자인 설정_start ↓↓↓ */
 
-@keyframes opacity {
-    from {
-        opacity: 0;
-    }
+.section_box {
+    width: calc(1920px * .8);
 }
 
 ::selection {
+    /* 드래그 색상 지정 */
     background: #705b43;
     color: white;
 }
 
-.section_box {
-    width: calc(1920px * .8);
+@keyframes opacity {
+    /* opacity 애니메이션 설정 */
+    from {
+        opacity: 0;
+    }
 }
 
 h2,
@@ -62,13 +64,10 @@ section div>p,
 h2,
 .location>p {
     margin: 0 15px;
-
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 section div>p {
+    /* 소개 글 디자인 설정 */
     width: 32%;
     white-space: pre-line;
     letter-spacing: 1px;
@@ -80,10 +79,11 @@ section div>p {
 }
 
 .welcome {
+    /* 소개 사진 디자인 설정 */
     width: 60%;
     height: 50vh;
     position: relative;
-    background-image: url(./team_image/c8197b6606af6.jpg);
+    background-image: url(../img/c8197b6606af6.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-left: 38%;
@@ -95,6 +95,7 @@ section div>p {
 }
 
 iframe {
+    /* google 지도 디자인 설정 */
     margin-top: 1%;
     box-shadow: 0 0 30px rgb(141, 132, 93);
     width: 100%;
@@ -112,6 +113,7 @@ iframe {
 }
 
 .line {
+    /* 제목(h2)과 내용 사이에 있는 짧은 선 */
     width: 5%;
     margin: 0 15px;
     margin-top: -2%;
@@ -120,17 +122,20 @@ iframe {
     opacity: .2;
 }
 
-/* ========================================================== */
-/* room 공통사항 */
+/* ↑↑↑ section 기본 디자인 설정_end ↑↑↑ */
+
+
+/* ↓↓↓ room 공통사항_start ↓↓↓ */
 
 .tab_content input {
     display: none;
 }
 
 .tab_content label {
+    /* 기본으로 설정되는 빈 동그라미 label 디자인 설정 */
     display: inline-block;
     padding: 10px;
-    background-image: url(./team_image/circle_1.png);
+    background-image: url(../img/circle_1.png);
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -140,7 +145,19 @@ iframe {
     top: 540px;
 }
 
+.tab_content input:checked+label {
+    /* label 을 클릭했을 때 나타나는 체크 동그라미 */
+    background-image: url(../img/circle_2.png);
+}
+
+.rooms {
+    /* 이미지 box 정렬 */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .conbox {
+    /* 이미지 box 디자인 */
     display: none;
     width: 450px;
     height: 500px;
@@ -172,111 +189,70 @@ input[id="tab3_4"]:checked~.room3_4 {
     display: block;
 }
 
-.tab_content input:checked+label {
-    background-image: url(./team_image/circle_2.png);
-}
 
-/* ========================================================== */
-/* room 1 */
+/* ↑↑↑ room 공통사항_end ↑↑↑ */
 
+
+/* ↓↓↓ room 개별 이미지 삽입_start ↓↓↓ */
+
+/* G_Room */
 
 .room1_1 {
-    background-image: url(./team_image/room1_1.jpg);
+    background-image: url(../img/room1_1.jpg);
 }
 
 .room1_2 {
-    background-image: url(./team_image/room1_2.jpg);
+    background-image: url(../img/room1_2.jpg);
 }
 
 .room1_3 {
-    background-image: url(./team_image/room1_3.jpg);
+    background-image: url(../img/room1_3.jpg);
 }
 
 .room1_4 {
-    background-image: url(./team_image/room1_4.jpg);
+    background-image: url(../img/room1_4.jpg);
 }
 
-/* ========================================================== */
-/* room 2 */
+/* H_Room */
 
 .room2_1 {
-    background-image: url(./team_image/room2_1.jpg);
+    background-image: url(../img/room2_1.jpg);
 }
 
 .room2_2 {
-    background-image: url(./team_image/room2_2.jpg);
+    background-image: url(../img/room2_2.jpg);
 }
 
 .room2_3 {
-    background-image: url(./team_image/room2_3.jpg);
+    background-image: url(../img/room2_3.jpg);
 }
 
 .room2_4 {
-    background-image: url(./team_image/room2_4.jpg);
+    background-image: url(../img/room2_4.jpg);
 }
 
-/* ========================================================== */
-/* room 3 */
+/* O_Room */
 
 .room3_1 {
-    background-image: url(./team_image/room3_1.jpg);
+    background-image: url(../img/room3_1.jpg);
 }
 
 .room3_2 {
-    background-image: url(./team_image/room3_2.jpg);
+    background-image: url(../img/room3_2.jpg);
 }
 
 .room3_3 {
-    background-image: url(./team_image/room3_3.jpg);
+    background-image: url(../img/room3_3.jpg);
 }
 
 .room3_4 {
-    background-image: url(./team_image/room3_4.jpg);
+    background-image: url(../img/room3_4.jpg);
 }
 
-/* ============================================================= */
+/* ↑↑↑ room 개별 이미지 삽입_end ↑↑↑ */
 
-.rooms {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
 
-.room_box,
-.room_go a {
-    font-family: "Nanum Myeongjo", serif;
-    font-style: normal;
-    letter-spacing: 1px;
-    font-weight: bolder;
-    color: rgb(117, 97, 72);
-    opacity: .5;
-}
-
-.room_box {
-    position: absolute;
-    margin-left: 200px;
-    margin-top: -280px;
-    font-size: 30px;
-    background-color: rgb(241, 235, 223);
-    border-radius: 30% 0;
-    padding: 3px 17px;
-}
-
-.room_go a {
-    display: inline-block;
-    border: 1px solid;
-    text-align: center;
-    width: 300px;
-    line-height: 70px;
-    margin: auto;
-
-    font-size: 20px;
-    text-decoration: none;
-    letter-spacing: 5px;
-}
-
-.room_go a:hover {
-    opacity: 1;
-}
+/* ↓↓↓ rooms 메인 연결 링크 삽입_start ↓↓↓ */
 
 .room_go {
     text-align: center;
@@ -284,4 +260,31 @@ input[id="tab3_4"]:checked~.room3_4 {
     height: 130px;
 }
 
-/* section 디자인 ========================================================= */
+.room_go a {
+    /* text 디자인 */
+    font-family: "Nanum Myeongjo", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(117, 97, 72);
+    letter-spacing: 5px;
+    text-decoration: none;
+    opacity: .5;
+
+    /* box 디자인 */
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    width: 300px;
+    line-height: 70px;
+    margin: auto;
+}
+
+.room_go a:hover {
+    opacity: 1;
+}
+
+/* ↑↑↑ rooms 메인 연결 링크 삽입_end ↑↑↑ */
+
+/* ============================ ↑↑↑ about_section ↑↑↑ ============================================*/
