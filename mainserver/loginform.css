@@ -45,7 +45,7 @@
     width: 400px;
     
     position: fixed;
-    z-index: 2;
+    z-index: 100;
     left: 50%;
     top: 50vh;
     transform: translate(-50%, -50%);
@@ -116,7 +116,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 99;
 }
 /* ↑↑↑ 로그인(모달) 열었을 때 배경 ↑↑↑ */
 /* ============================ ↑↑↑ 로그인 모달팝업 ↑↑↑ ============================================*/
