@@ -23,6 +23,7 @@ header,
 section,
 footer {
     margin: auto;
+    overflow-x: hidden;
 }
 /* =================↓↓↓↓section↓↓↓↓=============================== */
 .top_space1{
@@ -70,6 +71,7 @@ footer {
     letter-spacing: 8px;
     padding: 50px;
 }
+
 @keyframes move {
     from{
         right: -300px;
@@ -100,7 +102,9 @@ section {
     margin: auto;
     max-height: 100%;
     min-height: max-content;
-    width: calc(1920px * .8);
+    width: 100%;
+    max-width: calc(1920px * .8);
+    min-width: 1050px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -132,6 +136,7 @@ td,th,a,
     font-family: "Noto Serif KR", serif;
     font-weight: 400;
     font-style: normal;
+    
 }
 /* ==================↓↓↓↓ 리스트 세팅↓↓↓↓============================================================= */
 a{
