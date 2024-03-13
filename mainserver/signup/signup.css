@@ -35,24 +35,10 @@ footer {
 /* ============================ ↑↑↑ 디폴트 ↑↑↑ ============================================*/
 
 /* ============================ ↓↓↓ 메인 ↓↓↓ ============================================*/
-section {
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
-    font-style: normal;
-
-    max-height: max-content;
-    min-height: 100vh;
-    background-color: white;
-}
-
 .section_box {
-    border: 1px solid rgb(7, 7, 7, 0);
-    box-sizing: border-box;
-
-    margin: auto;
-    max-height: 100%;
-    min-height: 100%;
-    max-width: calc(1920px * .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .lgj_section {
@@ -61,6 +47,11 @@ section {
     align-items: center;
     height: 100%;
     margin: 40px;
+}
+
+header {
+    /* 모달창을 위로 올리기위해 지정*/
+    z-index: 10;
 }
 
 .signup_form {
