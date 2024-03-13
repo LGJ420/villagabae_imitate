@@ -27,20 +27,24 @@ footer {
 
 /* ============================ ↓↓↓ about_section ↓↓↓ ============================================*/
 
+/* ↓↓↓ section 기본 디자인 설정_start ↓↓↓ */
 
-@keyframes opacity {
-    from {
-        opacity: 0;
-    }
+.section_box {
+    width: calc(1920px * .8);
 }
 
 ::selection {
+    /* 드래그 색상 지정 */
     background: #705b43;
     color: white;
 }
 
-.section_box {
-    width: calc(1920px * .8);
+@keyframes opacity {
+
+    /* opacity 애니메이션 설정 */
+    from {
+        opacity: 0;
+    }
 }
 
 h2,
@@ -65,6 +69,7 @@ h2,
 }
 
 section div>p {
+    /* 소개 글 디자인 설정 */
     width: 32%;
     white-space: pre-line;
     letter-spacing: 1px;
@@ -76,6 +81,7 @@ section div>p {
 }
 
 .welcome {
+    /* 소개 사진 디자인 설정 */
     width: 60%;
     height: 50vh;
     position: relative;
@@ -91,6 +97,7 @@ section div>p {
 }
 
 iframe {
+    /* google 지도 디자인 설정 */
     margin-top: 1%;
     box-shadow: 0 0 30px rgb(141, 132, 93);
     width: 100%;
@@ -108,6 +115,7 @@ iframe {
 }
 
 .line {
+    /* 제목(h2)과 내용 사이에 있는 짧은 선 */
     width: 5%;
     margin: 0 15px;
     margin-top: -2%;
@@ -116,170 +124,130 @@ iframe {
     opacity: .2;
 }
 
-/* ↓↓↓ room 공통사항_start ↓↓↓ */
+/* ↑↑↑ section 기본 디자인 설정_end ↑↑↑ */
 
-.tab_content input {
-    display: none;
-}
-
-.tab_content label {
-    display: inline-block;
-    padding: 10px;
-    background-image: url(../img/circle_1.png);
-    background-size: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
+.small_box {
+    /* height: 280px; */
+    overflow: hidden;
     position: relative;
-    left: 200px;
-    top: 540px;
-}
 
-.conbox {
-    display: none;
-    width: 450px;
-    height: 500px;
-    margin: 0 auto;
+    background-image: url(../img/room3_1.jpg);
+    height: 920px;
 
     box-shadow: 0 0 30px rgb(141, 132, 93);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    animation: opacity .4s;
-    border-radius: 10% 0;
+    opacity: .9;
 }
 
-.conbox:hover {
-    opacity: .7;
+.small_box .about_img {
+    transform: scale(1.15);
+    object-fit: cover;
+    transition: opacity .5s, transform 1s;
+
+    width: 60%;
+    height: 60%;
+
+    position: relative;
+    left: 19%;
+    top: 20%;
 }
 
-input[id="tab1_1"]:checked~.room1_1,
-input[id="tab1_2"]:checked~.room1_2,
-input[id="tab1_3"]:checked~.room1_3,
-input[id="tab1_4"]:checked~.room1_4,
-input[id="tab2_1"]:checked~.room2_1,
-input[id="tab2_2"]:checked~.room2_2,
-input[id="tab2_3"]:checked~.room2_3,
-input[id="tab2_4"]:checked~.room2_4,
-input[id="tab3_1"]:checked~.room3_1,
-input[id="tab3_2"]:checked~.room3_2,
-input[id="tab3_3"]:checked~.room3_3,
-input[id="tab3_4"]:checked~.room3_4 {
-    display: block;
+.small_box:hover .about_img {
+    transform: scale(1);
+    opacity: .8;
 }
 
-.tab_content input:checked+label {
-    background-image: url(../img/circle_2.png);
-}
-
-/* ↑↑↑ room 공통사항_end ↑↑↑ */
-
-
-/* ========================================================== */
-/* room 1 */
-
-
-.room1_1 {
-    background-image: url(../img/room1_1.jpg);
-}
-
-.room1_2 {
-    background-image: url(../img/room1_2.jpg);
-}
-
-.room1_3 {
-    background-image: url(../img/room1_3.jpg);
-}
-
-.room1_4 {
-    background-image: url(../img/room1_4.jpg);
-}
-
-/* ========================================================== */
-/* room 2 */
-
-.room2_1 {
-    background-image: url(../img/room2_1.jpg);
-}
-
-.room2_2 {
-    background-image: url(../img/room2_2.jpg);
-}
-
-.room2_3 {
-    background-image: url(../img/room2_3.jpg);
-}
-
-.room2_4 {
-    background-image: url(../img/room2_4.jpg);
-}
-
-/* ========================================================== */
-/* room 3 */
-
-.room3_1 {
-    background-image: url(../img/room3_1.jpg);
-}
-
-.room3_2 {
-    background-image: url(../img/room3_2.jpg);
-}
-
-.room3_3 {
-    background-image: url(../img/room3_3.jpg);
-}
-
-.room3_4 {
-    background-image: url(../img/room3_4.jpg);
-}
-
-/* ============================================================= */
-
-.rooms {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.room_box,
-.room_go a {
-    font-family: "Nanum Myeongjo", serif;
-    font-style: normal;
-    letter-spacing: 1px;
-    font-weight: bolder;
-    color: rgb(117, 97, 72);
-    opacity: .5;
-}
-
-.room_box {
+.text {
     position: absolute;
-    margin-left: 200px;
-    margin-top: -280px;
-    font-size: 30px;
-    background-color: rgb(241, 235, 223);
-    border-radius: 30% 0;
-    padding: 3px 17px;
-}
-
-.room_go a {
-    display: inline-block;
-    border: 1px solid;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    width: 300px;
-    line-height: 70px;
-    margin: auto;
-
-    font-size: 20px;
-    text-decoration: none;
-    letter-spacing: 5px;
+    color: rgb(240, 228, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.room_go a:hover {
+.text>p:nth-of-type(1) {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.text>p:nth-of-type(2) {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.text p {
+    transform: translateY(20px);
+    transition: all .5s;
+    opacity: 0;
+    width: 50%;
+
+    background-color: rgb(177, 167, 142);
+    opacity: .4;
+
+}
+
+.small_box:hover .text p {
+    transform: translateY(0);
     opacity: 1;
 }
+
+.text::before {
+    content: '';
+    border: 2px solid;
+    position: absolute;
+
+    /* top: 20px; left: 20px; right: 20px; bottom: 20px; */
+    inset: 20px;
+    opacity: 0;
+
+    transition: all .5s;
+    transform: scale(1.15);
+}
+
+.small_box:hover .text::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ↓↓↓ rooms 메인 연결 링크 삽입_start ↓↓↓ */
 
 .room_go {
     text-align: center;
     margin-top: 80px;
     height: 130px;
 }
+
+.room_go a {
+    /* text 디자인 */
+    font-family: "Nanum Myeongjo", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(117, 97, 72);
+    letter-spacing: 5px;
+    text-decoration: none;
+    opacity: .5;
+
+    /* box 디자인 */
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    width: 300px;
+    line-height: 70px;
+    margin: auto;
+}
+
+.room_go a:hover {
+    opacity: 1;
+}
+
+/* ↑↑↑ rooms 메인 연결 링크 삽입_end ↑↑↑ */
 
 /* ============================ ↑↑↑ about_section ↑↑↑ ============================================*/
