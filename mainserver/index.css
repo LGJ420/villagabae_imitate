@@ -151,7 +151,6 @@ label.right {
 /* ============================ ↑↑↑ 백그라운드 슬라이드 설정 ↑↑↑ ============================================*/
 
 /* ============================ ↓↓↓ header ↓↓↓ ============================================*/
-/* ↓↓↓ header 영역 디자인 ↓↓↓ */
 header {
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
@@ -211,7 +210,6 @@ header {
     cursor: pointer;
 }
 .nav_top_ul>li>a {
-    /* margin: 0 5px; */
     padding: 20px;
     color: rgba(255, 255, 255);
     text-decoration: none;
@@ -221,13 +219,13 @@ header {
 }
 /* ↑↑↑ NAV 메뉴 설정 ↑↑↑ */
 
-/* ↓↓↓ login&join 설정 ↓↓↓*/
+/* ↓↓↓ Login&SignUp 설정 ↓↓↓*/
 .login_join_menu>.nav_top_ul {
     display: flex;
     justify-content: end;
     padding-right: 15px;
 }
-/* ↑↑↑ login&join 설정 ↑↑↑ */
+/* ↑↑↑ Login&SignUp 설정 ↑↑↑ */
 
 /* ↓↓↓ 2차 메뉴(deps 영역) ↓↓↓ */
 .nav_deps {
@@ -305,7 +303,6 @@ section {
     font-weight: 100;
     color: rgb(230, 226, 226);
 }
-
 .VIST_btn {
     position: absolute;
     top: 50%;
@@ -315,14 +312,12 @@ section {
     width: 100px;
     height: 50px;
 }
-
 .VIST_btn:hover {
     background-color: rgb(254, 254, 254);
     color: rgb(95, 95, 95);
     transition: all 0.5s;
     cursor: pointer;
 }
-
 .VIST_btn a {
     text-decoration: none;
     line-height: 50px;
@@ -367,6 +362,7 @@ footer {
     margin: 10px 0;
 }
 /* ↑↑↑ biz 정보 디자인 설정 ↑↑↑ */
+
 /* ↓↓↓ footer nav 설정 ↓↓ ↓*/
 .nav_footer_menu {
     display: flex;

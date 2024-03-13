@@ -34,7 +34,7 @@ header {
     letter-spacing: 1px;
     color: rgb(100, 92, 72);
     position: relative;
-    z-index: 1;
+    z-index: 10;
 
     display: flex;
     height: 25vh;
@@ -46,7 +46,7 @@ header {
     flex-direction: column;
     width: 100%;
     padding: 0 15px;
-    position: fixed;
+    position: absolute;
     max-width: calc(1920px * .8);
 }
 /* ↓↓↓ 좌측 상단 메인로고 설정 ↓↓↓ */
@@ -54,7 +54,7 @@ header {
     display: flex;
     height: 120px;
     width: 30%;
-    position: fixed;
+    position: absolute;
 }
 .logo_design a {
     display: flex;
@@ -87,7 +87,6 @@ header {
     cursor: pointer;
 }
 .nav_top_ul>li>a {
-    /* margin: 0 5px; */
     padding: 20px;
     color: rgba(255, 255, 255);
     text-decoration: none;
@@ -97,13 +96,13 @@ header {
 }
 /* ↑↑↑ NAV 메뉴 설정 ↑↑↑ */
 
-/* ↓↓↓ login&join 설정 ↓↓↓*/
+/* ↓↓↓ Login&SignUp 설정 ↓↓↓*/
 .login_join_menu>.nav_top_ul {
     display: flex;
     justify-content: end;
     padding-right: 15px;
 }
-/* ↑↑↑ login&join 설정 ↑↑↑ */
+/* ↑↑↑ Login&SignUp 설정 ↑↑↑ */
 
 /* ↓↓↓ 2차 메뉴(deps 영역) ↓↓↓ */
 .nav_deps {
@@ -151,6 +150,7 @@ header {
     color: white;
 }
 /* ↑↑↑ 2차 메뉴(deps 영역) ↑↑↑ */
+/* ↑↑↑ header 영역 디자인 ↑↑↑ */
 /* ============================ ↑↑↑ header ↑↑↑ ============================================*/
 
 /* ============================ ↓↓↓ section ↓↓↓ ============================================*/
