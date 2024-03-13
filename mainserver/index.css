@@ -157,7 +157,6 @@ header {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
-    opacity: .9;
     color: rgb(100, 92, 72);
 
     display: flex;
@@ -340,7 +339,6 @@ footer {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
-    opacity: .9;
     color: rgb(100, 92, 72);
 
     display: flex;
