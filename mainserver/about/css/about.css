@@ -131,11 +131,12 @@ iframe {
     overflow: hidden;
     position: relative;
 
-    background-image: url(../img/room3_1.jpg);
+    /* background-image: url(../img/room3_1.jpg); */
+    /* background-color: aqua; */
     height: 920px;
 
-    box-shadow: 0 0 30px rgb(141, 132, 93);
-    opacity: .9;
+    /* box-shadow: 0 0 30px rgb(141, 132, 93); */
+    /* opacity: .9; */
 
     margin-top: 3%;
 }
@@ -145,12 +146,12 @@ iframe {
     object-fit: cover;
     transition: opacity .5s, transform 1s;
 
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
 
     position: relative;
-    left: 19%;
-    top: 20%;
+    left: 10%;
+    top: 10%;
 }
 
 .small_box:hover .about_img {
