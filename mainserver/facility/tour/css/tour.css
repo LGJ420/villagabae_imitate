@@ -99,12 +99,12 @@ section {
     width: 10px;
     height: 10px;
 }
-.jeju_map label[for="slide01"] {bottom: 190px;left: 205px;z-index: 1;}
-.jeju_map label[for="slide02"] {bottom: 335px;left: 525px;z-index: 1;}
-.jeju_map label[for="slide03"] {bottom: 185px;left: 120px;z-index: 1;}
-.jeju_map label[for="slide04"] {bottom: 200px;left: 340px;z-index: 1;}
-.jeju_map label[for="slide05"] {bottom: 235px;left: 165px;z-index: 1;}
-.jeju_map label[for="slide06"] {bottom: 190px;left: 300px;z-index: 1;}
+.jeju_map label[for="slide01"] {bottom: 190px;left: 205px;z-index: 0;}
+.jeju_map label[for="slide02"] {bottom: 335px;left: 525px;z-index: 0;}
+.jeju_map label[for="slide03"] {bottom: 185px;left: 120px;z-index: 0;}
+.jeju_map label[for="slide04"] {bottom: 200px;left: 340px;z-index: 0;}
+.jeju_map label[for="slide05"] {bottom: 235px;left: 165px;z-index: 0;}
+.jeju_map label[for="slide06"] {bottom: 190px;left: 300px;z-index: 0;}
 
 input[id*="slide01"]:checked ~ .labelbox label[for*="slide01"] em ,
 input[id*="slide02"]:checked ~ .labelbox label[for*="slide02"] em,
