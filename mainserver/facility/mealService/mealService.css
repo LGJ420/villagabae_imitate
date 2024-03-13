@@ -42,7 +42,13 @@ section {
     line-height: 40px;
     padding-bottom: 50px;
     padding-top: 50px;
-    padding-left: 165px;
+}
+
+@media (width >= calc(100vw * .5)) {
+    .contitle{
+        display: grid;
+        justify-content: center;
+    }
 }
 
 .contitle span {
