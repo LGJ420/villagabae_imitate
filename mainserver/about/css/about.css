@@ -83,7 +83,7 @@ section div>p {
     width: 60%;
     height: 50vh;
     position: relative;
-    background-image: url(./team_image/c8197b6606af6.jpg);
+    background-image: url(../img/c8197b6606af6.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-left: 38%;
@@ -130,7 +130,7 @@ iframe {
 .tab_content label {
     display: inline-block;
     padding: 10px;
-    background-image: url(./team_image/circle_1.png);
+    background-image: url(../img/circle_1.png);
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -173,7 +173,7 @@ input[id="tab3_4"]:checked~.room3_4 {
 }
 
 .tab_content input:checked+label {
-    background-image: url(./team_image/circle_2.png);
+    background-image: url(../img/circle_2.png);
 }
 
 /* ========================================================== */
@@ -181,57 +181,57 @@ input[id="tab3_4"]:checked~.room3_4 {
 
 
 .room1_1 {
-    background-image: url(./team_image/room1_1.jpg);
+    background-image: url(../img/room1_1.jpg);
 }
 
 .room1_2 {
-    background-image: url(./team_image/room1_2.jpg);
+    background-image: url(../img/room1_2.jpg);
 }
 
 .room1_3 {
-    background-image: url(./team_image/room1_3.jpg);
+    background-image: url(../img/room1_3.jpg);
 }
 
 .room1_4 {
-    background-image: url(./team_image/room1_4.jpg);
+    background-image: url(../img/room1_4.jpg);
 }
 
 /* ========================================================== */
 /* room 2 */
 
 .room2_1 {
-    background-image: url(./team_image/room2_1.jpg);
+    background-image: url(../img/room2_1.jpg);
 }
 
 .room2_2 {
-    background-image: url(./team_image/room2_2.jpg);
+    background-image: url(../img/room2_2.jpg);
 }
 
 .room2_3 {
-    background-image: url(./team_image/room2_3.jpg);
+    background-image: url(../img/room2_3.jpg);
 }
 
 .room2_4 {
-    background-image: url(./team_image/room2_4.jpg);
+    background-image: url(../img/room2_4.jpg);
 }
 
 /* ========================================================== */
 /* room 3 */
 
 .room3_1 {
-    background-image: url(./team_image/room3_1.jpg);
+    background-image: url(../img/room3_1.jpg);
 }
 
 .room3_2 {
-    background-image: url(./team_image/room3_2.jpg);
+    background-image: url(../img/room3_2.jpg);
 }
 
 .room3_3 {
-    background-image: url(./team_image/room3_3.jpg);
+    background-image: url(../img/room3_3.jpg);
 }
 
 .room3_4 {
-    background-image: url(./team_image/room3_4.jpg);
+    background-image: url(../img/room3_4.jpg);
 }
 
 /* ============================================================= */
