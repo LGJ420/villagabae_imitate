@@ -46,7 +46,7 @@ header {
     flex-direction: column;
     width: 100%;
     padding: 0 15px;
-    position: absolute;
+    position: relative;
     max-width: calc(1920px * .8);
 }
 /* ↓↓↓ 좌측 상단 메인로고 설정 ↓↓↓ */
@@ -126,12 +126,11 @@ header {
 .nav_main_menu {
     display: flex;
     height: 60px;
-    width: 100%;
+    width: 98%;
     justify-content: end;
 }
 .nav_main_menu>.nav_top_ul {
     display: flex;
-    padding-right: 15px;
     align-items: baseline;
     position: relative;
 }
@@ -155,7 +154,7 @@ header {
 .login_join_menu>.nav_top_ul {
     display: flex;
     justify-content: end;
-    padding-right: 15px;
+    /* padding-right: 15px; */
 }
 /* ↑↑↑ Login&SignUp 설정 ↑↑↑ */
 
