@@ -201,22 +201,20 @@ input#allow{                            /* allow 체크 박스 디자인 변경*
     cursor: pointer;
 }
 input#allow + label:before{
+    background-image: url(./img/circle_1.png) ;
+    background-size: 100% 100%;
     content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border:2px solid #807570 ;
-    border-radius: 50%;
-    vertical-align: middle;
-    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    display:inline-block;
 }
 input#allow:checked+label:before{
+    background-image: url(./img/circle_2.png);
+    background-size: 100% 100%;
     content: "";
-    width: 15px;
-    height: 15px;
-    background-color: #807570;
-    border-radius: 50%;
-    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
 }
 
 .button_1{                                     /*전송 버튼 디자인 및 효과설정*/
