@@ -166,7 +166,7 @@ h3+p {
 
 label.sl_left {
     left: 10px;
-    background-image: url(./team_image/left.png);
+    background-image: url(./img/left.png);
     background-position: center center;
     background-size: 100% 140%;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@ label.sl_left {
 
 label.sl_right {
     right: 10px;
-    background-image: url(./team_image/right.png);
+    background-image: url(./img/right.png);
     background-position: center center;
     background-size: 100% 140%;
     background-repeat: no-repeat;
