@@ -10,12 +10,10 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-
     cursor: auto;
-    text-decoration: none;
 }
-/* ============================ ↑↑↑ 모달 기본 설정 ↑↑↑ ============================================*/
 
+/* ============================ ↑↑↑ 모달 기본 설정 ↑↑↑ ============================================*/
 
 /* ============================ ↓↓↓ 로그인 클릭버튼 ↓↓↓ ============================================*/
 .modal input[type="checkbox"] {
@@ -45,7 +43,7 @@
     width: 400px;
     
     position: fixed;
-    z-index: 100;
+    z-index: 2;
     left: 50%;
     top: 50vh;
     transform: translate(-50%, -50%);
@@ -107,16 +105,16 @@
 
 /* ↓↓↓ 로그인(모달) 열었을 때 배경 ↓↓↓ */
 .modal input[id="modal_login"]:checked ~ .modal_bg{
-    width: 100%;
-    /* height: 100vh; */
-    height: calc(100vh + 200px);
     background-color: rgb(146, 146, 146);
     opacity: .7;
     
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }
+
 /* ↑↑↑ 로그인(모달) 열었을 때 배경 ↑↑↑ */
 /* ============================ ↑↑↑ 로그인 모달팝업 ↑↑↑ ============================================*/

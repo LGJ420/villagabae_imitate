@@ -199,34 +199,34 @@ input[type="radio"]{
 }
 
 .room1 {
-    background-image: url(../images/room1.jpg);
+    background-image: url(./img/room1.jpg);
 }
 .room2 {
-    background-image: url(../images/room2.jpg);
+    background-image: url(./img/room2.jpg);
 }
 .room3 {
-    background-image: url(../images/room3.jpg);
+    background-image: url(./img/room3.jpg);
 }
 .room4 {
-    background-image: url(../images/room4.jpg);
+    background-image: url(./img/room4.jpg);
 }
 .room5 {
-    background-image: url(../images/room5.jpg);
+    background-image: url(./img/room5.jpg);
 }
 .room6 {
-    background-image: url(../images/room6.jpg);
+    background-image: url(./img/room6.jpg);
 }
 .room7 {
-    background-image: url(../images/room7.jpg);
+    background-image: url(./img/room7.jpg);
 }
 .room8 {
-    background-image: url(../images/room8.jpg);
+    background-image: url(./img/room8.jpg);
 }
 .room9 {
-    background-image: url(../images/room9.jpg);
+    background-image: url(./img/room9.jpg);
 }
 .room10 {
-    background-image: url(../images/room10.jpg);
+    background-image: url(./img/room10.jpg);
 }
 
 .tabs {
@@ -471,7 +471,7 @@ input[id="tab10"]:checked~ .tabs .tab10{
 
 
 .social_btn li a {
-    background-image: url(../images/social_btn.png);
+    background-image: url(./img/social_btn.png);
     width: 112px;
     height: 112px;
     margin: 3px;
