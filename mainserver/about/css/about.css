@@ -25,7 +25,7 @@ footer {
     margin: auto;
 }
 
-/* section 디자인 ========================================================= */
+/* ============================ ↓↓↓ about_section ↓↓↓ ============================================*/
 
 
 @keyframes opacity {
@@ -41,6 +41,7 @@ footer {
 
 .section_box {
     width: calc(1920px * .8);
+    margin: 0 15px;
 }
 
 h2,
@@ -54,18 +55,6 @@ h2 {
     font-size: 35px;
     letter-spacing: 10px;
     opacity: .9;
-}
-
-section div>p,
-.welcome,
-.map,
-h2,
-.location>p {
-    margin: 0 15px;
-
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 section div>p {
@@ -120,8 +109,7 @@ iframe {
     opacity: .2;
 }
 
-/* ========================================================== */
-/* room 공통사항 */
+/* ↓↓↓ room 공통사항_start ↓↓↓ */
 
 .tab_content input {
     display: none;
@@ -175,6 +163,9 @@ input[id="tab3_4"]:checked~.room3_4 {
 .tab_content input:checked+label {
     background-image: url(../img/circle_2.png);
 }
+
+/* ↑↑↑ room 공통사항_end ↑↑↑ */
+
 
 /* ========================================================== */
 /* room 1 */
@@ -284,4 +275,4 @@ input[id="tab3_4"]:checked~.room3_4 {
     height: 130px;
 }
 
-/* section 디자인 ========================================================= */
+/* ============================ ↑↑↑ about_section ↑↑↑ ============================================*/
