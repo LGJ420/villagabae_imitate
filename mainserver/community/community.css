@@ -259,10 +259,10 @@ to{
     opacity: 1;
 }
 }
-@media (width < 1000px){
-    .grid_box{
+@media (width < 1500px){
+    .grid_box {
         display: grid;
-        grid-template-columns:repeat(auto-fit, 1fr);
+        grid-template: 1fr 1fr / 1fr;
     }
 
 }
