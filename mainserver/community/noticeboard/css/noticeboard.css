@@ -72,27 +72,6 @@ footer {
     padding: 50px;
 }
 
-@keyframes move {
-    from{
-        right: -300px;
-    }
-    to{
-        right:700px
-    }
-}
-@keyframes down1 {
-    from{
-        bottom: 350px;
-        opacity: 0;
-    }
-    to{
-        bottom:400px ;
-        opacity: 1;
-    }
-}
-.motion_logo::selection{
-    background-color: white;
-}
 section {
     min-height: 40vh;
     max-height: max-content;
@@ -120,10 +99,10 @@ section {
     font-weight: 500;
     animation: down1 2.35s ease-out;
 }
-
-
-
 /* ==================↓↓↓↓부가 효과 설정↓↓↓↓================================================================== */
+.motion_logo::selection{
+    background-color: white;
+}
 a::selection,
 td::selection,
 th::selection,
@@ -150,7 +129,7 @@ table{
     padding: 50px;
     margin: 1.5vh 0 20vh 0 ;
     position: relative;
-
+    
 }
 .board_list{
     width: 100%;
@@ -207,4 +186,23 @@ i{
 .paging{
     text-align: center;
     min-width: 800px;
+}
+/* ===============↓↓↓↓keyframes 모음↓↓↓↓===================================================== */
+@keyframes move {
+    from{
+        right: -300px;
+    }
+    to{
+        right:700px
+    }
+}
+@keyframes down1 {
+    from{
+        bottom: 350px;
+        opacity: 0;
+    }
+    to{
+        bottom:400px ;
+        opacity: 1;
+    }
 }
