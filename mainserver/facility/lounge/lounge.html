@@ -1,101 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESERVATION</title>
 </head>
+<link rel="stylesheet" href="../../loginform.css">
 <link rel="stylesheet" href="../../htmlcssform_sub.css">
 <link rel="stylesheet" href="./lounge.css">
+<link rel="stylesheet" href="../../../mainserver/loginform.css">
 
 <body>
     <header>
         <div class="nav_box">
             <div class="logo_design">
-                <a href="../../../mainserver/index.html">logo</a>
+                <a href="../../index.html">logo</a>
+            </div>
+            <div class="login_join_menu">
+                <div class="nav_top_ul">
+                    <li>
+                        <div class="modal">
+                            <input type="checkbox" id="modal_login">
+                            <label for="modal_login">Login</label>
+                            <div class="modal_box">
+                                <label for="modal_login">×</label>
+                                <div>
+                                    <h2>로그인</h2>
+                                    <hr>
+                                    <div class="info">
+                                        <form action="#">
+                                            <input type="text" placeholder="아이디" required>
+                                            <input type="password" placeholder="비밀번호" required>
+                                            <button>로그인</button>
+                                        </form>
+                                    </div>
+                                    <hr>
+                                    <p>
+                                        <a href="">아이디 찾기</a>
+                                        <a href="">비밀번호 찾기</a>
+                                        <a href="">회원가입</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 로그인(모달) 열었을 때 배경 오퍼시티 -->
+                            <div class="modal_bg"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../../signup/signup.html">SignUp</a>
+                    </li>
+                </div>
             </div>
             <nav class="nav_main_menu">
                 <ul class="nav_top_ul">
                     <li>
-                        <a href="../../../mainserver/about/html/about.html">ABOUT</a>
+                        <a href="../../about/html/about.html">ABOUT</a>
                     </li>
                     <li>
-                        <a class="nemu_hover" href="../../../mainserver/rooms/rooms.html">ROOMS</a>
+                        <a class="nemu_hover" href="../../rooms/rooms.html">ROOMS</a>
                         <ul class="nav_deps">
-                            <li><a href="../../../mainserver/rooms/groom/G_room.html">G_room</a></li>
-                            <li><a href="../../../mainserver/rooms/hroom/H_room.html">H_room</a></li>
-                            <li><a href="../../../mainserver/rooms/oroom/O_room.html">O_room</a></li>
+                            <li><a href="../../rooms/groom/G_room.html">G_room</a></li>
+                            <li><a href="../../rooms/hroom/H_room.html">H_room</a></li>
+                            <li><a href="../../rooms/oroom/O_room.html">O_room</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="../../../mainserver/facility/facility.html">GUIDE</a>
+                        <a href="../../facility/facility.html">FACILITY</a>
                         <ul class="nav_deps">
-                            <li><a href="../../../mainserver/facility/facility.html">SERVICE</a></li>
-                            <li><a href="../../../mainserver/facility/tour/html/tour.html">TOUR</a></li>
+                            <li><a href="../../facility/tour/html/tour.html">TOUR</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="../../../mainserver/reservation/reservation.html">RESERVATION</a>
+                        <a href="../../reservation/reservation.html">RESERVATION</a>
                     </li>
                     <li>
-                        <a href="../../../mainserver/community/community.html">COMMUNITY</a>
+                        <a href="../../community/community.html">COMMUNITY</a>
                         <ul class="nav_deps">
-                            <li><a href="../../../mainserver/community/community.html">공지사항</a></li>
-                            <li><a href="../../../mainserver/community/noticeboard/html/noticeboard.html">게시판</a></li>
+                            <li><a href="../../community/noticeboard/html/noticeboard.html">게시판</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    
-    
-    <section> 
+
+    <section>
         <section class="section_box">
-        <h1 class="contitle">
-            <span>Lounge</span><br>
-            다채로운 액티비티와 휴식을 함께<br> 
-            즐길 수 있는 호텔 파라다이스의 시설을 즐겨보세요.
-        </h1>
-                <div class="pictureMore">
-                    <input type="radio" name="slide" id="slide01" checked>
-                    <input type="radio" name="slide" id="slide02" >
-                    <input type="radio" name="slide" id="slide03" >   
+            <h1 class="contitle">
+                <span>Lounge</span><br>
+                다채로운 액티비티와 휴식을 함께<br>
+                즐길 수 있는 호텔 파라다이스의 시설을 즐겨보세요.
+            </h1>
+            <div class="pictureMore">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
 
-                    <div class="slidewrap">
-                        <ul class="slidelist">
-                            <li>
-                                <a>
-                                    <label for="slide03" class="left"></label>
-                                    <img src="../img/paradise1.jpg" alt="facilities7">
-                                    <label for="slide02" class="right"></label>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <label for="slide01" class="left"></label>
-                                    <img src="../img/paradise2.jpg" alt="paradise2">
-                                    <label for="slide03" class="right"></label>
-                                </a>
-                            </li>
+                <div class="slidewrap">
+                    <ul class="slidelist">
+                        <li>
+                            <a>
+                                <label for="slide03" class="left"></label>
+                                <img src="../img/paradise1.jpg" alt="facilities7">
+                                <label for="slide02" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <label for="slide01" class="left"></label>
+                                <img src="../img/paradise2.jpg" alt="paradise2">
+                                <label for="slide03" class="right"></label>
+                            </a>
+                        </li>
 
-                            <li>
-                                <a>
-                                    <label for="slide02" class="left"></label>
-                                    <img src="../img/paradise5.jpg" alt="facilities7">
-                                    <label for="slide01" class="right"></label>
-                                </a>
-                            </li>
-                        </ul>
+                        <li>
+                            <a>
+                                <label for="slide02" class="left"></label>
+                                <img src="../img/paradise5.jpg" alt="facilities7">
+                                <label for="slide01" class="right"></label>
+                            </a>
+                        </li>
+                    </ul>
 
-                    </div>       
-                    
-                    <div class="underList">
-                        <label for="slide01"></label>
-                        <label for="slide02"></label>
-                        <label for="slide03"></label>
-                    </div>
                 </div>
+
+                <div class="underList">
+                    <label for="slide01"></label>
+                    <label for="slide02"></label>
+                    <label for="slide03"></label>
+                </div>
+            </div>
 
             <div class="cautionBox">
                 <div class="cautionBox1">
@@ -106,24 +141,24 @@
                 </div>
 
                 <div class="cautionBox2">
-                    <ol >
+                    <ol>
                         <li>
                             <h3>영업시간</h3>
-                                <p class="box box1">1. 라운지는 매일 24시간 운영됩니다. <br>
-                                   2. 음료 서비스는 오전 8시부터 밤 10시까지 제공됩니다.
-                                </p>
+                            <p class="box box1">1. 라운지는 매일 24시간 운영됩니다. <br>
+                                2. 음료 서비스는 오전 8시부터 밤 10시까지 제공됩니다.
+                            </p>
                         </li>
 
                         <li>
                             <h3>라운지 서비스</h3>
                             <p class="box box2">1. 다양한 음료 메뉴와 경미한 간식을 즐길 수 있습니다. <br>
-                               2. 무료 와이파이를 이용하여 비즈니스 미팅이나 소셜 미디어를 이용할 수 있습니다.</p>
+                                2. 무료 와이파이를 이용하여 비즈니스 미팅이나 소셜 미디어를 이용할 수 있습니다.</p>
                         </li>
 
                         <li>
                             <h3>특별 이벤트</h3>
                             <p class="box box3">1. 매주 금요일 저녁에는 라이브 음악 공연을 즐기실 수 있습니다. <br>
-                               2. 특별 행사나 이벤트가 있을 경우 미리 공지됩니다.</p>
+                                2. 특별 행사나 이벤트가 있을 경우 미리 공지됩니다.</p>
                         </li>
 
                         <li>
@@ -137,15 +172,15 @@
                                 2. 소음을 최소화하여 다른 손님들의 휴식을 존중해주세요.<br>
                                 3. 라운지를 이용하시는 동안 편안한 시간을 보내시길 바랍니다.<br>
                                 4. 언제든지 질문이나 요청이 있으시면 직원에게 문의해주세요.<br>
-                                </p>
-                        </li>                 
-                    </ol> 
-                </div>
+                            </p>
+                        </li>
+                    </ol>
                 </div>
             </div>
+            </div>
 
-        </div>
-    </section>
+            </div>
+        </section>
     </section>
 
     <footer>
@@ -153,22 +188,22 @@
             <div class="Business_infor">
                 <div class="Business_item">
                     <p>
-                    <span>빌라가배 Villagabae</span>
+                        <span>빌라가배 Villagabae</span>
                     </p>
                     <p>
-                    <span>Tel. 010-8020-3216</span>
+                        <span>Tel. 010-8020-3216</span>
                     </p>
                     <p>
-                    <span>거제시 동부면 거제 남서로 2407-21</span>
+                        <span>거제시 동부면 거제 남서로 2407-21</span>
                     </p>
                     <p>
-                    <span>공동대표 : 김태경 한동협ㅣ Biz License 308-11-42972 </span>
+                        <span>공동대표 : 김태경 한동협ㅣ Biz License 308-11-42972 </span>
                     </p>
                     <p>
-                    <span>통신판매업 신고번호 : 2022-경남 거제-0622</span>
+                        <span>통신판매업 신고번호 : 2022-경남 거제-0622</span>
                     </p>
                     <p>
-                    <span>copyright ⓒ VILLAGABAE All right reserved. since 2023.</span>
+                        <span>copyright ⓒ VILLAGABAE All right reserved. since 2023.</span>
                     </p>
                 </div>
             </div>
@@ -199,4 +234,5 @@
         </div>
     </footer>
 </body>
+
 </html>
