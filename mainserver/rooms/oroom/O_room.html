@@ -6,7 +6,7 @@
     <title>O ROOM</title>
     <link rel="stylesheet" href="../../htmlcssform_sub.css">
     <link rel="stylesheet" href="../../loginform.css">
-    <link rel="stylesheet" href="./O_room.css">
+    <link rel="stylesheet" href="../g_h_oroom_css/g_h_oroom.css">
 </head>
 
 <body>
@@ -15,23 +15,94 @@
             <div class="logo_design">
                 <a href="../../index.html">logo</a>
             </div>
+            <!-- ============================ ↓↓↓ 변경 사항 ↓↓↓ ============================================ -->
+            <div class="login_join_menu">
+                <ul class="nav_top_ul">
+                    <li>
+                        <!-- ↓↓↓ 변경 후 ↓↓↓ -->
+                        <div class="modal">
+                            <input type="checkbox" id="modal_login">
+                            <label for="modal_login">Login</label>
+                            <div class="modal_box">
+                                <div>
+                                    <a href="./O_room.html">×</a>
+                                </div>
+                                <div>
+                                    <input type="radio" name="modal_usage" id="login" checked>
+                                    <input type="radio" name="modal_usage" id="id_serch">
+                                    <input type="radio" name="modal_usage" id="pw_serch">
+                                    <div class="login">
+                                        <h2>로그인</h2>
+                                        <hr>
+                                        <div class="info">
+                                            <form action="#" >
+                                                <input type="text" placeholder="아이디" required>
+                                                <input type="password" placeholder="비밀번호" required>
+                                                <button>Login</button>
+                                            </form>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <label for="id_serch">ID 찾기</label>
+                                            <label for="pw_serch">PW 찾기</label>
+                                            <a href="../../signup/signup.html">SignUp</a>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="id_serch">
+                                        <h2>ID 찾기</h2>
+                                        <hr>
+                                        <div class="info">
+                                            <form action="#" >
+                                                <input type="text" placeholder="성명" required>
+                                                <input type="text" placeholder="주민번호 6자" required>
+                                                <button>ID 찾기</button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="pw_serch">
+                                        <h2>PW 찾기</h2>
+                                        <hr>
+                                        <div class="info">
+                                            <form action="#" >
+                                                <input type="text" placeholder="성명" required>
+                                                <input type="text" placeholder="주민번호 6자" required>
+                                                <input type="text" placeholder="아이디" required>
+                                                <button>PW 찾기</button>
+                                            </form>
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 로그인(모달) 열었을 때 배경 오퍼시티 -->
+                            <div class="modal_bg"></div>
+                        </div>
+                        <!-- ↑↑↑ 변경 후 ↑↑↑ -->
+                    </li>
+                    <li>
+                        <a href="../../signup/signup.html">SignUp</a>
+                    </li>
+                </ul>
+            </div>
+            <!--  ============================ ↑↑↑ 변경 사항 ↑↑↑ ============================================ -->
             <nav class="nav_main_menu">
                 <ul class="nav_top_ul">
                     <li>
                         <a href="../../about/html/about.html">ABOUT</a>
                     </li>
                     <li>
-                        <a class="nemu_hover" href="">ROOMS</a>
+                        <a class="nemu_hover" href="../rooms.html">ROOMS</a>
                         <ul class="nav_deps">
                             <li><a href="../groom/G_room.html">G_room</a></li>
                             <li><a href="../hroom/H_room.html">H_room</a></li>
-                            <li><a href="#">O_room</a></li>
+                            <li><a href="../oroom/O_room.html">O_room</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="../../facility/facility.html">GUIDE</a>
+                        <a href="../../facility/facility.html">FACILITY</a>
                         <ul class="nav_deps">
-                            <li><a href="../../facility/facility.html">SERVICE</a></li>
                             <li><a href="../../facility/tour/html/tour.html">TOUR</a></li>
                         </ul>
                     </li>
@@ -41,7 +112,6 @@
                     <li>
                         <a href="../../community/community.html">COMMUNITY</a>
                         <ul class="nav_deps">
-                            <li><a href="../../community/community.html">공지사항</a></li>
                             <li><a href="../../community/noticeboard/html/noticeboard.html">게시판</a></li>
                         </ul>
                     </li>
@@ -158,7 +228,7 @@
                     <div>
                         <a href="../../facility/mealService/mealService.html">
                             <img src="./img/service/meal_service.jpg" alt="meal Service">
-                            <em>Breakfast</em>
+                            <em>Meal Service</em>
                         </a>
                     </div>
 
@@ -233,10 +303,10 @@
                         <a href="../../about/html/about.html">ABOUT</a>
                     </li>
                     <li>
-                        <a href="../rooms.html">ROOMS</a>
+                        <a href="../../rooms/rooms.html">ROOMS</a>
                     </li>
                     <li>
-                        <a href="../../facility/facility.html">TOUR</a>
+                        <a href="../../facility/facility.html">FACILITY</a>
                     </li>
                     <li>
                         <a href="../../reservation/reservation.html">RESERVATION</a>

@@ -141,28 +141,28 @@ label[for*="tab"] {
     }
 }
 
-input[id="tab01"]:checked ~ .room_img_box .room_1,
-input[id="tab02"]:checked ~ .room_img_box .room_2,
-input[id="tab03"]:checked ~ .room_img_box .room_3,
-input[id="tab04"]:checked ~ .room_img_box .room_4,
-input[id="tab05"]:checked ~ .room_img_box .room_5,
-input[id="tab06"]:checked ~ .room_img_box .room_6,
-input[id="tab07"]:checked ~ .room_img_box .room_7,
-input[id="tab08"]:checked ~ .room_img_box .room_8,
-input[id="tab09"]:checked ~ .room_img_box .room_9 {
+#tab01:checked~.room_img_box .room_1,
+#tab02:checked~.room_img_box .room_2,
+#tab03:checked~.room_img_box .room_3,
+#tab04:checked~.room_img_box .room_4,
+#tab05:checked~.room_img_box .room_5,
+#tab06:checked~.room_img_box .room_6,
+#tab07:checked~.room_img_box .room_7,
+#tab08:checked~.room_img_box .room_8,
+#tab09:checked~.room_img_box .room_9 {
     display: block;
     animation: opacity .5s;
 }
 
-input[id="tab01"]:checked ~ .room_img_tab label[for="tab01"],
-input[id="tab02"]:checked ~ .room_img_tab label[for="tab02"],
-input[id="tab03"]:checked ~ .room_img_tab label[for="tab03"],
-input[id="tab04"]:checked ~ .room_img_tab label[for="tab04"],
-input[id="tab05"]:checked ~ .room_img_tab label[for="tab05"],
-input[id="tab06"]:checked ~ .room_img_tab label[for="tab06"],
-input[id="tab07"]:checked ~ .room_img_tab label[for="tab07"],
-input[id="tab08"]:checked ~ .room_img_tab label[for="tab08"],
-input[id="tab09"]:checked ~ .room_img_tab label[for="tab09"] {
+#tab01:checked~.room_img_tab label[for="tab01"],
+#tab02:checked~.room_img_tab label[for="tab02"],
+#tab03:checked~.room_img_tab label[for="tab03"],
+#tab04:checked~.room_img_tab label[for="tab04"],
+#tab05:checked~.room_img_tab label[for="tab05"],
+#tab06:checked~.room_img_tab label[for="tab06"],
+#tab07:checked~.room_img_tab label[for="tab07"],
+#tab08:checked~.room_img_tab label[for="tab08"],
+#tab09:checked~.room_img_tab label[for="tab09"] {
     border: 5px solid rgba(146,111,52,0.8);
 }
 /* ↑↑↑ 객실 사진 ↑↑↑ */
