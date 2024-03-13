@@ -2,24 +2,21 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    /* border: 1px rgb(5, 139, 0) solid;
-    box-sizing: border-box;
-    padding: 3px; */
 }
 
 body {
-    height: 100vh;
     width: 100%;
+    height: 100vh;
 }
 
 body::before {
-    content: "";
     top: 0;
+    content: "";
+    z-index: -1;
     width: 100%;
     height: 100%;
-    background: url(../../image/background4.jpg) no-repeat center/cover;
     position: fixed;
-    z-index: -1;
+    background: url(../../image/background4.jpg) no-repeat center/cover;
 }
 
 header,
@@ -28,7 +25,7 @@ footer {
     margin: auto;
 }
 
-/* header 디자인 ========================================================= */
+
 
 
 
@@ -37,53 +34,66 @@ footer {
 /* section 디자인 ========================================================= */
 
 
+/* ↓↓↓ section 기본 설정 ↓↓↓ */
 section {    
     min-height: 75vh;
     max-height: max-content;
     background-color: white;    
 }
+/* ↑↑↑ section 기본 설정 ↑↑↑ */
 
+
+
+/* ↓↓↓ 사진 상단 문구 위치 정렬 및 디자인 ↓↓↓↓ */
 .contitle{   
     font-size: 30px;
     font-weight: 100;
     line-height: 40px;
-    padding-bottom: 50px;
     padding-top: 50px;   
+    padding-bottom: 50px;
 }
 
+.contitle p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(223,190,106);
+}
+/* ↑↑↑ 사진 상단 문구 위치 정렬 및 디자인 ↑↑↑ */
+
+
+/* ↓↓↓ 사진 상단 문구 뷰포트 크기에 따른 반응형 정렬 ↓↓↓↓ */
 @media (width >= calc(100vw * .5 )) {
     .contitle {
         display: grid;
         justify-content: center;
     }
 }
+/* ↑↑↑ 사진 상단 문구 뷰포트 크기에 따른 반응형 정렬 ↑↑↑ */
 
-.contitle p{
-    font-weight: bold;
-    font-size: 20px;
-    color: rgba(223,190,106);
-}
 
+
+
+/* ↓↓↓ 사진에 슬라이드 기능 추가 ↓↓↓↓ */
 .pictureMore input[id*="slide"] {
     display: none;
 }
 
 .pictureMore .slidewrap {
-    max-width: 900px;
     margin:0 auto;
     overflow: hidden;
+    max-width: 900px;
 }
 
 .pictureMore .slidelist {
-    white-space: nowrap;
     font-size: 0;
+    white-space: nowrap;
 }
 
 .pictureMore .slidelist>li {
-    display: inline-block;
-    vertical-align: middle;
     width: 100%;
     transition: all 0.5s;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .pictureMore .slidelist>li>a {
@@ -96,12 +106,12 @@ section {
 }
 
 .pictureMore .slidelist label {
-    position: absolute;
-    z-index: 10;
     top: 50%;
-    transform: translateY(-50%);
+    z-index: 10;
     padding: 50px;
     cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
 }
 
 .pictureMore .slidelist .left {
@@ -114,58 +124,79 @@ section {
     background: url(../img/chevron-double-right\ 1.png ) center center / 100% no-repeat;
 }
 
-.pictureMore [id="slide01"]:checked ~ .slidewrap .slidelist>li {transform: translateX(0%);}
-.pictureMore [id="slide02"]:checked ~ .slidewrap .slidelist>li {transform: translateX(-100%);}
-.pictureMore [id="slide03"]:checked ~ .slidewrap .slidelist>li {transform: translateX(-200%);}
+#slide01:checked~.slidewrap .slidelist>li {transform: translateX(0%);}
+#slide02:checked~.slidewrap .slidelist>li {transform: translateX(-100%);}
+#slide03:checked~.slidewrap .slidelist>li {transform: translateX(-200%);}
 
-.pictureMore [id="slide01"]:checked ~ .underList label[for="slide01"] ,
-.pictureMore [id="slide02"]:checked ~ .underList label[for="slide02"] ,
-.pictureMore [id="slide03"]:checked ~ .underList label[for="slide03"] 
+#slide01:checked~.underList label[for="slide01"] ,
+#slide02:checked~.underList label[for="slide02"] ,
+#slide03:checked~.underList label[for="slide03"] 
 {
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: rgba(223,190,106);
     background-image: url(../img/circle_2.png) ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    cursor: pointer;
+}
+/* ↑↑↑ 사진에 슬라이드 기능 추가 ↑↑↑ */
+
+
+
+.pictureMore .slidewrap:hover {
+    scale: 1.1;
+    transition: all 0.8s;
 }
 
+/* ↓↓↓ 사진 하단 작은 원에 기능 추가 ↓↓↓↓ */
 .underList {
+    gap: 10px;
     padding: 30px;
     display: flex;
     justify-content: center;
-    gap: 10px;
 }
 
+
+
 .underList label {
-    display: inline-block;
-    background-color: rgba(223,190,106,0.5);
-    background-image: url(../img/circle_1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
     width: 15px;
     height: 15px;
     border-radius: 50%;
+    display: inline-block;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(223,190,106,0.5);
+    background-image: url(../img/circle_1.png);
 }
+/* ↑↑↑ 사진 하단 작은 원에 기능 추가 ↑↑↑ */
 
+
+
+
+/* ↓↓↓ 어메니티 화면의 상세정보 문구 정렬 ↓↓↓*/
 .infoBox{
-    font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 100px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .infoBox2>ul>li{
+    padding: 10px;
     font-size: 1.2em;
     font-weight: bold;
-    padding: 10px;
     color: rgba(223,190,106);;
 }
 
 .infoBox2>ul>li>ul>li {
+    padding: 10px;
+    color: initial;
     font-size: initial;
     font-weight: initial;
-    color: initial;
-    padding: 10px;
+}
+
+.infoBox1 li {
+    font-size: 1.5em;
+    padding-bottom: 20px;
 }
 
 .infoBox2{
@@ -183,7 +214,9 @@ section {
 }
 
 .box3 {
+    gap: 10px;
     display: grid;
     grid-template: repeat(2,1fr)/ repeat(2,1fr);
-    gap: 10px;
 }
+/* ↑↑↑ 어메니티 화면의 상세정보 문구 정렬 ↑↑↑ */
+/* =========================================================================== */
