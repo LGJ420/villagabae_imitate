@@ -33,18 +33,17 @@ footer {
     width: calc(1920px * .8);
 }
 
-@keyframes opacity {
-
-    /* opacity 애니메이션 설정 */
-    from {
-        opacity: 0;
-    }
-}
-
 ::selection {
     /* 드래그 색상 지정 */
     background: #705b43;
     color: white;
+}
+
+@keyframes opacity {
+    /* opacity 애니메이션 설정 */
+    from {
+        opacity: 0;
+    }
 }
 
 h2,

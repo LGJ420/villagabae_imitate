@@ -26,27 +26,26 @@ footer {
     margin: auto;
 }
 
-/* section 디자인 ========================================================= */
+/* ============================ ↓↓↓ rooms_section ↓↓↓ ============================================*/
+
+/* ↓↓↓ section 기본 디자인 설정_start ↓↓↓ */
+
+.section_box {
+    width: calc(1920px * .8);
+}
 
 ::selection {
     background: #705b43;
     color: white;
 }
 
-.section_box {
-    width: calc(1920px * .8);
-}
-
-/* ========================================================== */
-/* 상단 소개 */
-
+/* ↓↓↓ 상단소개_start ↓↓↓ */
 h2 {
     margin-top: 8%;
     color: rgb(117, 97, 72);
 }
 
 .section_box hr+p {
-    white-space: pre-line;
     font-size: 40px;
     opacity: .7;
     color: #796a59;
@@ -56,6 +55,7 @@ h2 {
 }
 
 .line {
+    /* 제목(h2)과 내용 사이에 있는 짧은 선 */
     width: 5%;
     margin-top: 2%;
     opacity: .2;
@@ -337,4 +337,4 @@ label.sl_right {
     justify-self: center;
 }
 
-/* section 디자인 ========================================================= */
+/* ============================ ↑↑↑ about_section ↑↑↑ ============================================*/
