@@ -56,7 +56,7 @@ header {
 }
 .logo_design a {
     display: flex;
-    background-image: url(../img/logo.png);
+    background-image: url(./image/logo.png);
     background-repeat: no-repeat;
     background-size: 200px;
     width: 50%;
