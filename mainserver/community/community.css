@@ -118,13 +118,13 @@ section {
     background-size: 100% 100%;
 }
 .sns_1:hover {
-    background: url(./Instagram.png);                  /*SNS아이콘 클릭효과*/
+    background: url(./img/Instagram.png);                  /*SNS아이콘 클릭효과*/
     background-size: 100% 100%;
     opacity: 0.5;
     transition: all 0.5s;
 }
 .sns_2:hover {
-    background: url(./Facebook.png);
+    background: url(./img/Facebook.png);
     background-size: 100% 100%;
     opacity: 0.5;
     transition: all 0.5s;
