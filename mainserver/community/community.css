@@ -52,7 +52,7 @@ span::selection,                                 /*드래그 색상 변경*/
 }
 /* -===========↓↓↓↓Section 백그라운드(기본 set)↓↓↓↓======================================*/
 section {
-    min-height: 40vh;
+    /* min-height: 40vh; */
     max-height: max-content;
     background-color: rgb(255, 255, 255);
 }
@@ -258,5 +258,12 @@ from{
 to{
     opacity: 1;
 }
+}
+@media (width < 1000px){
+    .grid_box{
+        display: grid;
+        grid-template-columns:repeat(auto-fit, 1fr);
+    }
+
 }
 /* section 디자인 =========================================================================*/
