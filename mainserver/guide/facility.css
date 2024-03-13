@@ -27,9 +27,7 @@ footer {
 
 
 
-/* section 디자인 ========================================================= */
-
-
+/* ↓↓↓ section 기본 설정 ↓↓↓ */
 section {
     min-height: 75vh;
     max-height: max-content;
@@ -44,18 +42,24 @@ section {
     max-width: calc(1920px * .8);
     width: 100%;
 }
+/* ↑↑↑ section 기본 설정 ↑↑↑ */
 
+
+h2 {
+    color: rgba(223,190,106);
+    padding: 20px 0 20px 20px;
+}
+
+/* ↓↓↓ section 사진 기본 설정 ↓↓↓ */
 .picture {
     display: flex;
     flex-direction: column;
 }
 
-.picture h2{
-}
-
 img {
     width: 100%;
 }
+
 .pic {
     height: 75vh;
     display: grid;
@@ -63,6 +67,20 @@ img {
     gap: 10px;
 }
 
+.pic div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+/* ↑↑↑ 사진 기본 설정 ↑↑↑ */
+
+
+
+
+
+/* ↓↓↓ 화면 크기에 따른 사진 배열 기능 추가 ↓↓↓ */
 @media (max-width: 960px) {
     .pic {
         display: grid;
@@ -70,16 +88,13 @@ img {
         grid-template-rows: repeat(auto-fit,1fr);
     }
 }
+/* ↑↑↑ 화면 크기에 따른 사진 배열 기능 추가 ↑↑↑ */
 
-.pic div{
-    width: 100%;
 
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-wrap: wrap;
-}
 
+
+
+/* ↓↓↓ 사진 하단 문구 정렬 및 색 조정 ↓↓↓ */
 .pic div img {    
     width: 100%;
     cursor: pointer;
@@ -87,6 +102,8 @@ img {
 
 .ser {
     text-align: center;
+    background-color: rgba(146, 111, 52, .8);
+    width:100%;
 }
 
 .pic div img:hover,
@@ -101,13 +118,11 @@ span{
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 p>a:visited {
     text-decoration: none;
-    color: black;
+    color: white
 }
-
-
-
+/* ↑↑↑ 사진 하단 문구 정렬 및 색 조정 ↑↑↑ */ 
