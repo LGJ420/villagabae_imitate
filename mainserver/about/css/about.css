@@ -152,6 +152,12 @@ iframe {
     background-image: url(../img/circle_2.png);
 }
 
+.rooms {
+    /* 이미지 box 정렬 */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .conbox {
     /* 이미지 box 디자인 */
     display: none;
@@ -189,7 +195,7 @@ input[id="tab3_4"]:checked~.room3_4 {
 /* ↑↑↑ room 공통사항_end ↑↑↑ */
 
 
-/* ↓↓↓ room 이미지 삽입_start ↓↓↓ */
+/* ↓↓↓ room 개별 이미지 삽입_start ↓↓↓ */
 
 /* G_Room */
 
@@ -245,54 +251,42 @@ input[id="tab3_4"]:checked~.room3_4 {
     background-image: url(../img/room3_4.jpg);
 }
 
-/* ↑↑↑ room 이미지 삽입_end ↑↑↑ */
+/* ↑↑↑ room 개별 이미지 삽입_end ↑↑↑ */
 
-.rooms {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
 
-.room_box,
-.room_go a {
-    font-family: "Nanum Myeongjo", serif;
-    font-style: normal;
-    letter-spacing: 1px;
-    font-weight: bolder;
-    color: rgb(117, 97, 72);
-    opacity: .5;
-}
-
-.room_box {
-    position: absolute;
-    margin-left: 200px;
-    margin-top: -280px;
-    font-size: 30px;
-    background-color: rgb(241, 235, 223);
-    border-radius: 30% 0;
-    padding: 3px 17px;
-}
-
-.room_go a {
-    display: inline-block;
-    border: 1px solid;
-    text-align: center;
-    width: 300px;
-    line-height: 70px;
-    margin: auto;
-
-    font-size: 20px;
-    text-decoration: none;
-    letter-spacing: 5px;
-}
-
-.room_go a:hover {
-    opacity: 1;
-}
+/* ↓↓↓ rooms 메인 연결 링크 삽입_start ↓↓↓ */
 
 .room_go {
     text-align: center;
     margin-top: 80px;
     height: 130px;
 }
+
+.room_go a {
+    /* text 디자인 */
+    font-family: "Nanum Myeongjo", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(117, 97, 72);
+    letter-spacing: 5px;
+    text-decoration: none;
+    opacity: .5;
+
+    /* box 디자인 */
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    width: 300px;
+    line-height: 70px;
+    margin: auto;
+}
+
+.room_go a:hover {
+    opacity: 1;
+}
+
+/* ↑↑↑ rooms 메인 연결 링크 삽입_end ↑↑↑ */
 
 /* ============================ ↑↑↑ about_section ↑↑↑ ============================================*/
