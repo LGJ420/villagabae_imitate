@@ -49,6 +49,11 @@ footer {
     margin: 40px;
 }
 
+header {
+    /* 모달창을 위로 올리기위해 지정*/
+    z-index: 10;
+}
+
 .signup_form {
     position: relative;
     z-index: 2;
