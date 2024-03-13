@@ -16,7 +16,7 @@ body::before {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(../img/background4.jpg) no-repeat center/cover;
+    background: url(./img/background4.jpg) no-repeat center/cover;
     position: fixed;
     z-index: -1;
 }
@@ -137,7 +137,7 @@ input[id*="Agreement"] + label {
     cursor: pointer;
 }
 input[id*="Agreement"] + label em {
-    background: url(../img/arrowdown.png) no-repeat;
+    background: url(./img/arrowdown.png) no-repeat;
     background-size: 70%;
     background-position: center;
     position: absolute;
@@ -157,7 +157,7 @@ input[id*="Agreement"]:checked + label + div {
     max-height: 1000px;
 }
 input[id*="Agreement"]:checked + label em {
-    background: url(../img/arrowup.png) no-repeat;
+    background: url(./img/arrowup.png) no-repeat;
     background-position: center;
     background-size: 70%;
 }
