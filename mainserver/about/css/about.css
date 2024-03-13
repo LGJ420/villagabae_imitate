@@ -41,7 +41,6 @@ footer {
 
 .section_box {
     width: calc(1920px * .8);
-    margin: 0 15px;
 }
 
 h2,
@@ -55,6 +54,14 @@ h2 {
     font-size: 35px;
     letter-spacing: 10px;
     opacity: .9;
+}
+
+section div>p,
+.welcome,
+.map,
+h2,
+.location>p {
+    margin: 0 15px;
 }
 
 section div>p {
