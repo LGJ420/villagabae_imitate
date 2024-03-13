@@ -1,3 +1,7 @@
+/* ============================ ↓↓↓ 주석 양식 ↓↓↓ ============================================*/
+/* ============================ ↑↑↑ 주석 양식 ↑↑↑ ============================================*/
+/* ↓↓↓ "작은" 주석 양식 ↓↓↓ */
+/* ↑↑↑ "작은" 주석 양식 ↑↑↑ */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +25,6 @@ section,
 footer {
     margin: auto;
 }
-
 /* ============================ ↓↓↓ section ↓↓↓ ============================================*/
 /* ↓↓↓ section 내용 디자인 설정 ↓↓↓ */
 section {
@@ -43,7 +46,7 @@ section {
     height: max-content;
     max-width: calc(1920px * .8);
 }
-
+/* ↑↑↑ section 내용 디자인 설정 ↑↑↑ */
 .jeju_guide_box {
     display: flex;
     justify-content: center;
@@ -77,7 +80,7 @@ section {
     overflow:hidden;
 }
 
-/* 체크박스 스타일 지정 */
+/* ↓↓↓ 체크박스 스타일 지정 ↓↓↓ */
 .jeju_map label {
     display: flex;
     width: 10px;
@@ -99,12 +102,12 @@ section {
     width: 10px;
     height: 10px;
 }
-.jeju_map label[for="slide01"] {bottom: 190px;left: 205px;z-index: 0;}
-.jeju_map label[for="slide02"] {bottom: 335px;left: 525px;z-index: 0;}
-.jeju_map label[for="slide03"] {bottom: 185px;left: 120px;z-index: 0;}
-.jeju_map label[for="slide04"] {bottom: 200px;left: 340px;z-index: 0;}
-.jeju_map label[for="slide05"] {bottom: 235px;left: 165px;z-index: 0;}
-.jeju_map label[for="slide06"] {bottom: 190px;left: 300px;z-index: 0;}
+.jeju_map label[for="slide01"] {bottom: 190px;left: 205px;z-index: 1;}
+.jeju_map label[for="slide02"] {bottom: 335px;left: 525px;z-index: 1;}
+.jeju_map label[for="slide03"] {bottom: 185px;left: 120px;z-index: 1;}
+.jeju_map label[for="slide04"] {bottom: 200px;left: 340px;z-index: 1;}
+.jeju_map label[for="slide05"] {bottom: 235px;left: 165px;z-index: 1;}
+.jeju_map label[for="slide06"] {bottom: 190px;left: 300px;z-index: 1;}
 
 input[id*="slide01"]:checked ~ .labelbox label[for*="slide01"] em ,
 input[id*="slide02"]:checked ~ .labelbox label[for*="slide02"] em,
@@ -115,8 +118,7 @@ input[id*="slide06"]:checked ~ .labelbox label[for*="slide06"] em {
     background-color: white;
     opacity: 1;
 }
-
-/* 체크박스 스타일 지정 */
+/* ↑↑↑ 체크박스 스타일 지정 ↑↑↑ */
 .slidebox .slideitem {
     position: relative;
     display: inline-block;
@@ -139,8 +141,7 @@ input[id*="slide06"]:checked ~ .labelbox label[for*="slide06"] em {
 [id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);}
 [id="slide05"]:checked ~ .slidelist .slideitem {transform:translateX(-400%);}
 [id="slide06"]:checked ~ .slidelist .slideitem {transform:translateX(-500%);}
-
-/* ↑↑↑ "작은" 주석 양식 ↑↑↑ */
+/* ↑↑↑ 슬라이드 기능 추가 ↑↑↑ */
 
 /* ↓↓↓ 이미지 테투리 효과 ↓↓↓ */
 .jeju_map {
