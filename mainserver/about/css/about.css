@@ -27,20 +27,24 @@ footer {
 
 /* ============================ ↓↓↓ about_section ↓↓↓ ============================================*/
 
+/* ↓↓↓ section 기본 디자인 설정_start ↓↓↓ */
+
+.section_box {
+    width: calc(1920px * .8);
+}
 
 @keyframes opacity {
+
+    /* opacity 애니메이션 설정 */
     from {
         opacity: 0;
     }
 }
 
 ::selection {
+    /* 드래그 색상 지정 */
     background: #705b43;
     color: white;
-}
-
-.section_box {
-    width: calc(1920px * .8);
 }
 
 h2,
@@ -65,6 +69,7 @@ h2,
 }
 
 section div>p {
+    /* 소개 글 디자인 설정 */
     width: 32%;
     white-space: pre-line;
     letter-spacing: 1px;
@@ -76,6 +81,7 @@ section div>p {
 }
 
 .welcome {
+    /* 소개 사진 디자인 설정 */
     width: 60%;
     height: 50vh;
     position: relative;
@@ -91,6 +97,7 @@ section div>p {
 }
 
 iframe {
+    /* google 지도 디자인 설정 */
     margin-top: 1%;
     box-shadow: 0 0 30px rgb(141, 132, 93);
     width: 100%;
@@ -108,6 +115,7 @@ iframe {
 }
 
 .line {
+    /* 제목(h2)과 내용 사이에 있는 짧은 선 */
     width: 5%;
     margin: 0 15px;
     margin-top: -2%;
@@ -116,6 +124,9 @@ iframe {
     opacity: .2;
 }
 
+/* ↑↑↑ section 기본 디자인 설정_end ↑↑↑ */
+
+
 /* ↓↓↓ room 공통사항_start ↓↓↓ */
 
 .tab_content input {
@@ -123,6 +134,7 @@ iframe {
 }
 
 .tab_content label {
+    /* 기본으로 설정되는 빈 동그라미 label 디자인 설정 */
     display: inline-block;
     padding: 10px;
     background-image: url(../img/circle_1.png);
@@ -135,7 +147,13 @@ iframe {
     top: 540px;
 }
 
+.tab_content input:checked+label {
+    /* label 을 클릭했을 때 나타나는 체크 동그라미 */
+    background-image: url(../img/circle_2.png);
+}
+
 .conbox {
+    /* 이미지 box 디자인 */
     display: none;
     width: 450px;
     height: 500px;
@@ -167,16 +185,13 @@ input[id="tab3_4"]:checked~.room3_4 {
     display: block;
 }
 
-.tab_content input:checked+label {
-    background-image: url(../img/circle_2.png);
-}
 
 /* ↑↑↑ room 공통사항_end ↑↑↑ */
 
 
-/* ========================================================== */
-/* room 1 */
+/* ↓↓↓ room 이미지 삽입_start ↓↓↓ */
 
+/* G_Room */
 
 .room1_1 {
     background-image: url(../img/room1_1.jpg);
@@ -194,8 +209,7 @@ input[id="tab3_4"]:checked~.room3_4 {
     background-image: url(../img/room1_4.jpg);
 }
 
-/* ========================================================== */
-/* room 2 */
+/* H_Room */
 
 .room2_1 {
     background-image: url(../img/room2_1.jpg);
@@ -213,8 +227,7 @@ input[id="tab3_4"]:checked~.room3_4 {
     background-image: url(../img/room2_4.jpg);
 }
 
-/* ========================================================== */
-/* room 3 */
+/* O_Room */
 
 .room3_1 {
     background-image: url(../img/room3_1.jpg);
@@ -232,7 +245,7 @@ input[id="tab3_4"]:checked~.room3_4 {
     background-image: url(../img/room3_4.jpg);
 }
 
-/* ============================================================= */
+/* ↑↑↑ room 이미지 삽입_end ↑↑↑ */
 
 .rooms {
     display: grid;
