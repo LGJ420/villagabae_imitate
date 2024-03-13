@@ -126,22 +126,20 @@ iframe {
 
 /* ↑↑↑ section 기본 디자인 설정_end ↑↑↑ */
 
+
+/* ↓↓↓ Room 소개 디자인_start ↓↓↓ */
+
 .small_box {
-    /* height: 280px; */
     overflow: hidden;
     position: relative;
 
-    /* background-image: url(../img/room3_1.jpg); */
-    /* background-color: aqua; */
     height: 920px;
-
-    /* box-shadow: 0 0 30px rgb(141, 132, 93); */
-    /* opacity: .9; */
 
     margin-top: 3%;
 }
 
 .small_box .about_img {
+    /* Room 대표 이미지 설정 */
     transform: scale(1.15);
     object-fit: cover;
     transition: opacity .5s, transform 1s;
@@ -155,11 +153,13 @@ iframe {
 }
 
 .small_box:hover .about_img {
+    /* 이미지 hover 기능 삽입 */
     transform: scale(1);
     opacity: .8;
 }
 
 .text {
+    /* 이미지 내부 글자 설정 */
     position: absolute;
     top: 0;
     left: 0;
@@ -174,17 +174,20 @@ iframe {
 }
 
 .text>p:nth-of-type(1) {
+    /* 제목 */
     text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
     margin-bottom: 10px;
     font-size: 50px;
 }
 
 .text>p:nth-of-type(2) {
+    /* 내용 */
     font-size: 20px;
     padding-bottom: 20px;
 }
 
 .text p {
+    /* 제목, 내용 공통사항 */
     transform: translateY(20px);
     transition: all .5s;
     opacity: 0;
@@ -192,15 +195,16 @@ iframe {
 
     background-color: rgb(177, 167, 142);
     opacity: .4;
-
 }
 
 .small_box:hover .text p {
+    /* 제목, 내용 hover 기능 삽입 */
     transform: translateY(0);
     opacity: 1;
 }
 
 .text::before {
+    /* 사진 바깥 border 설정 */
     content: '';
     border: 2px solid;
     position: absolute;
@@ -214,9 +218,13 @@ iframe {
 }
 
 .small_box:hover .text::before {
+    /* 사진 바깥 border hover 기능 삽입 */
     opacity: 1;
     transform: scale(1);
 }
+
+/* ↑↑↑ Room 소개 디자인_end ↑↑↑ */
+
 
 /* ↓↓↓ rooms 메인 연결 링크 삽입_start ↓↓↓ */
 
@@ -233,22 +241,25 @@ iframe {
     letter-spacing: 1px;
     font-size: 20px;
     font-weight: bolder;
-    color: rgb(117, 97, 72);
+    color: white;
     letter-spacing: 5px;
     text-decoration: none;
-    opacity: .5;
+    opacity: .9;
+    background-color: rgb(117, 97, 72);
+    transition: all .5s;
 
     /* box 디자인 */
     display: inline-block;
-    border: 1px solid;
     text-align: center;
     width: 300px;
     line-height: 70px;
-    margin: auto;
 }
 
 .room_go a:hover {
-    opacity: 1;
+    /* text hover 기능 삽입 */
+    background-color: white;
+    color: rgb(117, 97, 72);
+    border: 1px solid rgb(117, 97, 72);
 }
 
 /* ↑↑↑ rooms 메인 연결 링크 삽입_end ↑↑↑ */
