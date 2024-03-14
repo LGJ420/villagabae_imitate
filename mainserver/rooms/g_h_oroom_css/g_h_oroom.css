@@ -6,6 +6,7 @@
 } */
 
 /* ============================ ↓↓↓ 기본 세팅 ↓↓↓ ============================================*/
+/* ↓↓↓ 공용 ↓↓↓ */
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +19,6 @@ body {
     width: 100%;
 }
 
-body * {
-    box-sizing: border-box;
-}
 
 body::before {
     content: "";
@@ -37,6 +35,12 @@ section,
 footer {
     margin: auto;
 }
+/* ↑↑↑ 공용 ↑↑↑ */
+
+/* ↓↓↓ 개인 ↓↓↓ */
+body * {
+    box-sizing: border-box;
+}
 
 a:visited {
     color: black;
@@ -51,6 +55,7 @@ em {
     padding: 10px 0;
     color: white;
 }
+/* ↑↑↑ 개인 ↑↑↑ */
 /* ============================ ↑↑↑ 기본 세팅 ↑↑↑ ============================================*/
 
 
@@ -64,7 +69,6 @@ section {
 .section_box {
     margin: auto;
     max-height: 100%;
-    max-width: calc(1920px * 0.8);
     width: calc(100% * 0.8);
 }
 
@@ -104,6 +108,7 @@ input[type="radio"]{
 
 .room_img_box div {
     display: none;
+    width: 100%;
     max-width: calc(1920px * 0.8 * 0.6);
 }
 
@@ -176,39 +181,29 @@ label[for*="tab"] {
     padding-left: 50px;
     margin: 2px 0;
 }
-
-.room_expDetail>ul>li>ul>li::before{
-    content: "▶";
-    font-size: 13px;
-}
 /* ↑↑↑ 상세 정보 ↑↑↑ */
 
 /* ↓↓↓ 안내 사항 ↓↓↓ */
-.notice p,
-.notice hr {
+.room_notice p,
+.room_notice hr {
     width: 100%;
     margin-bottom: 5px;
 }
 
-.notice>ul>li {
+.room_notice>ul>li {
     padding-left: 50px;
     margin: 2px 0;
-}
-
-.notice>ul>li::before{
-    content: "▶";
-    font-size: 13px;
 }
 /* ↑↑↑ 안내 사항 ↑↑↑ */
 
 /* ↓↓↓ 예약하기 버튼 ↓↓↓ */
-.btn {
+.room_btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn a {
+.room_btn a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,30 +222,29 @@ label[for*="tab"] {
     border: 1px solid rgba(223,190,106,0.3);
 }
 
-.btn a:hover {
+.room_btn a:hover {
     color: white;
     background-position: 99% 50%;
 }
 /* ↑↑↑ 예약하기 버튼 ↑↑↑ */
 
 /* ↓↓↓ 서비스 ↓↓↓ */
-.service p,
-.service hr {
+.room_service p {
     margin-bottom: 5px;
 }
 
-.service>div {
+.room_service>div {
     display: flex;
     justify-content: space-evenly;
 }
 
-.service div div {
+.room_service div div {
     width: 100%;
     max-width: calc(1920px * 0.8 * 0.2);
-    padding: 0px 5px;
+    padding: 5px;
 }
 
-.service div div a {
+.room_service div div a {
     background-color: rgba(146,111,52,0.8);
     
     display: flex;
@@ -258,47 +252,40 @@ label[for*="tab"] {
     justify-content: center;
 }
 
-.service div div a:hover {
+.room_service div div a:hover {
     scale: 1.01;
     transition: all .5s;
 }
 
 @media (width <= 800px) {
-    .service>div {
-        width: 100%;
-
-        display: flex;
+    .room_service>div {
         flex-wrap: wrap;
-        justify-content: space-evenly;
         align-content: space-evenly;
     }
 
-    .service>div>div {
+    .room_service>div>div {
         width: 50%;
-        max-width: calc(1920px * 0.8 * 0.2);
-        padding: 5px 5px;
     }
 }
 /* ↑↑↑ 서비스 ↑↑↑ */
 
 /* ↓↓↓ 다른 객실 ↓↓↓ */
-.other_room p,
-.other_room hr {
+.room_other p{
     margin-bottom: 5px;
 }
 
-.other_room>div {
+.room_other>div {
     display: flex;
     justify-content: space-evenly;
 }
 
-.other_room div div {
+.room_other div div {
     width: 100%;
     max-width: calc(1920px * 0.8 * 0.2);
-    padding: 0px 5px;
+    padding: 5px;
 }
 
-.other_room div div a{
+.room_other div div a{
     background-color: rgba(146,111,52,0.8);
 
     display: flex;
@@ -307,7 +294,7 @@ label[for*="tab"] {
     text-align: center;
 }
 
-.other_room div div a:hover {
+.room_other div div a:hover {
     scale: 1.01;
     transition: all .5s;
 }
