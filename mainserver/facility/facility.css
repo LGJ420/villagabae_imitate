@@ -60,7 +60,6 @@ img {
 .picture {
     display: flex;
     flex-direction: column;  
-    /* border: 1px solid red; */
 }
 
 .pic {
@@ -68,16 +67,14 @@ img {
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
     height: 75vh;
-    /* border: 1px solid red; */
 }
 
 .pic div{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: center;
-    /* border: 1px solid red; */
+    width: 100%;
 }
 /* ↑↑↑ 사진 기본 설정 ↑↑↑ */
 
@@ -102,7 +99,7 @@ img {
 /* ↓↓↓ 사진 하단 문구 정렬 및 색 조정 ↓↓↓ */
 .pic div img {    
     width: 100%;
-    cursor: pointer;    
+    cursor: pointer; 
 }
 
 .pic div img:hover{
@@ -111,16 +108,13 @@ img {
 }
 
 .ser {
+    font-size: 1.2em;      /* 16px * 1.2= 19.2px */
     width:100%;
     text-align: center;
-    background-color: rgba(146, 111, 52, .8);
+    background-color: rgba(172, 123, 38, 0.8);
 }
 
-p {
-    font-size: 1.2em;        /* 16px * 1.2= 19.2px */
-}
-
-span {
+.ser span {
     font-size: initial;      /*기본 크기인 16px*/
 }
 
