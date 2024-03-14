@@ -38,12 +38,13 @@ section {
 
 
 /* ↓↓↓ 사진 상단 문구 위치 정렬 및 디자인 ↓↓↓↓ */
-.contitle{   
+.contitle{  
+    display: grid;
+    justify-content: center; 
     font-size: 30px;
     font-weight: 100;
     line-height: 40px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0  ;
 }
 
 .contitle span{
@@ -55,14 +56,6 @@ section {
 
 
 
-/* ↓↓↓ 사진 상단 문구 뷰포트 크기에 따른 반응형 정렬 ↓↓↓↓ */
-@media (width >= calc(100vw * .5)) {
-    .contitle {
-        display: grid;
-        justify-content: center;
-    }
-}
-/* ↑↑↑ 사진 상단 문구 뷰포트 크기에 따른 반응형 정렬 ↑↑↑ */
 
 
 
@@ -137,12 +130,10 @@ section {
 
 
 
-.pictureMore .slidewrap:hover {
+.pictureMore img:hover {
     scale: 1.1;
     transition: all 0.8s;
 }
-
-
 
 
 /* ↓↓↓ 사진 하단 작은 원에 기능 추가 ↓↓↓↓ */
@@ -168,11 +159,18 @@ section {
 
 
 
+
+
 /* ↓↓↓ 라운지 화면의 안내사항 문구 정렬 ↓↓↓*/
 .useBox{
     margin: auto;
     padding-bottom: 100px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.Box1 li {
+    font-size: 1.5em;
+    padding-bottom: 20px;
 }
 
 .Box2{
@@ -181,30 +179,16 @@ section {
 }
 
 .Box2>ol>li {
-    padding: 5px 0 10px 0;
-}
-
-.box {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.Box1 li {
-    font-size: 1.5em;
-    padding-bottom: 20px;
-}
-
-.box li{
-    padding: 0 0 5px 30px;
-}
-
-.except {
-    margin-left: 15px;
+    padding: 5px 10px;
 }
 
 .upperBox {
     font-size: 1.2em;
     font-weight: bold;
+}
+
+.box li{
+    padding: 0 0 5px 30px;
 }
 /* ↑↑↑ 라운지 화면의 안내사항 문구 정렬 ↑↑↑ */
 /* ============================ section ============================= */
