@@ -71,8 +71,7 @@ section {
 .grid_box {
     padding: 50px ;
     display: grid;
-    grid-template: 1fr/ 1fr 1fr;
-    background: url(./frame1.png) no-repeat;   /*main grid박스(1행X2열)*/
+    grid-template: 1fr/ 1fr 1fr;               /*main grid박스(1행X2열)*/
 }
 .grid_sub1 {
     display: grid;
@@ -88,7 +87,7 @@ section {
 
 .first_box {
     display: grid;
-    grid-template-rows: 0.25fr 0.25fr 0.25fr 150px/ 1fr;    /*4행*/
+    grid-template-rows: 0.25fr 0.25fr 0.25fr 150px;    /*4행*/
 }
 .second1_box {
     animation: move 2s ease-out;                              
