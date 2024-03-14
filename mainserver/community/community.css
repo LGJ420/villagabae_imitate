@@ -176,8 +176,8 @@ section {
     border-radius: 50%;
     text-wrap: nowrap;
 }
-input:focus + .labelline,
-input:valid + .labelline{
+input:focus + .labelline
+{
     color: rgb(211, 182, 163);
     height: 30px;
     line-height: 30px;
