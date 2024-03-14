@@ -198,6 +198,36 @@ header {
     width: 100%;
     justify-content: end;
 }
+/* ↓↓↓ 좌측 Nav 반응형 "줄어들 때" ↓↓↓*/
+@media (width <= 1100px) {
+    .login_join_menu {position: relative; top: 13.5vh; animation: move01 0.5s forwards;}
+    .nav_main_menu {position: relative; top: 6vh;right: 162px; animation: move02 0.5s forwards;}
+}
+@media (width <= 850px) { 
+    .login_join_menu {position: relative;top: 20vh;right: 0;animation: move03 0.5s forwards;}
+    .nav_main_menu {position: relative;top: 6vh;right: 0;animation: move04 0.5s forwards;}
+}
+@keyframes move01 {0% {top:0vh;} 100% {top:13.5vh;}}
+@keyframes move02 {0% {top:0vh; right: 0px;}100% {top:6vh; right: 162px;}}
+@keyframes move03 {0% {top:13.5vh; right:0px}100% {top:20vh; right:0px}}
+@keyframes move04 {0% {top:6vh; right:162px}100% {top:6vh; right:0px}}
+/* ↑↑↑ 좌측 Nav 반응형 "줄어들 때" ↑↑↑ */
+
+/* ↓↓↓ 좌측 Nav 반응형 "늘어날 때" ↓↓↓*/
+@media (width > 1100px) {
+    .login_join_menu {position: relative; top: 13.5vh; animation: move05 0.5s both;}
+    .nav_main_menu {position: relative; top: 6vh;right: 162px; animation: move06 0.5s both;}
+}
+@media (850px <= width < 975px) { 
+    .login_join_menu {animation: move07 0.5s both;}
+    .nav_main_menu {animation: move08 0.5s both;}
+}
+@keyframes move05 {0% {top:13.5vh;} 100% {top:0vh;}}
+@keyframes move06 {0% {top:6vh; right: 162px;}100% {top:0vh; right: 0px;}}
+@keyframes move07 {0% {top:20vh; right:0px}100% {top:13.5vh; right:0px}}
+@keyframes move08 {0% {top:6vh; right:0px}100% {top:6vh; right:162px}}
+/* ↑↑↑ 좌측 Nav 반응형 "늘어날 때" ↑↑↑ */
+
 .nav_main_menu>.nav_top_ul {
     display: flex;
     align-items: baseline;
@@ -217,14 +247,12 @@ header {
 .nav_top_ul>li>a:hover {
     color: rgb(95, 95, 95);
 }
-/* ↑↑↑ NAV 메뉴 설정 ↑↑↑ */
-
-/* ↓↓↓ Login&SignUp 설정 ↓↓↓*/
 .login_join_menu>.nav_top_ul {
     display: flex;
     justify-content: end;
 }
-/* ↑↑↑ Login&SignUp 설정 ↑↑↑ */
+
+/* ↑↑↑ NAV 메뉴 설정 ↑↑↑ */
 
 /* ↓↓↓ 2차 메뉴(deps 영역) ↓↓↓ */
 .nav_deps {
@@ -272,77 +300,6 @@ header {
     color: white;
 }
 /* ↑↑↑ 2차 메뉴(deps 영역) ↑↑↑ */
-
-/* ↓↓↓ header, footer "줄어들때" 애니메이션 적용 ↓↓↓ */
-@media (850px < width <= 1100px) {
-    .login_join_menu {
-        display: inline-block;
-        text-align: right;position: relative;
-        top: 13vh;
-        animation: move01 0.5s forwards;
-    }
-    .nav_main_menu {
-        display: flex;
-        text-align: right;
-        position: relative;
-        top: 6vh;
-        right: 162px;
-        animation: move02 0.5s forwards;
-    }
-    .Business_infor {
-        animation: fadeout01 0.5s forwards;
-    }
-}
-@media (width <= 850px) {
-    .login_join_menu {
-        display: inline-block;
-        text-align: right;
-        position: relative;
-        top: 18vh;
-        right: 0;
-        animation: move03 0.5s forwards;
-    }
-    .nav_main_menu {
-        display: flex;
-        text-align: right;
-        position: relative;
-        top: 6vh;
-        right: 0;
-        animation: move04 0.5s forwards;
-    }
-}
-@keyframes move01 {0% {top:0vh;} 100% {top:13vh;}}
-@keyframes move02 {0% {top:0vh; right: 0px;}100% {top:6vh; right: 162px;}}
-@keyframes move03 {0% {top:13vh; right:0px}100% {top:18vh; right:0px}}
-@keyframes move04 {0% {top:6vh; right:162px}100% {top:6vh; right:0px}}
-@keyframes fadeout01 {0% {opacity: 1;}100% {opacity: 0;}}
-/* ↑↑↑ header, footer "줄어들때" 애니메이션 적용 ↑↑↑ */
-
-/* ↓↓↓ header, footer "늘어날때" 애니메이션 적용 ↓↓↓ */
-@media (width > 1100px) {
-    .login_join_menu {
-        display: inline-block;
-        text-align: right;
-        position: relative;
-        top: 13vh;
-        animation: move05 0.5s forwards;
-    }
-    .nav_main_menu {
-        display: flex;
-        text-align: right;
-        position: relative;
-        top: 0vh;
-        right: 0px;
-        animation: move06 0.5s forwards;
-    }
-    .Business_infor {
-        animation: fadeout02 0.5s forwards;
-    }
-}
-@keyframes move05 {0% {top:13vh;} 100% {top:0vh;}}
-@keyframes move06 {0% {top:6vh; right: 162px;}100% {top:0vh; right: 0px;}}
-@keyframes fadeout02 {0% {opacity: 0;}100% {opacity: 1;}}
-/* ↑↑↑ header, footer "늘어날때" 애니메이션 적용 ↑↑↑ */
 /* ============================ ↑↑↑ header ↑↑↑ ============================================*/
 
 /* ============================ ↓↓↓ section ↓↓↓ ============================================*/
@@ -436,14 +393,17 @@ footer {
 /* ↓↓↓ footer nav 설정 ↓↓ ↓*/
 .nav_footer_menu {
     display: flex;
+    position: relative;
     justify-content: end;
     width: 50%;
-    height: 50px;
+    height: 200px;
 }
 .nav_bottom_ul {
     display: flex;
-    margin: 10px 0;
-    text-align: right;
+    position: absolute;
+    justify-content: end;
+    height: 50px;
+    margin: 20px 0;
 }
 .nav_bottom_ul li {
     display: inline-block;
@@ -457,5 +417,49 @@ footer {
 .nav_bottom_ul>li>a:hover {
     color: black;
 }
+/* ↓↓↓ footer instar icon 설정 ↓↓ ↓*/
+.instar_icon {
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 50px;
+    width: 100%;
+    height: 100px;
+}
+.instar_icon a {
+    display: flex;
+    position: absolute;
+    object-fit: cover;
+    background: url(./mainserver/image/insta_1.png) no-repeat center/100%;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    opacity: 0.5;
+    text-indent: -9999em;
+}
+/* ↑↑↑ footer instar icon 설정 ↑↑↑ */
+
+/* ↓↓↓ Footer 반응형 "줄어들 때" ↓↓↓*/
+@media (width <= 1000px) { 
+    .Business_infor {animation: fadeout01 .35s forwards;}
+    .nav_footer_menu {animation: fadeout02 .7s forwards;}
+    .instar_icon a {animation: fadeout03 .7s forwards;}
+}
+@keyframes fadeout01 {0% {opacity: 1;}100% {overflow: hidden; width: 0%; opacity: 0;}}
+@keyframes fadeout02 {0% {width: 50%;} 100% {justify-content: center; width: 100%;}}
+@keyframes fadeout03 {0% {right: 20px;} 100% {right: calc(50% - 50px); width: 80px; height: 80px;}}
+/* ↑↑↑ Footer 반응형 "줄어들 때" ↑↑↑ */
+
+/* ↓↓↓ Footer 반응형 "늘어날 때" ↓↓↓ */
+@media (width > 1000px) { 
+    .Business_infor {animation: fadein01 0.5s forwards;}
+}
+@keyframes move05 {0% {top:13.5vh;} 100% {top:0vh;}}
+@keyframes move06 {0% {top:6vh; right: 162px;}100% {top:0vh; right: 0px;}}
+@keyframes move07 {0% {top:20vh; right:0px}100% {top:13.5vh; right:0px}}
+@keyframes move08 {0% {top:6vh; right:0px}100% {top:6vh; right:162px}}
+@keyframes fadein01 {0% {width: 0%; opacity: 0;}100% {width: 50%; opacity: 1;}}
+/* ↑↑↑ Footer 반응형 "늘어날 때" ↑↑↑ */
+
 /* ↑↑↑ footer nav 설정 ↑↑↑ */
 /* ============================ ↑↑↑ footer ↑↑↑ ============================================*/
