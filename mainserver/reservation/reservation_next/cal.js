@@ -35,8 +35,8 @@ const renderCalender = () => {
 
     dates.forEach((date, i) => {
         const condition = i >= firstDateIndex && i < lastDateIndex + 1
-                          ? 'this'
-                          : 'other';
+                        ? 'this'
+                        : 'other';
         dates[i] = `<div class="date"><span class=${condition}>${date}</span></div>`;
     });
 

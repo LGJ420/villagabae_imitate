@@ -15,7 +15,7 @@ section {
     margin: 50px;
 }
 
-.header {
+.cal_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,7 +89,8 @@ section {
 
 .today {
     position: relative;
-    color: #FFFFFF;
+    color: goldenrod;
+    font-weight: bold;
 }
 
 .today::before {
@@ -97,11 +98,11 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: 3;
     width: 30px;
     height: 30px;
     display: block;
-    background-color: #FF0000;
+    border: 2px solid goldenrod;
     border-radius: 50%;
     content: '';
 }
