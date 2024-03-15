@@ -105,7 +105,7 @@ img {
 .pic div img:hover{
     scale: 1.2;
     transition: all 0.5s;
-    z-index: 3;
+    z-index: 1;
 }
 
 .pic div img {
