@@ -6,6 +6,7 @@
 } */
 
 /* ============================ ↓↓↓ 기본 세팅 ↓↓↓ ============================================*/
+/* ↓↓↓ 공용 ↓↓↓ */
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +19,6 @@ body {
     width: 100%;
 }
 
-body * {
-    box-sizing: border-box;
-}
 
 body::before {
     content: "";
@@ -37,6 +35,12 @@ section,
 footer {
     margin: auto;
 }
+/* ↑↑↑ 공용 ↑↑↑ */
+
+/* ↓↓↓ 개인 ↓↓↓ */
+body * {
+    box-sizing: border-box;
+}
 
 a:visited {
     color: black;
@@ -51,6 +55,7 @@ em {
     padding: 10px 0;
     color: white;
 }
+/* ↑↑↑ 개인 ↑↑↑ */
 /* ============================ ↑↑↑ 기본 세팅 ↑↑↑ ============================================*/
 
 
@@ -64,23 +69,12 @@ section {
 .section_box {
     margin: auto;
     max-height: 100%;
-    max-width: calc(1920px * 0.8);
     width: calc(100% * 0.8);
-    
-    display: flex;
-    flex-direction: column;
 }
 
 /* section 상단, 하단 마진 */
-.section_box::before,
-.section_box::after {
-    content: "";
-    display: block;
-    margin: 20px 0;
-}
-
 .section_box>div {
-    margin: 20px 0;
+    margin: 40px 0;
 }
 /* ↑↑↑ 섹션 세팅 ↑↑↑ */
 
@@ -112,27 +106,29 @@ input[type="radio"]{
     display: none;
 }
 
-.room_img_box div[class*="room"] {
+.room_img_box div {
     display: none;
+    width: 100%;
     max-width: calc(1920px * 0.8 * 0.6);
 }
 
-/* .room_img_box img {
+.room_img_box img {
+    /* stretch */
     display: flex;
-} */
+}
 
+/* 탭할 사진 수평정렬 */
 .room_img_tab {
     display: flex;
 }
 
 label[for*="tab"] {
-    /* display: inline-block; */
     cursor: pointer;
     width: 100%;
     max-width: 100px;
     
+    /* stretch */
     display: flex;
-    /* align-items: center; */
 }
 
 @keyframes opacity {
@@ -168,85 +164,57 @@ label[for*="tab"] {
 /* ↑↑↑ 객실 사진 ↑↑↑ */
 
 /* ↓↓↓ 상세 정보 ↓↓↓ */
-.room_expDetail{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .room_expDetail p,
 .room_expDetail hr {
-    width: 100%;
     margin: 5px;
 }
 
 .room_expDetail>ul {
     display: flex;
-    width: 100%;
 }
 
 .room_expDetail>ul>li {
-    width: 50%;
+    width: 100%;
 }
 
 .room_expDetail>ul>li>ul>li {
-    display: flex;
     padding-left: 50px;
     margin: 2px 0;
-}
-
-.room_expDetail>ul>li>ul>li::before{
-    content: "▶";
-    font-size: 13px;
 }
 /* ↑↑↑ 상세 정보 ↑↑↑ */
 
 /* ↓↓↓ 안내 사항 ↓↓↓ */
-.notice{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.notice p,
-.notice hr {
+.room_notice p,
+.room_notice hr {
     width: 100%;
     margin-bottom: 5px;
 }
 
-.notice ul {
-    width: 100%;
-}
-
-.notice>ul>li {
-    display: flex;
+.room_notice>ul>li {
     padding-left: 50px;
     margin: 2px 0;
-}
-
-.notice>ul>li::before{
-    content: "▶";
-    font-size: 13px;
 }
 /* ↑↑↑ 안내 사항 ↑↑↑ */
 
 /* ↓↓↓ 예약하기 버튼 ↓↓↓ */
-.btn {
+.room_btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn a {
-    display: inline-block;
-    width: 70%;
-    height: 50px;
-    margin: 20px 0;
-    
+.room_btn a {
     display: flex;
     justify-content: center;
     align-items: center;
 
+    width: 70%;
+    max-width: 500px;
+    height: 50px;
+    margin: 20px 0;
+    
     font-style: normal;
-    color: rgba(223,190,106,0.7);
+    color: rgba(223,190,106);
     transition: all 0.7s ease-out;
     background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
     background-position: 1% 50%;
@@ -254,99 +222,81 @@ label[for*="tab"] {
     border: 1px solid rgba(223,190,106,0.3);
 }
 
-.btn a:hover {
+.room_btn a:hover {
     color: white;
     background-position: 99% 50%;
 }
 /* ↑↑↑ 예약하기 버튼 ↑↑↑ */
 
 /* ↓↓↓ 서비스 ↓↓↓ */
-.service {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.service p,
-.service hr {
-    width: 100%;
+.room_service p {
     margin-bottom: 5px;
 }
 
-.service>div {
-    width: 100%;
-
+.room_service>div {
     display: flex;
     justify-content: space-evenly;
 }
 
-.service div div {
+.room_service div div {
     width: 100%;
     max-width: calc(1920px * 0.8 * 0.2);
-    padding: 0px 5px;
+    padding: 5px;
 }
 
-.service div div a {
+.room_service div div a {
     background-color: rgba(146,111,52,0.8);
     
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
 }
 
-@media (width <= 600px) {
-    .service>div {
-        width: 100%;
+.room_service div div a:hover {
+    scale: 1.01;
+    transition: all .5s;
+}
 
-        display: flex;
+@media (width <= 800px) {
+    .room_service>div {
         flex-wrap: wrap;
-        justify-content: space-evenly;
         align-content: space-evenly;
     }
 
-    .service>div>div {
+    .room_service>div>div {
         width: 50%;
-        max-width: calc(1920px * 0.8 * 0.2);
-        padding: 5px 5px;
     }
-    
 }
 /* ↑↑↑ 서비스 ↑↑↑ */
 
 /* ↓↓↓ 다른 객실 ↓↓↓ */
-.other_room {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.other_room p,
-.other_room hr {
-    width: 100%;
+.room_other p{
     margin-bottom: 5px;
 }
 
-.other_room>div {
-    width: 100%;
-
+.room_other>div {
     display: flex;
     justify-content: space-evenly;
 }
 
-.other_room div div {
+.room_other div div {
     width: 100%;
     max-width: calc(1920px * 0.8 * 0.2);
-    padding: 0px 5px;
+    padding: 5px;
 }
 
-.other_room div div a{
+.room_other div div a{
     background-color: rgba(146,111,52,0.8);
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+}
+
+.room_other div div a:hover {
+    scale: 1.01;
+    transition: all .5s;
 }
 /* ↑↑↑ 다른 객실 ↑↑↑ */
 /* ============================ ↑↑↑ 섹션 세팅 ↑↑↑ ============================================*/

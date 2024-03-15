@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    /* border: 1px solid red;
+    box-sizing: border-box;
+    padding: 2px; */
 }
 
 body {
@@ -10,12 +13,12 @@ body {
 }
 
 body::before {
+    position: fixed;
     top: 0;
     content: "";
-    z-index: -1;
     width: 100%;
     height: 100%;
-    position: fixed;
+    z-index: -1;
     background: url(../image/background4.jpg) no-repeat center/cover;
 }
 
@@ -56,22 +59,22 @@ img {
 
 .picture {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
 }
 
 .pic {
-    gap: 10px;
-    height: 75vh;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    height: 75vh;
 }
 
 .pic div{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
     justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
 }
 /* ↑↑↑ 사진 기본 설정 ↑↑↑ */
 
@@ -96,23 +99,23 @@ img {
 /* ↓↓↓ 사진 하단 문구 정렬 및 색 조정 ↓↓↓ */
 .pic div img {    
     width: 100%;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
-.ser {
-    width:100%;
-    text-align: center;
-    background-color: rgba(146, 111, 52, .8);
-}
-
-.pic div img:hover,
-.ser:hover {
-    scale: 1.2;
+.pic div img:hover{
+    scale: 1.1;
     transition: all 0.5s;
 }
 
-span{
-    font-size: 14px;
+.ser {
+    font-size: 1.2em;      /* 16px * 1.2= 19.2px */
+    width:100%;
+    text-align: center;
+    background-color: rgba(172, 123, 38, 0.8);
+}
+
+.ser span {
+    font-size: initial;      /*기본 크기인 16px*/
 }
 
 a,
