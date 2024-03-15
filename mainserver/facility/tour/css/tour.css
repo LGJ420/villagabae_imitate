@@ -108,7 +108,8 @@ section {
 .jeju_map label[for="slide05"] {bottom: 190px;left: 520px;z-index: 1;}
 .jeju_map label[for="slide06"] {bottom: 190px;left: 100px;z-index: 1;}
 
-.jeju_map label[for*="slide"] em:hover {scale: 1.5; transition: all 0.35s;}
+.jeju_map label[for*="slide"] em:hover {scale: 1.8; transition: all .5s;}
+.jeju_map label[for*="slide"] em {scale: 1; transition: all .5s;}
 
 input[id*="slide01"]:checked ~ .labelbox label[for*="slide01"] em ,
 input[id*="slide02"]:checked ~ .labelbox label[for*="slide02"] em,
@@ -207,6 +208,7 @@ input[id="slide04"]:hover ~ .tab_content_name label[for="slide04"],
 input[id="slide05"]:hover ~ .tab_content_name label[for="slide05"], 
 input[id="slide06"]:hover ~ .tab_content_name label[for="slide06"] {
     color: #00a9ba;;
+    background-color: rgb(255, 255, 255, 0.5);
     transition: all 0.5s;
 }
 input[id="slide01"]:checked ~ .tab_content_name label[for="slide01"], 
