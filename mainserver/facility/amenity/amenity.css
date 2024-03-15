@@ -120,7 +120,13 @@ section {
 #slide01:checked~.slidewrap .slidelist>li {transform: translateX(0%);}
 #slide02:checked~.slidewrap .slidelist>li {transform: translateX(-100%);}
 #slide03:checked~.slidewrap .slidelist>li {transform: translateX(-200%);}
+/* ↑↑↑ 사진에 슬라이드 기능 추가 ↑↑↑ */
 
+
+
+
+
+/* ↓↓↓ 사진 하단 작은 원에 기능 추가 ↓↓↓↓ */
 #slide01:checked~.underList label[for="slide01"] ,
 #slide02:checked~.underList label[for="slide02"] ,
 #slide03:checked~.underList label[for="slide03"] 
@@ -132,24 +138,13 @@ section {
     background-color: rgba(223,190,106);
     background-image: url(../img/circle_2.png) ;
 }
-/* ↑↑↑ 사진에 슬라이드 기능 추가 ↑↑↑ */
 
-
-
-.pictureMore img:hover {
-    scale: 1.1;
-    transition: all 0.8s;
-}
-
-/* ↓↓↓ 사진 하단 작은 원에 기능 추가 ↓↓↓↓ */
 .underList {
     gap: 10px;
     padding: 30px;
     display: flex;
     justify-content: center;
 }
-
-
 
 .underList label {
     width: 15px;
@@ -167,10 +162,10 @@ section {
 
 
 
+
 /* ↓↓↓ 어메니티 화면의 상세정보 문구 정렬 ↓↓↓*/
 .infoBox{
     padding-bottom: 100px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .infoBox2>ul>li{
@@ -201,15 +196,14 @@ section {
     justify-content: space-evenly;
 }
 
-.box1 {
+.box1,
+.box3 {
     display: grid;
     grid-template: repeat(2,1fr)/ repeat(2,1fr);
 }
 
 .box3 {
     gap: 10px;
-    display: grid;
-    grid-template: repeat(2,1fr)/ repeat(2,1fr);
 }
 /* ↑↑↑ 어메니티 화면의 상세정보 문구 정렬 ↑↑↑ */
 /* =========================================================================== */

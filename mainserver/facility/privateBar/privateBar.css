@@ -122,7 +122,13 @@ section {
 #slide01:checked~.slidewrap .slidelist>li {transform: translateX(0%);}
 #slide02:checked~.slidewrap .slidelist>li {transform: translateX(-100%);}
 #slide03:checked~.slidewrap .slidelist>li {transform: translateX(-200%);}
+/* ↑↑↑ 사진에 슬라이드 기능 추가 ↑↑↑ */
 
+
+
+
+
+/* ↓↓↓ 사진 하단 작은 원에 기능 추가 ↓↓↓↓ */
 #slide01:checked~.underList label[for="slide01"] ,
 #slide02:checked~.underList label[for="slide02"] ,
 #slide03:checked~.underList label[for="slide03"] 
@@ -134,10 +140,7 @@ section {
     background-color: rgba(223,190,106);
     background-image: url(../img/circle_2.png);
 }
-/* ↑↑↑ 사진에 슬라이드 기능 추가 ↑↑↑ */
 
-
-/* ↓↓↓ 사진 하단 작은 원에 기능 추가 ↓↓↓↓ */
 .underList {
     gap: 10px;
     padding: 30px;
@@ -159,11 +162,6 @@ section {
 /* ↑↑↑ 사진 하단 작은 원에 기능 추가 ↑↑↑ */
 
 
-
-.pictureMore .img:hover {
-    scale: 1.1;
-    transition: all 0.8s;
-}
 
 
 
