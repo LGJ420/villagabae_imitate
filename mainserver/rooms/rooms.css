@@ -302,8 +302,11 @@ label.sl_right {
     font-style: normal;
     letter-spacing: 1px;
     font-weight: bolder;
-    color: rgb(117, 97, 72);
-    opacity: .5;
+    color: white;
+    opacity: .9;
+
+    background-color: rgb(117, 97, 72);
+    transition: all .5s;
 
     display: inline-block;
     border: 1px solid;
@@ -317,7 +320,9 @@ label.sl_right {
 }
 
 .room_go a:hover {
-    opacity: 1;
+    background-color: white;
+    color: rgb(117, 97, 72);
+    border: 1px solid rgb(117, 97, 72);
 }
 
 .room_go {
