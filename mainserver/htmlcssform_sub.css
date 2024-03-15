@@ -25,6 +25,13 @@ section,
 footer {
     margin: auto;
 } */
+
+::selection {
+    /* 드래그 색상 지정 */
+    background: #705b43;
+    color: white;
+}
+
 /* ============================ ↓↓↓ header ↓↓↓ ============================================*/
 /* ↓↓↓ header 영역 디자인 ↓↓↓ */
 header {
