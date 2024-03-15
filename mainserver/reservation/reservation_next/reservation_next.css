@@ -25,34 +25,20 @@ select,
 button {
     cursor: pointer;
 }
-/* a {
-    color: black;
-} */
-
 a:visited {
     color: black;
 }
-hr {
-    display: block;
-}
-
 select {
     width: 100px;
     height: 40px;
     margin-right: 20px;
 }
-
 header,
 section,
 footer {
     margin: auto;
 }
 
-@keyframes opacity {
-    from {
-        opacity: 0;
-    }
-}
 /* ============================ ↓↓↓ section ↓↓↓ ============================================*/
 /* ↓↓↓ section 내용 디자인 설정 ↓↓↓ */
 section {
@@ -70,6 +56,7 @@ section {
     box-sizing: border-box;
 
     display: flex;
+    justify-content: center;
     max-height: max-content;
     min-height: 160vh;
     width: calc(1920px * .8);
@@ -113,46 +100,16 @@ section {
 input[type="radio"]{
     display:none;
 }
-.room1 {
-    background-image: url(./img/room1.jpg);
-    margin-bottom: 15px;
-}
-.room2 {
-    background-image: url(./img/room2.jpg);
-    margin-bottom: 15px;
-}
-.room3 {
-    background-image: url(./img/room3.jpg);
-    margin-bottom: 15px;
-}
-.room4 {
-    background-image: url(./img/room4.jpg);
-    margin-bottom: 15px;
-}
-.room5 {
-    background-image: url(./img/room5.jpg);
-    margin-bottom: 15px;
-}
-.room6 {
-    background-image: url(./img/room6.jpg);
-    margin-bottom: 15px;
-}
-.room7 {
-    background-image: url(./img/room7.jpg);
-    margin-bottom: 15px;
-}
-.room8 {
-    background-image: url(./img/room8.jpg);
-    margin-bottom: 15px;
-}
-.room9 {
-    background-image: url(./img/room9.jpg);
-    margin-bottom: 15px;
-}
-.room10 {
-    background-image: url(./img/room10.jpg);
-    margin-bottom: 15px;
-}
+.room1 {background-image: url(./img/room1.jpg);margin-bottom: 15px;}
+.room2 {background-image: url(./img/room2.jpg);margin-bottom: 15px;}
+.room3 {background-image: url(./img/room3.jpg);margin-bottom: 15px;}
+.room4 {background-image: url(./img/room4.jpg);margin-bottom: 15px;}
+.room5 {background-image: url(./img/room5.jpg);margin-bottom: 15px;}
+.room6 {background-image: url(./img/room6.jpg);margin-bottom: 15px;}
+.room7 {background-image: url(./img/room7.jpg);margin-bottom: 15px;}
+.room8 {background-image: url(./img/room8.jpg);margin-bottom: 15px;}
+.room9 {background-image: url(./img/room9.jpg);margin-bottom: 15px;}
+.room10 {background-image: url(./img/room10.jpg);margin-bottom: 15px;}
 
 .tabs {
     width: 700px;
@@ -178,6 +135,11 @@ input[id="tab9"]:checked~.room9,
 input[id="tab10"]:checked~.room10 {
     display: block;
     animation: opacity 1s;
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
 }
 
 input[id="tab1"]:checked~ .tabs .tab1,
@@ -211,7 +173,6 @@ input[id="tab10"]:checked~ .tabs .tab10{
     height: 50px;
     width: 100%;
 }
-
 .section_detail p span {
     position: absolute;
     display: flex;
@@ -219,7 +180,6 @@ input[id="tab10"]:checked~ .tabs .tab10{
     height: 50px;
     width: 90%;
 }
-
 .modal1_open {
     position: relative;
     left: 4%;
@@ -272,7 +232,8 @@ input[id="tab10"]:checked~ .tabs .tab10{
 }
 
 .modal1_footer {
-    padding: 0 30px;
+    display: flex;
+    padding: 30px;
     white-space: pre-wrap;
     overflow: scroll;
     width: 100%;
@@ -318,7 +279,6 @@ input[id="tab10"]:checked~ .tabs .tab10{
     height: 50px;
     width: 100%;
 }
-
 .section_sum {
     display: flex;
     justify-content: space-between;
@@ -333,14 +293,12 @@ input[id="tab10"]:checked~ .tabs .tab10{
 .section_sum>div:last-child {
     font-size: 40px;
 }
-
 .section_menu {
     position: relative;
     text-align: center;
     height: 100px;
     top: 100px;
 }
-
 .btn {
     display: inline-block;
     transition: all 0.7s ease-out;
@@ -348,12 +306,10 @@ input[id="tab10"]:checked~ .tabs .tab10{
     background-position: 1% 50%;
     background-size: 300% 300%;
 }
-
 .btn:hover {
     color: white;
     background-position: 99% 50%;
 }
-
 .section_menu a {
     width: 250px;
     height: 100%;
@@ -363,7 +319,6 @@ input[id="tab10"]:checked~ .tabs .tab10{
     justify-content: center;
     align-items: center;
 }
-
 .modal2_open {
     width: 100px;
     height: 100%;
@@ -382,7 +337,6 @@ input[id="tab10"]:checked~ .tabs .tab10{
     transform: translate(-50%, -50%);
     background-color: white;
 }
-
 .modal2_header {
     height: 15%;
     display: flex;
@@ -391,29 +345,22 @@ input[id="tab10"]:checked~ .tabs .tab10{
     padding: 30px;
     margin-top: 10px;
 }
-
 .modal2_close{
     border: 0;
     background-color: transparent;
 }
-
 .modal2_close img{
     width: 50px;
 }
-
 .social_btn {
     height: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-
 .social_btn ul {
     width: 92%;
 }
-
-
 .social_btn li a {
     background-image: url(./img/social_btn.png);
     width: 112px;
@@ -421,22 +368,11 @@ input[id="tab10"]:checked~ .tabs .tab10{
     margin: 3px;
     text-indent: -9999em;
 }
-
-.social_btn .line {
-    background-position-y: calc(-163px);
-}
-.social_btn .band {
-    background-position-y: calc(-163px*5 + 3px);
-}
-.social_btn .naver {
-    background-position-y: calc(-163px*8 + 6px);
-}
-.social_btn .face {
-    background-position-y: calc(-163px*2);
-}
-.social_btn .X {
-    background-position-y: calc(-163px*3);
-}
+.social_btn .line {background-position-y: calc(-163px);}
+.social_btn .band {background-position-y: calc(-163px*5 + 3px);}
+.social_btn .naver {background-position-y: calc(-163px*8 + 6px);}
+.social_btn .face {background-position-y: calc(-163px*2);}
+.social_btn .X {background-position-y: calc(-163px*3);}
 
 .modal2_footer {
     height: 15%;
@@ -444,19 +380,15 @@ input[id="tab10"]:checked~ .tabs .tab10{
     justify-content: center;
     align-items: center;
 }
-
 .modal2_footer>* {
     height: 40px;
     font-size: 1.4em;
 }
-
 .modal2_footer input {
     width: 200px;
 }
-
 .modal2_footer button {
     width: 70px;
-
 }
 /* ↑↑↑ modal 두번째 창 ↑↑↑ */
 /* ↑↑↑ section 오른쪽 ↑↑↑ */
