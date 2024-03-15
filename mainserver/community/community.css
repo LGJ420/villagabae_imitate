@@ -3,12 +3,10 @@
     padding: 0;
     list-style: none;
 }
-
 body {
     height: 100vh;
     width: 100vw;
 }
-
 body::before {
     content: "";
     top: 0;
@@ -18,7 +16,6 @@ body::before {
     position: fixed;
     z-index: -1;
 }
-
 header,
 section,
 footer {
@@ -42,18 +39,18 @@ button,label,a {
     font-family: "Lora", serif;
     font-weight:500px;
     font-style: normal;
-    
 }
 span::selection,                                 /*드래그 색상 변경*/
 .section_bottom::selection,
-.big::selection
+.big::selection,
+div::selection,
+img::selection
 {
     background: #e4d4cc;
     color: #72645c;
 }
 /* -===========↓↓↓↓Section 백그라운드(기본 set)↓↓↓↓======================================*/
 section {
-    /* min-height: 40vh; */
     max-height: max-content;
     background-color: rgb(255, 255, 255);
 }
@@ -137,7 +134,6 @@ section {
     
 }
 /* ==================================(왼쪽 박스) */
-
 .input {
     background-color: rgb(255, 255, 255);            /*input박스 전체 setting*/
     height: 100px;
@@ -145,7 +141,6 @@ section {
     justify-content: center;
     align-items: center;
     outline: none;
-    /* flex-direction: column; */
 }
 .input>input{                                          /*name,tel <input>태그 속성 설정*/
     outline: none;
@@ -213,7 +208,7 @@ input#allow:checked+label:before{
     content: "";
     width: 17px;
     height: 17px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .button_1{                                     /*전송 버튼 디자인 및 효과설정*/
@@ -225,7 +220,6 @@ input#allow:checked+label:before{
     font-size: 1.5em;
     margin-left: 50px;
     font-family: "Noto Serif KR", serif;
-    border-radius: 10px;
     cursor: pointer;
 }
 .button_1:hover{
@@ -262,7 +256,6 @@ img:hover{
     background: url(./hq.png) no-repeat;
     background-size: 100% 70%;
     color: #72645c;
-    /* display: inline-block; */
     padding-bottom: 50px;
 }
 /* =====================↓↓↓↓keyframes 모음↓↓↓↓============================================*/
