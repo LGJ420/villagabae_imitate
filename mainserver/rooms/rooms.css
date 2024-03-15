@@ -35,17 +35,20 @@ footer {
 }
 
 ::selection {
+    /* 드래그 색상 지정 */
     background: #705b43;
     color: white;
 }
 
 /* ↓↓↓ 상단소개_start ↓↓↓ */
+
 h2 {
     margin-top: 8%;
     color: rgb(117, 97, 72);
 }
 
 .section_box hr+p {
+    /* 객실 설명 디자인 */
     font-size: 40px;
     opacity: .7;
     color: #796a59;
@@ -61,63 +64,75 @@ h2 {
     opacity: .2;
 }
 
+/* ↑↑↑ 상단소개_END ↑↑↑ */
+
+
+/* ↓↓↓ 개별 room_box 디자인 설정_start ↓↓↓ */
+
 h3 {
+    /* 개별 room 명칭 */
     color: rgb(105, 89, 69);
     margin-bottom: 15px;
 }
 
 h3+p {
+    /* 개별 room 짧은 설명 */
     color: rgb(153, 144, 132);
     opacity: .8;
     font-weight: bolder;
     margin-bottom: -110px;
-
 }
 
-/* ========================================================== */
-/* 개별 div 안 정렬 */
-
 .room_box {
+    /* 개별 room_box 정렬 */
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(8, 1fr);
     height: 50vh;
     align-items: center;
     justify-items: center;
 
-    padding: 0 7px;
     margin-bottom: 9%;
-
     overflow: hidden;
+    border: 1px solid rgb(175, 167, 167);
 }
 
 .rooms_main {
+    /* 사진 위치(1, 3번 box) */
     grid-area: 1 / 1 / -1 / -4;
 }
 
-.main2 {
-    grid-area: 1 / 4 / -1 / -1;
-}
-
 .room_smallbox {
+    /* 룸 정보 소개 위치(1, 3번 box) */
     grid-area: 1 / -4 / -2 / -1;
     width: 350px;
 }
 
-.smallbox2 {
-    grid-area: 1 / 1 / -2 / 4;
-}
-
 .room_go {
+    /* room 상세 페이지 연결 버튼 위치(1, 3번 box) */
     grid-area: -2 / -4 / -1 / -1;
 }
 
+.main2 {
+    /* 사진 위치(2번 box - 위치 변경) */
+    grid-area: 1 / 4 / -1 / -1;
+}
+
+.smallbox2 {
+    /* 룸 정보 소개 위치(2번 box - 위치 변경) */
+    grid-area: 1 / 1 / -2 / 4;
+}
+
 .room_go2 {
+    /* room 상세 페이지 연결 버튼 위치(2번 box - 위치 변경) */
     grid-area: -2 / 1 / -1 / 4;
 
 }
 
-/* ========================================================== */
-/* room 공통사항 */
+/* ↑↑↑ 개별 room_box 디자인 설정_END ↑↑↑ */
+
+
+
+/* ↓↓↓ 개별 room 공통 디자인 설정_start ↓↓↓ */
 
 [name="room1_main"],
 [name="room2_main"],
@@ -141,8 +156,6 @@ h3+p {
     white-space: nowrap;
     font-size: 0;
     overflow: hidden;
-    width: 100%;
-    height: 100%;
 }
 
 .rooms_main .room_item {
@@ -162,23 +175,26 @@ h3+p {
     padding: 20px;
     border-radius: 50%;
     cursor: pointer;
+
+    background-position: center center;
+    background-size: 100% 140%;
+    background-repeat: no-repeat;
 }
 
 label.sl_left {
     left: 10px;
     background-image: url(./img/left.png);
-    background-position: center center;
-    background-size: 100% 140%;
-    background-repeat: no-repeat;
 }
 
 label.sl_right {
     right: 10px;
     background-image: url(./img/right.png);
-    background-position: center center;
-    background-size: 100% 140%;
-    background-repeat: no-repeat;
 }
+
+/* ↑↑↑ 개별 room 공통 디자인 설정_END ↑↑↑ */
+
+
+/* ↓↓↓ slide 효과 적용을 위한 사진 위치 지정 ↓↓↓ */
 
 [id="sl1_1"]:checked~.room_list .room_item,
 [id="sl2_1"]:checked~.room_list .room_item,
@@ -204,8 +220,12 @@ label.sl_right {
     transform: translateX(-300%);
 }
 
-/* ============================================================= */
+/* ↑↑↑ slide 효과 적용을 위한 사진 위치 지정 ↑↑↑ */
 
+
+/* ↓↓↓ slide 효과 적용 ↓↓↓ */
+
+/* animation 지정을 위한 keyframes 설정 */
 @keyframes slide {
     0% {
         left: 0%;
@@ -251,13 +271,10 @@ label.sl_right {
     animation: slide 12s infinite;
 }
 
+/* ↑↑↑ slide 효과 적용 ↑↑↑ */
 
-.room_box {
-    border: 1px solid rgb(175, 167, 167);
-    margin-top: 8%;
-}
 
-/* ========================================================= */
+/* ↓↓↓ room 상세 정보 box(small_box) 디자인 설정 ↓↓↓ */
 
 .room_smallbox>p:nth-of-type(1) {
     font-size: 40px;
@@ -295,51 +312,38 @@ label.sl_right {
 
 }
 
-/* ========================================================= */
+/* ↑↑↑ room 상세 정보 box(small_box) 디자인 설정 ↑↑↑ */
+
+
+/* ↓↓↓ 개별 room 연결 링크 삽입_start ↓↓↓ */
 
 .room_go a {
-    font-family: "Nanum Myeongjo", serif;
-    font-style: normal;
+    /* 폰트 스타일 */
     letter-spacing: 1px;
     font-weight: bolder;
+    font-size: 20px;
     color: white;
     opacity: .9;
+    text-decoration: none;
+    text-align: center;
 
-    background-color: rgb(117, 97, 72);
-    transition: all .5s;
-
+    /* box 스타일 */
     display: inline-block;
     border: 1px solid;
-    text-align: center;
     width: 300px;
     line-height: 70px;
-    margin: auto;
+    background-color: rgb(117, 97, 72);
 
-    font-size: 20px;
-    text-decoration: none;
+    transition: all .5s;
 }
 
 .room_go a:hover {
+    /* 개별 room에 연결된 a 링크 hover 기능 삽입 */
     background-color: white;
     color: rgb(117, 97, 72);
     border: 1px solid rgb(117, 97, 72);
 }
 
-.room_go {
-    text-align: center;
-    margin-top: 80px;
-    height: 130px;
-}
+/* ↑↑↑ 개별 room 연결 링크 삽입_end ↑↑↑ */
 
-.room_go a {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: right;
-    align-items: center;
-}
-
-.room_go a img {
-    justify-self: center;
-}
-
-/* ============================ ↑↑↑ about_section ↑↑↑ ============================================*/
+/* ============================ ↑↑↑ rooms_section ↑↑↑ ============================================*/

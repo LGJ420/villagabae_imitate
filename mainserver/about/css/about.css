@@ -76,6 +76,7 @@ section div>p {
     font-size: 17px;
     font-weight: bolder;
     opacity: .7;
+    line-height: 18px;
 
     animation: opacity 2s;
 }
@@ -89,7 +90,7 @@ section div>p {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-left: 38%;
-    margin-top: -33%;
+    margin-top: -30%;
     margin-bottom: 5%;
     box-shadow: 0 0 30px rgb(141, 132, 93);
 
