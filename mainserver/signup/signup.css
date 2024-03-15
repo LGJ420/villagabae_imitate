@@ -73,7 +73,7 @@ header {
     margin: 20px 0;
 }
 
-input::placeholder {
+#phone::placeholder {
     text-align: end;
 }
 
