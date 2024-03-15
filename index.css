@@ -441,9 +441,9 @@ footer {
 
 /* ↓↓↓ Footer 반응형 "줄어들 때" ↓↓↓*/
 @media (width <= 1000px) { 
-    .Business_infor {animation: fadeout01 .35s forwards;}
-    .nav_footer_menu {animation: fadeout02 .7s forwards;}
-    .instar_icon a {animation: fadeout03 .7s forwards;}
+    .Business_infor {animation: fadeout01 .5s forwards;}
+    .nav_footer_menu {animation: fadeout02 .5s forwards;}
+    .instar_icon a {animation: fadeout03 .5s forwards;}
 }
 @keyframes fadeout01 {0% {opacity: 1;}100% {overflow: hidden; width: 0%; opacity: 0;}}
 @keyframes fadeout02 {0% {width: 50%;} 100% {justify-content: center; width: 100%;}}

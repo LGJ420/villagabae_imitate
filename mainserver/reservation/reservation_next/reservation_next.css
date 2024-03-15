@@ -1,193 +1,96 @@
-/* ============================ ↓↓↓ 디폴트 ↓↓↓ ============================================*/
-body * {
-    box-sizing: border-box;
+/* ============================ ↓↓↓ 주석 양식 ↓↓↓ ============================================*/
+/* ============================ ↑↑↑ 주석 양식 ↑↑↑ ============================================*/
+/* ↓↓↓ "작은" 주석 양식 ↓↓↓ */
+/* ↑↑↑ "작은" 주석 양식 ↑↑↑ */
+* {
     margin: 0;
     padding: 0;
+    list-style: none;
     text-decoration: none;
-    font-family: "Nanum Myeongjo", serif;
-
-    /* border: 1px solid red;
-    padding: 3px; */
 }
-
-a {
-    color: black;
+body {
+    height: 100vh;
+    width: 100%;
 }
-
+body::before {
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/background4.jpg) no-repeat center/cover;
+    position: fixed;
+    z-index: -1;
+}
 select,
 button {
     cursor: pointer;
 }
-
 a:visited {
     color: black;
 }
-
-header,
-main,
-footer {
-    width: calc(1920px * 0.8);
-    margin: auto;
-}
-
-header *,
-main *,
-footer * {
-    display: inline-block;
-}
-
-hr {
-    display: block;
-}
-
-p {
-    white-space: pre-wrap;
-}
-
 select {
     width: 100px;
     height: 40px;
     margin-right: 20px;
 }
+header,
+section,
+footer {
+    margin: auto;
+}
 
-@keyframes opacity {
-    from {
-        opacity: 0;
+/* ============================ ↓↓↓ section ↓↓↓ ============================================*/
+/* ↓↓↓ section 내용 디자인 설정 ↓↓↓ */
+section {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    max-height: max-content;
+    min-height: 160vh;
+    background-color: white;
+}
+
+.section_box {
+    border: 1px solid rgb(7, 7, 7, 0);
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    max-height: max-content;
+    min-height: 160vh;
+    width: calc(1920px * .8);
+}
+
+@media (width <= 1500px) {
+    .section_box {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
-/* ============================ ↑↑↑ 디폴트 ↑↑↑ ============================================*/
-
-/* ============================ ↓↓↓ header ↓↓↓ ============================================*/
-/* ↓↓↓ 로고영역 ↓↓↓ */
-header {
-    display: flex;
-    height: 20vh;
-    align-items: center;
-}
-
-.header_back {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.logo {
-    width: 20%;
-    height: 70%;
-    transform: translateY(-15%)
-}
-
-.logo>i {
-    text-indent: -9999em;
-}
-
-.header_menu {
+.section_left,
+.section_right {
     width: 50%;
-    height: 70%;
-    float: right;
 }
 
-
-.header_menu li {
-    padding: 15px 20px;
-}
-
-/* ↑↑↑ 로고영역 ↑↑↑ */
-/* ↓↓↓ NAV 메뉴 설정 ↓↓↓*/
-.nav_box {
-    display: flex;
-}
-
-.nav_main_menu {
-    display: flex;
-    height: 120px;
+.section_left_sub,
+.section_right_sub {
+    position: relative;
     width: 100%;
-    justify-content: end;
 }
-.nav_top_ul {
-    display: flex;
-}
-.nav_top_ul>li {
+
+.section_imglist {
     display: inline-block;
-    cursor: pointer;
-}
-.nav_top_ul>li>a {
-    padding: 20px;
-    color: black;
-    text-decoration: none;
-}
-.nav_top_ul>li>a:hover {
-    color: rgb(95, 95, 95);
-}
-
-/* ↑↑↑ NAV 메뉴 설정 ↑↑↑ */
-/* ↓↓↓ 2차 메뉴(deps 영역) ↓↓↓ */
-
-.nav_deps {
-    visibility: none;
-    opacity: 0;
-}
-.nav_top_ul>li:hover .nav_deps {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    width: 120px;
-    margin-top: 20px;
-    margin-left: 20px;
-    opacity: 1;
-
-    transition: 0.5s;
     position: absolute;
-}
-.nav_deps>li {
-    background-color: white;
-    padding: 10px 0 10px 15px;
-    color: rgb(76, 78, 76);
-    cursor: pointer;
-}
-.nav_deps>li>a {
-    font-size: 12px;
-    text-decoration: none;
-}
-.nav_deps>li:hover {
-    transition: all 0.35s;
-    background-color: rgb(237, 230, 223);
-}
-.nav_deps>li>a {
-    color: rgb(35, 35, 35);
-}
-.nav_deps>li:hover a{
-    color: black;
-}
-
-/* ↑↑↑ 2차 메뉴(deps 영역) ↑↑↑ */
-/* ============================ ↑↑↑ header ↑↑↑ ============================================*/
-/* ============================ ↓↓↓ main ↓↓↓ ============================================*/
-/* ↓↓↓ main 왼쪽 ↓↓↓ */
-main {
-    display: flex;
-    height: 1500px;
-}
-
-.main_left {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: 30px;
-}
-
-.main_left>div {
-    display: block;
+    top: 100px;
+    width: 665px;
 }
 
 .combox {
     display: none;
-    width: 800px;
-    height: 600px;
-    margin: 0 auto;
+    width: 100%;
+    height: 450px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -197,48 +100,27 @@ main {
 input[type="radio"]{
     display:none;
 }
-
-.room1 {
-    background-image: url(./img/room1.jpg);
-}
-.room2 {
-    background-image: url(./img/room2.jpg);
-}
-.room3 {
-    background-image: url(./img/room3.jpg);
-}
-.room4 {
-    background-image: url(./img/room4.jpg);
-}
-.room5 {
-    background-image: url(./img/room5.jpg);
-}
-.room6 {
-    background-image: url(./img/room6.jpg);
-}
-.room7 {
-    background-image: url(./img/room7.jpg);
-}
-.room8 {
-    background-image: url(./img/room8.jpg);
-}
-.room9 {
-    background-image: url(./img/room9.jpg);
-}
-.room10 {
-    background-image: url(./img/room10.jpg);
-}
+.room1 {background-image: url(./img/room1.jpg);margin-bottom: 15px;}
+.room2 {background-image: url(./img/room2.jpg);margin-bottom: 15px;}
+.room3 {background-image: url(./img/room3.jpg);margin-bottom: 15px;}
+.room4 {background-image: url(./img/room4.jpg);margin-bottom: 15px;}
+.room5 {background-image: url(./img/room5.jpg);margin-bottom: 15px;}
+.room6 {background-image: url(./img/room6.jpg);margin-bottom: 15px;}
+.room7 {background-image: url(./img/room7.jpg);margin-bottom: 15px;}
+.room8 {background-image: url(./img/room8.jpg);margin-bottom: 15px;}
+.room9 {background-image: url(./img/room9.jpg);margin-bottom: 15px;}
+.room10 {background-image: url(./img/room10.jpg);margin-bottom: 15px;}
 
 .tabs {
-    width: 100%;
+    width: 700px;
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .tabs img {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
+    width: 70px;
+    height: 45px;
 }
 
 input[id="tab1"]:checked~.room1,
@@ -254,6 +136,11 @@ input[id="tab10"]:checked~.room10 {
     display: block;
     animation: opacity 1s;
 }
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+}
 
 input[id="tab1"]:checked~ .tabs .tab1,
 input[id="tab2"]:checked~ .tabs .tab2,
@@ -268,19 +155,40 @@ input[id="tab10"]:checked~ .tabs .tab10{
     border: 5px solid rgb(99, 70, 7);
 }
 
-
-.main_detail {
-    width: 90%;
-    height: 5%;
-    margin: 20px;
-}
-
-.modal1_open {
-    font-size: 20px;
+.section_detail {
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    top: 700px;
+    height: 500px;
     width: 100%;
+}
+.section_note {
+    position: relative;
+    top: 40px;
+    width: 100%;
+}
+.section_detail p {
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+.section_detail p span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 90%;
+}
+.modal1_open {
+    position: relative;
+    left: 4%;
+    font-size: 20px;
+    width: 80%;
     height: 80px;
     background-color: transparent;
     border: 1px solid black;
+    box-sizing: border-box;
     color: black;
 }
 
@@ -324,7 +232,8 @@ input[id="tab10"]:checked~ .tabs .tab10{
 }
 
 .modal1_footer {
-    padding: 0 30px;
+    display: flex;
+    padding: 30px;
     white-space: pre-wrap;
     overflow: scroll;
     width: 100%;
@@ -335,64 +244,61 @@ input[id="tab10"]:checked~ .tabs .tab10{
     line-height: 40px;
 }
 /* ↑↑↑ modal 첫번째 창 ↑↑↑ */
+/* ↑↑↑ section 왼쪽 ↑↑↑ */
 
-.main_note {
-    margin-top: 40px;
-    height: 30%;
-}
+/* ↓↓↓ section 오른쪽 ↓↓↓ */
 
-.main_note p {
-    display: block;
-    white-space: pre-wrap;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* ↑↑↑ main 왼쪽 ↑↑↑ */
-/* ↓↓↓ main 오른쪽 ↓↓↓ */
-.main_right {
-    float: right;
-    width: 50%;
-    height: 100%;
+.section_cal {
     display: flex;
-    flex-direction: column;
-
+    position: relative;
 }
-
-.main_cal {
-    height: max-content;
-}
-
-.main_sel1 {
-    height: 5%;
+.section_sel1 {
     display: flex;
+    justify-content: start;
     align-items: center;
-
+    padding: 10px 0;
+    border-top: 1px solid rgb(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+    width: 100%;
 }
-.main_sel2 {
-    margin: 30px 0px ;
+.section_sel2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    width: 100%;
 }
-
-.main_sel2 p{
-    margin-bottom: 20px;
+.section_sel2 p{
+    height: 50px;
+    width: 100%;
 }
-
-.main_sum {
-    height: 5%;
+.section_sel2 p span {
+    position: absolute;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+.section_sum {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    padding-top: 40px;
+    border-top: 1px solid rgb(0, 0, 0, 0.5);
+    height: 40px;
+    width: 100%;
+    top: 50px;
 }
-
-.main_sum>div:last-child {
+.section_sum>div:last-child {
     font-size: 40px;
 }
-
-.main_menu {
+.section_menu {
+    position: relative;
     text-align: center;
-    height: 5%;
+    height: 100px;
+    top: 100px;
 }
-
 .btn {
     display: inline-block;
     transition: all 0.7s ease-out;
@@ -400,13 +306,11 @@ input[id="tab10"]:checked~ .tabs .tab10{
     background-position: 1% 50%;
     background-size: 300% 300%;
 }
-
 .btn:hover {
     color: white;
     background-position: 99% 50%;
 }
-
-.main_menu a {
+.section_menu a {
     width: 250px;
     height: 100%;
     font-size: 20px;
@@ -415,7 +319,6 @@ input[id="tab10"]:checked~ .tabs .tab10{
     justify-content: center;
     align-items: center;
 }
-
 .modal2_open {
     width: 100px;
     height: 100%;
@@ -434,11 +337,6 @@ input[id="tab10"]:checked~ .tabs .tab10{
     transform: translate(-50%, -50%);
     background-color: white;
 }
-
-.modal2>div {
-    width: 100%;
-}
-
 .modal2_header {
     height: 15%;
     display: flex;
@@ -447,29 +345,22 @@ input[id="tab10"]:checked~ .tabs .tab10{
     padding: 30px;
     margin-top: 10px;
 }
-
 .modal2_close{
     border: 0;
     background-color: transparent;
 }
-
 .modal2_close img{
     width: 50px;
 }
-
 .social_btn {
     height: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-
 .social_btn ul {
     width: 92%;
 }
-
-
 .social_btn li a {
     background-image: url(./img/social_btn.png);
     width: 112px;
@@ -477,22 +368,11 @@ input[id="tab10"]:checked~ .tabs .tab10{
     margin: 3px;
     text-indent: -9999em;
 }
-
-.social_btn .line {
-    background-position-y: calc(-163px);
-}
-.social_btn .band {
-    background-position-y: calc(-163px*5 + 3px);
-}
-.social_btn .naver {
-    background-position-y: calc(-163px*8 + 6px);
-}
-.social_btn .face {
-    background-position-y: calc(-163px*2);
-}
-.social_btn .X {
-    background-position-y: calc(-163px*3);
-}
+.social_btn .line {background-position-y: calc(-163px);}
+.social_btn .band {background-position-y: calc(-163px*5 + 3px);}
+.social_btn .naver {background-position-y: calc(-163px*8 + 6px);}
+.social_btn .face {background-position-y: calc(-163px*2);}
+.social_btn .X {background-position-y: calc(-163px*3);}
 
 .modal2_footer {
     height: 15%;
@@ -500,119 +380,16 @@ input[id="tab10"]:checked~ .tabs .tab10{
     justify-content: center;
     align-items: center;
 }
-
 .modal2_footer>* {
     height: 40px;
     font-size: 1.4em;
 }
-
 .modal2_footer input {
     width: 200px;
 }
-
 .modal2_footer button {
     width: 70px;
-
 }
 /* ↑↑↑ modal 두번째 창 ↑↑↑ */
-/* ↑↑↑ main 오른쪽 ↑↑↑ */
-/* ============================ ↑↑↑ main ↑↑↑ ============================================*/
-/* ============================ ↓↓↓ footer ↓↓↓ ============================================*/
-/* ↓↓↓ footertop 내용 ↓↓↓ */
-footer {
-    height: 400px;
-}
-
-.footer_top {
-    width: 100%;
-    height: 50%;
-    background-color: RGB(237,230,223);
-}
-
-.footer_topleft {
-    width: 40%;
-    height: 100%;
-    float: left;
-}
-
-.footer_info {
-    margin: 30px;
-}
-
-.footer_info p{
-    white-space: pre-wrap;
-    line-height: 25px;
-}
-
-.footer_topright {
-    width: 57%;
-    height: 100%;
-    float: right;
-}
-
-.footer_toprighttop {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    top: 30px;
-    right: -120px;
-}
-
-
-.footer_toprighttop ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer_toprighttop a {
-    margin: 0 30px;
-}
-
-.footer_toprightbottom {
-    width: 100%;
-    height: 50%;
-}
-
-.footer_b1 {
-    width: 5%;
-}
-
-.footer_b1 img {
-    float: right;
-    margin-right: 30px;
-    width: 100%;
-}
-
-.footer_b1 img:hover {
-    opacity: 0.3;
-    transition: 0.2s;
-}
-
-.footer_toprightbottom div{
-    float: right;
-}
-/* ↑↑↑ footertop 내용 ↑↑↑ */
-/* ↓↓↓ footerbottom 내용 ↓↓↓ */
-.footer_bottom {
-    width: 100%;
-    height: 50%;
-    text-align: center;
-}
-
-.footer_b2 {
-    width: 3%;
-
-}
-
-.footer_b2 img{
-    width: 100%;
-    height: 100%;
-    margin-top: 30px;
-}
-
-.footer_b2 img:hover{
-    opacity: 0.3;
-    transition: 0.2s;
-}
-
-/* ↑↑↑ footerbottom 내용 ↑↑↑ */
+/* ↑↑↑ section 오른쪽 ↑↑↑ */
+/* ============================ ↑↑↑ section ↑↑↑ ============================================*/
