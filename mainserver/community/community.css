@@ -36,7 +36,8 @@ section div {
 }
 .Question>p>span,
 button,label,a {
-    font-family: "Lora", serif;
+    font-family: "Noto Serif KR",
+        serif;
     font-weight:500px;
     font-style: normal;
 }
