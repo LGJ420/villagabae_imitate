@@ -195,33 +195,33 @@ label.sl_right {
 /* ↑↑↑ 개별 room 공통 디자인 설정_END ↑↑↑ */
 
 
-/* ↓↓↓ slide 효과 적용을 위한 사진 위치 지정 ↓↓↓ */
+/* ↓↓↓ label 사진 위치 지정 ↓↓↓ */
 
-[id="sl1_1"]:checked~.room_list .room_item,
-[id="sl2_1"]:checked~.room_list .room_item,
-[id="sl3_1"]:checked~.room_list .room_item {
+#sl1_1:checked~.room_list .room_item,
+#sl2_1:checked~.room_list .room_item,
+#sl3_1:checked~.room_list .room_item {
     transform: translateX(0);
 }
 
-[id="sl1_2"]:checked~.room_list .room_item,
-[id="sl2_2"]:checked~.room_list .room_item,
-[id="sl3_2"]:checked~.room_list .room_item {
+#sl1_2:checked~.room_list .room_item,
+#sl2_2:checked~.room_list .room_item,
+#sl3_2:checked~.room_list .room_item {
     transform: translateX(-100%);
 }
 
-[id="sl1_3"]:checked~.room_list .room_item,
-[id="sl2_3"]:checked~.room_list .room_item,
-[id="sl3_3"]:checked~.room_list .room_item {
+#sl1_3:checked~.room_list .room_item,
+#sl2_3:checked~.room_list .room_item,
+#sl3_3:checked~.room_list .room_item {
     transform: translateX(-200%);
 }
 
-[id="sl1_4"]:checked~.room_list .room_item,
-[id="sl2_4"]:checked~.room_list .room_item,
-[id="sl3_4"]:checked~.room_list .room_item {
+#sl1_4:checked~.room_list .room_item,
+#sl2_4:checked~.room_list .room_item,
+#sl3_4:checked~.room_list .room_item {
     transform: translateX(-300%);
 }
 
-/* ↑↑↑ slide 효과 적용을 위한 사진 위치 지정 ↑↑↑ */
+/* ↑↑↑ label 사진 위치 지정 ↑↑↑ */
 
 
 /* ↓↓↓ slide 효과 적용 ↓↓↓ */
@@ -265,9 +265,9 @@ label.sl_right {
     }
 }
 
-[id="sl1_1"]:checked~.room_list .room_item,
-[id="sl2_1"]:checked~.room_list .room_item,
-[id="sl3_1"]:checked~.room_list .room_item {
+#sl1_1:checked~.room_list .room_item,
+#sl2_1:checked~.room_list .room_item,
+#sl3_1:checked~.room_list .room_item {
     transform: translateX(0);
     animation: slide 12s infinite;
 }
