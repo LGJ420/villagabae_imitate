@@ -40,7 +40,7 @@
 
 /* ============================ ↓↓↓ 로그인 모달팝업 ↓↓↓ ============================================*/
 /* ↓↓↓ 로그인(모달) ↓↓↓ */
-.modal_box {
+.modal .modal_box {
     display: none;
 
     position: fixed;
@@ -54,11 +54,11 @@
     width: 400px;
 }
 
-.modal_box * {
+.modal .modal_box * {
     color: black;
 }
 
-.modal_box>div>a {
+.modal .modal_box>div>a {
     font-size: 1.5em;
     padding: 10px 10px;
     
@@ -68,17 +68,17 @@
     cursor: pointer;
 }
 
-.modal_box hr {
+.modal .modal_box hr {
     margin: 15px;
 }
 
-.modal_box .info form {
+.modal .modal_box .info form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 } 
 
-.modal_box .info form * {
+.modal .modal_box .info form * {
     margin: 5px;
     padding: 10px;
     width: 80%;
@@ -86,19 +86,19 @@
     border-radius: 2px;
 }
 
-.modal_box .info form button {
+.modal .modal_box .info form button {
     cursor: pointer;
     color: white;
     background-color: rgba(146,111,52,0.8);
 }
 
-.modal_box div {
+.modal .modal_box div {
     display: flex;
     justify-content: space-evenly;
 }
 
-.modal_box div label,
-.modal_box div a {
+.modal .modal_box div label,
+.modal .modal_box div a {
     font-size: 13px;
     cursor: pointer;
 }
