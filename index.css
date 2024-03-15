@@ -184,7 +184,7 @@ header {
 .logo_design {
     display: flex;
     height: 120px;
-    width: 50%;
+    width: 40%;
     position: absolute;
     z-index: 1;
 }
