@@ -17,6 +17,13 @@ footer {
     z-index: 1;
     margin: auto;
 }
+
+::selection {
+    /* 드래그 색상 지정 */
+    background: #705b43;
+    color: white;
+}
+
 /* ============================ ↓↓↓ 백그라운드 슬라이드 설정 ↓↓↓ ============================================*/
 [name="slide"] {display: none;}
 .slidebox {position: absolute; width:100%; margin:0 auto;}
