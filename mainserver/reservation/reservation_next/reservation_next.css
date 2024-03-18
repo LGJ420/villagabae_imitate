@@ -385,7 +385,7 @@ input[type="radio"]{
 .social_btn .band {background-position-y: calc(-163px*5 + 3px);}
 .social_btn .naver {background-position-y: calc(-163px*8 + 6px);}
 .social_btn .face {background-position-y: calc(-163px*2);}
-.social_btn .X {background-position-y: calc(-163px*3);}
+.social_btn .X {background-position-y: calc(-163px*3 + 1px);}
 
 .modal2_footer {
     height: 15%;
