@@ -108,7 +108,7 @@ img {
     z-index: 1;
 }
 
-.pic div img {
+.pic div a {
     scale: 1;
     transition: all 0.5s;
 }
