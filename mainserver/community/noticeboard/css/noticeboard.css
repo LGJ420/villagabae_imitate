@@ -67,10 +67,18 @@ footer {
     letter-spacing: 8px;
     padding: 50px;
 }
+.motion_logo_box{
+    position: relative;
+    width:100%;
+    height: 142px;
+    overflow: hidden;
+    
+}
 section {
     min-height: 40vh;
     max-height: max-content;
     background-color: rgb(255, 255, 255);
+    min-width: max-content
 }
 .section_box {
     margin: auto;
@@ -181,6 +189,12 @@ i{
 .paging{
     text-align: center;
     min-width: 800px;
+}
+footer {
+    min-width: 1050px;
+}
+header{
+    min-width: 1050px;
 }
 /* ===============↓↓↓↓keyframes 모음↓↓↓↓===================================================== */
 @keyframes move {
