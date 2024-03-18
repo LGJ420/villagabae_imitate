@@ -102,7 +102,7 @@ img {
     cursor: pointer; 
 }
 
-.pic div img:hover{
+.pic div a:hover{
     scale: 1.2;
     transition: all 0.5s;
     z-index: 1;
