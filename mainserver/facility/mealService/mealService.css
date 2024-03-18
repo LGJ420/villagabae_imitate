@@ -165,10 +165,8 @@ section {
 /* ↑↑↑ 사진 하단 작은 원에 기능 추가 ↑↑↑ */
 
 
-.pictureMore img:hover {
-    scale: 1.1;
-    transition: all 0.8s;
-}
+
+
 
 
 /* ↓↓↓ 밀서비스 화면의 안내사항 문구 정렬 ↓↓↓*/
