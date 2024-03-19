@@ -23,15 +23,12 @@ header,
 section,
 footer {
     margin: auto;
+    min-width: calc(1920px * .8);
 }
 
 /* ============================ ↓↓↓ about_section ↓↓↓ ============================================*/
 
 /* ↓↓↓ section 기본 디자인 설정_start ↓↓↓ */
-
-.section_box {
-    width: calc(1920px * .8);
-}
 
 ::selection {
     /* 드래그 색상 지정 */

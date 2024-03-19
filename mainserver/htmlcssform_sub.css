@@ -7,10 +7,12 @@
     padding: 0;
     list-style: none;
 }
+
 body {
     height: 100vh;
     width: 100%;
 }
+
 body::before {
     content: "";
     top: 0;
@@ -20,10 +22,12 @@ body::before {
     position: fixed;
     z-index: -1;
 }
+
 header,
 section,
 footer {
     margin: auto;
+    min-width: calc(1920px * .8);
 }
 
 ::selection {
@@ -48,6 +52,7 @@ header {
     background-color: transparent;
     justify-content: center;
 }
+
 .nav_box {
     display: flex;
     flex-direction: column;
@@ -56,6 +61,7 @@ header {
     position: relative;
     max-width: calc(1920px * .8);
 }
+
 /* ↓↓↓ 좌측 상단 메인로고 설정 ↓↓↓ */
 .logo_design {
     display: flex;
@@ -64,6 +70,7 @@ header {
     position: relative;
     z-index: 1;
 }
+
 .logo_design a {
     display: flex;
     background: url(./image/logo.png) no-repeat;
@@ -71,24 +78,81 @@ header {
     width: 200px;
     text-indent: -9999em;
 }
+
 /* ↑↑↑ 좌측 상단 메인로고 설정 ↑↑↑ */
 
 /* ↓↓↓ header 반응형 "줄어들 때" ↓↓↓ */
-@media (width <= 1100px) {
-    .login_join_menu {display: flex; position: absolute; animation: move01 0.5s forwards;}
-    .nav_main_menu {display: flex; position: absolute; animation: move02 0.5s forwards;}
+@media (width <=1100px) {
+    .login_join_menu {
+        display: flex;
+        position: absolute;
+        animation: move01 0.5s forwards;
+    }
+
+    .nav_main_menu {
+        display: flex;
+        position: absolute;
+        animation: move02 0.5s forwards;
+    }
 }
-@keyframes move01 {0% {top:0px;} 100% {top:100px;}}
-@keyframes move02 {0% {top:50px;}100% {top:140px;}}
+
+@keyframes move01 {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 100px;
+    }
+}
+
+@keyframes move02 {
+    0% {
+        top: 50px;
+    }
+
+    100% {
+        top: 140px;
+    }
+}
+
 /* ↑↑↑ header 반응형 "줄어들 때" ↑↑↑ */
 
 /* ↓↓↓ header 반응형 "늘어날 때" ↓↓↓ */
 @media (width > 1100px) {
-    .login_join_menu {display: flex; position: absolute; animation: move03 0.5s forwards;}
-    .nav_main_menu {display: flex; position: absolute;animation: move04 0.5s forwards;}
+    .login_join_menu {
+        display: flex;
+        position: absolute;
+        animation: move03 0.5s forwards;
+    }
+
+    .nav_main_menu {
+        display: flex;
+        position: absolute;
+        animation: move04 0.5s forwards;
+    }
 }
-@keyframes move03 {0% {top:100px;} 100% {top:0px;}}
-@keyframes move04 {0% {top:140px;} 100% {top:50px;}}
+
+@keyframes move03 {
+    0% {
+        top: 100px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes move04 {
+    0% {
+        top: 140px;
+    }
+
+    100% {
+        top: 50px;
+    }
+}
+
 /* ↑↑↑ header 반응형 "늘어날 때" ↑↑↑ */
 
 /* ↓↓↓ NAV 메뉴 설정 ↓↓↓*/
@@ -99,25 +163,30 @@ header {
     width: 98%;
     justify-content: end;
 }
+
 .nav_main_menu>.nav_top_ul {
     display: flex;
     align-items: baseline;
     position: relative;
 }
+
 .nav_top_ul>li {
     display: flex;
     justify-content: center;
     height: max-content;
     cursor: pointer;
 }
+
 .nav_top_ul>li>a {
     padding: 20px;
     color: rgba(255, 255, 255);
     text-decoration: none;
 }
+
 .nav_top_ul>li>a:hover {
     color: rgb(95, 95, 95);
 }
+
 /* ↑↑↑ NAV 메뉴 설정 ↑↑↑ */
 
 /* ↓↓↓ Login&SignUp 설정 ↓↓↓*/
@@ -126,6 +195,7 @@ header {
     justify-content: end;
     /* padding-right: 15px; */
 }
+
 /* ↑↑↑ Login&SignUp 설정 ↑↑↑ */
 
 /* ↓↓↓ 2차 메뉴(deps 영역) ↓↓↓ */
@@ -133,8 +203,9 @@ header {
     visibility: none;
     opacity: 0;
     position: absolute;
-    top:50px;
+    top: 50px;
 }
+
 .nav_top_ul>li:hover .nav_deps {
     display: flex;
     flex-direction: column;
@@ -145,6 +216,7 @@ header {
     transition: 0.5s;
     opacity: 1;
 }
+
 .nav_deps>li {
     display: flex;
     height: 50px;
@@ -153,6 +225,7 @@ header {
     color: rgb(76, 78, 76);
     cursor: pointer;
 }
+
 .nav_deps>li>a {
     display: flex;
     width: 90px;
@@ -163,16 +236,20 @@ header {
     text-indent: -3px;
     text-decoration: none;
 }
+
 .nav_deps>li:hover {
     transition: all 0.35s;
     background-color: rgb(237, 230, 223);
 }
+
 .nav_deps>li>a {
     color: rgb(35, 35, 35);
 }
-.nav_deps>li:hover a{
+
+.nav_deps>li:hover a {
     color: white;
 }
+
 /* ↑↑↑ 2차 메뉴(deps 영역) ↑↑↑ */
 /* ↑↑↑ header 영역 디자인 ↑↑↑ */
 /* ============================ ↑↑↑ header ↑↑↑ ============================================*/
@@ -198,6 +275,7 @@ section {
     min-height: 75vh;
     max-width: calc(1920px * .8);
 }
+
 /* ↑↑↑ section 내용 디자인 설정 ↑↑↑ */
 /* ============================ ↑↑↑ section ↑↑↑ ============================================*/
 
@@ -215,17 +293,20 @@ footer {
     justify-content: center;
     align-content: center;
 }
+
 .footer_box {
     display: flex;
     width: calc(1920px * .8);
     margin: 0 15px;
 }
+
 /* ↓↓↓ biz 정보 디자인 설정 ↓↓↓*/
 .Business_infor {
     display: flex;
     width: 50%;
     height: 200px;
 }
+
 .Business_item {
     display: flex;
     flex-direction: column;
@@ -234,6 +315,7 @@ footer {
     width: 100%;
     margin: 10px 0;
 }
+
 /* ↑↑↑ biz 정보 디자인 설정 ↑↑↑ */
 /* ↓↓↓ footer nav 설정 ↓↓ ↓*/
 .nav_footer_menu {
@@ -276,6 +358,7 @@ footer {
     width: 100%;
     height: 100px;
 }
+
 .instar_icon a {
     display: flex;
     position: absolute;
@@ -287,28 +370,126 @@ footer {
     opacity: 0.5;
     text-indent: -9999em;
 }
+
 /* ↑↑↑ footer instar icon 설정 ↑↑↑ */
 
 /* ↓↓↓ Footer 반응형 "줄어들 때" ↓↓↓*/
-@media (width <= 1000px) { 
-    .Business_infor {animation: fadeout01 .5s forwards;}
-    .nav_footer_menu {animation: fadeout02 .5s forwards;}
-    .instar_icon a {animation: fadeout03 .5s forwards;}
+@media (width <=1000px) {
+    .Business_infor {
+        animation: fadeout01 .5s forwards;
+    }
+
+    .nav_footer_menu {
+        animation: fadeout02 .5s forwards;
+    }
+
+    .instar_icon a {
+        animation: fadeout03 .5s forwards;
+    }
 }
-@keyframes fadeout01 {0% {opacity: 1;}100% {overflow: hidden; width: 0%; opacity: 0;}}
-@keyframes fadeout02 {0% {width: 50%;} 100% {justify-content: center; width: 100%;}}
-@keyframes fadeout03 {0% {right: 20px;} 100% {right: calc(50% - 50px); width: 80px; height: 80px;}}
+
+@keyframes fadeout01 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        overflow: hidden;
+        width: 0%;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout02 {
+    0% {
+        width: 50%;
+    }
+
+    100% {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@keyframes fadeout03 {
+    0% {
+        right: 20px;
+    }
+
+    100% {
+        right: calc(50% - 50px);
+        width: 80px;
+        height: 80px;
+    }
+}
+
 /* ↑↑↑ Footer 반응형 "줄어들 때" ↑↑↑ */
 
 /* ↓↓↓ Footer 반응형 "늘어날 때" ↓↓↓ */
-@media (width > 1000px) { 
-    .Business_infor {animation: fadein01 0.5s forwards;}
+@media (width > 1000px) {
+    .Business_infor {
+        animation: fadein01 0.5s forwards;
+    }
 }
-@keyframes move05 {0% {top:13.5vh;} 100% {top:0vh;}}
-@keyframes move06 {0% {top:6vh; right: 162px;}100% {top:0vh; right: 0px;}}
-@keyframes move07 {0% {top:20vh; right:0px}100% {top:13.5vh; right:0px}}
-@keyframes move08 {0% {top:6vh; right:0px}100% {top:6vh; right:162px}}
-@keyframes fadein01 {0% {width: 0%; opacity: 0;}100% {width: 50%; opacity: 1;}}
+
+@keyframes move05 {
+    0% {
+        top: 13.5vh;
+    }
+
+    100% {
+        top: 0vh;
+    }
+}
+
+@keyframes move06 {
+    0% {
+        top: 6vh;
+        right: 162px;
+    }
+
+    100% {
+        top: 0vh;
+        right: 0px;
+    }
+}
+
+@keyframes move07 {
+    0% {
+        top: 20vh;
+        right: 0px
+    }
+
+    100% {
+        top: 13.5vh;
+        right: 0px
+    }
+}
+
+@keyframes move08 {
+    0% {
+        top: 6vh;
+        right: 0px
+    }
+
+    100% {
+        top: 6vh;
+        right: 162px
+    }
+}
+
+@keyframes fadein01 {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    100% {
+        width: 50%;
+        opacity: 1;
+    }
+}
+
 /* ↑↑↑ Footer 반응형 "늘어날 때" ↑↑↑ */
 
 /* ↑↑↑ footer nav 설정 ↑↑↑ */
