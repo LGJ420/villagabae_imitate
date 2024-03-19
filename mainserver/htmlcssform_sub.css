@@ -27,7 +27,6 @@ header,
 section,
 footer {
     margin: auto;
-    min-width: calc(1920px * .8);
 }
 
 ::selection {
