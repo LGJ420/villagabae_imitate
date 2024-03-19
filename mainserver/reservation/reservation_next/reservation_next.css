@@ -204,6 +204,7 @@ input[type="radio"]{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
+    z-index: 5;
 }
 
 .modal1_back {
@@ -332,6 +333,7 @@ input[type="radio"]{
 .modal2 {
     display: none;
     position: fixed;
+    z-index: 5;
     width: 400px;
     height: 400px;
     top: 50%;
