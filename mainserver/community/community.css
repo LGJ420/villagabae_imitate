@@ -54,6 +54,7 @@ img::selection
 section {
     max-height: max-content;
     background-color: rgb(255, 255, 255);
+    min-width: max-content
 }
 .section_box {
     margin: auto;
@@ -259,6 +260,12 @@ img:hover{
     background-size: 100% 70%;
     color: #72645c;
     padding-bottom: 50px;
+}
+footer{
+    min-width: 763px;
+}
+header{
+    min-width: 763px;
 }
 /* =====================↓↓↓↓keyframes 모음↓↓↓↓============================================*/
 @keyframes move {

@@ -34,7 +34,7 @@ footer {
 }
 .Q_button{
     position: relative;
-    left:90%;
+    left:88%;
     top:100px;
     line-height: 50px;
     width: 150px;
@@ -61,16 +61,25 @@ footer {
     color: rgb(101, 88, 77);
     font-size: 5em;
     text-wrap: nowrap;
-    animation: move 35s infinite linear forwards;
+    animation: move 60s infinite linear forwards;
     position: absolute;
     display: inline-block;
     letter-spacing: 8px;
     padding: 50px;
 }
+.motion_logo_box{
+    position: relative;
+    width:100vw;
+    height: 142px;
+    overflow: hidden;
+    right: 283px;
+    
+}
 section {
     min-height: 40vh;
     max-height: max-content;
     background-color: rgb(255, 255, 255);
+    min-width: max-content
 }
 .section_box {
     margin: auto;
@@ -182,10 +191,16 @@ i{
     text-align: center;
     min-width: 800px;
 }
+footer {
+    min-width: 1050px;
+}
+header{
+    min-width: 1050px;
+}
 /* ===============↓↓↓↓keyframes 모음↓↓↓↓===================================================== */
 @keyframes move {
     from{
-        right: -300px;
+        right: -3200px;
     }
     to{
         right:700px
