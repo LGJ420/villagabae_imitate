@@ -86,7 +86,8 @@ section {
     max-height: 100%;
     min-height: max-content;
     width: 100%;
-    max-width: calc(1920px * .8);
+    /* max-width: calc(1920px * .8); */
+    max-width: 80vw;
     min-width: 1050px;
     box-sizing: border-box;
     text-align: center;

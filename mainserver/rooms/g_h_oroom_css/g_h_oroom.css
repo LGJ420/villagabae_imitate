@@ -34,7 +34,9 @@ header,
 section,
 footer {
     margin: auto;
+    min-width: 850px;
 }
+
 /* ↑↑↑ 공용 ↑↑↑ */
 
 /* ↓↓↓ 개인 ↓↓↓ */
@@ -257,12 +259,12 @@ label[for*="tab"] {
     transition: all .5s;
 }
 
-@media (width <= 800px) {
+@media (width <= 850px) {
     .room_service>div {
         flex-wrap: wrap;
         align-content: space-evenly;
     }
-
+    
     .room_service>div>div {
         width: 50%;
     }

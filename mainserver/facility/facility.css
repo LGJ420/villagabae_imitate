@@ -86,8 +86,11 @@ img {
 @media (width <= 960px) {
     .pic {
         display: grid;
-        grid-template-columns: repeat(2,1fr) ;
-        grid-template-rows: repeat(auto-fit,1fr);
+        grid-template: repeat(2,1fr) / repeat(2,1fr);
+    }
+
+    .pic div .ser span{
+        font-size: 14px;
     }
 }
 /* ↑↑↑ 화면 크기에 따른 사진 배열 기능 추가 ↑↑↑ */
@@ -121,7 +124,7 @@ img {
 }
 
 .ser span {
-    font-size: initial;      /*기본 크기인 16px*/
+    font-size: 14px;      /*기본 크기인 16px*/
 }
 
 a,
