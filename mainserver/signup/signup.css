@@ -109,7 +109,7 @@ header {
 
 /* ↓↓↓ 경고 효과 ↓↓↓ */
 
-@keyframes warning {
+@keyframes shake {
     0% {
         transform: translateX(-8px);
     }
@@ -126,7 +126,7 @@ header {
 
 .input_area label.warning {
     color: red !important;
-    animation: warning .3s ease;
+    animation: shake .3s ease;
     animation-iteration-count: 3;
 }
 
