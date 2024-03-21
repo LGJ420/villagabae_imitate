@@ -117,6 +117,7 @@ input[type="radio"]{
 .room_img_box img {
     /* stretch */
     display: flex;
+    max-width: 900px;
 }
 
 /* 탭할 사진 수평정렬 */
