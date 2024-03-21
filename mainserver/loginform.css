@@ -5,6 +5,11 @@
 } */
 
 /* ============================ ↓↓↓ 모달 기본 설정 ↓↓↓ ============================================*/
+.modal .modal_box {
+    /* box-shadow: 10px 10px 10px 10px black ; */
+    box-shadow: 0px 2px 18px 0px rgba(0,0,0,.9);
+}
+
 .modal * {
     margin: 0;
     padding: 0;
@@ -82,14 +87,27 @@
     margin: 5px;
     padding: 10px;
     width: 80%;
-    border: 1px solid black;
+    border: 1px solid rgba(146,111,52, .3);
     border-radius: 2px;
 }
 
 .modal .modal_box .info form button {
     cursor: pointer;
+    /* color: white; */
+    /* background-color: rgba(146,111,52,0.8); */
+
+    font-style: normal;
+    color: rgba(223,190,106);
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    border: 1px solid rgba(223,190,106,0.3);
+}
+
+.modal .modal_box .info form button:hover {
     color: white;
-    background-color: rgba(146,111,52,0.8);
+    background-position: 99% 50%;
 }
 
 .modal .modal_box div {
